@@ -1,0 +1,46 @@
+syntax = "proto2";
+
+package video_streaming;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+enum OnesieHeaderType {
+	// expect a ONESIE_DATA with an encrypted player response
+	PLAYER_RESPONSE = 0;
+	OnesieHeaderType_value_1 = 1;
+	// expect a ONESIE_DATA of which the 16 byte data is the decryption key for ONESIE_ENCRYPTED_MEDIA
+	MEDIA_DECRYPTION_KEY = 2;
+	OnesieHeaderType_value_3 = 3;
+	OnesieHeaderType_value_4 = 4;
+	OnesieHeaderType_value_5 = 5;
+	NEW_HOST = 6;
+	OnesieHeaderType_value_7 = 7;
+	OnesieHeaderType_value_8 = 8;
+	OnesieHeaderType_value_9 = 9;
+	OnesieHeaderType_value_10 = 10;
+	OnesieHeaderType_value_11 = 11;
+	OnesieHeaderType_value_12 = 12;
+	OnesieHeaderType_value_13 = 13;
+	// specifies that OnesieHeader::restrictedFormats is set
+	RESTRICTED_FORMATS_HINT = 14;
+	OnesieHeaderType_value_15 = 15;
+	// specifies that stream metadata, like OnesieHeader::{sequenceNumber, startRange} etc are set
+	STREAM_METADATA = 16;
+	OnesieHeaderType_value_17 = 17;
+	OnesieHeaderType_value_18 = 18;
+	OnesieHeaderType_value_19 = 19;
+	OnesieHeaderType_value_20 = 20;
+	OnesieHeaderType_value_21 = 21;
+	OnesieHeaderType_value_22 = 22;
+	OnesieHeaderType_value_23 = 23;
+	OnesieHeaderType_value_24 = 24;
+	// an encrypted response. purpose is unknown
+	ENCRYPTED_INNERTUBE_RESPONSE_PART = 25;
+	OnesieHeaderType_value_26 = 26;
+	OnesieHeaderType_value_27 = 27;
+	OnesieHeaderType_value_28 = 28;
+	OnesieHeaderType_value_29 = 29;
+	OnesieHeaderType_value_30 = 30;
+}

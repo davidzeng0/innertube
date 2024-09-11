@@ -1,0 +1,62 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+import "google/api/annotations.proto";
+import "google/api/client.proto";
+
+import "youtube/api/innertube/player_request.proto";
+import "youtube/api/innertube/player_response.proto";
+import "youtube/api/innertube/watch_next_request.proto";
+import "youtube/api/innertube/watch_next_response.proto";
+import "youtube/api/innertube/config_request.proto";
+import "youtube/api/innertube/config_response.proto";
+import "youtube/api/innertube/resolve_url_request.proto";
+import "youtube/api/innertube/resolve_url_response.proto";
+import "youtube/api/innertube/visitor_id_request.proto";
+import "youtube/api/innertube/visitor_id_response.proto";
+
+service InnerTube {
+	option (google.api.default_host) = "https://youtubei.googleapis.com";
+	option (google.api.oauth_scopes) = "https://www.googleapis.com/auth/youtube";
+
+	rpc GetPlayer(PlayerRequest) returns (PlayerResponse) {
+		option (google.api.http) = {
+			post: "/player",
+			body: "*"
+		};
+	}
+
+	rpc GetWatchNext(WatchNextRequest) returns (WatchNextResponse) {
+		option (google.api.http) = {
+			post: "/next",
+			body: "*"
+		};
+	}
+
+	rpc GetConfig(ConfigRequest) returns (ConfigResponse) {
+		option (google.api.http) = {
+			post: "/config",
+			body: "*"
+		};
+	}
+
+	rpc ResolveUrl(ResolveUrlRequest) returns (ResolveUrlResponse) {
+		option (google.api.http) = {
+			post: "/navigation/resolve_url",
+			body: "*"
+		};
+	}
+
+	rpc GetVisitorId(VisitorIdRequest) returns (VisitorIdResponse) {
+		option (google.api.http) = {
+			post: "/visitor_id",
+			body: "*"
+		};
+	}
+}

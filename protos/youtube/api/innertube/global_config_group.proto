@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message GlobalConfigGroup {
+	oneof coldConfigGroup {
+		string serializedColdConfigGroup = 1; // base64url serialized cold config group
+		bytes bytesSerializedColdConfigGroup = 6; // raw bytes. decode protobuf directly
+	}
+
+	oneof hotConfigGroup {
+		string serializedHotConfigGroup = 3; // base64url serialized hot config group
+		bytes byteSerializedHotConfigGroup = 7; // raw bytes. decode protobuf directly
+	}
+
+	optional string hotHashData = 4;
+	optional string coldHashData = 5;
+}

@@ -1,0 +1,44 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/connection_prewarm_config.proto";
+import "youtube/unknown/unnamed3701.proto";
+import "youtube/unknown/unnamed1811.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message OnesieHotConfig {
+	// 32 byte encryption key. first 16 bytes are aes-128-ctr key. last 16 bytes are hmac sha256 key.
+	optional bytes clientKey = 1;
+	// the encrypted client key, sent between client and server. the server uses this to decrypt the request
+	optional bytes encryptedClientKey = 2;
+	optional int64 keyExpiresInSeconds = 3;
+	optional string reverseProxyConfig = 5;
+	// urls for connection prewarming/keepalive
+	optional ConnectionPrewarmConfig prewarmConfig = 7;
+	repeated int32 audioItagWhitelistArray = 10;
+	repeated int32 videoItagWhitelistArray = 11;
+	optional Unnamed3701 unnamedField12 = 12;
+	// directly copied and sent in the request
+	optional bytes onesieUstreamerConfig = 16;
+	optional bool disableHostReplacement = 17;
+	optional bool retryEnabled = 22;
+	optional Unnamed1811 unnamedField23 = 23;
+	optional int64 maxRetryTimeoutMs = 24;
+	optional string unnamedField25 = 25;
+	optional bool disableFallbackToInnertube = 26;
+	optional bool sendClientInfoToUstreamer = 27;
+	// whether or not to send video_streaming.MediaCapabilities in the request
+	optional bool sendMediaCapabilities = 29;
+	// whether or not to use the hot config to create the request. not sure of the alternative,
+	// but there is also another OnesieConfig in the cold config group. it also contains the same
+	// encryption key related fields, but the key is different in the same response
+	optional bool useHotConfigToCreateOnesieRequest = 30;
+	optional bool useHotConfigWithMissingPlayback = 31;
+	optional string fallbackHostname = 32;
+	optional string fallbackUrlParams = 33;
+}

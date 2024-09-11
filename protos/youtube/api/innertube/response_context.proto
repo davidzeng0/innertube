@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/service_tracking_params.proto";
+import "youtube/api/innertube/global_config_group.proto";
+import "youtube/unknown/unnamed1393.proto";
+import "youtube/unknown/unnamed4568.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message ResponseContext {
+	optional string visitorData = 2;
+	repeated ServiceTrackingParams serviceTrackingParams = 6;
+	optional uint32 maxAgeSeconds = 7;
+	optional GlobalConfigGroup globalConfigGroup = 16;
+	optional .youtube.unknown.Unnamed1393 unnamedField22 = 22;
+	optional string unnamedField24 = 24;
+	optional .youtube.unknown.Unnamed4568 unnamedField26 = 26;
+}

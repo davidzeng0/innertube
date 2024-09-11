@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/service.proto";
+import "youtube/api/innertube/key_value_pair.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message ServiceTrackingParams {
+	optional Service service = 1;
+	repeated KeyValuePair params = 2;
+}

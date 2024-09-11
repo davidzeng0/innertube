@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message AudioTrack {
+	optional string displayName = 4;
+	optional string id = 5;
+	optional bool audioIsDefault = 6;
+}

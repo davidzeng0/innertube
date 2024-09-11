@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/inner_tube_context.proto";
+import "youtube/unknown/unnamed7319.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message EncryptedInnertubeRequest {
+	// contains only .youtube.api.innertube.ClientInfo. hl: 'zz', gl: 'zz',
+	// debugDeviceIdOverride: '0', clientName: ANDROID or IOS or any other, clientVersion:
+	// operating system version. not app version.
+	optional InnerTubeContext context = 1;
+	// encrypted via the function above. see below for type definition
+	optional bytes encryptedOnesieRequest = 2;
+	// from Onesie(Hot)Config::encryptedClientKey
+	optional bytes encryptedClientKey = 5;
+	optional bytes iv = 6; // iv generated above
+	optional bytes hmac = 7; // hmac generated above
+	// if set to true, the `encryptedOnesieRequest` is gzipped before encrypted
+	optional bool useCompression = 8;
+	// from Onesie(Hot)Config::reverseProxyConfig
+	optional string reverseProxyConfig = 9;
+	optional .youtube.unknown.Unnamed7319 unnamedField12 = 12;
+}

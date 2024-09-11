@@ -1,0 +1,44 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/unnamed9013.proto";
+import "youtube/unknown/unnamed7626.proto";
+import "youtube/unknown/unnamed5231.proto";
+import "youtube/unknown/unnamed3821.proto";
+import "youtube/unknown/unnamed9784.proto";
+import "youtube/unknown/unnamed1779.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto";
+
+message ClientAbrState {
+	optional int64 unnamedField13 = 13;
+	optional sint32 unnamedField14 = 14;
+	optional int32 unnamedField16 = 16;
+	optional .youtube.unknown.Unnamed9013 unnamedField17 = 17;
+	optional int32 unnamedField18 = 18;
+	optional int32 unnamedField19 = 19;
+	optional int64 unnamedField20 = 20;
+	optional int32 unnamedField21 = 21;
+	optional bool unnamedField22 = 22;
+	optional int64 unnamedField23 = 23;
+	optional .youtube.unknown.Unnamed7626 unnamedField24 = 24;
+	optional .youtube.unknown.Unnamed7626 unnamedField25 = 25;
+	optional .youtube.unknown.Unnamed5231 unnamedField26 = 26;
+	optional .youtube.unknown.Unnamed3821 unnamedField27 = 27;
+	optional int64 unnamedField28 = 28;
+	optional int64 unnamedField29 = 29;
+	optional bool unnamedField30 = 30;
+	optional .youtube.unknown.Unnamed9784 unnamedField32 = 32;
+	optional int32 unnamedField34 = 34;
+	optional float unnamedField35 = 35;
+	optional int64 unnamedField36 = 36;
+	optional bytes unnamedField38 = 38;
+	optional int64 unnamedField39 = 39;
+	optional int32 unnamedField40 = 40;
+	optional int32 unnamedField43 = 43;
+	optional bool unnamedField46 = 46;
+	repeated .youtube.unknown.Unnamed1779 unnamedField55 = 55 [packed = true];
+}

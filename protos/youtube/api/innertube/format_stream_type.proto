@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+enum FormatStreamType {
+	FORMAT_STREAM_TYPE_UNKNOWN = 0;
+	FORMAT_STREAM_TYPE_OTF = 3;
+}

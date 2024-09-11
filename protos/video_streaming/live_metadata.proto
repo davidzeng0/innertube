@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package video_streaming;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message LiveMetadata {
+	optional string unnamedField1 = 1;
+	optional int64 headSequenceNumber = 3;
+	optional int64 headTimeMillis = 4;
+	optional int64 walltimeMs = 5;
+	optional string unnamedField6 = 6;
+	optional bool unnamedField8 = 8;
+	optional int64 unnamedField12 = 12;
+	optional int32 unnamedField13 = 13;
+	optional int64 unnamedField14 = 14;
+	optional int32 unnamedField15 = 15;
+}

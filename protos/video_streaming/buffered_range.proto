@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "video_streaming/format_id.proto";
+import "video_streaming/time_range.proto";
+import "youtube/unknown/unnamed9835.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message BufferedRange {
+	optional FormatId formatId = 1;
+	optional int64 unnamedField2 = 2;
+	optional int64 unnamedField3 = 3;
+	optional int64 sequenceNumber1 = 4;
+	optional int64 sequenceNumber2 = 5;
+	optional TimeRange timeRange = 6;
+	optional .youtube.unknown.Unnamed9835 unnamedField7 = 7;
+}

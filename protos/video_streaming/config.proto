@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/unnamed1667.proto";
+import "youtube/unknown/unnamed1372.proto";
+import "youtube/unknown/unnamed4036.proto";
+import "youtube/unknown/unnamed1811.proto";
+import "youtube/unknown/unnamed1373.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message Config {
+	optional .youtube.unknown.Unnamed1667 unnamedField1 = 1;
+	optional .youtube.unknown.Unnamed1372 unnamedField2 = 2;
+	optional .youtube.unknown.Unnamed4036 unnamedField4 = 4;
+	optional .youtube.unknown.Unnamed1811 unnamedField6 = 6;
+	optional int32 unnamedField8 = 8;
+	optional int32 unnamedField9 = 9;
+	optional .youtube.unknown.Unnamed1373 unnamedField10 = 10;
+	optional .youtube.unknown.Unnamed1667 unnamedField12 = 12;
+	optional bool unnamedField13 = 13;
+}

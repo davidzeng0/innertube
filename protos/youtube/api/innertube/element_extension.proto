@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/element_renderer.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message ElementExtension {
+	extend ElementRenderer {
+		optional bytes newElement = 172660663;
+	}
+}

@@ -1,0 +1,35 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/thumbnail_details.proto";
+import "youtube/unknown/unnamed3227.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message VideoDetails {
+	optional string videoId = 1;
+	optional string title = 15;
+	optional uint64 lengthSeconds = 16;
+	optional bool unnamedField17 = 17;
+	optional string keywords = 18;
+	optional string channelId = 19;
+	optional bool isOwnerViewing = 20;
+	optional string shortDescription = 21;
+	optional bool isCrawlable = 22;
+	optional bool unnamedField24 = 24;
+	optional ThumbnailDetails thumbnail = 25;
+	optional bool unnamedField27 = 27;
+	optional int32 unnamedField29 = 29;
+	optional bool allowRatings = 31;
+	optional string viewCount = 32;
+	optional string author = 33;
+	optional bool isPrivate = 37;
+	optional bool isUnpluggedCorpus = 38;
+	optional .youtube.unknown.Unnamed3227 unnamedField39 = 39;
+	optional bool isLiveContent = 41;
+	optional bool unnamedField42 = 42;
+}

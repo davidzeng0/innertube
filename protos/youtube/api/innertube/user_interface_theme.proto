@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+enum UserInterfaceTheme {
+	USER_INTERFACE_THEME_UNKNOWN = 0;
+	USER_INTERFACE_THEME_LIGHT = 1;
+	USER_INTERFACE_THEME_DARK = 2;
+}

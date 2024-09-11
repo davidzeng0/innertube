@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/unnamed4308.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message SabrSeek {
+	optional int64 unnamedField1 = 1;
+	optional int32 unnamedField2 = 2;
+	optional .youtube.unknown.Unnamed4308 unnamedField3 = 3;
+}

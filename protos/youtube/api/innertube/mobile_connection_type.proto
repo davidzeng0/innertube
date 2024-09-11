@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+enum MobileConnectionType {
+	CONN_DEFAULT = 0;
+	CONN_UNKNOWN = 1;
+	CONN_NONE = 2;
+	CONN_WIFI = 3;
+	CONN_CELLULAR_2G = 4;
+	CONN_CELLULAR_3G = 5;
+	CONN_CELLULAR_4G = 6;
+	CONN_CELLULAR_UNKNOWN = 7;
+	CONN_DISCO = 8;
+	CONN_CELLULAR_5G = 9;
+	CONN_WIFI_METERED = 10;
+	CONN_CELLULAR_5G_SA = 11;
+	CONN_CELLULAR_5G_NSA = 12;
+	CONN_INVALID = 31;
+}

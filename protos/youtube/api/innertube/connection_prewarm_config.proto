@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message ConnectionPrewarmConfig {
+	optional int32 pingIntervalSeconds = 1;
+	optional string redirectorUrl = 2;
+	optional int32 randomizeRedirectorUrlSeconds = 3;
+	optional int32 hostnameTtlSeconds = 4;
+	optional int32 connectionKeepaliveSeconds = 5;
+	optional int32 startDelayMs = 6;
+	optional bool remapOnNetworkChange = 7;
+	repeated string mappingParamsToCopyArray = 9;
+	repeated string redirectorUrlsArray = 12;
+}

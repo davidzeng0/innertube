@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+enum ClientFormFactor {
+	UNKNOWN_FORM_FACTOR = 0;
+	SMALL_FORM_FACTOR = 1;
+	LARGE_FORM_FACTOR = 2;
+	AUTOMOTIVE_FORM_FACTOR = 3;
+	WEARABLE_FORM_FACTOR = 4;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+enum Service {
+	SERVICE_UNKNOWN = 0;
+	CSI = 1;
+	GFEEDBACK = 2;
+	BREAKPAD = 3;
+	GUIDED_HELP = 4;
+	GOOGLE_HELP = 5;
+	ECATCHER = 6;
+	SUGGEST = 7;
+	LISTNR = 8;
+}

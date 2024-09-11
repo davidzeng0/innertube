@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message Header {
+	enum HeaderType {
+		UNKNOWN = 0;
+		USER_AUTH = 1;
+		VISITOR_ID = 2;
+		PLUS_PAGE_ID = 3;
+		SPATULA_V1 = 4;
+		SHERLOG_SESSION_ID = 5;
+	}
+
+	optional Header.HeaderType headerType = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message AudioConfig {
+	optional float loudnessDb = 1;
+	optional bool unnamedField2 = 2;
+	optional float perceptualLoudnessDb = 3;
+	optional bool unnamedField4 = 4;
+	optional bool unnamedField5 = 5;
+	optional bool enablePerFormatLoudness = 6;
+}

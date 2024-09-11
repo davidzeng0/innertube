@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package youtube.elements;
+
+import "youtube/unknown/unnamed5578.proto";
+import "youtube/elements/model.proto";
+import "youtube/unknown/unnamed5530.proto";
+import "youtube/elements/type.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.elements";
+option objc_class_prefix = "ELMPB";
+
+message ComponentType {
+	optional .youtube.unknown.Unnamed5578 templateConfig = 3;
+	optional Model model = 5;
+	optional .youtube.unknown.Unnamed5530 entitiesConfig = 6;
+
+	extend Type {
+		optional ComponentType componentType = 168777401;
+	}
+}

@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/http_header.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message OnesieRequestProto {
+	// /player (?key=APIKEY&id=VIDEOID, optional, can also set in headers)
+	optional string url = 1;
+	// Content-Type: application/x-protobuf. X-Goog-Api-Format-Version: 2.
+	// User-Agent: same user agent sent in player requests, optionally tagged with gzip at the end.
+	// If not, the response may be compressed using brotli.
+	// Authorization: Bearer [token], if applicable
+	repeated .youtube.unknown.HttpHeader headers = 2;
+	// the request payload. if its /player, this is a serialized PlayerRequest
+	optional bytes body = 3;
+	// unknown. always set to true
+	optional bool unnamedField4 = 4;
+}

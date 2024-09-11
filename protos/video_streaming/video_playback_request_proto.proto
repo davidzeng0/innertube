@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/unnamed6053.proto";
+import "video_streaming/streamer_context.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message VideoPlaybackRequestProto {
+	optional .youtube.unknown.Unnamed6053 unnamedField1 = 1;
+	optional bytes unnamedField3 = 3;
+	optional int64 unnamedField4 = 4;
+	optional StreamerContext unnamedField5 = 5;
+}

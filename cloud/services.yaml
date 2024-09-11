@@ -1,0 +1,33 @@
+# API services
+- name: YouTube Internal API (InnerTube)
+  id: youtubei.googleapis.com
+  # Name of client used to make API calls
+  client: google.rest # gRPC is not supported for this service
+  scopes:
+    - https://www.googleapis.com/auth/youtube
+  endpoints:
+    - host: www.googleapis.com
+      transport:
+        - application/json
+        - application/x-protobuf
+    - host: youtubei.googleapis.com
+      transport:
+        - application/json
+        - application/x-protobuf
+    - host: www.googleapis.com
+      transport:
+        - application/json
+        - application/x-protobuf
+    - host: www.youtube.com
+      transport:
+        - application/json
+    - host: music.youtube.com
+      transport:
+        - application/json
+    - host: tv.youtube.com
+      transport:
+        - application/json
+  basePath: youtubei
+  version: v1
+  implementation:
+    protoOverREST: '@protos/youtube/api/innertube/innertube.InnerTubeDefinition' # protobuf service implementation

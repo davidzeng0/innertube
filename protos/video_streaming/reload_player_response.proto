@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "youtube/unknown/unnamed9836.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message ReloadPlayerResponse {
+	optional .youtube.unknown.Unnamed9836 unnamedField1 = 1;
+}

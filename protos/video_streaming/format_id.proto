@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package video_streaming;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message FormatId {
+	optional int32 itag = 1;
+	optional uint64 lastModified = 2;
+	optional string xtags = 3;
+}

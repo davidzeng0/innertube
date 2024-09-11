@@ -1,0 +1,125 @@
+# Android
+- name: YouTube Android
+  resourceNumber: '414843287017' # Google Cloud project resource number
+  oauth:
+    # OAuth 2.0 Issuer ID
+    - issuer: android.googleapis.com # First party Android issuer
+                                     # Only first party issuers can authorize first party apps
+                                     # client_secret not required for Android or iOS apps
+  keys: # Known keys from this project
+    - AIzaSyA8eiZmM1FaDVjRy-df2KTyQ_vz_yYM39w
+  apis: # Known enabled Google Cloud APIs
+    - id: youtubei.googleapis.com
+  clients: # Known clients from this project
+    - id: 414843287017-ceduiv97av1upoplqjev2aaoeq6j16lk.apps.googleusercontent.com
+      package: com.google.android.youtube
+      fingerprint: 4ba713dfece93d47572dc5e845a7a82c4a891f2f # Android signing key SHA-1 fingerprint
+    - id: 414843287017-puh18868jm25h4f136f1vju3qg5j492i.apps.googleusercontent.com
+      package: com.google.android.youtube
+      fingerprint: 24bb24c05e47e0aefa68a58a766179d9b613a600 # Doesn't need android id
+
+- name: YouTube Music (YouTube Music Android)
+  resourceNumber: '551011954849'
+  oauth:
+    - issuer: android.googleapis.com
+  keys:
+    - AIzaSyAOghZGza2MQSZkY_zfZ370N-PUdXEo8AI
+  apis:
+    - id: youtubei.googleapis.com
+  clients:
+    - id: 551011954849-d0tangvu20d72nmms5j1m4i5es648va2.apps.googleusercontent.com
+      package: com.google.android.apps.youtube.music
+      fingerprint: 2f8a75f382495b05528b32e71fe7b5d147d3add3
+
+# iOS
+- name: YouTube (YouTube iOS) # Google Cloud project name (Common Name)
+  resourceNumber: '755541669657'
+  oauth:
+    - issuer: oauthaccountmanager.googleapis.com # Firsty party issuer that uses public
+                                             # OAuth 2.0 flow after authorization
+  keys:
+    - AIzaSyB-63vPrdThhKuerbB2N_l7Kwwcxj6yUAc
+  apis:
+    - id: youtubei.googleapis.com
+  clients:
+    - id: 755541669657-kbosfavg7pk7sr3849c3tf657hpi5jpd.apps.googleusercontent.com
+      bundle: com.google.ios.youtube # Bundle ID from Info.plist
+
+- name: YouTube Music iOS
+  resourceNumber: '755973059757'
+  oauth:
+    - issuer: oauthaccountmanager.googleapis.com
+  keys:
+    - AIzaSyBAETezhkwP0ZWA02RsqT1zu78Fpt0bC_s
+  apis:
+    - id: youtubei.googleapis.com
+  clients:
+    - id: 755973059757-iigsfdoqt2c4qm209soqp2dlrh33almr.apps.googleusercontent.com
+      bundle: com.google.ios.youtubemusic
+
+- name: YouTube TV (YouTube TV iOS)
+  resourceNumber: '571458281011'
+  oauth:
+    - issuer: oauthaccountmanager.googleapis.com
+  keys:
+    - AIzaSyAA2X8Iz20HQACliPKA2J9URIdPmS3xFUA
+  apis:
+    - id: youtubei.googleapis.com
+  clients:
+    - id: 571458281011-o9pps7tr4fmnatnge4fvvfff75fka6a3.apps.googleusercontent.com
+      bundle: com.google.ios.youtubeunplugged
+
+# Web
+- name: InnerTube First Party (YouTube Web)
+  resourceNumber: '144809266352'
+  oauth:
+    - issuer: Google Cookie
+  keys:
+    - AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+  apis:
+    - id: youtubei.googleapis.com
+      defaultHost: www.youtube.com
+
+- name: (YouTube Music Web)
+  resourceNumber: '24340404327'
+  oauth:
+    - issuer: Google Cookie
+  keys:
+    - AIzaSyC9XL3ZjWddXya6X74dJoCTL-WEYFDNX30
+  apis:
+    - id: youtubei.googleapis.com
+      defaultHost: music.youtube.com
+
+- name: (YouTube TV)
+  resourceNumber: '809243779264'
+  oauth:
+    - issuer: Google Cookie
+  keys:
+    - AIzaSyD-L7DIyuMgBk-B4DYmjJZ5UG-D6Y-vkMc
+  apis:
+    - id: youtubei.googleapis.com
+      defaultHost: tv.youtube.com
+
+- name: YouTube on TV (YouTube Web on TV)
+  resourceNumber: '861556708454'
+  oauth:
+    - issuer: OAuth 2.0        # Normal OAuth 2.0 flow (considered third party app)
+                               # This project is authorized (unlike the first party apps)
+                               # for public auth flow
+                               #
+                               # Since the client_secret may change
+                               # it should be stored locally and updated
+                               # every so often (or when it stops working)
+      url: accounts.google.com
+    - issuer: OAuth 2.0 Device     # Device auth flow
+      url: accounts.google.com
+  keys:
+    - AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8
+  apis:
+    - id: youtubei.googleapis.com
+      defaultHost: www.youtube.com
+  clients:
+    - id: 861556708454-d6dlm3lh05idd8npek18k6be8ba3oc68.apps.googleusercontent.com # TV client, external browser auth
+      redirectUri: https://www.youtube.com # ignored for device auth
+    - id: 861556708454-912i5jlic99ecvu3ro5kqirg0hldli5t.apps.googleusercontent.com # Web client, current browser auth
+      redirectUri: urn:ietf:wg:oauth:2.0:oob:auto

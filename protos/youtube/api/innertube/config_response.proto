@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/response_context.proto";
+import "youtube/unknown/unnamed1968.proto";
+import "youtube/api/innertube/cold_config_group.proto";
+import "youtube/api/innertube/hot_config_group.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message ConfigResponse {
+	optional ResponseContext responseContext = 1;
+	optional .youtube.unknown.Unnamed1968 unnamedField3 = 3;
+	optional ColdConfigGroup rawColdConfigGroup = 4;
+	optional HotConfigGroup rawHotConfigGroup = 5;
+}

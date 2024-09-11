@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package youtube.api.innertube;
+
+import "youtube/api/innertube/string_run.proto";
+import "youtube/api/innertube/formatted_string_supported_accessibility_datas.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.protos.youtube.api.innertube";
+option objc_class_prefix = "YTI";
+
+message FormattedString {
+	repeated StringRun runs = 1;
+	optional bool rtl = 2;
+	optional FormattedStringSupportedAccessibilityDatas accessibility = 3;
+	optional string simpleText = 4;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package video_streaming;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message CompressionType7628 {
+	enum CompressionType {
+		// unknown. probably deflate. both are handled with gzip in the disassembled code.
+		CompressionType_value_0 = 0;
+		// unknown. probably gzip. both are handled with gzip in the disassembled code.
+		CompressionType_value_1 = 1;
+		BROTLI = 2;
+	}
+}

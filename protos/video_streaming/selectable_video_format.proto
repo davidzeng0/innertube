@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "video_streaming/format_id.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto.streaming";
+
+message SelectableVideoFormat {
+	optional FormatId formatId = 1;
+}

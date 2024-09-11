@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+package video_streaming;
+
+import "video_streaming/format_id.proto";
+import "video_streaming/time_range.proto";
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.google.android.apps.youtube.proto";
+
+message MediaHeader {
+	enum CompressionType {
+		CompressionType_value_0 = 0;
+		NONE = 1;
+		GZIP = 2;
+	}
+
+	optional uint32 headerId = 1;
+	optional string videoId = 2;
+	optional int32 itag = 3;
+	optional uint64 lastModified = 4;
+	optional string xtags = 5;
+	optional int64 startRange = 6;
+	optional MediaHeader.CompressionType compressionType = 7;
+	optional bool isInitSegment = 8;
+	optional int64 sequenceNumber = 9;
+	optional int64 unnamedField10 = 10;
+	optional FormatId formatId = 13;
+	optional int64 length = 14;
+	optional TimeRange timeRange = 15;
+	optional uint64 unnamedField16 = 16;
+	optional int64 unnamedField17 = 17;
+}
