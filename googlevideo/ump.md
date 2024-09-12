@@ -2,13 +2,6 @@
 
 The UMP (likely Universal Media Playback) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
 
-There is 1 request format for [/initplayback](./initplayback.md):
-- OnesieInnertubeRequest
-
-There are 2 request formats for /videoplayback:
-- VideoPlaybackRequestProto. Gets media data with ump.
-- VideoPlaybackAbrRequestProto. Can fetch media data for two itags at the same time. Interlaced data response. Uses server abr streaming url.
-
 ## Variable sized integers
 
 The UMP format uses variable size integers in a number of places.
