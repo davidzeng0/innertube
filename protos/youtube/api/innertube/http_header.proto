@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package youtube.unknown;
 
-message HttpHeader {
+message HTTPHeader {
 	optional string key = 1;
 	optional string value = 2;
 }

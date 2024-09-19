@@ -10,7 +10,7 @@ option cc_enable_arenas = true;
 message OnesieInnertubeResponse {
 	optional ProxyStatus proxyStatus = 1;
 	optional int32 status = 2;
-	repeated .youtube.api.innertube.HttpHeader headers = 3;
+	repeated .youtube.api.innertube.HTTPHeader headers = 3;
 	// the corresponding response for the request
 	optional bytes body = 4;
 }
