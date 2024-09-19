@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package youtube.unknown;
+package youtube.api.innertube;
 
 message HTTPHeader {
 	optional string key = 1;
