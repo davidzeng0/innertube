@@ -15,7 +15,7 @@ message OnesieRequestProto {
 	// User-Agent: same user agent sent in player requests, optionally tagged with gzip at the end.
 	// If not, the response may be compressed using brotli.
 	// Authorization: Bearer [token], if applicable
-	repeated .youtube.unknown.HttpHeader headers = 2;
+	repeated .youtube.api.innertube.HttpHeader headers = 2;
 	// the request payload. if its /player, this is a serialized PlayerRequest
 	optional bytes body = 3;
 	// unknown. always set to true
