@@ -2,7 +2,7 @@
 
 See [OnesieRequestProto](../protos/video_streaming/onesie_request_proto.proto).
 
-[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_request_proto.proto) is the data sent in `EncryptedInnertubeRequest::encryptedOnesiePlayerRequest`
+[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in `EncryptedInnertubeRequest::encryptedOnesiePlayerRequest`
 
 The key can be acquired via a request to /config.
 
