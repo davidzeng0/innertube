@@ -1,6 +1,6 @@
 # UMP Format
 
-The UMP (likely Universal Media Playback) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
+The UMP (likely Universal Media Playback or U Multi Part) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
 
 ## Variable sized integers
 
