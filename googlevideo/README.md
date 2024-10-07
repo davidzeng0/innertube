@@ -1,5 +1,5 @@
 There is 1 request format for [/initplayback](./initplayback.md):
-- OnesieInnertubeRequest
+- OnesieRequestProto
 
 There are 2 request formats for /videoplayback:
 - VideoPlaybackRequestProto. Gets media data with ump.
