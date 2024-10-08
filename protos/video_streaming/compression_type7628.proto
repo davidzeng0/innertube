@@ -10,7 +10,7 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 
 message CompressionType7628 {
 	enum CompressionType {
-		// unknown. probably deflate. both are handled with gzip in the disassembled code.
+		// unknown. probably deflate. both this and gzip are handled with GZIP(In/Out)putStream (android) and zlib::inflate (ios) in the disassembled code.
 		CompressionType_value_0 = 0;
 		GZIP = 1;
 		BROTLI = 2;
