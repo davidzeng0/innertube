@@ -27,5 +27,4 @@ message StringRun {
 	optional .youtube.unknown.Unnamed3130 unnamedField999 = 999;
 
 	extensions 152040444 to 152040444;
-
 }

@@ -11,5 +11,4 @@ option objc_class_prefix = "ELMPB";
 
 message Model {
 	extensions 188495463 to 400157044;
-
 }

@@ -1,6 +1,8 @@
 # UMP Format
 
-The UMP (likely Universal Media Playback or U Multi Part) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
+Original document: https://github.com/gsuberland/UMP_Format/blob/main/UMP_Format.md
+
+The UMP (likely Universal Media Playback or U(stream/streamer) Multi Part) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
 
 ## Variable sized integers
 
@@ -123,24 +125,24 @@ The following part types have been observed.
 
 OnesieHeader. Depending on the header type, there is exactly 0-1 ONESIE_DATA parts that follow.
 
-See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto)
+See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto) for possible values.
 
 ### Part 11: ONESIE_DATA
 
 If present, must be preceded by OnesieHeader (part 10).
 
-#### Type 0: OnesieHeaderType::PLAYER_RESPONSE
+#### Type 0: OnesieHeaderType::ONESIE_PLAYER_RESPONSE
 
 The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
 
 If the compression type is BROTLI, decompress using BROTLI, otherwise decompress using GZIP.
 
-The contents are now in protobuf.
+The contents are now in protobuf. See [OnesieInnertubeResponse](../protos/video_streaming/onesie_innertube_response.proto) for the format.
 
-See [OnesieInnertubeResponse](../protos/video_streaming/onesie_innertube_response.proto) and [ProxyStatus](../protos/video_streaming/proxy_status.proto)
-
-If the proxy status is not `OK`, panic or throw an exception.
-If the status is not 200, panic or throw an exception. Error codes have a response body in the same format as a Google Cloud API error response.
+If the onesie proxy status is not `OK`, panic or throw an exception.
+The http status and response body can be considered a part of a normal Google Cloud API invocation.
+See [errors](https://cloud.google.com/apis/design/errors) for information about API errors.
+For `X-Goog-Api-Format-Version: 2`, this corresponds to `message Status`. Otherwise, it is the json `Error` format.
 
 The body can be deserialized as a `PlayerResponse`.
 
@@ -165,7 +167,7 @@ Indicates some stream metadata is set in the header. No ONESIE_DATA follows
 
 Unknown purpose.
 
-Decrypted in the same way as OnesieHeaderType::PLAYER_RESPONSE.
+Decrypted in the same way as OnesieHeaderType::ONESIE_PLAYER_RESPONSE.
 
 See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertube_response_part.proto)
 
@@ -173,7 +175,8 @@ See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertu
 
 Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L19). The rest is encrypted media.
 
-The key is found in `OnesieHeaderType::MEDIA_DECRYPTION_KEY`.
+The key is found in `OnesieHeaderType::ONESIE_MEDIA_DECRYPTION_KEY`.
+The key is sent after a successful call to `/player`.
 The initialization vector is 16 bytes of zeros. There is no hmac.
 
 All ONESIE_ENCRYPTED_MEDIA chunks are to be decrypted with the same cipher instance, without resetting the IV.
@@ -204,7 +207,7 @@ Metadata related to live streams.
 
 See [LiveMetadata](../protos/video_streaming/live_metadata.proto)
 
-### Part 32: HOSTNAME_CHANGE_HINT
+### Part 32: HOSTNAME_CHANGE_HINT (deprecated)
 
 Unknown format.
 
@@ -252,7 +255,7 @@ Non existent (deprecated and removed or never existed in the first place).
 
 ### Part 42: FORMAT_INITIALIZATION_METADATA
 
-Unknown purpose and format.
+See [FormatInitializationMetadata](../protos/video_streaming/format_initialization_metadata.proto)
 
 ### Part 43: SABR_REDIRECT
 
@@ -260,17 +263,17 @@ Contains a url. The client should use this url for further requests.
 
 ### Part 44: SABR_ERROR
 
-Error in request payload.
+A server abr related error.
 
 ### Part 45: SABR_SEEK
 
-Unknown purpose and format.
+See [SabrSeek](../protos/video_streaming/sabr_seek.proto)
 
 ### Part 46: RELOAD_PLAYER_RESPONSE
 
-The streams have expired and a new /player request needs to be sent.
+The streams have expired and a new `/player` request needs to be sent.
 
-Unknown format.
+See [ReloadPlayerResponse](../protos/video_streaming/reload_player_response.proto)
 
 ### Part 47: PLAYBACK_START_POLICY
 
@@ -282,7 +285,7 @@ Unknown purpose and format.
 
 ### Part 49: START_BW_SAMPLING_HINT
 
-Unknown purpose and format.
+Probably related to [BandwidthSamplingConfig](../protos/video_streaming/bandwidth_sampling_config.proto)
 
 ### Part 50: PAUSE_BW_SAMPLING_HINT
 
@@ -290,11 +293,11 @@ Unknown purpose and format.
 
 ### Part 51: SELECTABLE_FORMATS
 
-Unknown purpose and format.
+See [SelectableFormats](../protos/video_streaming/selectable_formats.proto)
 
 ### Part 52: REQUEST_IDENTIFIER
 
-Unknown purpose and format.
+See [RequestIdentifier](../protos/video_streaming/request_identifier.proto)
 
 ### Part 53: REQUEST_CANCELLATION_POLICY
 

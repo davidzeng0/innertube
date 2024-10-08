@@ -12,8 +12,7 @@ message CompressionType7628 {
 	enum CompressionType {
 		// unknown. probably deflate. both are handled with gzip in the disassembled code.
 		CompressionType_value_0 = 0;
-		// unknown. probably gzip. both are handled with gzip in the disassembled code.
-		CompressionType_value_1 = 1;
+		GZIP = 1;
 		BROTLI = 2;
 	}
 }

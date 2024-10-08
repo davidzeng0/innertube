@@ -18,5 +18,4 @@ message Command {
 	optional .youtube.unknown.Unnamed1223 unnamedField4 = 4;
 
 	extensions 48687626 to 428788994;
-
 }

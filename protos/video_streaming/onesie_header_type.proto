@@ -10,10 +10,10 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 
 enum OnesieHeaderType {
 	// expect a ONESIE_DATA with an encrypted player response
-	PLAYER_RESPONSE = 0;
+	ONESIE_PLAYER_RESPONSE = 0;
 	OnesieHeaderType_value_1 = 1;
 	// expect a ONESIE_DATA of which the 16 byte data is the decryption key for ONESIE_ENCRYPTED_MEDIA
-	MEDIA_DECRYPTION_KEY = 2;
+	ONESIE_MEDIA_DECRYPTION_KEY = 2;
 	OnesieHeaderType_value_3 = 3;
 	OnesieHeaderType_value_4 = 4;
 	OnesieHeaderType_value_5 = 5;

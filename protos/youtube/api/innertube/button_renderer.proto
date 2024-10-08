@@ -49,5 +49,4 @@ message ButtonRenderer {
 	optional Command unnamedField28 = 28;
 
 	extensions 160206468 to 388817581;
-
 }
