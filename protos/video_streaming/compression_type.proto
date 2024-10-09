@@ -4,14 +4,13 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "video_streaming/compression_type.proto";
-
 option cc_enable_arenas = true;
 option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
 
-message CryptoParams {
-	optional bytes hmac = 4;
-	optional bytes iv = 5;
-	optional CompressionType compressionType = 6;
+enum CompressionType {
+	// unknown. probably deflate. both this and gzip are handled with GZIP(In/Out)putStream (android) and zlib::inflate (ios) in the disassembled code.
+	CompressionType_value_0 = 0;
+	GZIP = 1;
+	BROTLI = 2;
 }

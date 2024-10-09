@@ -157,6 +157,7 @@ message PlayerResponse {
 	optional .youtube.unknown.Unnamed1894 frameworkUpdates = 777;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed2553 {
 	oneof oneof0 {
 		.youtube.unknown.Unnamed5259 unnamedField48841103 = 48841103;
@@ -172,11 +173,13 @@ message Unnamed2553 {
 	}
 }
 
+/* protogen: merge reason = circular */
 message Unnamed2555 {
 	optional PlayerResponse unnamedField1 = 1;
 	optional PlayerRequest unnamedField2 = 2;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed1251 {
 	optional FormattedString unnamedField1 = 1;
 	optional ThumbnailDetails unnamedField2 = 2;
@@ -245,6 +248,7 @@ message Unnamed1251 {
 	optional Command unnamedField96 = 96;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed1253 {
 	oneof oneof0 {
 		Unnamed1251 unnamedField62285947 = 62285947;
@@ -252,6 +256,7 @@ message Unnamed1253 {
 	}
 }
 
+/* protogen: merge reason = circular */
 message Unnamed4327 {
 	optional FormattedString unnamedField2 = 2;
 	repeated Unnamed4328 unnamedField3 = 3;
@@ -261,6 +266,7 @@ message Unnamed4327 {
 	optional bytes unnamedField9 = 9;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed4328 {
 	optional .youtube.unknown.Unnamed4339 unnamedField61321220 = 61321220;
 	optional .youtube.unknown.Unnamed4326 unnamedField61331416 = 61331416;
@@ -307,6 +313,7 @@ message Unnamed4328 {
 	optional .youtube.unknown.Unnamed5004 unnamedField421338327 = 421338327;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed4330 {
 	optional FormattedString unnamedField1 = 1;
 	optional FormattedString unnamedField2 = 2;
@@ -317,6 +324,7 @@ message Unnamed4330 {
 	optional .youtube.unknown.Unnamed473 unnamedField8 = 8;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed3722 {
 	repeated Unnamed3717 unnamedField1 = 1;
 	optional FormattedString unnamedField2 = 2;
@@ -324,6 +332,7 @@ message Unnamed3722 {
 	optional .youtube.unknown.Unnamed951 unnamedField5 = 5;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed3717 {
 	optional .youtube.unknown.Unnamed3720 unnamedField77615207 = 77615207;
 	optional .youtube.unknown.Unnamed3718 unnamedField77694497 = 77694497;
@@ -331,6 +340,7 @@ message Unnamed3717 {
 	optional Unnamed3719 unnamedField111079109 = 111079109;
 }
 
+/* protogen: merge reason = circular */
 message Unnamed3719 {
 	optional FormattedString unnamedField1 = 1;
 	optional .youtube.unknown.Unnamed473 unnamedField5 = 5;

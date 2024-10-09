@@ -17,8 +17,7 @@ message EncryptedInnertubeRequest {
 	// debugDeviceIdOverride: '0', clientName: ANDROID or IOS or any other, clientVersion:
 	// operating system version. not app version.
 	optional InnerTubeContext context = 1;
-	// encrypted via the function above. see below for type definition
-	optional bytes encryptedOnesiePlayerRequest = 2;
+	optional bytes encryptedOnesieInnertubeRequest = 2;
 	// from Onesie(Hot)Config::encryptedClientKey
 	optional bytes encryptedClientKey = 5;
 	optional bytes iv = 6; // randomly generated iv

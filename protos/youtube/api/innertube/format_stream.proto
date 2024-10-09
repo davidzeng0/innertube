@@ -5,6 +5,7 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/range.proto";
+import "youtube/api/innertube/projection_type.proto";
 import "youtube/api/innertube/audio_track.proto";
 import "youtube/api/innertube/color_info.proto";
 import "youtube/unknown/unnamed1875.proto";
@@ -18,26 +19,15 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormatStream {
-	message DrmFamily2954 {
-		enum DrmFamily {
-			UNKNOWN = 0;
-			FLASHACCESS = 1;
-			WIDEVINE_CLASSIC = 2;
-			FAIRPLAY = 6;
-			CLEARKEY = 3;
-			WIDEVINE = 4;
-			PLAYREADY = 5;
-		}
-	}
-
-	message ProjectionType7237 {
-		enum ProjectionType {
-			UNKNOWN = 0;
-			RECTANGULAR = 1;
-			EQUIRECTANGULAR = 2;
-			EQUIRECTANGULAR_THREED_TOP_BOTTOM = 3;
-			MESH = 4;
-		}
+	/* protogen: merge reason = nested */
+	enum DrmFamily {
+		UNKNOWN = 0;
+		FLASHACCESS = 1;
+		WIDEVINE_CLASSIC = 2;
+		FAIRPLAY = 6;
+		CLEARKEY = 3;
+		WIDEVINE = 4;
+		PLAYREADY = 5;
 	}
 
 	optional int32 itag = 1;
@@ -51,10 +41,10 @@ message FormatStream {
 	optional int64 lastModified = 11;
 	optional int64 contentLength = 12;
 	optional string unnamedField23 = 23;
-	repeated FormatStream.DrmFamily2954.DrmFamily unnamedField24 = 24;
+	repeated DrmFamily unnamedField24 = 24;
 	optional int32 fps = 25;
 	optional string qualityLabel = 26;
-	optional FormatStream.ProjectionType7237.ProjectionType projectionType = 27;
+	optional ProjectionType projectionType = 27;
 	optional AudioTrack audioTrack = 28;
 	optional int32 averageBitrate = 31;
 	optional ColorInfo colorInfo = 33;

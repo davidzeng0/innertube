@@ -12,6 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message OnesieInnertubeResponse {
+	/* protogen: merge reason = nested */
 	enum OnesieProxyStatus {
 		UNKNOWN = 0;
 		OK = 1;
@@ -28,7 +29,7 @@ message OnesieInnertubeResponse {
 		OnesieProxyStatus_value_12 = 12;
 	}
 
-	optional OnesieInnertubeResponse.OnesieProxyStatus onesieProxyStatus = 1;
+	optional OnesieProxyStatus onesieProxyStatus = 1;
 	optional int32 httpStatus = 2;
 	repeated HTTPHeader httpHeaders = 3;
 	optional bytes body = 4;

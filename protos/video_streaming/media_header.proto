@@ -12,6 +12,7 @@ option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto";
 
 message MediaHeader {
+	/* protogen: merge reason = nested */
 	enum CompressionType {
 		NONE = 0;
 		NONE_1 = 1;
@@ -24,7 +25,7 @@ message MediaHeader {
 	optional uint64 lastModified = 4;
 	optional string xtags = 5;
 	optional int64 startRange = 6;
-	optional MediaHeader.CompressionType compressionType = 7;
+	optional CompressionType compressionType = 7;
 	optional bool isInitSegment = 8;
 	optional int64 sequenceNumber = 9;
 	optional int64 unnamedField10 = 10;

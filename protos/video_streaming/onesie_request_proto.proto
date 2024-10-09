@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "youtube/unknown/unnamed6053.proto";
+import "video_streaming/client_abr_state.proto";
 import "youtube/api/innertube/encrypted_innertube_request.proto";
 import "video_streaming/streamer_context.proto";
 import "youtube/unknown/unnamed472.proto";
@@ -15,8 +15,8 @@ option java_multiple_files = true;
 
 message OnesieRequestProto {
 	repeated string urls = 1;
-	optional .youtube.unknown.Unnamed6053 abrState = 2;
-	optional .youtube.api.innertube.EncryptedInnertubeRequest playerRequest = 3;
+	optional ClientAbrState abrState = 2;
+	optional .youtube.api.innertube.EncryptedInnertubeRequest innertubeRequest = 3;
 	optional bytes onesieUstreamerConfig = 4;
 	optional int32 maxVp9Height = 5;
 	optional int32 clientDisplayHeight = 6;

@@ -9,5 +9,5 @@ option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
 
 message SelectableCaptionFormat {
-	/* zero length fields */
+	/* protogen: zero length fields */
 }

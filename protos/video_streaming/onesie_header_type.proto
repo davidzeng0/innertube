@@ -9,11 +9,11 @@ option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
 
 enum OnesieHeaderType {
-	// expect a ONESIE_DATA with an encrypted player response
-	ONESIE_PLAYER_RESPONSE = 0;
+	// expect a ONESIE_DATA with an encrypted innertube response
+	INNERTUBE_RESPONSE = 0;
 	OnesieHeaderType_value_1 = 1;
 	// expect a ONESIE_DATA of which the 16 byte data is the decryption key for ONESIE_ENCRYPTED_MEDIA
-	ONESIE_MEDIA_DECRYPTION_KEY = 2;
+	MEDIA_DECRYPTION_KEY = 2;
 	OnesieHeaderType_value_3 = 3;
 	OnesieHeaderType_value_4 = 4;
 	OnesieHeaderType_value_5 = 5;

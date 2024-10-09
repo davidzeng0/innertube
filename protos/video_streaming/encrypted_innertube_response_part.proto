@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "video_streaming/compression_type7628.proto";
+import "video_streaming/compression_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -14,5 +14,5 @@ message EncryptedInnertubeResponsePart {
 	optional bytes encryptedContent = 1;
 	optional bytes hmac = 2;
 	optional bytes iv = 3;
-	optional CompressionType7628.CompressionType compressionType = 4;
+	optional CompressionType compressionType = 4;
 }
