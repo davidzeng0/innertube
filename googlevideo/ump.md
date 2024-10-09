@@ -62,68 +62,15 @@ fn read_part(input: &mut Reader) -> (Vec<u8>, u32) {
 }
 ```
 
-### Partial parts
-
-Parts are not guaranteed to be wholly contained within one response payload. It is quite common to find that a part's length exceeds the length of the HTTP response payload. This means that the part will continue in the next response payload.
-
-If a response payload is self-contained, i.e. it does not end with a partial part, the last part in the buffer will end precisely at the end of the buffer. Typically the last part will be `MEDIA_END` (type 22) with a single null byte payload, but this is not guaranteed.
-
-If a payload is not self-contained, i.e. its final part has a length exceeding the amount of remaining data in the buffer, its data will continue in the next response payload. In such a case, the next payload will start with a media header part (type 20) followed by a part of the same type as the partial one, whose data is a continuation of the partial part from the previous payload. Parts can be split up over an arbitrary number of response payloads.
-
-This is a little hard to picture, so here's an example. Let's say you've got a part with a length of 2,500,000 bytes, and each response payload can be maximum of 1MB (this is just for example; in practice there is no such hard limit). The resulting response payloads will look something like this:
-
-```
-response 1:
-	part 20 (media header)
-		size=...
-		data=...
-	part 21 (media data)
-		size=2500000
-		data=... (len=1000000)
-
-response 2:
-	part 20 (media header)
-		size=...
-		data=...
-	part 21 (media data)
-		size=1500000
-		data=... (len=1000000)
-
-response 3:
-	part 20 (media header)
-		size=...
-		data=...
-	part 21 (media data)
-		size=500000
-		data=... (len=500000)
-	part 22 (MEDIA_END)
-		size=1
-		data=00
-```
-
-This gets decoded as a single type 21 part of size 2,500,000 bytes, followed by a type 22 part. Note that there could be a different part type in response 3, after part 21, instead of `MEDIA_END`. The end of a part is determined solely by all of its data being read; the next part type is irrelevant.
-
-Once a partial part begins, responding with a different part type (e.g. sending a partial part 22, then following up with a part 32 before sending the rest of the first part) has undefined behaviour. As far as I could tell from the implementations, error handling is variable here. Some will throw an exception, but some appear to blindly accept the data as a continuation of the data, even if the part type ID is wrong. Fun! I would recommend being rigorous in checking for the correct type when decoding partial parts.
-
-### Reading UMP parts
-
-You can read UMP parts with a state machine:
-
-1. Read a response payload in chunks.
-2. If the amount of data remaining in the buffer is zero, go back to step 1.
-3. Read the UMP part type as a variable sized integer.
-4. Read the UMP part size as a variable sized integer.
-5. If the part size is zero, decode the part as a zero-length part (i.e. no payload), passing in an empty buffer, then go back to step 2.
-6. If the part size is less than or equal to the remaining buffer size, decode the part from that slice of the buffer, then increment the position within the buffer and go back to step 3.
-7. If the part size is greater than the remaining buffer size, keep a copy of the remaining buffer data, read the next buffer, stitch the two together, and continue parsing from step 5.
-
 ## Part types
 
 The following part types have been observed.
 
 ### Part 10: ONESIE_HEADER
 
-OnesieHeader. Depending on the header type, there is exactly 0-1 ONESIE_DATA parts that follow.
+Data related to a onesie (`/initplayback`) request. See [OnesieHeader](../protos/video_streaming/onesie_header.proto).
+
+Depending on the header type, there is exactly 0-1 ONESIE_DATA parts that follow.
 
 See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto) for possible values.
 
@@ -176,7 +123,6 @@ See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertu
 Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L19). The rest is encrypted media.
 
 The key is found in `OnesieHeaderType::ONESIE_MEDIA_DECRYPTION_KEY`.
-The key is sent after a successful call to `/player`.
 The initialization vector is 16 bytes of zeros. There is no hmac.
 
 All ONESIE_ENCRYPTED_MEDIA chunks are to be decrypted with the same cipher instance, without resetting the IV.
