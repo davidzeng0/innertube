@@ -10,7 +10,7 @@ If the rawColdConfigGroup and rawHotConfigGroup are not present, then check the 
 
 The client uses the [OnesieHotConfig::clientKey](../protos/youtube/api/innertube/onesie_hot_config.proto#L16) for encrypting the request. The IV is randomly generated.
 
-[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in [`EncryptedInnertubeRequest::encryptedOnesiePlayerRequest`](../protos/youtube/api/innertube/encrypted_innertube_request.proto#L21)
+[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in [`EncryptedInnertubeRequest::encryptedOnesieInnertubeRequest`](../protos/youtube/api/innertube/encrypted_innertube_request.proto#L20)
 
 
 The `OnesieHotConfig::encryptedClientKey` is sent in the request, along with the hmac and iv produced by the function below. Responses are encrypted/hmaced with the same key
