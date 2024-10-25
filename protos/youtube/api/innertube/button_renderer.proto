@@ -4,18 +4,18 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed7156.proto";
-import "youtube/unknown/unnamed949.proto";
-import "youtube/unknown/unnamed4738.proto";
-import "youtube/unknown/unnamed7157.proto";
+import "youtube/api/innertube/button_color_supported_datas.proto";
+import "youtube/api/innertube/themed_basic_color_palette.proto";
 import "youtube/api/innertube/formatted_string.proto";
 import "youtube/api/innertube/command.proto";
-import "youtube/unknown/unnamed2067.proto";
+import "youtube/api/innertube/icon.proto";
 import "youtube/api/innertube/accessibility_data.proto";
-import "youtube/unknown/unnamed473.proto";
-import "youtube/unknown/unnamed2033.proto";
-import "youtube/unknown/unnamed485.proto";
-import "youtube/unknown/unnamed7158.proto";
+import "youtube/api/innertube/hint_supported_renderers.proto";
+import "youtube/api/innertube/accessibility_supported_datas.proto";
+import "youtube/api/innertube/button_icon_position_type.proto";
+import "youtube/api/innertube/logging_directives.proto";
+import "youtube/api/innertube/button_style.proto";
+import "youtube/api/innertube/button_size.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -23,30 +23,36 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ButtonRenderer {
-	oneof oneof0 {
-		.youtube.unknown.Unnamed7156 unnamedField1 = 1;
-		.youtube.unknown.Unnamed949 unnamedField17 = 17;
-		.youtube.unknown.Unnamed4738 unnamedField20 = 20;
+	oneof styleOneof {
+		ButtonStyle.ButtonStyleType style = 1;
+		ButtonColorSupportedDatas colorData = 17;
+		ThemedBasicColorPalette themedBasicColorPalette = 20;
 	}
 
-	optional .youtube.unknown.Unnamed7157 unnamedField2 = 2;
-	optional bool unnamedField3 = 3;
-	optional FormattedString unnamedField5 = 5;
+	optional ButtonSize.ButtonSizeType size = 2;
+	optional bool isDisabled = 3;
+	optional FormattedString text = 5;
 	optional Command serviceEndpoint = 7;
-	optional .youtube.unknown.Unnamed2067 unnamedField8 = 8;
-	optional Command unnamedField9 = 9;
-	optional AccessibilityData unnamedField10 = 10;
-	optional string unnamedField11 = 11;
-	optional .youtube.unknown.Unnamed473 unnamedField12 = 12;
+	optional Icon icon = 8;
+	optional Command navigationEndpoint = 9;
+	optional AccessibilityData accessibility = 10;
+	optional string tooltip = 11;
 	optional bytes trackingParams = 13;
-	optional .youtube.unknown.Unnamed2033 unnamedField14 = 14;
-	optional .youtube.unknown.Unnamed485 unnamedField16 = 16;
-	optional string unnamedField18 = 18;
-	optional Command unnamedField19 = 19;
-	repeated Command unnamedField21 = 21;
-	optional .youtube.unknown.Unnamed7158 unnamedField25 = 25;
-	optional Command unnamedField26 = 26;
-	optional Command unnamedField28 = 28;
-
-	extensions 160206468 to 388817581;
+	optional HintSupportedRenderers hint = 14;
+	optional bool isSelected = 15;
+	optional AccessibilitySupportedDatas accessibilityData = 16;
+	optional string targetId = 18;
+	optional Command command = 19;
+	repeated Command impressionCommands = 21;
+	optional ButtonIconPositionType iconPosition = 22;
+	optional string disabledTooltip = 23;
+	optional Command onFocusCommand = 26;
+	optional Icon secondaryIcon = 27;
+	optional Command disabledCommand = 28;
+	optional string buttonEntityKey = 29;
+	optional LoggingDirectives loggingDirectives = 999;
+	
+	extensions 24 to 25;
+	
+	extensions 1000 to max;
 }

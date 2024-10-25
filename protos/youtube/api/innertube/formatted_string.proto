@@ -17,4 +17,6 @@ message FormattedString {
 	optional bool rtl = 2;
 	optional FormattedStringSupportedAccessibilityDatas accessibility = 3;
 	optional string simpleText = 4;
+	
+	extensions 5 to 6;
 }

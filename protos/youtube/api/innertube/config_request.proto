@@ -13,4 +13,5 @@ option objc_class_prefix = "YTI";
 
 message ConfigRequest {
 	optional InnerTubeContext context = 1;
+	optional bool enableThrottling = 2;
 }

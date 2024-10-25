@@ -5,7 +5,8 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/thumbnail_details.proto";
-import "youtube/unknown/unnamed3227.proto";
+import "youtube/api/innertube/mde_stream_optimizations_renderer_latency.proto";
+import "youtube/api/innertube/music_video_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,22 +17,28 @@ message VideoDetails {
 	optional string videoId = 1;
 	optional string title = 15;
 	optional uint64 lengthSeconds = 16;
-	optional bool unnamedField17 = 17;
-	optional string keywords = 18;
+	optional bool isLive = 17;
+	repeated string keywords = 18;
 	optional string channelId = 19;
 	optional bool isOwnerViewing = 20;
 	optional string shortDescription = 21;
 	optional bool isCrawlable = 22;
-	optional bool unnamedField24 = 24;
+	optional bool isLiveDvrEnabled = 24;
 	optional ThumbnailDetails thumbnail = 25;
-	optional bool unnamedField27 = 27;
-	optional int32 unnamedField29 = 29;
+	optional bool useCipher = 26;
+	optional bool isUpcoming = 27;
+	optional bool isFakeVod = 28;
+	optional int32 liveChunkReadahead = 29;
+	optional float averageRating = 30;
 	optional bool allowRatings = 31;
 	optional string viewCount = 32;
 	optional string author = 33;
+	optional bool isLiveDefaultBroadcast = 34;
+	optional bool isLowLatencyLiveStream = 35;
 	optional bool isPrivate = 37;
 	optional bool isUnpluggedCorpus = 38;
-	optional .youtube.unknown.Unnamed3227 unnamedField39 = 39;
+	optional MdeStreamOptimizationsRendererLatency latencyClass = 39;
+	optional MusicVideoType musicVideoType = 40;
 	optional bool isLiveContent = 41;
-	optional bool unnamedField42 = 42;
+	optional bool isPostLiveDvr = 42;
 }

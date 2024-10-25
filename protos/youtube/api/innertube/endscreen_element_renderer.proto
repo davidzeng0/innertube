@@ -4,14 +4,12 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed7208.proto";
 import "youtube/api/innertube/thumbnail_details.proto";
 import "youtube/api/innertube/formatted_string.proto";
 import "youtube/api/innertube/command.proto";
-import "youtube/unknown/unnamed3138.proto";
-import "youtube/api/innertube/hovercard_button.proto";
-import "youtube/unknown/unnamed473.proto";
-import "youtube/unknown/unnamed820.proto";
+import "youtube/api/innertube/logging_url.proto";
+import "youtube/api/innertube/endscreen_button_supported_renderers.proto";
+import "youtube/api/innertube/thumbnail_overlay_supported_renderers.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -19,11 +17,21 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EndscreenElementRenderer {
-	optional .youtube.unknown.Unnamed7208 style = 1;
+	/* protogen: merge reason = nested */
+	enum EndscreenElementStyle {
+		UNKNOWN = 0;
+		VIDEO = 1;
+		PLAYLIST = 2;
+		CHANNEL = 3;
+		WEBSITE = 4;
+		CREATOR_MERCHANDISE = 5;
+	}
+
+	optional EndscreenElementStyle style = 1;
 	optional ThumbnailDetails image = 2;
 	optional ThumbnailDetails icon = 3;
-	optional FormattedString unnamedField4 = 4;
-	optional FormattedString unnamedField5 = 5;
+	optional FormattedString videoDuration = 4;
+	optional FormattedString playlistLength = 5;
 	optional float left = 6;
 	optional float width = 7;
 	optional float top = 8;
@@ -35,17 +43,19 @@ message EndscreenElementRenderer {
 	optional FormattedString callToAction = 14;
 	optional FormattedString dismiss = 15;
 	optional Command endpoint = 16;
-	repeated .youtube.unknown.Unnamed3138 unnamedField17 = 17;
-	repeated .youtube.unknown.Unnamed3138 unnamedField18 = 18;
-	repeated .youtube.unknown.Unnamed3138 unnamedField19 = 19;
-	optional HovercardButton hovercardAction = 20;
-	optional FormattedString unnamedField22 = 22;
-	optional .youtube.unknown.Unnamed473 unnamedField23 = 23;
+	repeated LoggingUrl impressionUrls = 17;
+	repeated LoggingUrl hovercardShowUrls = 18;
+	repeated LoggingUrl hovercardDismissUrls = 19;
+	optional EndscreenButtonSupportedRenderers hovercardButton = 20;
+	optional ThumbnailDetails animatedImage = 21;
+	optional FormattedString subscribersText = 22;
 	optional bytes trackingParams = 24;
+	optional string htmlBlob = 25;
 	optional bool isSubscribe = 26;
-	optional Command unnamedField27 = 27;
-	optional FormattedString unnamedField29 = 29;
-	optional FormattedString unnamedField30 = 30;
+	optional Command signinEndpoint = 27;
+	optional bool useClassicSubscribeButton = 28;
+	optional FormattedString productPrice = 29;
+	optional FormattedString additionalFeesText = 30;
 	optional string id = 31;
-	repeated .youtube.unknown.Unnamed820 thumbnailOverlays = 32;
+	repeated ThumbnailOverlaySupportedRenderers thumbnailOverlays = 32;
 }

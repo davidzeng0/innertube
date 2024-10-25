@@ -14,6 +14,7 @@ import "youtube/unknown/unnamed1779.proto";
 option cc_enable_arenas = true;
 option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto";
+option objc_class_prefix = "YTVS";
 
 message ClientAbrState {
 	optional int64 unnamedField13 = 13;

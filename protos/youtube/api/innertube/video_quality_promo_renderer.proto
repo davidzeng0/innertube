@@ -4,12 +4,11 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed5230.proto";
+import "youtube/api/innertube/video_quality_promo_triggers.proto";
 import "youtube/api/innertube/formatted_string.proto";
 import "youtube/api/innertube/command.proto";
-import "youtube/unknown/unnamed473.proto";
-import "youtube/unknown/unnamed5225.proto";
-import "youtube/unknown/unnamed5228.proto";
+import "youtube/api/innertube/video_quality_promo_action_supported_renderers.proto";
+import "youtube/api/innertube/video_quality_promo_snackbar_supported_renderers.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -17,11 +16,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message VideoQualityPromoRenderer {
-	optional .youtube.unknown.Unnamed5230 unnamedField1 = 1;
-	optional FormattedString unnamedField2 = 2;
-	optional Command unnamedField3 = 3;
-	optional bytes unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed473 unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed5225 unnamedField6 = 6;
-	optional .youtube.unknown.Unnamed5228 unnamedField7 = 7;
+	optional VideoQualityPromoTriggers triggerCriteria = 1;
+	optional FormattedString text = 2;
+	optional Command endpoint = 3;
+	optional bytes trackingParams = 4;
+	optional VideoQualityPromoActionSupportedRenderers closeButton = 6;
+	optional VideoQualityPromoSnackbarSupportedRenderers snackbar = 7;
 }

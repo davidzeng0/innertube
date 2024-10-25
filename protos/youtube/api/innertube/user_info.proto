@@ -4,14 +4,34 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
+import "gaia_mint/mint_wrapper.proto";
+
 option cc_enable_arenas = true;
 option java_multiple_files = true;
 option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UserInfo {
+	/* protogen: merge reason = nested */
+	message DelegatePurchases {
+		optional string oauthToken = 1;
+	}
+	
+	/* protogen: merge reason = nested */
+	message KidsParent {
+		optional string oauthToken = 1;
+	}
+
+	optional uint64 gaiaId = 1;
+	optional uint64 userId = 2;
 	optional string onBehalfOfUser = 3;
+	optional uint64 managerGaiaId = 4;
+	optional int32 maxSafeContentLabel = 6;
 	optional bool enableSafetyMode = 7;
+	optional .gaia_mint.MintWrapper managerMintWrapper = 9;
+	optional DelegatePurchases delegatePurchases = 13;
+	optional KidsParent kidsParent = 14;
 	optional bool isIncognito = 15;
+	optional bool lockedSafetyMode = 16;
 	optional string serializedDelegationContext = 18;
 }

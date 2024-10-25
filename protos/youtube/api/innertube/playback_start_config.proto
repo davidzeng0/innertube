@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed5221.proto";
+import "youtube/api/innertube/video_playback_position.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -12,11 +12,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaybackStartConfig {
-	optional float unnamedField1 = 1;
-	optional bool unnamedField2 = 2;
+	optional float startSeconds = 1;
+	optional bool startPaused = 2;
+	optional int64 liveUtcStartSeconds = 3;
 	optional int64 startTimeToleranceBeforeMs = 4;
-	optional int64 unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed5221 unnamedField6 = 6;
-	optional .youtube.unknown.Unnamed5221 unnamedField7 = 7;
-	optional .youtube.unknown.Unnamed5221 unnamedField8 = 8;
+	optional int64 startTimeToleranceAfterMs = 5;
+	optional VideoPlaybackPosition startPosition = 6;
+	optional VideoPlaybackPosition progressBarStartPosition = 7;
+	optional VideoPlaybackPosition progressBarEndPosition = 8;
 }

@@ -4,9 +4,10 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed939.proto";
-import "youtube/unknown/unnamed940.proto";
-import "youtube/unknown/unnamed7151.proto";
+import "youtube/api/innertube/browse_endpoint_context_supported_configs.proto";
+import "youtube/api/innertube/browse_endpoint_form_data.proto";
+import "youtube/api/innertube/data_sync_path.proto";
+import "youtube/api/innertube/browse_navigation_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -15,11 +16,16 @@ option objc_class_prefix = "YTI";
 
 message BrowseEndpoint {
 	optional string browseId = 2;
-	optional string unnamedField3 = 3;
-	optional string unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed939 unnamedField6 = 6;
-	optional bool unnamedField7 = 7;
-	optional .youtube.unknown.Unnamed940 unnamedField8 = 8;
-	optional string unnamedField12 = 12;
-	optional .youtube.unknown.Unnamed7151 unnamedField14 = 14;
+	optional string params = 3;
+	optional string canonicalBaseUrl = 4;
+	optional string query = 5;
+	optional BrowseEndpointContextSupportedConfigs browseEndpointContextSupportedConfigs = 6;
+	optional bool offline = 7;
+	optional BrowseEndpointFormData formData = 8;
+	optional DataSyncPath consistencyTokenPath = 9;
+	optional bool nofollow = 11;
+	optional string parentTabIdentifier = 12;
+	optional BrowseNavigationType navigationType = 14;
+	optional bool forceReload = 15;
+	optional bool presentInShortsContext = 16;
 }

@@ -4,18 +4,17 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed3302.proto";
-import "youtube/unknown/unnamed3814.proto";
-import "youtube/unknown/unnamed4127.proto";
-import "youtube/unknown/unnamed4238.proto";
-import "youtube/unknown/unnamed4254.proto";
-import "youtube/unknown/unnamed1793.proto";
+import "youtube/api/innertube/ios_media_hot_config.proto";
+import "youtube/api/innertube/media_quality_settings_hot_config.proto";
+import "youtube/api/innertube/plan_aware_streaming_config.proto";
+import "youtube/api/innertube/scripted_player_hot_config.proto";
+import "youtube/api/innertube/media_fetch_hot_config.proto";
+import "youtube/api/innertube/hamplayer_hot_config.proto";
+import "youtube/api/innertube/exo_cache_hot_config.proto";
 import "youtube/api/innertube/onesie_hot_config.proto";
-import "youtube/unknown/unnamed909.proto";
-import "youtube/unknown/unnamed3757.proto";
-import "youtube/unknown/unnamed4134.proto";
-import "youtube/unknown/unnamed1798.proto";
-import "youtube/unknown/unnamed724.proto";
+import "youtube/api/innertube/bandwidth_model_config.proto";
+import "youtube/api/innertube/ios_av_player_hot_config.proto";
+import "youtube/api/innertube/qoe_hot_config.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -23,16 +22,15 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MediaHotConfig {
-	optional .youtube.unknown.Unnamed3302 mediaQualitySettings = 3;
-	optional .youtube.unknown.Unnamed3814 planAwareStreamingConfig = 4;
-	optional .youtube.unknown.Unnamed4127 unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed4238 unnamedField6 = 6;
-	optional .youtube.unknown.Unnamed4254 scriptedPlayerHotConfig = 7;
-	optional .youtube.unknown.Unnamed1793 exoCacheHotConfig = 139360648;
+	optional IosMediaHotConfig iosMediaHotConfig = 1;
+	optional MediaQualitySettingsHotConfig mediaQualitySettingsHotConfig = 3;
+	optional PlanAwareStreamingConfig planAwareStreamingConfig = 4;
+	optional ScriptedPlayerHotConfig scriptedPlayerHotConfig = 7;
+	optional MediaFetchHotConfig mediaFetchHotConfig = 8;
+	optional HamplayerHotConfig hamplayerHotConfig = 138562899;
+	optional ExoCacheHotConfig exoCacheHotConfig = 139360648;
 	optional OnesieHotConfig onesieHotConfig = 146311580;
-	optional .youtube.unknown.Unnamed909 bandwidthModelConfig = 151068309;
-	optional .youtube.unknown.Unnamed3757 unnamedField157462099 = 157462099;
-	optional .youtube.unknown.Unnamed4134 qoeHotConfig = 158048433;
-	optional .youtube.unknown.Unnamed1798 unnamedField171189558 = 171189558;
-	optional .youtube.unknown.Unnamed724 unnamedField179572306 = 179572306;
+	optional BandwidthModelConfig bandwidthModelConfig = 151068309;
+	optional IosAvPlayerHotConfig iosAvPlayerHotConfig = 151193525;
+	optional QoeHotConfig qoeHotConfig = 158048433;
 }

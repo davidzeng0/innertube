@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/api/innertube/mobile_connection_type.proto";
+import "youtube/api/innertube/client_connection_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -15,15 +15,34 @@ message OnesieConfig {
 	optional bytes clientKey = 1;
 	optional int64 keyExpiresInSeconds = 2;
 	optional bytes encryptedClientKey = 3;
+	optional bool tcpNodelay = 4;
 	optional string redirectorUrl = 5;
 	optional int64 hostnameTtlSeconds = 6;
 	optional int64 pingIntervalSeconds = 7;
+	optional bool enablePlayerRequestDebugInfoCollector = 8;
+	optional bool enableConnectionPrewarming = 9;
+	optional bool enableCronet = 10;
 	optional bool enableQuic = 11;
-	optional int32 httpConnectionTimeoutMs = 14;
+	optional bool enableCronetStorage = 12;
+	optional int64 earlyUpstreamOpenDelayMs = 13;
+	optional int32 httpConnectTimeoutMs = 14;
 	optional int32 httpReadTimeoutMs = 15;
 	optional int32 httpLoadTimeoutMs = 16;
+	optional bool alwaysRunConnectionOpener = 17;
+	optional bool useMultipleBandaidConnectionOpener = 18;
 	optional int32 openedConnectionFudgeMs = 19;
+	optional bool remapAndPrewarmOnNetworkChange = 20;
+	optional bool useAlternativeBackoff = 21;
+	optional bool useBandaidHostStatsTracker = 22;
+	optional bool useExoCronetDataSource = 23;
+	optional bool useSmoothedRttEstimator = 24;
 	optional int32 randomizePrewarmingUrlIdParamSecs = 25;
-	repeated MobileConnectionType prewarmOnlyWhenNetworkActiveConn = 32 [packed = true];
+	optional bool logTwoSecondMediaEventsToCsi = 26;
+	optional bool cronetUseDirectExecutor = 28;
+	optional bool ignoreOnesieBandwidthSamples = 29;
+	optional bool logFirstVideoBufferReadToCsi = 30;
+	optional bool trackUriForAllPrewarmedHosts = 31;
+	repeated ClientConnectionType prewarmOnlyWhenNetworkActiveConnectionTypes = 32 [packed = true];
+	optional string onesieHostSelectionToken = 33;
 	optional bool androidOnesieUseCritical = 34;
 }

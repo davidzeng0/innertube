@@ -5,7 +5,9 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/format_stream.proto";
-import "youtube/unknown/unnamed3344.proto";
+import "youtube/api/innertube/license_info.proto";
+import "youtube/api/innertube/metadata_format.proto";
+import "youtube/api/innertube/drm_track_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,11 +18,16 @@ message StreamingData {
 	optional int64 expiresInSeconds = 1;
 	repeated FormatStream formats = 2;
 	repeated FormatStream adaptiveFormats = 3;
-	optional string unnamedField4 = 4;
-	optional string unnamedField5 = 5;
-	optional string unnamedField7 = 7;
+	optional string dashManifestUrl = 4;
+	optional string hlsManifestUrl = 5;
+	repeated FormatStream hlsFormats = 6;
+	optional string probeUrl = 7;
+	repeated LicenseInfo licenseInfos = 8;
 	optional string onesieStreamingUrl = 11;
-	optional float unnamedField13 = 13;
-	optional string unnamedField14 = 14;
-	repeated .youtube.unknown.Unnamed3344 unnamedField16 = 16;
+	optional float aspectRatio = 13;
+	optional string drmParams = 14;
+	optional string serverAbrStreamingUrl = 15;
+	repeated MetadataFormat metadataFormats = 16;
+	repeated DrmTrackType initialAuthorizedDrmTrackTypes = 17;
+	optional string streamingUrlTemplate = 19;
 }

@@ -7,109 +7,100 @@ package youtube.api.innertube;
 import "youtube/api/innertube/response_context.proto";
 import "youtube/api/innertube/playability_status.proto";
 import "youtube/api/innertube/streaming_data.proto";
-import "youtube/unknown/unnamed2544.proto";
+import "youtube/api/innertube/heartbeat_params.proto";
 import "youtube/api/innertube/playback_tracking.proto";
-import "youtube/unknown/unnamed983.proto";
+import "youtube/api/innertube/captions_supported_renderers.proto";
 import "youtube/api/innertube/video_details.proto";
 import "youtube/api/innertube/annotations_supported_renderers.proto";
-import "youtube/unknown/unnamed3669.proto";
+import "youtube/api/innertube/offline_state.proto";
 import "youtube/api/innertube/player_config.proto";
 import "youtube/api/innertube/storyboards_supported_renderers.proto";
 import "youtube/api/innertube/renderer.proto";
-import "youtube/unknown/unnamed2099.proto";
+import "youtube/api/innertube/info_cards_supported_renderers.proto";
 import "youtube/api/innertube/attestation_supported_renderers.proto";
 import "youtube/api/innertube/video_quality_promo_supported_renderers.proto";
-import "youtube/unknown/unnamed473.proto";
-import "youtube/unknown/unnamed2556.proto";
+import "youtube/api/innertube/player_message_supported_renderers.proto";
 import "youtube/api/innertube/endscreen_supported_renderers.proto";
-import "youtube/unknown/unnamed4671.proto";
+import "youtube/api/innertube/survey_supported_renderers.proto";
 import "youtube/api/innertube/command.proto";
-import "youtube/unknown/unnamed3861.proto";
-import "youtube/unknown/unnamed2547.proto";
-import "youtube/unknown/unnamed2554.proto";
-import "youtube/unknown/unnamed2088.proto";
-import "youtube/unknown/unnamed833.proto";
-import "youtube/unknown/unnamed2840.proto";
-import "youtube/unknown/unnamed1204.proto";
-import "youtube/unknown/unnamed494.proto";
-import "youtube/unknown/player_settings_menu_data.proto";
-import "youtube/unknown/unnamed1894.proto";
-import "youtube/unknown/unnamed5259.proto";
+import "youtube/api/innertube/player_companion_ads_supported_renderers.proto";
+import "youtube/api/innertube/paid_content_overlay_supported_renderers.proto";
+import "youtube/api/innertube/player_controls_overlay_supported_renderers.proto";
+import "youtube/api/innertube/in_stream_player_cta_ads_supported_renderers.proto";
+import "youtube/api/innertube/player_ads_placement_supported_renderers.proto";
+import "youtube/api/innertube/auxiliary_ui.proto";
+import "youtube/api/innertube/interstitial_pod.proto";
+import "youtube/api/innertube/video_interactions.proto";
+import "youtube/api/innertube/clip_config.proto";
+import "youtube/api/innertube/account_linking_config.proto";
+import "youtube/api/innertube/player_cue_range.proto";
+import "youtube/api/innertube/contextual_playback_config.proto";
+import "youtube/api/innertube/deferred_player_data.proto";
+import "youtube/api/innertube/framework_update_transport.proto";
+import "youtube/api/innertube/vmap_renderer.proto";
 import "youtube/api/innertube/player_legacy_desktop_watch_ads_renderer.proto";
-import "youtube/unknown/unnamed5126.proto";
-import "youtube/api/innertube/ad_placement_renderer.proto";
-import "youtube/unknown/unnamed557.proto";
-import "youtube/unknown/unnamed603.proto";
-import "youtube/unknown/unnamed572.proto";
-import "youtube/unknown/unnamed563.proto";
-import "youtube/unknown/unnamed539.proto";
+import "youtube/api/innertube/vast_renderer.proto";
+import "youtube/api/innertube/ad_break_renderer.proto";
+import "youtube/api/innertube/ad_intro_renderer.proto";
+import "youtube/api/innertube/ad_video_end_renderer.proto";
+import "youtube/api/innertube/ad_player_overflow_button_renderer.proto";
+import "youtube/api/innertube/ad_message_renderer.proto";
 import "youtube/api/innertube/player_request.proto";
 import "youtube/api/innertube/formatted_string.proto";
 import "youtube/api/innertube/thumbnail_details.proto";
-import "youtube/unknown/unnamed3323.proto";
-import "youtube/unknown/unnamed1227.proto";
-import "youtube/unknown/unnamed885.proto";
-import "youtube/unknown/unnamed1261.proto";
-import "youtube/unknown/unnamed880.proto";
-import "youtube/unknown/unnamed7177.proto";
-import "youtube/unknown/unnamed7178.proto";
-import "youtube/unknown/unnamed1249.proto";
-import "youtube/unknown/unnamed1231.proto";
-import "youtube/unknown/unnamed951.proto";
-import "youtube/unknown/unnamed1281.proto";
-import "youtube/unknown/unnamed1241.proto";
-import "youtube/unknown/unnamed1466.proto";
-import "youtube/unknown/unnamed1246.proto";
-import "youtube/unknown/unnamed1254.proto";
-import "youtube/unknown/unnamed1252.proto";
-import "youtube/unknown/unnamed1250.proto";
-import "youtube/unknown/unnamed1404.proto";
-import "youtube/unknown/unnamed7138.proto";
-import "youtube/unknown/unnamed4339.proto";
-import "youtube/unknown/unnamed4326.proto";
-import "youtube/unknown/unnamed4325.proto";
-import "youtube/unknown/unnamed4343.proto";
-import "youtube/unknown/unnamed4337.proto";
-import "youtube/unknown/unnamed4338.proto";
-import "youtube/unknown/unnamed4318.proto";
-import "youtube/unknown/unnamed4341.proto";
-import "youtube/unknown/unnamed4316.proto";
-import "youtube/unknown/unnamed4317.proto";
-import "youtube/unknown/unnamed4340.proto";
-import "youtube/unknown/unnamed4352.proto";
-import "youtube/unknown/unnamed4321.proto";
-import "youtube/unknown/unnamed4324.proto";
-import "youtube/unknown/unnamed4349.proto";
-import "youtube/unknown/unnamed4344.proto";
-import "youtube/unknown/unnamed4957.proto";
-import "youtube/unknown/unnamed4934.proto";
-import "youtube/unknown/unnamed4935.proto";
-import "youtube/unknown/unnamed4932.proto";
-import "youtube/unknown/unnamed4346.proto";
-import "youtube/unknown/unnamed4962.proto";
-import "youtube/unknown/unnamed4315.proto";
-import "youtube/unknown/unnamed1912.proto";
-import "youtube/unknown/unnamed1934.proto";
-import "youtube/unknown/unnamed4347.proto";
-import "youtube/unknown/unnamed4319.proto";
-import "youtube/unknown/unnamed4345.proto";
-import "youtube/unknown/unnamed4320.proto";
-import "youtube/unknown/unnamed4348.proto";
-import "youtube/unknown/unnamed4992.proto";
-import "youtube/unknown/unnamed1161.proto";
-import "youtube/unknown/unnamed1159.proto";
-import "youtube/unknown/unnamed4952.proto";
-import "youtube/unknown/unnamed4974.proto";
-import "youtube/unknown/unnamed4336.proto";
-import "youtube/unknown/unnamed5014.proto";
-import "youtube/unknown/unnamed5022.proto";
-import "youtube/unknown/unnamed5012.proto";
-import "youtube/unknown/unnamed4351.proto";
-import "youtube/unknown/unnamed5004.proto";
-import "youtube/unknown/unnamed7488.proto";
-import "youtube/unknown/unnamed3720.proto";
-import "youtube/unknown/unnamed3718.proto";
-import "youtube/unknown/unnamed3721.proto";
+import "youtube/api/innertube/menu_supported_renderers.proto";
+import "youtube/api/innertube/comment_action_buttons_supported_renderers.proto";
+import "youtube/api/innertube/badge_supported_renderers.proto";
+import "youtube/api/innertube/like_status.proto";
+import "youtube/api/innertube/comment_reply_form_supported_renderers.proto";
+import "youtube/api/innertube/backstage_attachment_supported_renderers.proto";
+import "youtube/api/innertube/comment_badge_supported_renderers.proto";
+import "youtube/api/innertube/button_supported_renderers.proto";
+import "youtube/api/innertube/comment_creation_supported_renderers.proto";
+import "youtube/api/innertube/comment_poll_status.proto";
+import "youtube/api/innertube/creator_heart_supported_renderers.proto";
+import "youtube/api/innertube/comment_moderation_buttons_supported_renderers.proto";
+import "youtube/api/innertube/engagement_toolbar_style.proto";
+import "youtube/api/innertube/comment_style.proto";
+import "youtube/api/innertube/comment_exp_style.proto";
+import "youtube/api/innertube/accessibility_supported_datas.proto";
+import "youtube/api/innertube/logging_directives.proto";
+import "youtube/api/innertube/setting_category_id.proto";
+import "youtube/api/innertube/icon.proto";
+import "youtube/api/innertube/setting_single_option_menu_renderer.proto";
+import "youtube/api/innertube/setting_boolean_renderer.proto";
+import "youtube/api/innertube/setting_action_renderer.proto";
+import "youtube/api/innertube/setting_notification_list_renderer.proto";
+import "youtube/api/innertube/setting_read_only_item_renderer.proto";
+import "youtube/api/innertube/client_storage_usage_renderer.proto";
+import "youtube/api/innertube/setting_text_renderer.proto";
+import "youtube/api/innertube/caption_preview_renderer.proto";
+import "youtube/api/innertube/setting_spacer_decoration_renderer.proto";
+import "youtube/api/innertube/unplugged_subscriptions_setting_category_renderer.proto";
+import "youtube/api/innertube/notification_entry_setting_renderer.proto";
+import "youtube/api/innertube/notification_type_opt_in_renderer.proto";
+import "youtube/api/innertube/unplugged_location_setting_renderer.proto";
+import "youtube/api/innertube/tv_mdx_setting_renderer.proto";
+import "youtube/api/innertube/unplugged_empty_state_renderer.proto";
+import "youtube/api/innertube/unplugged_billing_details_renderer.proto";
+import "youtube/api/innertube/unplugged_app_tour_setting_renderer.proto";
+import "youtube/api/innertube/unplugged_family_flow_message_renderer.proto";
+import "youtube/api/innertube/auto_offline_storage_usage_renderer.proto";
+import "youtube/api/innertube/gaming_account_link_setting_renderer.proto";
+import "youtube/api/innertube/gaming_third_party_setting_renderer.proto";
+import "youtube/api/innertube/unplugged_disclaimer_setting_renderer.proto";
+import "youtube/api/innertube/unplugged_live_guide_setting_category_renderer.proto";
+import "youtube/api/innertube/unplugged_notification_section_renderer.proto";
+import "youtube/api/innertube/unplugged_current_location_setting_item_renderer.proto";
+import "youtube/api/innertube/unplugged_banner_renderer.proto";
+import "youtube/api/innertube/unplugged_storage_usage_renderer.proto";
+import "youtube/api/innertube/unplugged_setting_item_renderer.proto";
+import "youtube/api/innertube/client_setting_item.proto";
+import "youtube/api/innertube/option_service_item_renderer.proto";
+import "youtube/api/innertube/option_navigation_item_renderer.proto";
+import "youtube/api/innertube/kids_popover_menu_renderer.proto";
+import "youtube/api/innertube/options_confirm_dialog_supported_renderers.proto";
+import "youtube/api/innertube/accessibility_data.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -120,234 +111,301 @@ message PlayerResponse {
 	optional ResponseContext responseContext = 1;
 	optional PlayabilityStatus playabilityStatus = 2;
 	optional StreamingData streamingData = 4;
-	optional .youtube.unknown.Unnamed2544 unnamedField6 = 6;
-	repeated Unnamed2553 playerAds = 7;
+	optional HeartbeatParams heartbeatParams = 6;
+	repeated PlayerAdsSupportedRenderers playerAds = 7;
 	optional PlaybackTracking playbackTracking = 9;
-	optional .youtube.unknown.Unnamed983 unnamedField10 = 10;
+	optional CaptionsSupportedRenderers captions = 10;
 	optional VideoDetails videoDetails = 11;
 	repeated AnnotationsSupportedRenderers annotations = 13;
-	optional .youtube.unknown.Unnamed3669 unnamedField14 = 14;
+	optional OfflineState offlineState = 14;
 	optional PlayerConfig playerConfig = 15;
 	optional StoryboardsSupportedRenderers storyboards = 16;
-	optional Renderer unnamedField17 = 17;
-	optional .youtube.unknown.Unnamed2099 unnamedField20 = 20;
+	optional Renderer threed = 17;
+	optional InfoCardsSupportedRenderers cards = 20;
 	optional bytes trackingParams = 21;
 	optional AttestationSupportedRenderers attestation = 22;
-	optional string unnamedField23 = 23;
-	optional string unnamedField25 = 25;
+	optional string adParams = 23;
+	optional string adNextParams = 25;
 	optional VideoQualityPromoSupportedRenderers videoQualityPromoSupportedRenderers = 26;
-	optional .youtube.unknown.Unnamed473 unnamedField29 = 29;
-	repeated .youtube.unknown.Unnamed2556 unnamedField30 = 30;
+	optional string adBreakParams = 27;
+	repeated PlayerMessageSupportedRenderers messages = 30;
 	optional EndscreenSupportedRenderers endscreen = 32;
-	optional .youtube.unknown.Unnamed4671 unnamedField35 = 35;
-	repeated Command unnamedField36 = 36;
-	optional .youtube.unknown.Unnamed3861 unnamedField38 = 38;
-	optional .youtube.unknown.Unnamed2547 unnamedField41 = 41;
-	optional .youtube.unknown.Unnamed2554 unnamedField42 = 42;
-	optional .youtube.unknown.Unnamed2088 unnamedField44 = 44;
-	optional .youtube.unknown.Unnamed833 unnamedField46 = 46;
-	repeated Command unnamedField49 = 49;
-	repeated .youtube.unknown.Unnamed2840 unnamedField51 = 51;
-	optional Renderer unnamedField54 = 54;
-	optional .youtube.unknown.Unnamed1204 unnamedField56 = 56;
-	optional .youtube.unknown.Unnamed494 unnamedField58 = 58;
-	optional .youtube.unknown.PlayerSettingsMenuData playerSettingsMenuData = 59;
-	repeated Renderer unnamedField60 = 60;
-	optional Renderer unnamedField61 = 61;
-	optional .youtube.unknown.Unnamed1894 frameworkUpdates = 777;
+	optional string ibaDebugInfo = 34;
+	optional SurveySupportedRenderers survey = 35;
+	repeated Command onResponseReceivedEndpoints = 36;
+	optional PlayerCompanionAdsSupportedRenderers playerCompanionAd = 38;
+	optional bool hideAddtoButtonSmallScreen = 39;
+	optional bool hideShareButtonSmallScreen = 40;
+	optional PaidContentOverlaySupportedRenderers paidContentOverlay = 41;
+	optional PlayerControlsOverlaySupportedRenderers overlay = 42;
+	optional InStreamPlayerCtaAdsSupportedRenderers instreamPlayerCtaAd = 44;
+	repeated PlayerAdsPlacementSupportedRenderers adPlacements = 45;
+	optional AuxiliaryUi auxiliaryUi = 46;
+	optional bytes prefetchedPrerollAdBreakResponse = 48;
+	repeated Command onResponseReceivedActions = 49;
+	repeated InterstitialPod interstitialPods = 51;
+	optional bytes onesiePlayerServiceInfo = 53;
+	optional Renderer ctaOverlay = 54;
+	optional VideoInteractions videoInteractions = 55;
+	optional ClipConfig clipConfig = 56;
+	optional AccountLinkingConfig accountLinkingConfig = 58;
+	repeated Renderer playerOverlayLayerRenderers = 60;
+	optional Renderer miniPlayerByline = 61;
+	repeated PlayerCueRange playerCueRanges = 62;
+	repeated ContextualPlaybackConfig contextualPlaybackConfigs = 63;
+	optional DeferredPlayerData deferredPlayerData = 64;
+	optional string clientParam = 66;
+	repeated Renderer adSlots = 68;
+	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	
+	extensions 1000 to max;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed2553 {
-	oneof oneof0 {
-		.youtube.unknown.Unnamed5259 unnamedField48841103 = 48841103;
+message PlayerAdsSupportedRenderers {
+	oneof renderer {
+		VmapRenderer vmapRenderer = 48841103;
 		PlayerLegacyDesktopWatchAdsRenderer playerLegacyDesktopWatchAdsRenderer = 55860145;
-		Unnamed2555 unnamedField63112829 = 63112829;
-		.youtube.unknown.Unnamed5126 unnamedField63178286 = 63178286;
-		AdPlacementRenderer adPlacements = 84813246;
-		.youtube.unknown.Unnamed557 unnamedField88254013 = 88254013;
-		.youtube.unknown.Unnamed603 unnamedField89145698 = 89145698;
-		.youtube.unknown.Unnamed572 unnamedField97725940 = 97725940;
-		.youtube.unknown.Unnamed563 unnamedField201403539 = 201403539;
-		.youtube.unknown.Unnamed539 unnamedField370995195 = 370995195;
+		PlayerInstreamAdRenderer playerInstreamAdRenderer = 63112829;
+		VastRenderer vastRenderer = 63178286;
+		AdBreakRenderer adBreakRenderer = 84813246;
+		AdIntroRenderer adIntroRenderer = 88254013;
+		AdVideoEndRenderer adVideoEndRenderer = 89145698;
+		AdPlayerOverflowButtonRenderer adPlayerOverflowButtonRenderer = 97725940;
+		AdMessageRenderer adMessageRenderer = 201403539;
 	}
 }
 
 /* protogen: merge reason = circular */
-message Unnamed2555 {
-	optional PlayerResponse unnamedField1 = 1;
-	optional PlayerRequest unnamedField2 = 2;
+message PlayerInstreamAdRenderer {
+	optional PlayerResponse playerResponse = 1;
+	optional PlayerRequest playerRequest = 2;
+	optional float navigationConfidence = 3;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed1251 {
-	optional FormattedString unnamedField1 = 1;
-	optional ThumbnailDetails unnamedField2 = 2;
-	optional Command unnamedField3 = 3;
-	optional FormattedString unnamedField4 = 4;
-	optional FormattedString unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed3323 unnamedField8 = 8;
-	optional string unnamedField9 = 9;
-	optional .youtube.unknown.Unnamed1227 unnamedField10 = 10;
-
-	oneof oneof0 {
-		FormattedString unnamedField12 = 12;
-		.youtube.unknown.Unnamed885 unnamedField43 = 43;
+message CommentRenderer {
+	/* protogen: merge reason = nested */
+	enum CommentBackgroundStyleType {
+		BG_STYLE_UNKNOWN = 0;
+		BG_STYLE_DEFAULT = 1;
+		BG_STYLE_GREY = 2;
+	}
+	
+	/* protogen: merge reason = nested */
+	enum CommentAvatarSizeType {
+		AVATAR_SIZE_UNKNOWN = 0;
+		AVATAR_SIZE_DEFAULT = 1;
+		AVATAR_SIZE_SMALL = 2;
 	}
 
-	optional FormattedString unnamedField14 = 14;
-	optional .youtube.unknown.Unnamed885 unnamedField18 = 18;
-	optional bytes unnamedField19 = 19;
-	optional .youtube.unknown.Unnamed473 unnamedField20 = 20;
-	optional .youtube.unknown.Unnamed1261 unnamedField23 = 23;
-	optional .youtube.unknown.Unnamed880 unnamedField24 = 24;
-	optional FormattedString unnamedField25 = 25;
-	optional FormattedString unnamedField26 = 26;
-	optional bool unnamedField27 = 27;
-	optional FormattedString unnamedField28 = 28;
-	optional .youtube.unknown.Unnamed7177 unnamedField30 = 30;
+	optional FormattedString authorText = 1;
+	optional ThumbnailDetails authorThumbnail = 2;
+	optional Command authorEndpoint = 3;
+	optional FormattedString contentText = 4;
+	optional FormattedString publishedTimeText = 5;
+	optional bool isLiked = 6;
+	optional int32 likeCount = 7;
+	optional MenuSupportedRenderers actionMenu = 8;
+	optional string commentId = 9;
+	optional CommentActionButtonsSupportedRenderers actionButtons = 10;
+	optional bool authorIsChannelOwner = 11;
 
-	oneof oneof1 {
-		.youtube.unknown.Unnamed7178 unnamedField31 = 31;
-		.youtube.unknown.Unnamed1249 unnamedField94 = 94;
+	oneof linkedBadge {
+		FormattedString linkedCommentText = 12;
+		BadgeSupportedRenderers linkedCommentBadge = 43;
 	}
 
-	optional Command unnamedField32 = 32;
-	optional .youtube.unknown.Unnamed1231 unnamedField33 = 33;
-	optional .youtube.unknown.Unnamed951 unnamedField34 = 34;
-	optional .youtube.unknown.Unnamed951 unnamedField35 = 35;
-	optional Unnamed1253 unnamedField36 = 36;
-	optional Command unnamedField38 = 38;
-	optional .youtube.unknown.Unnamed1231 unnamedField39 = 39;
-	optional bool unnamedField40 = 40;
-	optional .youtube.unknown.Unnamed1281 unnamedField41 = 41;
-	optional .youtube.unknown.Unnamed1241 unnamedField42 = 42;
-	optional .youtube.unknown.Unnamed1466 unnamedField44 = 44;
-	repeated Command unnamedField45 = 45;
-	optional FormattedString unnamedField49 = 49;
-	optional bool unnamedField50 = 50;
-	optional .youtube.unknown.Unnamed1246 unnamedField51 = 51;
-	optional .youtube.unknown.Unnamed1254 unnamedField53 = 53;
-	optional FormattedString unnamedField55 = 55;
-	optional Renderer unnamedField56 = 56;
-	optional .youtube.unknown.Unnamed1252 unnamedField57 = 57;
-	optional .youtube.unknown.Unnamed1231 unnamedField58 = 58;
-	repeated .youtube.unknown.Unnamed1250 unnamedField59 = 59;
-	optional .youtube.unknown.Unnamed1231 unnamedField60 = 60;
-	optional .youtube.unknown.Unnamed951 unnamedField62 = 62;
-	optional Renderer unnamedField78 = 78;
-	optional bool unnamedField79 = 79;
-	optional Renderer unnamedField81 = 81;
-	optional Renderer unnamedField83 = 83;
-	optional Renderer unnamedField84 = 84;
-	optional FormattedString unnamedField86 = 86;
-	optional bool unnamedField90 = 90;
-	optional FormattedString unnamedField92 = 92;
-	optional Renderer unnamedField93 = 93;
-	optional string unnamedField95 = 95;
-	optional Command unnamedField96 = 96;
+	optional ThumbnailDetails currentUserReplyThumbnail = 13;
+	optional FormattedString editableContentText = 14;
+	optional LikeStatus voteStatus = 17;
+	optional BadgeSupportedRenderers authorVerifiedBadge = 18;
+	optional bytes trackingParams = 19;
+	optional string authorId = 21;
+	optional CommentReplyFormSupportedRenderers replyForm = 23;
+	optional BackstageAttachmentSupportedRenderers backstageAttachment = 24;
+	optional FormattedString initialReplyText = 25;
+	optional FormattedString prologueText = 26;
+	optional bool viewerIsAuthor = 27;
+	optional FormattedString voteCount = 28;
+	optional CommentAvatarSizeType avatarSize = 30;
+
+	oneof backgroundStyling {
+		CommentBackgroundStyleType backgroundStyle = 31;
+	}
+
+	optional Command detailViewEndpoint = 32;
+	optional CommentBadgeSupportedRenderers pinnedCommentBadge = 33;
+	optional ButtonSupportedRenderers expandButton = 34;
+	optional ButtonSupportedRenderers collapseButton = 35;
+	optional CommentSupportedRenderers creatorReply = 36;
+	optional Command replyCreateEndpoint = 38;
+	optional CommentBadgeSupportedRenderers authorCommentBadge = 39;
+	optional bool showSeparator = 40;
+	optional CommentCreationSupportedRenderers replyCreation = 41;
+	optional CommentPollStatus pollStatus = 42;
+	optional CreatorHeartSupportedRenderers creatorHeart = 44;
+	repeated Command actions = 45;
+	optional bool iosEnablePostsV2 = 47;
+	optional bool iosEnableBackstageFullscreenImageViewer = 48;
+	optional FormattedString fullScreenImageViewerAuthorText = 49;
+	optional bool enablePostsV2 = 50;
+	optional CommentModerationButtonsSupportedRenderers moderationButtons = 51;
+	optional int64 protoCreationMs = 52;
+	optional EngagementToolbarStyle engagementToolbarStyle = 53;
+	optional bool androidEnableBackstageFullscreenImageViewer = 54;
+	optional FormattedString moderationReasonText = 55;
+	optional Renderer videoThumbnail = 56;
+	optional CommentStyle style = 57;
+	optional CommentBadgeSupportedRenderers sponsorCommentBadge = 58;
+	repeated CommentExpStyle experimentStyles = 59;
+	optional CommentBadgeSupportedRenderers sponsorsOnlyBadge = 60;
+	optional ButtonSupportedRenderers detailViewButton = 62;
+	repeated ThumbnailDetails authorThumbnails = 65;
+	optional bool iosUpdateElementStoreForPoll = 66;
+	optional int32 maxPostTextLines = 67;
+	optional bool containsCreatorReply = 68;
+	optional bool isCreatorReply = 69;
+	optional int32 renderingLatencyInjectionMs = 72;
+	optional int32 threadNestingLevel = 77;
+	optional Renderer reelResponseButton = 78;
+	optional bool pulseHighlight = 79;
+	repeated Renderer authorReputation = 80;
+	optional Renderer profileCardHint = 81;
+	optional int32 replyCount = 82;
+	optional Renderer viewReplies = 83;
+	optional Renderer hideReplies = 84;
+	optional bool hiddenByDefault = 85;
+	optional FormattedString repliesMetadataText = 86;
+	optional bool isChannelWideTopCommenter = 89;
+	optional bool androidUseLogScrollingVisibilityUpdates = 90;
+	optional AccessibilitySupportedDatas accessibilityData = 91;
+	optional FormattedString repliesCount = 92;
+	optional Renderer paidCommentChipRenderer = 93;
+	optional string aadcGuidelinesStateEntityKey = 95;
+	optional Command showAadcGuidelinesBottomSheetCommand = 96;
+	optional bool hideReplyIcon = 97;
+	optional LoggingDirectives loggingDirectives = 999;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed1253 {
-	oneof oneof0 {
-		Unnamed1251 unnamedField62285947 = 62285947;
-		.youtube.unknown.Unnamed1404 unnamedField159495980 = 159495980;
+message CommentSupportedRenderers {
+	oneof renderer {
+		CommentRenderer commentRenderer = 62285947;
 	}
 }
 
 /* protogen: merge reason = circular */
-message Unnamed4327 {
-	optional FormattedString unnamedField2 = 2;
-	repeated Unnamed4328 unnamedField3 = 3;
-	optional .youtube.unknown.Unnamed7138 unnamedField4 = 4;
-	optional FormattedString unnamedField6 = 6;
-	optional .youtube.unknown.Unnamed473 unnamedField8 = 8;
-	optional bytes unnamedField9 = 9;
+message SettingCategoryCollectionRenderer {
+	optional FormattedString title = 2;
+	repeated SettingCategoryCollectionSupportedRenderers items = 3;
+	optional SettingCategoryId categoryId = 4;
+	optional Icon icon = 5;
+	optional FormattedString subtitle = 6;
+	optional bool focused = 7;
+	optional bytes trackingParams = 9;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed4328 {
-	optional .youtube.unknown.Unnamed4339 unnamedField61321220 = 61321220;
-	optional .youtube.unknown.Unnamed4326 unnamedField61331416 = 61331416;
-	optional Unnamed4327 unnamedField66930374 = 66930374;
-	optional .youtube.unknown.Unnamed4325 unnamedField71709717 = 71709717;
-	optional .youtube.unknown.Unnamed4343 unnamedField73852508 = 73852508;
-	optional Unnamed4330 unnamedField75120871 = 75120871;
-	optional .youtube.unknown.Unnamed4337 unnamedField75560919 = 75560919;
-	optional .youtube.unknown.Unnamed4338 unnamedField76886494 = 76886494;
-	optional .youtube.unknown.Unnamed4318 unnamedField84082909 = 84082909;
-	optional .youtube.unknown.Unnamed4341 unnamedField84887323 = 84887323;
-	optional .youtube.unknown.Unnamed4316 unnamedField85346949 = 85346949;
-	optional .youtube.unknown.Unnamed4317 unnamedField85446662 = 85446662;
-	optional .youtube.unknown.Unnamed4340 unnamedField124684298 = 124684298;
-	optional .youtube.unknown.Unnamed4352 unnamedField128367722 = 128367722;
-	optional .youtube.unknown.Unnamed4321 unnamedField133017926 = 133017926;
-	optional .youtube.unknown.Unnamed4324 unnamedField133044997 = 133044997;
-	optional .youtube.unknown.Unnamed4349 unnamedField133074661 = 133074661;
-	optional .youtube.unknown.Unnamed4344 unnamedField134624760 = 134624760;
-	optional .youtube.unknown.Unnamed4957 unnamedField135842323 = 135842323;
-	optional .youtube.unknown.Unnamed4934 unnamedField136270663 = 136270663;
-	optional .youtube.unknown.Unnamed4935 unnamedField136270664 = 136270664;
-	optional .youtube.unknown.Unnamed4932 unnamedField136270667 = 136270667;
-	optional .youtube.unknown.Unnamed4346 unnamedField139240142 = 139240142;
-	optional .youtube.unknown.Unnamed4962 unnamedField142640027 = 142640027;
-	optional .youtube.unknown.Unnamed4315 unnamedField147386845 = 147386845;
-	optional .youtube.unknown.Unnamed1912 unnamedField155765234 = 155765234;
-	optional .youtube.unknown.Unnamed1934 unnamedField155905127 = 155905127;
-	optional .youtube.unknown.Unnamed4347 unnamedField157490845 = 157490845;
-	optional .youtube.unknown.Unnamed4319 unnamedField170042164 = 170042164;
-	optional .youtube.unknown.Unnamed4345 unnamedField170171963 = 170171963;
-	optional .youtube.unknown.Unnamed4320 unnamedField170189923 = 170189923;
-	optional .youtube.unknown.Unnamed4348 unnamedField174749716 = 174749716;
-	optional .youtube.unknown.Unnamed4992 unnamedField177528310 = 177528310;
-	optional .youtube.unknown.Unnamed1161 unnamedField183712476 = 183712476;
-	optional .youtube.unknown.Unnamed1159 unnamedField184548507 = 184548507;
-	optional .youtube.unknown.Unnamed4952 unnamedField192807389 = 192807389;
-	optional .youtube.unknown.Unnamed4974 unnamedField194877191 = 194877191;
-	optional .youtube.unknown.Unnamed4336 unnamedField281193939 = 281193939;
-	optional .youtube.unknown.Unnamed5014 unnamedField290296147 = 290296147;
-	optional .youtube.unknown.Unnamed5022 unnamedField339341032 = 339341032;
-	optional .youtube.unknown.Unnamed5012 unnamedField339688886 = 339688886;
-	optional .youtube.unknown.Unnamed4351 unnamedField384508195 = 384508195;
-	optional .youtube.unknown.Unnamed5004 unnamedField421338327 = 421338327;
+message SettingCategoryCollectionSupportedRenderers {
+	optional SettingSingleOptionMenuRenderer settingSingleOptionMenuRenderer = 61321220;
+	optional SettingBooleanRenderer settingBooleanRenderer = 61331416;
+	optional SettingCategoryCollectionRenderer settingCategoryCollectionRenderer = 66930374;
+	optional SettingActionRenderer settingActionRenderer = 71709717;
+	optional SettingCategorySectionRenderer settingCategorySectionRenderer = 75120871;
+	optional SettingNotificationListRenderer settingNotificationListRenderer = 75560919;
+	optional SettingReadOnlyItemRenderer settingReadOnlyItemRenderer = 76886494;
+	optional ClientStorageUsageRenderer storageUsageRenderer = 84082909;
+	optional SettingTextRenderer settingTextRenderer = 84887323;
+	optional CaptionPreviewRenderer captionPreviewRenderer = 85346949;
+	optional CaptionSettingCategoryRenderer captionSettingCategoryRenderer = 85446662;
+	optional SettingSpacerDecorationRenderer settingSpacerDecorationRenderer = 124684298;
+	optional UnpluggedSubscriptionsSettingCategoryRenderer unpluggedSubscriptionsSettingCategoryRenderer = 128367722;
+	optional NotificationEntrySettingRenderer notificationEntrySettingRenderer = 133017926;
+	optional NotificationTypeOptInRenderer notificationTypeOptInRenderer = 133044997;
+	optional UnpluggedLocationSettingRenderer unpluggedLocationSettingRenderer = 133074661;
+	optional TvMdxSettingRenderer tvMdxSettingRenderer = 134624760;
+	optional UnpluggedEmptyStateRenderer unpluggedEmptyStateRenderer = 135842323;
+	optional UnpluggedBillingDetailsRenderer unpluggedBillingDetailsRenderer = 136270667;
+	optional UnpluggedAppTourSettingRenderer unpluggedAppTourSettingRenderer = 139240142;
+	optional UnpluggedFamilyFlowMessageRenderer unpluggedFamilyFlowMessageRenderer = 142640027;
+	optional AutoOfflineStorageUsageRenderer autoOfflineStorageUsageRenderer = 147386845;
+	optional GamingAccountLinkSettingRenderer gamingAccountLinkSettingRenderer = 155765234;
+	optional GamingThirdPartySettingRenderer gamingThirdPartySettingRenderer = 155905127;
+	optional UnpluggedDisclaimerSettingRenderer unpluggedDisclaimerSettingRenderer = 157490845;
+	optional UnpluggedLiveGuideSettingCategoryRenderer unpluggedLiveGuideSettingCategoryRenderer = 174749716;
+	optional UnpluggedNotificationSectionRenderer unpluggedNotificationSectionRenderer = 177528310;
+	optional UnpluggedCurrentLocationSettingItemRenderer unpluggedCurrentLocationSettingItemRenderer = 192807389;
+	optional UnpluggedBannerRenderer unpluggedBannerRenderer = 224687714;
+	optional UnpluggedStorageUsageRenderer unpluggedStorageUsageRenderer = 339341032;
+	optional UnpluggedSettingItemRenderer unpluggedSettingItemRenderer = 339688886;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed4330 {
-	optional FormattedString unnamedField1 = 1;
-	optional FormattedString unnamedField2 = 2;
-	optional Command unnamedField3 = 3;
-	repeated Unnamed4328 unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed7488 unnamedField6 = 6;
-	optional string unnamedField7 = 7;
-	optional .youtube.unknown.Unnamed473 unnamedField8 = 8;
+message SettingCategorySectionRenderer {
+	optional FormattedString title = 1;
+	optional FormattedString tooltip = 2;
+	optional Command serviceEndpoint = 3;
+	repeated SettingCategoryCollectionSupportedRenderers items = 4;
+	optional Icon icon = 5;
+	optional string identifier = 7;
+	optional bytes trackingParams = 9;
+	repeated ClientSettingItem clientSettingDependencies = 10;
+	optional Renderer iconLink = 12;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed3722 {
-	repeated Unnamed3717 unnamedField1 = 1;
-	optional FormattedString unnamedField2 = 2;
-	optional .youtube.unknown.Unnamed473 unnamedField3 = 3;
-	optional .youtube.unknown.Unnamed951 unnamedField5 = 5;
+message CaptionSettingCategoryRenderer {
+	optional FormattedString title = 1;
+	repeated CaptionCategorySupportedRenderers items = 2;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed3717 {
-	optional .youtube.unknown.Unnamed3720 unnamedField77615207 = 77615207;
-	optional .youtube.unknown.Unnamed3718 unnamedField77694497 = 77694497;
-	optional Unnamed3722 unnamedField77875886 = 77875886;
-	optional Unnamed3719 unnamedField111079109 = 111079109;
+message CaptionCategorySupportedRenderers {
+	optional SettingSingleOptionMenuRenderer settingSingleOptionMenuRenderer = 61321220;
+	optional SettingCategorySectionRenderer settingCategorySectionRenderer = 75120871;
+	optional CaptionPreviewRenderer captionPreviewRenderer = 85346949;
+	optional CaptionCustomOptionsSectionRenderer captionCustomOptionsSectionRenderer = 85732916;
 }
 
 /* protogen: merge reason = circular */
-message Unnamed3719 {
-	optional FormattedString unnamedField1 = 1;
-	optional .youtube.unknown.Unnamed473 unnamedField5 = 5;
-	repeated Unnamed3717 unnamedField8 = 8;
-	optional .youtube.unknown.Unnamed3721 unnamedField9 = 9;
-	optional bool unnamedField10 = 10;
-	optional Command unnamedField12 = 12;
-	optional Command unnamedField13 = 13;
-	repeated Command unnamedField15 = 15;
+message CaptionCustomOptionsSectionRenderer {
+	optional FormattedString title = 1;
+	repeated SettingCategoryCollectionSupportedRenderers items = 2;
+}
+
+/* protogen: merge reason = circular */
+message OptionsRenderer {
+	repeated OptionItemSupportedRenderers items = 1;
+	optional FormattedString title = 2;
+	optional bytes trackingParams = 4;
+	optional ButtonSupportedRenderers submitButton = 5;
+	optional string key = 6;
+}
+
+/* protogen: merge reason = circular */
+message OptionItemSupportedRenderers {
+	optional OptionServiceItemRenderer serviceItem = 77615207;
+	optional OptionNavigationItemRenderer navigationItem = 77694497;
+	optional OptionsRenderer subOptions = 77875886;
+	optional OptionSelectableItemRenderer optionSelectableItemRenderer = 111079109;
+	optional KidsPopoverMenuRenderer kidsPopoverMenuRenderer = 487031440;
+}
+
+/* protogen: merge reason = circular */
+message OptionSelectableItemRenderer {
+	optional FormattedString text = 1;
+	optional Icon icon = 2;
+	optional AccessibilitySupportedDatas accessibility = 4;
+	optional bytes trackingParams = 6;
+	repeated OptionItemSupportedRenderers subOptions = 8;
+	optional OptionsConfirmDialogSupportedRenderers confirmDialog = 9;
+	optional bool disableSubmitButton = 10;
+	optional Command submitEndpoint = 12;
+	optional Command submitNavigationEndpoint = 13;
+	repeated Command actions = 14;
+	repeated Command clickCommands = 15;
+	optional AccessibilityData subOptionsAccessibility = 16;
+	optional int32 preselectedIndex = 17;
+	optional FormattedString subtext = 18;
 }

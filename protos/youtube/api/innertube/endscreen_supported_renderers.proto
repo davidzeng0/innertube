@@ -5,8 +5,8 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/endscreen_renderer.proto";
-import "youtube/unknown/unnamed1754.proto";
-import "youtube/unknown/unnamed1755.proto";
+import "youtube/api/innertube/endscreen_url_renderer.proto";
+import "youtube/api/innertube/skip_endscreen_renderer.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -14,9 +14,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EndscreenSupportedRenderers {
-	oneof oneof0 {
+	oneof renderer {
 		EndscreenRenderer endscreenRenderer = 106301526;
-		.youtube.unknown.Unnamed1754 unnamedField107233212 = 107233212;
-		.youtube.unknown.Unnamed1755 unnamedField150436494 = 150436494;
+		EndscreenUrlRenderer endscreenUrlRenderer = 107233212;
+		SkipEndscreenRenderer skipEndscreenRenderer = 150436494;
 	}
 }

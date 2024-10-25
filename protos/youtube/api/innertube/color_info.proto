@@ -4,8 +4,7 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/color_transfer_characteristics.proto";
-import "youtube/unknown/unnamed7236.proto";
+import "youtube/api/innertube/dynamic_metadata.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -13,8 +12,34 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ColorInfo {
-	optional int32 primaries = 1;
-	optional .youtube.unknown.ColorTransferCharacteristics transferCharacteristics = 2;
-	optional int32 matrixCoefficients = 3;
-	optional .youtube.unknown.Unnamed7236 unnamedField4 = 4;
+	/* protogen: merge reason = nested */
+	enum ColorMatrixCoefficients {
+		COLOR_MATRIX_COEFFICIENTS_UNKNOWN = 0;
+		COLOR_MATRIX_COEFFICIENTS_BT_709 = 1;
+		COLOR_MATRIX_COEFFICIENTS_UNSPECIFIED = 2;
+		COLOR_MATRIX_COEFFICIENTS_BT_2020_NCL = 9;
+	}
+	
+	/* protogen: merge reason = nested */
+	enum ColorPrimaries {
+		COLOR_PRIMARIES_UNKNOWN = 0;
+		COLOR_PRIMARIES_BT_709 = 1;
+		COLOR_PRIMARIES_UNSPECIFIED = 2;
+		COLOR_PRIMARIES_BT_2020 = 9;
+	}
+	
+	/* protogen: merge reason = nested */
+	enum ColorTransferCharacteristics {
+		COLOR_TRANSFER_CHARACTERISTICS_UNKNOWN = 0;
+		COLOR_TRANSFER_CHARACTERISTICS_BT_709 = 1;
+		COLOR_TRANSFER_CHARACTERISTICS_UNSPECIFIED = 2;
+		COLOR_TRANSFER_CHARACTERISTICS_BT_202010 = 14;
+		COLOR_TRANSFER_CHARACTERISTICS_SMPTEST_2084 = 16;
+		COLOR_TRANSFER_CHARACTERISTICS_ARIB_STD_B_67 = 18;
+	}
+
+	optional ColorPrimaries primaries = 1;
+	optional ColorTransferCharacteristics transferCharacteristics = 2;
+	optional ColorMatrixCoefficients matrixCoefficients = 3;
+	optional DynamicMetadata dynamicMetadata = 4;
 }

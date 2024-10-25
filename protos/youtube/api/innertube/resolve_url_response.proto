@@ -6,7 +6,7 @@ package youtube.api.innertube;
 
 import "youtube/api/innertube/response_context.proto";
 import "youtube/api/innertube/command.proto";
-import "youtube/unknown/unnamed801.proto";
+import "youtube/api/innertube/attribution_data.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,6 +16,6 @@ option objc_class_prefix = "YTI";
 message ResolveUrlResponse {
 	optional ResponseContext responseContext = 1;
 	optional Command endpoint = 2;
-	optional .youtube.unknown.Unnamed801 attributionData = 4;
+	optional AttributionData attributionData = 4;
 	optional Command commandExecutorCommand = 5;
 }

@@ -5,17 +5,18 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/section_list_supported_renderers.proto";
-import "youtube/unknown/unnamed4304.proto";
-import "youtube/unknown/unnamed473.proto";
-import "youtube/unknown/unnamed4303.proto";
-import "youtube/unknown/unnamed4301.proto";
-import "youtube/unknown/unnamed4300.proto";
-import "youtube/unknown/unnamed4299.proto";
-import "youtube/unknown/unnamed4298.proto";
-import "youtube/unknown/unnamed7485.proto";
-import "youtube/unknown/unnamed7486.proto";
+import "youtube/api/innertube/section_list_supported_continuations.proto";
+import "youtube/api/innertube/section_list_sub_menu_supported_renderers.proto";
+import "youtube/api/innertube/section_list_header_supported_renderers.proto";
+import "youtube/api/innertube/section_list_fab_supported_renderers.proto";
+import "youtube/api/innertube/section_list_drawer_supported_renderers.proto";
+import "youtube/api/innertube/floating_pill_renderers.proto";
+import "youtube/api/innertube/section_list_layout_order.proto";
+import "youtube/api/innertube/section_list_selected_item_align_position.proto";
 import "youtube/api/innertube/renderer.proto";
-import "youtube/unknown/unnamed4214.proto";
+import "youtube/api/innertube/section_list_style_padded_list.proto";
+import "youtube/api/innertube/screen_visual_element.proto";
+import "youtube/api/innertube/section_list_identifier.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -24,23 +25,32 @@ option objc_class_prefix = "YTI";
 
 message SectionListRenderer {
 	repeated SectionListSupportedRenderers contents = 1;
-	repeated .youtube.unknown.Unnamed4304 continuations = 2;
-	optional .youtube.unknown.Unnamed473 unnamedField3 = 3;
-	optional bytes unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed4303 unnamedField5 = 5;
-	optional .youtube.unknown.Unnamed4301 unnamedField6 = 6;
-	optional .youtube.unknown.Unnamed4300 unnamedField7 = 7;
-	optional .youtube.unknown.Unnamed4299 unnamedField8 = 8;
-	optional bool unnamedField9 = 9;
-	optional string unnamedField13 = 13;
-	optional .youtube.unknown.Unnamed4298 unnamedField15 = 15;
-	optional .youtube.unknown.Unnamed7485 unnamedField16 = 16;
-	optional string unnamedField17 = 17;
-	optional .youtube.unknown.Unnamed7486 unnamedField18 = 18;
-	optional Renderer unnamedField19 = 19;
-	optional Renderer unnamedField22 = 22;
+	repeated SectionListSupportedContinuations continuations = 2;
+	optional bytes trackingParams = 4;
+	optional SectionListSubMenuSupportedRenderers subMenu = 5;
+	optional SectionListHeaderSupportedRenderers header = 6;
+	optional SectionListFabSupportedRenderers fab = 7;
+	optional SectionListDrawerSupportedRenderers drawer = 8;
+	optional bool canHaveDrawer = 9;
+	optional bool enableElements = 10;
+	optional bool hideBottomSeparator = 11;
+	optional bool disableSubMenuScroll = 12;
+	optional string targetId = 13;
+	optional bool hack = 14;
+	optional FloatingPillRenderers floatingPillRenderers = 15;
+	optional SectionListLayoutOrder layoutOrder = 16;
+	optional string syncModelEntityKey = 17;
+	optional SectionListSelectedItemAlignPosition selectedItemAlignPosition = 18;
+	optional Renderer footer = 19;
 
-	extend .youtube.unknown.Unnamed4214 {
-		optional SectionListRenderer sectionListRendererUnnamed4214Extension49399797 = 49399797;
+	oneof layoutStyle {
+		SectionListStylePaddedList listStyle = 20;
 	}
+
+	optional ScreenVisualElement screenVisualElement = 21;
+	optional Renderer contentOverlay = 22;
+	optional bool disablePullToRefresh = 23;
+	optional int32 selectedIndex = 24;
+	optional SectionListIdentifier sectionListIdentifier = 25;
+	optional int32 scrollPositionIndex = 26;
 }

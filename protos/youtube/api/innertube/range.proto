@@ -10,6 +10,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message Range {
+	optional int32 legacyStart = 1;
+	optional int32 legacyEnd = 2;
 	optional int64 start = 3;
 	optional int64 end = 4;
 }

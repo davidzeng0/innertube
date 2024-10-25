@@ -5,13 +5,17 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/range.proto";
-import "youtube/api/innertube/projection_type.proto";
 import "youtube/api/innertube/audio_track.proto";
 import "youtube/api/innertube/color_info.proto";
-import "youtube/unknown/unnamed1875.proto";
-import "youtube/unknown/unnamed7238.proto";
+import "youtube/api/innertube/signature_info.proto";
+import "youtube/api/innertube/stereo_layout.proto";
 import "youtube/api/innertube/format_stream_type.proto";
-import "youtube/unknown/unnamed980.proto";
+import "youtube/api/innertube/caption_track.proto";
+import "youtube/api/innertube/audio_quality.proto";
+import "youtube/api/innertube/drm_track_type.proto";
+import "youtube/api/innertube/format_projection.proto";
+import "youtube/api/innertube/spatial_audio.proto";
+import "youtube/api/innertube/license_info.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -19,17 +23,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormatStream {
-	/* protogen: merge reason = nested */
-	enum DrmFamily {
-		UNKNOWN = 0;
-		FLASHACCESS = 1;
-		WIDEVINE_CLASSIC = 2;
-		FAIRPLAY = 6;
-		CLEARKEY = 3;
-		WIDEVINE = 4;
-		PLAYREADY = 5;
-	}
-
 	optional int32 itag = 1;
 	optional string url = 2;
 	optional string mimeType = 5;
@@ -40,23 +33,33 @@ message FormatStream {
 	optional Range indexRange = 10;
 	optional int64 lastModified = 11;
 	optional int64 contentLength = 12;
-	optional string unnamedField23 = 23;
-	repeated DrmFamily unnamedField24 = 24;
+	optional string quality = 16;
+	optional string xtags = 23;
+	repeated LicenseInfo.DrmFamily drmFamilies = 24;
 	optional int32 fps = 25;
 	optional string qualityLabel = 26;
-	optional ProjectionType projectionType = 27;
+	optional FormatProjection.ProjectionType projectionType = 27;
 	optional AudioTrack audioTrack = 28;
 	optional int32 averageBitrate = 31;
+	optional SpatialAudio.SpatialAudioType spatialAudioType = 32;
 	optional ColorInfo colorInfo = 33;
-	optional .youtube.unknown.Unnamed1875 unnamedField34 = 34;
-	optional double unnamedField35 = 35;
-	optional .youtube.unknown.Unnamed7238 unnamedField37 = 37;
-	optional double unnamedField38 = 38;
+	optional SignatureInfo signatureInfo = 34;
+	optional double targetDurationSec = 35;
+	optional string fairPlayKeyUri = 36;
+	optional StereoLayout stereoLayout = 37;
+	optional double maxDvrDurationSec = 38;
+	optional bool highReplication = 39;
 	optional FormatStreamType type = 41;
-	optional .youtube.unknown.Unnamed980 unnamedField42 = 42;
-	optional int32 audioQuality = 43;
-	optional int32 approxDurationMs = 44;
-	optional int32 audioSampleRate = 45;
-	optional int32 audioChannels = 46;
+	optional CaptionTrack captionTrack = 42;
+	optional AudioQuality audioQuality = 43;
+	optional uint64 approxDurationMs = 44;
+	optional uint64 audioSampleRate = 45;
+	optional uint32 audioChannels = 46;
 	optional float loudnessDb = 47;
+	optional string signatureCipher = 48;
+	optional bool isDrc = 49;
+	optional DrmTrackType drmTrackType = 50;
+	optional string distinctParams = 51;
+	
+	extensions 1000 to max;
 }

@@ -4,8 +4,8 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed3138.proto";
-import "youtube/unknown/unnamed1223.proto";
+import "youtube/api/innertube/logging_url.proto";
+import "youtube/api/innertube/command_metadata.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 
 message Command {
 	optional bytes clickTrackingParams = 2;
-	repeated .youtube.unknown.Unnamed3138 unnamedField3 = 3;
-	optional .youtube.unknown.Unnamed1223 unnamedField4 = 4;
-
-	extensions 48687626 to 428788994;
+	repeated LoggingUrl loggingUrls = 3;
+	optional CommandMetadata commandMetadata = 4;
+	
+	extensions 1000 to max;
 }

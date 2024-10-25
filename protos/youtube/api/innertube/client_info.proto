@@ -4,21 +4,21 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/api/innertube/client_name.proto";
-import "youtube/unknown/unnamed7286.proto";
-import "youtube/api/innertube/client_form_factor.proto";
-import "youtube/unknown/unnamed5830.proto";
-import "youtube/unknown/unnamed3413.proto";
-import "youtube/unknown/unnamed2253.proto";
-import "youtube/api/innertube/mobile_connection_type.proto";
-import "youtube/unknown/unnamed2257.proto";
-import "youtube/unknown/unnamed3119.proto";
+import "youtube/api/innertube/player_type.proto";
+import "youtube/api/innertube/mobile_data_plan_info.proto";
+import "youtube/api/innertube/client_connection_type.proto";
+import "youtube/api/innertube/config_groups_client_info.proto";
+import "youtube/api/innertube/unplugged_location_info.proto";
+import "youtube/api/innertube/kids_app_info.proto";
+import "youtube/api/innertube/music_app_info.proto";
+import "youtube/api/innertube/unplugged_app_info.proto";
+import "youtube/api/innertube/location_info.proto";
 import "youtube/api/innertube/user_interface_theme.proto";
-import "youtube/unknown/unnamed187.proto";
-import "youtube/unknown/unnamed3564.proto";
-import "youtube/unknown/unnamed3583.proto";
-import "youtube/unknown/unnamed4246.proto";
-import "youtube/unknown/unnamed3871.proto";
+import "experiments/heterodyne/experiment_ids.proto";
+import "youtube/api/innertube/notification_permission_info.proto";
+import "youtube/api/innertube/client_store_info.proto";
+import "youtube/api/innertube/srsdata_push_version.proto";
+import "youtube/api/innertube/player_data_push_version.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -26,50 +26,202 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ClientInfo {
+	/* protogen: merge reason = nested */
+	enum ApplicationState {
+		UNKNOWN_APPLICATION_STATE = 0;
+		ACTIVE = 1;
+		BACKGROUND = 2;
+		INACTIVE = 3;
+	}
+
+	/* protogen: merge reason = nested */
+	enum ClientFormFactor {
+		UNKNOWN_FORM_FACTOR = 0;
+		SMALL_FORM_FACTOR = 1;
+		LARGE_FORM_FACTOR = 2;
+		AUTOMOTIVE_FORM_FACTOR = 3;
+		WEARABLE_FORM_FACTOR = 4;
+	}
+
+	/* protogen: merge reason = nested */
+	enum ClientName {
+		UNKNOWN_INTERFACE = 0;
+		WEB = 1;
+		WEB_GAMING = 32;
+		WEB_MUSIC = 61;
+		WEB_REMIX = 67;
+		WEB_MUSIC_EMBEDDED_PLAYER = 86;
+		WEB_EXPERIMENTS = 42;
+		WEB_HEROES = 60;
+		WEB_CREATOR = 62;
+		WEB_LIVE_STREAMING = 73;
+		WEB_KIDS = 76;
+		WEB_PARENT_TOOLS = 88;
+		WEB_PHONE_VERIFICATION = 90;
+		WEB_UNPLUGGED = 41;
+		WEB_UNPLUGGED_ONBOARDING = 69;
+		WEB_UNPLUGGED_OPS = 70;
+		WEB_UNPLUGGED_PUBLIC = 71;
+		MWEB = 2;
+		MWEB_TIER_2 = 27;
+		ANDROID = 3;
+		ANDROID_CASUAL = 54;
+		ANDROID_CREATOR = 14;
+		ANDROID_PRODUCER = 91;
+		ANDROID_EMBEDDED_PLAYER = 55;
+		ANDROID_GAMING = 24;
+		ANDROID_INSTANT = 20;
+		ANDROID_KIDS = 18;
+		ANDROID_MUSIC = 21;
+		ANDROID_TESTSUITE = 30;
+		ANDROID_UNPLUGGED = 29;
+		ANDROID_VR = 28;
+		ANDROID_WITNESS = 34;
+		ANDROID_SPORTS = 36;
+		ANDROID_LITE = 38;
+		IOS = 5;
+		IOS_CREATOR = 15;
+		IOS_PRODUCER = 92;
+		IOS_DIRECTOR = 40;
+		IOS_GAMING = 25;
+		IOS_INSTANT = 17;
+		IOS_KIDS = 19;
+		IOS_LIVE_CREATION_EXTENSION = 64;
+		IOS_MESSAGES_EXTENSION = 66;
+		IOS_MUSIC = 26;
+		IOS_TABLOID = 22;
+		IOS_UNPLUGGED = 33;
+		IOS_UPTIME = 68;
+		IOS_WITNESS = 35;
+		IOS_PILOT_STUDIO = 53;
+		IOS_SPORTS = 37;
+		IOS_EMBEDDED_PLAYER = 39;
+		TVHTML_5 = 7;
+		TVHTML_5_AUDIO = 57;
+		TVHTML_5_CAST = 43;
+		TVHTML_5_KIDS = 59;
+		TVHTML_5_FOR_KIDS = 93;
+		ANDROID_TV_KIDS = 74;
+		TVHTML_5_SIMPLY = 75;
+		TVHTML_5_SIMPLY_EMBEDDED_PLAYER = 85;
+		TVHTML_5_UNPLUGGED = 65;
+		TVHTML_5_YONGLE = 80;
+		TVLITE = 8;
+		TVANDROID = 10;
+		TV_UNPLUGGED_CAST = 58;
+		TV_UNPLUGGED_ANDROID = 63;
+		TVHTML_5_VR = 72;
+		ANDROID_TV = 23;
+		XBOX = 11;
+		XBOXONEGUIDE = 13;
+		CLIENTX = 12;
+		TVAPPLE = 16;
+		WEB_EMBEDDED_PLAYER = 56;
+		WEB_MUSIC_ANALYTICS = 31;
+		MUSIC_INTEGRATIONS = 77;
+		GOOGLE_ASSISTANT = 84;
+		WEB_INTERNAL_ANALYTICS = 87;
+		GOOGLE_MEDIA_ACTIONS = 89;
+		GOOGLE_LIST_RECS = 94;
+		MEDIA_CONNECT_FRONTEND = 95;
+	}
+
+	/* protogen: merge reason = nested */
+	enum Theme {
+		UNKNOWN_THEME = 0;
+		CLASSIC = 1;
+		KIDS = 2;
+		INSTANT = 3;
+		CREATOR = 4;
+		MUSIC = 5;
+		GAMING = 6;
+		UNPLUGGED = 7;
+	}
 	optional string hl = 1;
 	optional string gl = 2;
+	optional string geo = 3;
+	optional string remoteHost = 4;
+	optional string deviceId = 6;
+	optional bool isInternal = 7;
 	optional string debugDeviceIdOverride = 8;
+	repeated int32 experimentIds = 9;
+	optional string carrierGeo = 10;
 	optional bool crackedHl = 11;
 	optional string deviceMake = 12;
 	optional string deviceModel = 13;
 	optional string visitorData = 14;
+	optional string userAgent = 15;
 	optional ClientName clientName = 16;
 	optional string clientVersion = 17;
 	optional string osName = 18;
 	optional string osVersion = 19;
+	optional string projectId = 20;
 	optional string acceptLanguage = 21;
 	optional string acceptRegion = 22;
-	optional string deviceId = 25;
+	optional string originalUrl = 23;
+	repeated int32 internalExperimentIds = 24;
+	optional string rawDeviceId = 25;
+	optional bool clientValid = 26;
+	optional string configData = 27;
+	optional Theme theme = 30;
+	optional string spacecastToken = 31;
+	repeated int32 internalClientExperimentIds = 32;
 	optional string internalGeo = 34;
-	optional .youtube.unknown.Unnamed7286 applicationState = 35;
+	optional ApplicationState applicationState = 35;
+	optional PlayerType playerType = 36;
 	optional int32 screenWidthPoints = 37;
 	optional int32 screenHeightPoints = 38;
 	optional float screenWidthInches = 39;
 	optional float screenHeightInches = 40;
 	optional int32 screenPixelDensity = 41;
+	optional string gfeFrontlineInfo = 43;
+	optional string ytSafetyModeHeader = 44;
 	optional ClientFormFactor clientFormFactor = 46;
-	optional .youtube.unknown.Unnamed5830 unnamedField47 = 47;
-	optional .youtube.unknown.Unnamed3413 mobileDataPlanInfo = 49;
+	optional string forwardedFor = 48;
+	optional MobileDataPlanInfo mobileDataPlanInfo = 49;
 	optional int32 gmscoreVersionCode = 50;
-	optional .youtube.unknown.Unnamed2253 unnamedField52 = 52;
+	optional bool webpSupport = 51;
+	optional string ytRestrictHeader = 53;
+	optional string experimentsToken = 54;
 	optional int32 windowWidthPoints = 55;
 	optional int32 windowHeightPoints = 56;
-	optional MobileConnectionType connectionType = 61;
-	optional .youtube.unknown.Unnamed2257 unnamedField62 = 62;
+	optional ClientConnectionType connectionType = 61;
+	optional ConfigGroupsClientInfo configInfo = 62;
+	optional UnpluggedLocationInfo unpluggedLocationInfo = 63;
 	optional int32 androidSdkVersion = 64;
 	optional float screenDensityFloat = 65;
-	repeated int32 unnamedField66 = 66;
+	repeated int32 firstTimeSignInExperimentIds = 66;
 	optional int32 utcOffsetMinutes = 67;
-	optional .youtube.unknown.Unnamed3119 unnamedField74 = 74;
+	optional bool animatedWebpSupport = 68;
+	optional KidsAppInfo kidsAppInfo = 69;
+	optional MusicAppInfo musicAppInfo = 70;
+	optional string internalGeoIp = 72;
+	optional UnpluggedAppInfo unpluggedAppInfo = 73;
+	optional LocationInfo locationInfo = 74;
+
+	oneof textScaleAdjustment {
+		string contentSizeCategory = 76;
+		float fontScale = 77;
+	}
+
 	optional UserInterfaceTheme userInterfaceTheme = 78;
+	optional bool newVisitorCookie = 79;
 	optional string timeZone = 80;
-	optional bytes unnamedField84 = 84;
-	repeated .youtube.unknown.Unnamed187 unnamedField86 = 86;
-	optional string unnamedField89 = 89;
-	optional .youtube.unknown.Unnamed3564 unnamedField94 = 94;
+	optional bytes emlTemplateContext = 84;
+	optional bytes coldAppBundleConfigData = 85;
+	repeated .experiments.heterodyne.ExperimentIds heterodyneIds = 86;
+	optional string browserName = 87;
+	optional string browserVersion = 88;
+	optional string locationPlayabilityToken = 89;
+	optional int32 releaseYear = 91;
+	optional string chipset = 92;
+	optional string firmwareVersion = 93;
 	optional int64 memoryTotalKbytes = 95;
-	optional .youtube.unknown.Unnamed3583 unnamedField97 = 97;
-	optional string unnamedField98 = 98;
-	repeated .youtube.unknown.Unnamed4246 unnamedField100 = 100;
-	repeated .youtube.unknown.Unnamed3871 unnamedField101 = 101;
+	optional NotificationPermissionInfo notificationPermissionInfo = 97;
+	optional string deviceBrand = 98;
+	optional ClientStoreInfo clientStoreInfo = 99;
+	repeated SRSDataPushVersion srsDatapushBuildIds = 100;
+	repeated PlayerDataPushVersion playerDatapushBuildIds = 101;
+	optional string acceptHeader = 103;
+	optional string deviceExperimentId = 104;
 }

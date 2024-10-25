@@ -5,7 +5,6 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/thumbnail_details.proto";
-import "youtube/unknown/unnamed473.proto";
 import "youtube/api/innertube/command.proto";
 import "youtube/api/innertube/renderer.proto";
 
@@ -18,8 +17,8 @@ message FeaturedChannel {
 	optional int64 startTimeMs = 1;
 	optional int64 endTimeMs = 2;
 	optional ThumbnailDetails watermark = 6;
-	optional .youtube.unknown.Unnamed473 unnamedField8 = 8;
 	optional bytes trackingParams = 9;
-	optional Command unnamedField10 = 10;
-	optional Renderer unnamedField12 = 12;
+	optional Command navigationEndpoint = 10;
+	optional string channelName = 11;
+	optional Renderer subscribeButton = 12;
 }

@@ -6,7 +6,6 @@ package youtube.api.innertube;
 
 import "youtube/api/innertube/entity_mutation.proto";
 import "youtube/api/innertube/timestamp.proto";
-import "youtube/unknown/unnamed1894.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,8 +15,4 @@ option objc_class_prefix = "YTI";
 message EntityBatchUpdate {
 	repeated EntityMutation mutations = 1;
 	optional Timestamp timestamp = 2;
-
-	extend .youtube.unknown.Unnamed1894 {
-		optional EntityBatchUpdate entityBatchUpdate = 1;
-	}
 }

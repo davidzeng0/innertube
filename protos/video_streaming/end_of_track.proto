@@ -9,6 +9,7 @@ import "youtube/unknown/unnamed6071.proto";
 option cc_enable_arenas = true;
 option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
+option objc_class_prefix = "YTVS";
 
 message EndOfTrack {
 	optional .youtube.unknown.Unnamed6071 unnamedField1 = 1;

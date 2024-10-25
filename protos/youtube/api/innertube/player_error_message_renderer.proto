@@ -5,7 +5,10 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/formatted_string.proto";
-import "youtube/unknown/unnamed951.proto";
+import "youtube/api/innertube/button_supported_renderers.proto";
+import "youtube/api/innertube/thumbnail_details.proto";
+import "youtube/api/innertube/icon.proto";
+import "youtube/api/innertube/renderer_visibility_condition_data.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -13,9 +16,14 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerErrorMessageRenderer {
-	optional FormattedString reason = 1;
-	optional FormattedString subreason = 2;
-	optional FormattedString learnMore = 3;
-	optional .youtube.unknown.Unnamed951 proceedButton = 4;
-	optional .youtube.unknown.Unnamed951 dismissButton = 7;
+	optional FormattedString subreason = 1;
+	optional FormattedString learnMore = 2;
+	optional FormattedString reason = 3;
+	optional ButtonSupportedRenderers proceedButton = 4;
+	optional ThumbnailDetails thumbnail = 5;
+	optional Icon icon = 6;
+	optional ButtonSupportedRenderers dismissButton = 7;
+	optional ThumbnailDetails thumbnailIcon = 8;
+	optional RendererVisibilityConditionData visibilityCondition = 9;
+	optional FormattedString footer = 10;
 }

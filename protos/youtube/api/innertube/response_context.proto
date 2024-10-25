@@ -4,10 +4,14 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
+import "gdata/errors.proto";
 import "youtube/api/innertube/service_tracking_params.proto";
+import "youtube/api/innertube/experimental_data.proto";
 import "youtube/api/innertube/global_config_group.proto";
-import "youtube/unknown/unnamed1393.proto";
-import "youtube/unknown/unnamed4568.proto";
+import "youtube/api/innertube/unplugged_response_context.proto";
+import "youtube/api/innertube/consistency_token_jar.proto";
+import "youtube/api/innertube/state_tags.proto";
+import "youtube/api/innertube/inner_tube_token_jar.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -15,11 +19,29 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ResponseContext {
+	optional .gdata.Errors errors = 1;
 	optional string visitorData = 2;
 	repeated ServiceTrackingParams serviceTrackingParams = 6;
 	optional uint32 maxAgeSeconds = 7;
+	optional string entityTag = 8;
+	optional bool notModified = 9;
+	optional string logEntryString = 10;
+	optional string extraDebugData = 11;
+	optional string veTree = 13;
+	optional ExperimentalData experimentalData = 14;
+	repeated string spacecastAddressCandidates = 15;
 	optional GlobalConfigGroup globalConfigGroup = 16;
-	optional .youtube.unknown.Unnamed1393 unnamedField22 = 22;
-	optional string unnamedField24 = 24;
-	optional .youtube.unknown.Unnamed4568 unnamedField26 = 26;
+	optional string bloat = 17;
+	optional string logEntryStringJson = 19;
+	optional bool isIncognito = 20;
+	optional UnpluggedResponseContext unpluggedResponseContext = 21;
+	optional ConsistencyTokenJar consistencyTokenJar = 22;
+	optional string sherlogFrontendUrl = 23;
+	optional string locationPlayabilityToken = 24;
+	optional StateTags stateTags = 26;
+	optional InnerTubeTokenJar innertubeTokenJar = 27;
+	
+	extensions 3 to 4;
+	
+	extensions 1000 to max;
 }

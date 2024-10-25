@@ -12,5 +12,7 @@ option objc_class_prefix = "YTI";
 message PlayerStoryboardSpecRenderer {
 	optional string spec = 1;
 	optional int32 recommendedLevel = 3;
-	optional int32 unnamedField4 = 4;
+	optional int32 threedLayout = 4;
+	optional int32 fineScrubbingRecommendedLevel = 5;
+	optional int32 cinematicWatchRecommendedLevel = 6;
 }

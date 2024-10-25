@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed3386.proto";
+import "youtube/api/innertube/mobile_connection_type.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -13,9 +13,9 @@ option objc_class_prefix = "YTI";
 
 message DataSaverConfig {
 	optional int64 simpleBitrateCap = 1;
-	repeated .youtube.unknown.Unnamed3386 unnamedField3 = 3;
-	optional bool unnamedField4 = 4;
-	optional bool unnamedField5 = 5;
-	optional bool unnamedField6 = 6;
-	optional bool unnamedField7 = 7;
+	repeated MobileConnectionType bitrateCappedConnectionTypes = 3;
+	optional bool useA1Subdomain = 4;
+	optional bool enableManualFormatPacing = 5;
+	optional bool enableDataPlanLogging = 6;
+	optional bool applyPacingForAllTraffic = 7;
 }

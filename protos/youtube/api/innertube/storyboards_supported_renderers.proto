@@ -5,7 +5,7 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/player_storyboard_spec_renderer.proto";
-import "youtube/unknown/unnamed3885.proto";
+import "youtube/api/innertube/player_live_storyboard_spec_renderer.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -13,8 +13,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message StoryboardsSupportedRenderers {
-	oneof oneof0 {
+	oneof renderer {
 		PlayerStoryboardSpecRenderer playerStoryboardSpecRenderer = 55735497;
-		.youtube.unknown.Unnamed3885 playerLiveStoryboardSpecRenderer = 70276274;
+		PlayerLiveStoryboardSpecRenderer playerLiveStoryboardSpecRenderer = 70276274;
 	}
 }

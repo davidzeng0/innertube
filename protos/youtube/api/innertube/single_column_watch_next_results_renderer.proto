@@ -4,11 +4,16 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/api/innertube/single_column_watch_next_results_supported_renderers.proto";
-import "youtube/unknown/unnamed2718.proto";
-import "youtube/unknown/unnamed2716.proto";
-import "youtube/unknown/unnamed2717.proto";
-import "youtube/unknown/unnamed1407.proto";
+import "youtube/api/innertube/conversation_bar_supported_renderers.proto";
+import "youtube/api/innertube/section_list_renderer.proto";
+import "youtube/api/innertube/minimal_video_metadata_renderer.proto";
+import "youtube/api/innertube/watch_next_tabbed_results_renderer.proto";
+import "youtube/api/innertube/playlist_panel_renderer.proto";
+import "youtube/api/innertube/autoplay_renderer.proto";
+import "youtube/api/innertube/lock_screen_renderer.proto";
+import "youtube/api/innertube/unplugged_lock_screen_renderer.proto";
+import "youtube/api/innertube/watch_next_end_screen_renderer.proto";
+import "youtube/api/innertube/horizontal_list_renderer.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,9 +21,69 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SingleColumnWatchNextResultsRenderer {
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextResultsSupportedRenderers {
+		oneof renderer {
+			SectionListRenderer results = 49399797;
+			MinimalVideoMetadataRenderer minimalVideoMetadataRenderer = 69950105;
+			WatchNextTabbedResultsRenderer watchNextTabbedResultsRenderer = 91700600;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextPlaylistSupportedRenderers {
+		oneof renderer {
+			PlaylistPanelRenderer playlist = 50631000;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextAutoplaySupportedRenderers {
+		oneof renderer {
+			AutoplayRenderer autoplay = 46659098;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextLockScreenSupportedRenderers {
+		oneof renderer {
+			LockScreenRenderer lockScreen = 61479009;
+			UnpluggedLockScreenRenderer unpluggedLockScreenRenderer = 122746779;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextPostTipScreenSupportedRenderers {
+		/* protogen: zero length fields */
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextEndScreenSupportedRenderers {
+		oneof renderer {
+			WatchNextEndScreenRenderer endScreen = 57158578;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextPivotSupportedRenderers {
+		oneof renderer {
+			SectionListRenderer sectionListRenderer = 49399797;
+			HorizontalListRenderer horizontalListRenderer = 92565330;
+		}
+	}
+	
+	/* protogen: merge reason = nested */
+	message SingleColumnWatchNextAutomixPlaylistPanelSupportedRenderers {
+		/* protogen: zero length fields */
+	}
+
 	optional SingleColumnWatchNextResultsSupportedRenderers results = 1;
-	optional .youtube.unknown.Unnamed2718 unnamedField2 = 2;
-	optional .youtube.unknown.Unnamed2716 unnamedField3 = 3;
-	optional .youtube.unknown.Unnamed2717 unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed1407 unnamedField6 = 6;
+	optional SingleColumnWatchNextPlaylistSupportedRenderers playlist = 2;
+	optional SingleColumnWatchNextAutoplaySupportedRenderers autoplay = 3;
+	optional SingleColumnWatchNextLockScreenSupportedRenderers lockScreen = 4;
+	optional SingleColumnWatchNextPostTipScreenSupportedRenderers postTipScreen = 5;
+	optional ConversationBarSupportedRenderers conversationBar = 6;
+	optional SingleColumnWatchNextEndScreenSupportedRenderers endScreen = 7;
+	optional SingleColumnWatchNextPivotSupportedRenderers pivot = 8;
+	optional SingleColumnWatchNextAutomixPlaylistPanelSupportedRenderers automix = 9;
 }

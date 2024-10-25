@@ -11,6 +11,7 @@ import "youtube/unknown/unnamed9835.proto";
 option cc_enable_arenas = true;
 option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
+option objc_class_prefix = "YTVS";
 
 message BufferedRange {
 	optional FormatId formatId = 1;

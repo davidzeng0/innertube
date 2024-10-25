@@ -16,8 +16,10 @@ message Header {
 		USER_AUTH = 1;
 		VISITOR_ID = 2;
 		PLUS_PAGE_ID = 3;
-		SPATULA_V1 = 4;
+		SPATULA_V_1 = 4;
 		SHERLOG_SESSION_ID = 5;
+		EOM_VISITOR_ID = 6;
+		ATTRIBUTION_REPORTING_ELIGIBLE = 7;
 	}
 
 	optional HeaderType headerType = 1;

@@ -4,10 +4,10 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/unknown/unnamed7223.proto";
-import "youtube/unknown/unnamed1777.proto";
-import "youtube/unknown/unnamed1772.proto";
-import "youtube/unknown/unnamed1775.proto";
+import "youtube/api/innertube/entity_mutation_type.proto";
+import "youtube/api/innertube/entity_mutation_payload.proto";
+import "youtube/api/innertube/entity_field_mask.proto";
+import "youtube/api/innertube/entity_mutation_options.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -16,8 +16,8 @@ option objc_class_prefix = "YTI";
 
 message EntityMutation {
 	optional string entityKey = 1;
-	optional .youtube.unknown.Unnamed7223 type = 2;
-	optional .youtube.unknown.Unnamed1777 payload = 3;
-	optional .youtube.unknown.Unnamed1772 unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed1775 unnamedField5 = 5;
+	optional EntityMutationType type = 2;
+	optional EntityMutationPayload payload = 3;
+	optional EntityFieldMask fieldMask = 4;
+	optional EntityMutationOptions options = 5;
 }

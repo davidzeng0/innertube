@@ -5,9 +5,7 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/formatted_string.proto";
-import "youtube/unknown/unnamed7528.proto";
-import "youtube/unknown/unnamed7529.proto";
-import "youtube/unknown/unnamed2067.proto";
+import "youtube/api/innertube/icon.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -15,8 +13,17 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayTimeStatusRenderer {
+	/* protogen: merge reason = nested */
+	enum TimeStatusBackgroundStyle {
+		UNKNOWN = 0;
+		DEFAULT = 1;
+		LIVE = 2;
+		UPCOMING = 3;
+		HERO = 4;
+		SHORTS = 5;
+	}
+
 	optional FormattedString text = 1;
-	optional .youtube.unknown.Unnamed7528 unnamedField2 = 2;
-	optional .youtube.unknown.Unnamed7529 unnamedField3 = 3;
-	optional .youtube.unknown.Unnamed2067 unnamedField4 = 4;
+	optional TimeStatusBackgroundStyle style = 2;
+	optional Icon icon = 4;
 }

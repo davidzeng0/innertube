@@ -4,8 +4,8 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/api/innertube/playback_onesie_config.proto";
-import "youtube/unknown/unnamed3706.proto";
+import "youtube/api/innertube/playback_init_segment_config.proto";
+import "youtube/api/innertube/ios_playback_onesie_config.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointSupportedOnesieConfig {
-	optional PlaybackOnesieConfig playbackOnesieConfig = 79756255;
-	optional .youtube.unknown.Unnamed3706 unnamedField79857191 = 79857191;
+	optional PlaybackInitSegmentConfig playbackInitSegmentConfig = 79857191;
+	optional IosPlaybackOnesieConfig iosPlaybackOnesieConfig = 146179543;
 }

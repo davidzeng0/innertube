@@ -11,9 +11,9 @@ option objc_class_prefix = "YTI";
 
 message AudioConfig {
 	optional float loudnessDb = 1;
-	optional bool unnamedField2 = 2;
+	optional bool audioMuted = 2;
 	optional float perceptualLoudnessDb = 3;
-	optional bool unnamedField4 = 4;
-	optional bool unnamedField5 = 5;
+	optional bool muteOnStart = 4;
+	optional bool playAudioOnly = 5;
 	optional bool enablePerFormatLoudness = 6;
 }

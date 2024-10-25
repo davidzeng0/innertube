@@ -5,19 +5,18 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/single_column_watch_next_results_renderer.proto";
-import "youtube/unknown/unnamed2721.proto";
-import "youtube/unknown/unnamed1920.proto";
-import "youtube/unknown/unnamed2715.proto";
+import "youtube/api/innertube/two_column_watch_next_results_renderer.proto";
+import "youtube/api/innertube/single_column_music_watch_next_results_renderer.proto";
 
 option cc_enable_arenas = true;
+option java_multiple_files = true;
 option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchNextSupportedRenderers {
 	oneof renderer {
 		SingleColumnWatchNextResultsRenderer singleColumnWatchNextResults = 51779735;
-		.youtube.unknown.Unnamed2721 twoColumnWatchNextResults = 51779759;
-		.youtube.unknown.Unnamed1920 unnamedField119098865 = 119098865;
-		.youtube.unknown.Unnamed2715 unnamedField125354411 = 125354411;
+		TwoColumnWatchNextResultsRenderer twoColumnWatchNextResults = 51779759;
+		SingleColumnMusicWatchNextResultsRenderer singleColumnMusicWatchNextResultsRenderer = 125354411;
 	}
 }

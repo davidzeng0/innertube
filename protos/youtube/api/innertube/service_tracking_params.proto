@@ -4,7 +4,6 @@ syntax = "proto2";
 
 package youtube.api.innertube;
 
-import "youtube/api/innertube/service.proto";
 import "youtube/api/innertube/key_value_pair.proto";
 
 option cc_enable_arenas = true;
@@ -13,6 +12,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ServiceTrackingParams {
+	/* protogen: merge reason = nested */
+	enum Service {
+		SERVICE_UNKNOWN = 0;
+		CSI = 1;
+		GFEEDBACK = 2;
+		BREAKPAD = 3;
+		GUIDED_HELP = 4;
+		GOOGLE_HELP = 5;
+		ECATCHER = 6;
+		SUGGEST = 7;
+		LISTNR = 8;
+	}
+
 	optional Service service = 1;
 	repeated KeyValuePair params = 2;
 }
