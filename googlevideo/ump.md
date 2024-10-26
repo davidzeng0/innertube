@@ -1,6 +1,7 @@
 # UMP Format
 
-Original document: https://github.com/gsuberland/UMP_Format/blob/main/UMP_Format.md and https://github.com/davidzeng0/UMP_Format/blob/main/UMP_Format.md
+Thanks to contributors to [gsuberland/UMP_Format](https://github.com/gsuberland/UMP_Format/blob/main/UMP_Format.md) for kickstarting this document.<br>
+Original document (derived from gsuberland): [davidzeng0/UMP_Format](https://github.com/davidzeng0/UMP_Format/blob/main/UMP_Format.md)
 
 The UMP (likely Universal Media Playback or U(stream/streamer) Multi Part) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
 
