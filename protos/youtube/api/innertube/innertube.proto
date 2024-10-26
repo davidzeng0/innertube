@@ -1,3 +1,4 @@
+/* note: this file is not a part of the official api */
 syntax = "proto2";
 
 package youtube.api.innertube;

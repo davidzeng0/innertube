@@ -1,5 +1,5 @@
 # InnerTube
-The most accurate and up to date reverse engineering of the YouTube Internal API, also known as InnerTube.
+Schemas and (some) unofficial documentation for the YouTube Internal API, also known as InnerTube.
 
 See [googlevideo](./googlevideo) for a description of googlevideo request formats and the UMP response format.
 
