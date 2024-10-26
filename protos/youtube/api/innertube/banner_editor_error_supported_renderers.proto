@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message BannerEditorErrorSupportedRenderers {
 	oneof renderer {
-		ToastRenderer toastRenderer = 91854672;
+		ToastRenderer toast_renderer = 91854672;
 	}
 }

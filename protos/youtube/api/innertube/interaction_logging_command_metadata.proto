@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message InteractionLoggingCommandMetadata {
-	optional ScreenVisualElement screenVisualElement = 1;
-	optional LoggingExpectations loggingExpectations = 2;
+	optional ScreenVisualElement screen_visual_element = 1;
+	optional LoggingExpectations logging_expectations = 2;
 }

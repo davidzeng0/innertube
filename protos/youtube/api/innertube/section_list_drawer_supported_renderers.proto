@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message SectionListDrawerSupportedRenderers {
 	oneof renderer {
-		SectionListDrawerRenderer sectionListDrawerRenderer = 105924295;
+		SectionListDrawerRenderer section_list_drawer_renderer = 105924295;
 	}
 }

@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message PlaylistSelectOptionSupportedRenderers {
 	oneof renderer {
-		PlaylistSelectOptionRenderer playlistSelectOptionRenderer = 70408529;
-		PlaylistAddToOptionRenderer playlistAddToOptionRenderer = 74079946;
+		PlaylistSelectOptionRenderer playlist_select_option_renderer = 70408529;
+		PlaylistAddToOptionRenderer playlist_add_to_option_renderer = 74079946;
 	}
 }

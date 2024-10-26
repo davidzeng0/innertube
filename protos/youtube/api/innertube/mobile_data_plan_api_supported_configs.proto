@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message MobileDataPlanApiSupportedConfigs {
 	oneof config {
-		MobileDataPlanApiConfig mobileDataPlanApiConfig = 99881742;
+		MobileDataPlanApiConfig mobile_data_plan_api_config = 99881742;
 	}
 }

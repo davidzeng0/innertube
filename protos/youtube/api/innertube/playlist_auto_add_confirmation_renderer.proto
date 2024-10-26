@@ -17,7 +17,7 @@ option objc_class_prefix = "YTI";
 message PlaylistAutoAddConfirmationRenderer {
 	optional FormattedString title = 1;
 	optional FormattedString description = 2;
-	repeated PlaylistAutoAddRule autoAddRules = 3;
-	optional BooleanFormFieldSupportedRenderers addMatchingVideos = 4;
-	optional Command addMatchingVideosEndpoint = 5;
+	repeated PlaylistAutoAddRule auto_add_rules = 3;
+	optional BooleanFormFieldSupportedRenderers add_matching_videos = 4;
+	optional Command add_matching_videos_endpoint = 5;
 }

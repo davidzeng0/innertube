@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerYouTubeWatermarkRenderer {
-	optional Command onTapEndpoint = 1;
-	optional int32 durationMs = 2;
-	optional bytes trackingParams = 3;
+	optional Command on_tap_endpoint = 1;
+	optional int32 duration_ms = 2;
+	optional bytes tracking_params = 3;
 }

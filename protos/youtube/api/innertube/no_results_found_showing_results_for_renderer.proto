@@ -13,10 +13,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message NoResultsFoundShowingResultsForRenderer {
-	optional FormattedString showingResultsFor = 1;
-	optional FormattedString correctedQuery = 2;
-	optional Command correctedQueryEndpoint = 3;
-	optional FormattedString noResultsFound = 4;
-	optional FormattedString originalQuery = 5;
-	optional bytes trackingParams = 7;
+	optional FormattedString showing_results_for = 1;
+	optional FormattedString corrected_query = 2;
+	optional Command corrected_query_endpoint = 3;
+	optional FormattedString no_results_found = 4;
+	optional FormattedString original_query = 5;
+	optional bytes tracking_params = 7;
 }

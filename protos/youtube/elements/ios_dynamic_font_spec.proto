@@ -12,18 +12,18 @@ option objc_class_prefix = "ELMPB";
 message IosDynamicFontSpec {
 	/* protogen: merge reason = nested */
 	message IosFontSizeValues {
-		optional float extraSmall = 1;
+		optional float extra_small = 1;
 		optional float small = 2;
 		optional float medium = 3;
 		optional float large = 4;
-		optional float extraLarge = 5;
-		optional float extraExtraLarge = 6;
-		optional float extraExtraExtraLarge = 7;
-		optional float accessibilityMedium = 8;
-		optional float accessibilityLarge = 9;
-		optional float accessibilityExtraLarge = 10;
-		optional float accessibilityExtraExtraLarge = 11;
-		optional float accessibilityExtraExtraExtraLarge = 12;
+		optional float extra_large = 5;
+		optional float extra_extra_large = 6;
+		optional float extra_extra_extra_large = 7;
+		optional float accessibility_medium = 8;
+		optional float accessibility_large = 9;
+		optional float accessibility_extra_large = 10;
+		optional float accessibility_extra_extra_large = 11;
+		optional float accessibility_extra_extra_extra_large = 12;
 	}
 	
 	/* protogen: merge reason = nested */
@@ -43,7 +43,7 @@ message IosDynamicFontSpec {
 	}
 
 	oneof spec {
-		IosFontScaler iosFontScaler = 1;
-		IosFontSizeValues iosFontSizeValues = 2;
+		IosFontScaler ios_font_scaler = 1;
+		IosFontSizeValues ios_font_size_values = 2;
 	}
 }

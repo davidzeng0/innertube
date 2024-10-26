@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointClipConfig {
-	optional ClipConfig clipConfig = 1;
+	optional ClipConfig clip_config = 1;
 }

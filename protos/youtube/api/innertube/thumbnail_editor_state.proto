@@ -13,9 +13,9 @@ option objc_class_prefix = "YTI";
 
 message ThumbnailEditorState {
 	repeated ThumbnailDetails stills = 1;
-	optional int32 stillId = 2;
-	optional string downloadUrl = 3;
-	optional bool autoEnhance = 4;
-	optional ThumbnailDetails customThumbnail = 5;
-	optional ThumbnailDetails customThumbnailEnhanced = 6;
+	optional int32 still_id = 2;
+	optional string download_url = 3;
+	optional bool auto_enhance = 4;
+	optional ThumbnailDetails custom_thumbnail = 5;
+	optional ThumbnailDetails custom_thumbnail_enhanced = 6;
 }

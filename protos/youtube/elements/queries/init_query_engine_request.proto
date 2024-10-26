@@ -14,7 +14,7 @@ option objc_class_prefix = "ELMQY";
 
 message InitQueryEngineRequest {
 	oneof dataSourceRegistryFactoryKind {
-		DataSourceRegistryFactoryBlockWeakRef dataSourceRegistryFactory = 3;
-		DataSourceRegistryFactoryBlockMovableRef movableDataSourceRegistryFactory = 4;
+		DataSourceRegistryFactoryBlockWeakRef data_source_registry_factory = 3;
+		DataSourceRegistryFactoryBlockMovableRef movable_data_source_registry_factory = 4;
 	}
 }

@@ -15,17 +15,17 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message HorizontalVideoShelfData {
-	optional float headerTopMargin = 2;
-	optional float collectionTopMargin = 3;
-	optional float collectionBottomMargin = 4;
-	optional bytes trackingParams = 5;
-	optional float shelfHeight = 7;
-	optional uint32 backgroundColor = 8;
-	repeated VideoCardData videoCards = 9;
+	optional float header_top_margin = 2;
+	optional float collection_top_margin = 3;
+	optional float collection_bottom_margin = 4;
+	optional bytes tracking_params = 5;
+	optional float shelf_height = 7;
+	optional uint32 background_color = 8;
+	repeated VideoCardData video_cards = 9;
 	optional .youtube.elements.EnvironmentData environment = 10;
-	optional bool useLargestCellSizingMode = 11;
-	optional .youtube.elements.Command onFirstVisible = 12;
-	optional string viewAllButtonText = 13;
-	optional .youtube.elements.Command onViewAll = 14;
-	optional .youtube.api.innertube.LoggingDirectives viewAllButtonLoggingDirectives = 18;
+	optional bool use_largest_cell_sizing_mode = 11;
+	optional .youtube.elements.Command on_first_visible = 12;
+	optional string view_all_button_text = 13;
+	optional .youtube.elements.Command on_view_all = 14;
+	optional .youtube.api.innertube.LoggingDirectives view_all_button_logging_directives = 18;
 }

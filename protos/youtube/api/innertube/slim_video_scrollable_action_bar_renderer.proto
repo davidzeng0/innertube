@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message SlimVideoScrollableActionBarRenderer {
 	repeated SlimMetadataButtonSupportedRenderers buttons = 1;
-	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offlineButtonTooltip = 2;
-	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offlineButtonPoorConnectivityTooltip = 3;
-	optional bytes trackingParams = 5;
+	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offline_button_tooltip = 2;
+	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offline_button_poor_connectivity_tooltip = 3;
+	optional bytes tracking_params = 5;
 }

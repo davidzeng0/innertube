@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message LoggingProperties {
-	optional string nodeKey = 2;
-	optional InteractionConfig interactionConfig = 3;
-	
+	optional string node_key = 2;
+	optional InteractionConfig interaction_config = 3;
+
 	extensions 900 to max;
 }

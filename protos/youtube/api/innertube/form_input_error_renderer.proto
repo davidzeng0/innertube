@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormInputErrorRenderer {
-	optional FormattedString errorText = 1;
+	optional FormattedString error_text = 1;
 }

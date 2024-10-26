@@ -13,5 +13,5 @@ option objc_class_prefix = "YTI";
 
 message PlayerToastCommand {
 	optional FormattedString text = 1;
-	optional int32 durationMs = 2;
+	optional int32 duration_ms = 2;
 }

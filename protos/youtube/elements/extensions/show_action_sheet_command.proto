@@ -15,13 +15,13 @@ option objc_class_prefix = "ELMPB";
 message ShowActionSheetCommand {
 	optional .youtube.elements.Element header = 1;
 	optional .youtube.elements.Element footer = 2;
-	repeated .youtube.elements.Element listOption = 3;
-	optional string sheetId = 4;
-	optional .youtube.elements.Command onAppear = 5;
-	optional bool shouldLogAsNewScreen = 7;
-	optional bool forceBottomSheetUi = 8;
-	optional int32 durationDisableCancelWhileLoadingMilliseconds = 10;
-	optional .youtube.elements.Element singleContentElement = 11;
-	
-	extensions 9 to 10;
+	repeated .youtube.elements.Element list_option = 3;
+	optional string sheet_id = 4;
+	optional .youtube.elements.Command on_appear = 5;
+	optional bool should_log_as_new_screen = 7;
+	optional bool force_bottom_sheet_ui = 8;
+	optional int32 duration_disable_cancel_while_loading_milliseconds = 10;
+	optional .youtube.elements.Element single_content_element = 11;
+
+	extensions 9;
 }

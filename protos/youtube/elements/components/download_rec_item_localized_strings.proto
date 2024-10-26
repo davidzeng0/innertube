@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadRecItemLocalizedStrings {
-	optional string downloadA11YLabel = 1;
-	optional string downloadingA11YLabel = 2;
-	optional string removeA11YLabel = 3;
+	optional string download_a_11_y_label = 1;
+	optional string downloading_a_11_y_label = 2;
+	optional string remove_a_11_y_label = 3;
 }

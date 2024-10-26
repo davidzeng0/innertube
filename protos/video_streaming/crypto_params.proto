@@ -14,5 +14,5 @@ option objc_class_prefix = "YTVS";
 message CryptoParams {
 	optional bytes hmac = 4;
 	optional bytes iv = 5;
-	optional CompressionType compressionType = 6;
+	optional CompressionType compression_type = 6;
 }

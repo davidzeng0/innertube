@@ -10,5 +10,5 @@ option java_package = "com.google.android.apps.youtube.proto";
 option objc_class_prefix = "YTVS";
 
 message OnesieLiveMetadataPromise {
-	optional string videoId = 1;
+	optional string video_id = 1;
 }

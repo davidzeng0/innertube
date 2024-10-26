@@ -12,10 +12,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message DataSaverConfig {
-	optional int64 simpleBitrateCap = 1;
-	repeated MobileConnectionType bitrateCappedConnectionTypes = 3;
-	optional bool useA1Subdomain = 4;
-	optional bool enableManualFormatPacing = 5;
-	optional bool enableDataPlanLogging = 6;
-	optional bool applyPacingForAllTraffic = 7;
+	optional int64 simple_bitrate_cap = 1;
+	repeated MobileConnectionType bitrate_capped_connection_types = 3;
+	optional bool use_a_1_subdomain = 4;
+	optional bool enable_manual_format_pacing = 5;
+	optional bool enable_data_plan_logging = 6;
+	optional bool apply_pacing_for_all_traffic = 7;
 }

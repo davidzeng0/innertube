@@ -15,9 +15,9 @@ option objc_class_prefix = "YTI";
 
 message PlaylistThumbnailOverlayRenderer {
 	optional PlaylistThumbnailOverlayThumbnailSupportedRenderers thumbnail = 1;
-	optional FormattedString videoCountText = 2;
+	optional FormattedString video_count_text = 2;
 	optional Icon icon = 3;
-	optional bytes trackingParams = 5;
+	optional bytes tracking_params = 5;
 	optional FormattedString text = 6;
-	optional uint32 backgroundColor = 7;
+	optional uint32 background_color = 7;
 }

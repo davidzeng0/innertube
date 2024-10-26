@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStartBroadcastEndpoint {
-	optional string videoId = 1;
-	optional StartBroadcastOption startOption = 2;
+	optional string video_id = 1;
+	optional StartBroadcastOption start_option = 2;
 }

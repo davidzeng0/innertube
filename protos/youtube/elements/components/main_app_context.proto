@@ -14,5 +14,5 @@ option objc_class_prefix = "ELMPB";
 
 message MainAppContext {
 	optional MainAppExperiments experiments = 1;
-	optional .youtube.api.innertube.ClientInfo.ClientName clientName = 2;
+	optional .youtube.api.innertube.ClientInfo.ClientName client_name = 2;
 }

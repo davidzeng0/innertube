@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadOptionsPickerExperiments {
-	optional bool enableEmUpsell = 1;
-	optional bool useOptionsPickerSubcomponents = 2;
+	optional bool enable_em_upsell = 1;
+	optional bool use_options_picker_subcomponents = 2;
 }

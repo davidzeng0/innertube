@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message InteractionLoggingDebugModeError {
-	optional int32 veType = 1;
-	optional int32 pageVeType = 2;
-	optional InteractionLoggingErrorType errorType = 3;
+	optional int32 ve_type = 1;
+	optional int32 page_ve_type = 2;
+	optional InteractionLoggingErrorType error_type = 3;
 }

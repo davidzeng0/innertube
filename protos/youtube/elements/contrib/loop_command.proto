@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.elements.contrib";
 option objc_class_prefix = "ELMPB";
 
 message LoopCommand {
-	optional string loopId = 1;
-	optional float delaySeconds = 2;
+	optional string loop_id = 1;
+	optional float delay_seconds = 2;
 	optional .youtube.elements.Command command = 3;
 }

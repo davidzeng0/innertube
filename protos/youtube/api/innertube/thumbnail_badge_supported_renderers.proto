@@ -16,9 +16,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailBadgeSupportedRenderers {
-	optional LiveBadgeRenderer liveBadgeRenderer = 50921414;
-	optional TextBadgeRenderer textBadgeRenderer = 50922968;
-	optional UpcomingEventBadgeRenderer upcomingEventBadgeRenderer = 50931187;
-	optional MusicPassBadgeRenderer musicPassBadge = 60170570;
-	optional MusicPivotBadgeRenderer musicPivotBadgeRenderer = 65013849;
+	optional LiveBadgeRenderer live_badge_renderer = 50921414;
+	optional TextBadgeRenderer text_badge_renderer = 50922968;
+	optional UpcomingEventBadgeRenderer upcoming_event_badge_renderer = 50931187;
+	optional MusicPassBadgeRenderer music_pass_badge = 60170570;
+	optional MusicPivotBadgeRenderer music_pivot_badge_renderer = 65013849;
 }

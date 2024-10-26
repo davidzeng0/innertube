@@ -14,6 +14,6 @@ option objc_class_prefix = "YTI";
 
 message PlaylistVideoThumbnailRenderer {
 	optional ThumbnailDetails thumbnail = 1;
-	optional bytes trackingParams = 3;
+	optional bytes tracking_params = 3;
 	optional Command command = 4;
 }

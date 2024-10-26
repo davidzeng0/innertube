@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message GestureAccessibilityInfo {
-	optional string accessibilityLabel = 1;
+	optional string accessibility_label = 1;
 }

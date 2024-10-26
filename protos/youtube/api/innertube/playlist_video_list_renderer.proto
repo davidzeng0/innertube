@@ -18,15 +18,15 @@ option objc_class_prefix = "YTI";
 
 message PlaylistVideoListRenderer {
 	repeated PlaylistVideoListSupportedRenderers contents = 1;
-	optional string playlistId = 2;
-	optional bool isEditable = 3;
+	optional string playlist_id = 2;
+	optional bool is_editable = 3;
 	repeated PlaylistVideoListSupportedContinuations continuations = 4;
-	optional bool canReorder = 5;
-	optional bytes trackingParams = 9;
+	optional bool can_reorder = 5;
+	optional bytes tracking_params = 9;
 	repeated PlaylistVideoListNotificationSupportedRenderers notifications = 10;
-	optional Command onReorderEndpoint = 11;
-	optional Renderer sortFilterMenu = 12;
+	optional Command on_reorder_endpoint = 11;
+	optional Renderer sort_filter_menu = 12;
 	optional Datas binding = 13;
-	optional string targetId = 14;
-	optional int32 selectedIndex = 15;
+	optional string target_id = 14;
+	optional int32 selected_index = 15;
 }

@@ -16,10 +16,10 @@ option objc_class_prefix = "YTI";
 message AdSignalsInfo {
 	repeated KeyValuePair params = 1;
 	optional string bid = 2;
-	optional string mutsuId = 3;
-	optional string consentBumpState = 4;
-	optional ATTrackingManagerAuthorizationStatus atTrackingManagerAuthorizationStatus = 6;
-	optional string advertisingId = 7;
-	optional DeviceIdType advertisingIdSignalType = 8;
-	optional bool limitAdTracking = 9;
+	optional string mutsu_id = 3;
+	optional string consent_bump_state = 4;
+	optional ATTrackingManagerAuthorizationStatus at_tracking_manager_authorization_status = 6;
+	optional string advertising_id = 7;
+	optional DeviceIdType advertising_id_signal_type = 8;
+	optional bool limit_ad_tracking = 9;
 }

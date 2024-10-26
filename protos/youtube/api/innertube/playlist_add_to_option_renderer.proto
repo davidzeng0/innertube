@@ -24,17 +24,17 @@ message PlaylistAddToOptionRenderer {
 		ALL = 3;
 	}
 
-	optional string playlistId = 1;
+	optional string playlist_id = 1;
 	optional FormattedString title = 2;
 	optional PrivacyStatus privacy = 3;
-	optional FormattedString shortBylineText = 4;
-	optional ContainsSelectedVideos containsSelectedVideos = 5;
-	optional Icon privacyIcon = 6;
-	optional Command addToPlaylistServiceEndpoint = 7;
-	optional Command removeFromPlaylistServiceEndpoint = 8;
-	optional PlaylistThumbnailSupportedRenderers thumbnailRenderer = 9;
-	optional bytes trackingParams = 11;
-	repeated Icon additionalIcons = 12;
-	
+	optional FormattedString short_byline_text = 4;
+	optional ContainsSelectedVideos contains_selected_videos = 5;
+	optional Icon privacy_icon = 6;
+	optional Command add_to_playlist_service_endpoint = 7;
+	optional Command remove_from_playlist_service_endpoint = 8;
+	optional PlaylistThumbnailSupportedRenderers thumbnail_renderer = 9;
+	optional bytes tracking_params = 11;
+	repeated Icon additional_icons = 12;
+
 	extensions 1000 to max;
 }

@@ -15,10 +15,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UnsubscribeResponse {
-	optional ResponseContext responseContext = 1;
-	repeated LoggingUrl loggingUrls = 3;
+	optional ResponseContext response_context = 1;
+	repeated LoggingUrl logging_urls = 3;
 	repeated Command actions = 5;
-	optional bytes trackingParams = 7;
-	optional int64 timestampMs = 8;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional bytes tracking_params = 7;
+	optional int64 timestamp_ms = 8;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

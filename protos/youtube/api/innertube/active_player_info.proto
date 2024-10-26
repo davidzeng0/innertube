@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ActivePlayerInfo {
-	optional bytes playerContextParams = 1;
+	optional bytes player_context_params = 1;
 }

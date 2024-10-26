@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message StoryboardsSupportedRenderers {
 	oneof renderer {
-		PlayerStoryboardSpecRenderer playerStoryboardSpecRenderer = 55735497;
-		PlayerLiveStoryboardSpecRenderer playerLiveStoryboardSpecRenderer = 70276274;
+		PlayerStoryboardSpecRenderer player_storyboard_spec_renderer = 55735497;
+		PlayerLiveStoryboardSpecRenderer player_live_storyboard_spec_renderer = 70276274;
 	}
 }

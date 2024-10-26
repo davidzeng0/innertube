@@ -20,20 +20,30 @@ option objc_class_prefix = "YTI";
 message MealbarPromoRenderer {
 	/* protogen: merge reason = nested */
 	message MealbarPromoButtonSupportedRenderers {
-		optional ButtonRenderer buttonRenderer = 65153809;
+		optional ButtonRenderer button_renderer = 65153809;
 	}
 	
 	/* protogen: merge reason = nested */
 	message MealbarPromoDismissData {
 		optional Command endpoint = 1;
-		optional bytes trackingParams = 3;
+		optional bytes tracking_params = 3;
 	}
 	
 	/* protogen: merge reason = nested */
 	message MealbarPromoPlayerSupportedDatas {
 		oneof data {
-			YouThereData youThereData = 126827209;
+			YouThereData you_there_data = 126827209;
 		}
+	}
+	
+	/* protogen: merge reason = nested */
+	enum MealbarPromoStyle {
+		STYLE_UNKNOWN = 0;
+		STYLE_DEFAULT = 1;
+		STYLE_MODAL = 2;
+		STYLE_MESSAGE = 3;
+		STYLE_MODERN_DARK = 4;
+		STYLE_MODERN = 5;
 	}
 	
 	/* protogen: merge reason = nested */
@@ -50,36 +60,26 @@ message MealbarPromoRenderer {
 		TRIGGER_CONDITION_USER_IDLE_ADS_REQUIREMENTS = 9;
 		TRIGGER_CONDITION_MIDROLL_AD_BREAKS = 10;
 	}
-	
-	/* protogen: merge reason = nested */
-	enum MealbarPromoStyle {
-		STYLE_UNKNOWN = 0;
-		STYLE_DEFAULT = 1;
-		STYLE_MODAL = 2;
-		STYLE_MESSAGE = 3;
-		STYLE_MODERN_DARK = 4;
-		STYLE_MODERN = 5;
-	}
 
 	optional ThumbnailDetails icon = 1;
-	repeated FormattedString messageTexts = 2;
-	optional MealbarPromoButtonSupportedRenderers actionButton = 3;
-	optional MealbarPromoButtonSupportedRenderers dismissButton = 4;
-	optional Command swipeDismissEndpoint = 5;
-	optional MealbarPromoTriggerCondition triggerCondition = 6;
+	repeated FormattedString message_texts = 2;
+	optional MealbarPromoButtonSupportedRenderers action_button = 3;
+	optional MealbarPromoButtonSupportedRenderers dismiss_button = 4;
+	optional Command swipe_dismiss_endpoint = 5;
+	optional MealbarPromoTriggerCondition trigger_condition = 6;
 	optional MealbarPromoStyle style = 7;
-	optional bytes trackingParams = 9;
-	repeated Command impressionEndpoints = 10;
-	optional bool isVisible = 11;
-	optional Icon alternateIcon = 13;
-	optional FormattedString messageTitle = 14;
-	optional bool bypassRateLimit = 15;
-	optional Command seenEndpoint = 16;
-	optional int32 seenTimeMs = 17;
-	optional MealbarPromoPlayerSupportedDatas playerData = 18;
-	optional bool isPersistent = 19;
-	repeated ClientFrequencyCapConfig clientFrequencyCapConfigs = 20;
-	optional string targetId = 21;
-	optional ThumbnailDetails backgroundImage = 22;
-	optional int32 dwellTimeMs = 25;
+	optional bytes tracking_params = 9;
+	repeated Command impression_endpoints = 10;
+	optional bool is_visible = 11;
+	optional Icon alternate_icon = 13;
+	optional FormattedString message_title = 14;
+	optional bool bypass_rate_limit = 15;
+	optional Command seen_endpoint = 16;
+	optional int32 seen_time_ms = 17;
+	optional MealbarPromoPlayerSupportedDatas player_data = 18;
+	optional bool is_persistent = 19;
+	repeated ClientFrequencyCapConfig client_frequency_cap_configs = 20;
+	optional string target_id = 21;
+	optional ThumbnailDetails background_image = 22;
+	optional int32 dwell_time_ms = 25;
 }

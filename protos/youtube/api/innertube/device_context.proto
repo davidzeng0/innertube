@@ -12,17 +12,17 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message DeviceContext {
-	optional bool wifiConnected = 1;
-	optional bool screenActive = 2;
-	optional uint32 wifiId = 3;
-	optional bool setByClient = 4;
-	optional bool isBrowseBackgroundFetchEnabled = 6;
-	optional int32 appLastOpenedTimeBucket = 7;
-	optional bool deviceCharging = 8;
-	optional bool powerSaveMode = 9;
-	optional int32 currentBatteryPercent = 10;
-	optional int64 taskScheduledTimeMillis = 11;
-	optional int64 clientCurrentTimeMillis = 12;
-	optional NotificationsSetting notificationsSetting = 13;
-	optional int32 appLastOpenedMaxHours = 15;
+	optional bool wifi_connected = 1;
+	optional bool screen_active = 2;
+	optional uint32 wifi_id = 3;
+	optional bool set_by_client = 4;
+	optional bool is_browse_background_fetch_enabled = 6;
+	optional int32 app_last_opened_time_bucket = 7;
+	optional bool device_charging = 8;
+	optional bool power_save_mode = 9;
+	optional int32 current_battery_percent = 10;
+	optional int64 task_scheduled_time_millis = 11;
+	optional int64 client_current_time_millis = 12;
+	optional NotificationsSetting notifications_setting = 13;
+	optional int32 app_last_opened_max_hours = 15;
 }

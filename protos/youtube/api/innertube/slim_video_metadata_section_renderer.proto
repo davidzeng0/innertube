@@ -14,12 +14,12 @@ option objc_class_prefix = "YTI";
 
 message SlimVideoMetadataSectionRenderer {
 	repeated Renderer contents = 1;
-	optional string videoId = 2;
-	optional Command updatedMetadataCommand = 3;
-	optional bytes trackingParams = 5;
-	optional string sectionIdentifier = 6;
-	optional bool expandedByDefault = 8;
-	optional bool hideSectionTopInset = 9;
-	
+	optional string video_id = 2;
+	optional Command updated_metadata_command = 3;
+	optional bytes tracking_params = 5;
+	optional string section_identifier = 6;
+	optional bool expanded_by_default = 8;
+	optional bool hide_section_top_inset = 9;
+
 	extensions 1000 to max;
 }

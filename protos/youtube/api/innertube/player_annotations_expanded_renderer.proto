@@ -14,9 +14,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerAnnotationsExpandedRenderer {
-	optional FeaturedVideo featuredVideo = 1;
-	optional FeaturedChannel featuredChannel = 2;
+	optional FeaturedVideo featured_video = 1;
+	optional FeaturedChannel featured_channel = 2;
 	repeated CallToAction ctas = 3;
-	optional bool allowSwipeDismiss = 5;
-	optional string annotationId = 6;
+	optional bool allow_swipe_dismiss = 5;
+	optional string annotation_id = 6;
 }

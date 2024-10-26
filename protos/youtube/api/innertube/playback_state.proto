@@ -10,9 +10,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaybackState {
-	optional bool isOfflinePlayback = 1;
-	optional bool isAudioPlayback = 2;
-	optional bool isMdxConnected = 3;
-	optional bool isBluetoothConnected = 4;
-	optional bool isBackgroundPlayback = 5;
+	optional bool is_offline_playback = 1;
+	optional bool is_audio_playback = 2;
+	optional bool is_mdx_connected = 3;
+	optional bool is_bluetooth_connected = 4;
+	optional bool is_background_playback = 5;
 }

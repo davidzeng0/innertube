@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message CompatibilityOptions {
-	repeated VersionCompatibilityRange iosVersions = 1;
-	repeated VersionCompatibilityRange androidVersions = 2;
-	optional string iosSupportNotes = 3;
-	optional string androidSupportNotes = 4;
+	repeated VersionCompatibilityRange ios_versions = 1;
+	repeated VersionCompatibilityRange android_versions = 2;
+	optional string ios_support_notes = 3;
+	optional string android_support_notes = 4;
 }

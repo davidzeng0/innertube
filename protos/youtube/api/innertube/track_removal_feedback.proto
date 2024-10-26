@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message TrackRemovalFeedback {
-	optional string feedbackToken = 1;
-	optional string containerId = 2;
+	optional string feedback_token = 1;
+	optional string container_id = 2;
 }

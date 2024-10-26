@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message HeartbeatRequestParams {
-	optional UnpluggedHeartbeatRequestParams unpluggedParams = 1;
-	repeated HeartbeatCheckType heartbeatChecks = 2;
+	optional UnpluggedHeartbeatRequestParams unplugged_params = 1;
+	repeated HeartbeatCheckType heartbeat_checks = 2;
 }

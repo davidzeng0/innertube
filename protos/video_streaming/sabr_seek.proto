@@ -12,7 +12,7 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message SabrSeek {
-	optional int64 unnamedField1 = 1;
-	optional int32 unnamedField2 = 2;
-	optional .youtube.unknown.Unnamed4308 unnamedField3 = 3;
+	optional int64 unnamed_field_1 = 1;
+	optional int32 unnamed_field_2 = 2;
+	optional .youtube.unknown.Unnamed4308 unnamed_field_3 = 3;
 }

@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.contrib";
 option objc_class_prefix = "ELMPB";
 
 message StartLoopCommand {
-	optional string loopId = 1;
+	optional string loop_id = 1;
 }

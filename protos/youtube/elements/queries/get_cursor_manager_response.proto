@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message GetCursorManagerResponse {
-	optional CursorManagerBlockWeakRef cursorManager = 1;
+	optional CursorManagerBlockWeakRef cursor_manager = 1;
 }

@@ -18,5 +18,5 @@ message DatePickerTypeEnum {
 		COLLECT_FULL_BIRTHDATE = 3;
 	}
 
-	optional DatePickerType datePickerType = 1;
+	optional DatePickerType date_picker_type = 1;
 }

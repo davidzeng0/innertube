@@ -16,9 +16,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamingEventData {
-	optional WebRTCHandshakeOfferEventData webrtcHandshakeOffer = 1;
-	optional WebRTCHandshakeAnswerEventData webrtcHandshakeAnswer = 2;
-	optional WebRTCHandshakeErrorEventData webrtcHandshakeError = 3;
-	optional CostreamStartNotificationEventData costreamStartNotification = 4;
-	optional RemoteParticipantEventData remoteParticipant = 5;
+	optional WebRTCHandshakeOfferEventData webrtc_handshake_offer = 1;
+	optional WebRTCHandshakeAnswerEventData webrtc_handshake_answer = 2;
+	optional WebRTCHandshakeErrorEventData webrtc_handshake_error = 3;
+	optional CostreamStartNotificationEventData costream_start_notification = 4;
+	optional RemoteParticipantEventData remote_participant = 5;
 }

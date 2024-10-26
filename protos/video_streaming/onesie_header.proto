@@ -17,16 +17,16 @@ option objc_class_prefix = "YTVS";
 
 message OnesieHeader {
 	optional OnesieHeaderType type = 1;
-	optional string videoId = 2;
+	optional string video_id = 2;
 	optional string itag = 3;
-	optional CryptoParams cryptoParams = 4;
-	optional uint64 lastModified = 5;
-	optional int64 unnamedField6 = 6;
-	optional int64 expectedMediaSizeBytes = 7;
-	repeated string restrictedFormats = 11;
-	optional TimeRange unnamedField14 = 14;
+	optional CryptoParams crypto_params = 4;
+	optional uint64 last_modified = 5;
+	optional int64 unnamed_field_6 = 6;
+	optional int64 expected_media_size_bytes = 7;
+	repeated string restricted_formats = 11;
+	optional TimeRange unnamed_field_14 = 14;
 	optional string xtags = 15;
-	optional int64 sequenceNumber = 18;
-	optional .youtube.unknown.Unnamed6346 unnamedField23 = 23;
-	optional .youtube.unknown.Unnamed418 unnamedField24 = 24;
+	optional int64 sequence_number = 18;
+	optional .youtube.unknown.Unnamed6346 unnamed_field_23 = 23;
+	optional .youtube.unknown.Unnamed418 unnamed_field_24 = 24;
 }

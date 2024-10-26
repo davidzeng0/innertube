@@ -13,8 +13,8 @@ option objc_class_prefix = "YTI";
 
 message UnsubscribeRequest {
 	optional InnerTubeContext context = 1;
-	repeated string channelIds = 2;
-	optional string siloName = 3;
+	repeated string channel_ids = 2;
+	optional string silo_name = 3;
 	optional string params = 4;
-	optional string clientFeature = 5;
+	optional string client_feature = 5;
 }

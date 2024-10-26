@@ -14,12 +14,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamabilityRenderer {
-	optional string videoId = 1;
-	optional string broadcastId = 2;
-	optional Command streamTransitionEndpoint = 3;
-	optional LiveStreamSlateSupportedRenderers offlineSlate = 4;
-	optional int64 pollDelayMs = 5;
-	optional bool switchStreamsImmediately = 6;
-	optional bool displayEndscreen = 7;
-	optional StreamTransitionTiming transitionTiming = 10;
+	optional string video_id = 1;
+	optional string broadcast_id = 2;
+	optional Command stream_transition_endpoint = 3;
+	optional LiveStreamSlateSupportedRenderers offline_slate = 4;
+	optional int64 poll_delay_ms = 5;
+	optional bool switch_streams_immediately = 6;
+	optional bool display_endscreen = 7;
+	optional StreamTransitionTiming transition_timing = 10;
 }

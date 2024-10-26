@@ -12,9 +12,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message Ping {
-	optional string baseUrl = 1;
-	optional int32 offsetMilliseconds = 2;
+	optional string base_url = 1;
+	optional int32 offset_milliseconds = 2;
 	repeated Header headers = 3;
-	optional bool offlineDelayAllowed = 4;
-	optional bytes serializedAdPingMetadata = 5;
+	optional bool offline_delay_allowed = 4;
+	optional bytes serialized_ad_ping_metadata = 5;
 }

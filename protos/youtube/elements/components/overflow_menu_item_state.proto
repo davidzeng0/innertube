@@ -10,9 +10,9 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message OverflowMenuItemState {
-	optional string selectionText = 1;
-	optional bool isAvailable = 2;
-	optional bool isToggled = 3;
-	optional bool isHighlighted = 4;
-	optional bool isDisabled = 5;
+	optional string selection_text = 1;
+	optional bool is_available = 2;
+	optional bool is_toggled = 3;
+	optional bool is_highlighted = 4;
+	optional bool is_disabled = 5;
 }

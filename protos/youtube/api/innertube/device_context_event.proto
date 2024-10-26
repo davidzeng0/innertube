@@ -14,15 +14,15 @@ option objc_class_prefix = "YTI";
 message DeviceContextEvent {
 	/* protogen: merge reason = nested */
 	message DeviceContextFeaturesMdx {
-		repeated MdxDevice detectedMdxDevices = 1;
+		repeated MdxDevice detected_mdx_devices = 1;
 	}
 	
 	/* protogen: merge reason = nested */
 	message DeviceContextFeaturesNotifTarget {
-		optional bytes deviceMessagingIdInBytes = 2;
+		optional bytes device_messaging_id_in_bytes = 2;
 	}
 
 	optional DeviceContextFeaturesMdx mdx = 5;
-	optional DeviceContextFeaturesNotifTarget notifTarget = 6;
-	optional bool testNotification = 7;
+	optional DeviceContextFeaturesNotifTarget notif_target = 6;
+	optional bool test_notification = 7;
 }

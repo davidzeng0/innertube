@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadRecItemExperiments {
-	optional DownloadButtonExperiments downloadButtonExperiments = 1;
+	optional DownloadButtonExperiments download_button_experiments = 1;
 }

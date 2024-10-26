@@ -18,6 +18,6 @@ message WatchMetadataAppPromoRenderer {
 	optional FormattedString title = 2;
 	optional FormattedString subtitle = 3;
 	optional ButtonSupportedRenderers button = 4;
-	optional bytes trackingParams = 6;
-	optional bool enableAmsterdamUi = 7;
+	optional bytes tracking_params = 6;
+	optional bool enable_amsterdam_ui = 7;
 }

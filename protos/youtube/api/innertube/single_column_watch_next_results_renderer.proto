@@ -25,8 +25,8 @@ message SingleColumnWatchNextResultsRenderer {
 	message SingleColumnWatchNextResultsSupportedRenderers {
 		oneof renderer {
 			SectionListRenderer results = 49399797;
-			MinimalVideoMetadataRenderer minimalVideoMetadataRenderer = 69950105;
-			WatchNextTabbedResultsRenderer watchNextTabbedResultsRenderer = 91700600;
+			MinimalVideoMetadataRenderer minimal_video_metadata_renderer = 69950105;
+			WatchNextTabbedResultsRenderer watch_next_tabbed_results_renderer = 91700600;
 		}
 	}
 	
@@ -47,8 +47,8 @@ message SingleColumnWatchNextResultsRenderer {
 	/* protogen: merge reason = nested */
 	message SingleColumnWatchNextLockScreenSupportedRenderers {
 		oneof renderer {
-			LockScreenRenderer lockScreen = 61479009;
-			UnpluggedLockScreenRenderer unpluggedLockScreenRenderer = 122746779;
+			LockScreenRenderer lock_screen = 61479009;
+			UnpluggedLockScreenRenderer unplugged_lock_screen_renderer = 122746779;
 		}
 	}
 	
@@ -60,15 +60,15 @@ message SingleColumnWatchNextResultsRenderer {
 	/* protogen: merge reason = nested */
 	message SingleColumnWatchNextEndScreenSupportedRenderers {
 		oneof renderer {
-			WatchNextEndScreenRenderer endScreen = 57158578;
+			WatchNextEndScreenRenderer end_screen = 57158578;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnWatchNextPivotSupportedRenderers {
 		oneof renderer {
-			SectionListRenderer sectionListRenderer = 49399797;
-			HorizontalListRenderer horizontalListRenderer = 92565330;
+			SectionListRenderer section_list_renderer = 49399797;
+			HorizontalListRenderer horizontal_list_renderer = 92565330;
 		}
 	}
 	
@@ -80,10 +80,10 @@ message SingleColumnWatchNextResultsRenderer {
 	optional SingleColumnWatchNextResultsSupportedRenderers results = 1;
 	optional SingleColumnWatchNextPlaylistSupportedRenderers playlist = 2;
 	optional SingleColumnWatchNextAutoplaySupportedRenderers autoplay = 3;
-	optional SingleColumnWatchNextLockScreenSupportedRenderers lockScreen = 4;
-	optional SingleColumnWatchNextPostTipScreenSupportedRenderers postTipScreen = 5;
-	optional ConversationBarSupportedRenderers conversationBar = 6;
-	optional SingleColumnWatchNextEndScreenSupportedRenderers endScreen = 7;
+	optional SingleColumnWatchNextLockScreenSupportedRenderers lock_screen = 4;
+	optional SingleColumnWatchNextPostTipScreenSupportedRenderers post_tip_screen = 5;
+	optional ConversationBarSupportedRenderers conversation_bar = 6;
+	optional SingleColumnWatchNextEndScreenSupportedRenderers end_screen = 7;
 	optional SingleColumnWatchNextPivotSupportedRenderers pivot = 8;
 	optional SingleColumnWatchNextAutomixPlaylistPanelSupportedRenderers automix = 9;
 }

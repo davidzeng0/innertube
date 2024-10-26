@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message TooltipPositionEntity {
-	optional .youtube.api.innertube.TooltipSuggestedPosition.TooltipPositionType tooltipPositionType = 1;
-	optional float nativeContainerWidth = 2;
-	optional float nativeContainerHeight = 3;
-	optional float arrowX = 4;
+	optional .youtube.api.innertube.TooltipSuggestedPosition.TooltipPositionType tooltip_position_type = 1;
+	optional float native_container_width = 2;
+	optional float native_container_height = 3;
+	optional float arrow_x = 4;
 }

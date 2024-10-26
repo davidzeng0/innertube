@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message EmbeddedPlayerOverlayVideoDetailsExpandedRenderer {
 	optional FormattedString title = 1;
-	optional Renderer subscribeButton = 2;
+	optional Renderer subscribe_button = 2;
 	optional FormattedString subtitle = 3;
-	optional bytes trackingParams = 5;
+	optional bytes tracking_params = 5;
 }

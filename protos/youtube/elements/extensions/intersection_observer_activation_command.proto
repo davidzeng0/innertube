@@ -17,6 +17,6 @@ message IntersectionObserverActivationCommand {
 		DISABLE = 2;
 	}
 
-	optional string groupKey = 1;
+	optional string group_key = 1;
 	optional OperationType operation = 2;
 }

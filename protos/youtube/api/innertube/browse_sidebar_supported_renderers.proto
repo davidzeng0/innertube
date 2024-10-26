@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message BrowseSidebarSupportedRenderers {
 	oneof renderer {
-		PlaylistSidebarRenderer playlistSidebarRenderer = 157509376;
+		PlaylistSidebarRenderer playlist_sidebar_renderer = 157509376;
 	}
 }

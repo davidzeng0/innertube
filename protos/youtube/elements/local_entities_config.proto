@@ -13,5 +13,5 @@ option objc_class_prefix = "ELMPB";
 
 message LocalEntitiesConfig {
 	repeated LocalEntityMapping mappings = 1;
-	optional int32 resultField = 2;
+	optional int32 result_field = 2;
 }

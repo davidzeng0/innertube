@@ -17,6 +17,6 @@ message AnalyticsChartType {
 	optional int32 width = 2;
 	optional int32 height = 3;
 	optional SeriesConfiguration series = 5;
-	optional .youtube.elements.Command onDataPointSelected = 6;
-	optional int32 axisLabelSize = 7;
+	optional .youtube.elements.Command on_data_point_selected = 6;
+	optional int32 axis_label_size = 7;
 }

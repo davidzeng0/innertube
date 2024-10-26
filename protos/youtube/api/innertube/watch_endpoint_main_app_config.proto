@@ -14,6 +14,6 @@ option objc_class_prefix = "YTI";
 
 message WatchEndpointMainAppConfig {
 	optional MainAppEndpointTheme theme = 1;
-	optional SeekSource seekSource = 2;
-	optional bool enablePlayerResponseCacheKeyRelaxation = 3;
+	optional SeekSource seek_source = 2;
+	optional bool enable_player_response_cache_key_relaxation = 3;
 }

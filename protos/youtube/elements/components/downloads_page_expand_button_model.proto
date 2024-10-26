@@ -16,10 +16,10 @@ option objc_class_prefix = "ELMPB";
 
 message DownloadsPageExpandButtonModel {
 	optional .youtube.elements.Context context = 2;
-	optional string buttonText = 3;
-	optional .youtube.api.innertube.DownloadsPageEndpoint.FilterType filterType = 4;
-	optional int32 uiType = 5;
-	optional .youtube.elements.EnvironmentData environmentData = 6;
-	optional string downloadsPageStateEntityKey = 7;
-	optional .youtube.api.innertube.DownloadsPageExpandButtonVariant buttonStyle = 8;
+	optional string button_text = 3;
+	optional .youtube.api.innertube.DownloadsPageEndpoint.FilterType filter_type = 4;
+	optional int32 ui_type = 5;
+	optional .youtube.elements.EnvironmentData environment_data = 6;
+	optional string downloads_page_state_entity_key = 7;
+	optional .youtube.api.innertube.DownloadsPageExpandButtonVariant button_style = 8;
 }

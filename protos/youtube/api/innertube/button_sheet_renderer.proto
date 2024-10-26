@@ -15,5 +15,5 @@ option objc_class_prefix = "YTI";
 message ButtonSheetRenderer {
 	repeated ButtonSheetItemSupportedRenderers buttons = 1;
 	optional FormattedString title = 2;
-	optional bytes trackingParams = 3;
+	optional bytes tracking_params = 3;
 }

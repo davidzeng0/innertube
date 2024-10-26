@@ -15,9 +15,9 @@ option objc_class_prefix = "YTI";
 
 message AdPlacementRenderer {
 	optional AdPlacementSupportedRenderers renderer = 2;
-	optional string elementId = 3;
-	repeated Ping placementStartPings = 6;
-	repeated Ping placementEndPings = 7;
-	optional int64 driftRecoveryMs = 8;
-	optional AdSlotLoggingData adSlotLoggingData = 9;
+	optional string element_id = 3;
+	repeated Ping placement_start_pings = 6;
+	repeated Ping placement_end_pings = 7;
+	optional int64 drift_recovery_ms = 8;
+	optional AdSlotLoggingData ad_slot_logging_data = 9;
 }

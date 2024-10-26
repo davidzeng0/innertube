@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message PlayabilityMessageSupportedRenderers {
 	oneof renderer {
-		AlertRenderer alertRenderer = 58057493;
-		UnpluggedTimeCounterRenderer unpluggedTimeCounterRenderer = 394510275;
+		AlertRenderer alert_renderer = 58057493;
+		UnpluggedTimeCounterRenderer unplugged_time_counter_renderer = 394510275;
 	}
 }

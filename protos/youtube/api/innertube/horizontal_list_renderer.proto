@@ -19,17 +19,17 @@ option objc_class_prefix = "YTI";
 
 message HorizontalListRenderer {
 	repeated HorizontalListSupportedRenderers items = 1;
-	optional FormattedString viewAllText = 3;
-	optional bytes trackingParams = 4;
+	optional FormattedString view_all_text = 3;
+	optional bytes tracking_params = 4;
 	repeated HorizontalListSupportedContinuations continuations = 5;
-	optional int32 collapsedItemCount = 6;
-	optional int32 visibleItemCount = 7;
-	optional Command viewAllEndpoint = 8;
-	optional int32 selectedIndex = 9;
-	optional Renderer nextButton = 11;
-	optional Renderer previousButton = 12;
-	optional ActiveStateDescriptor activeStateDescriptor = 13;
-	optional LoggingDirectives loggingDirectives = 999;
-	
+	optional int32 collapsed_item_count = 6;
+	optional int32 visible_item_count = 7;
+	optional Command view_all_endpoint = 8;
+	optional int32 selected_index = 9;
+	optional Renderer next_button = 11;
+	optional Renderer previous_button = 12;
+	optional ActiveStateDescriptor active_state_descriptor = 13;
+	optional LoggingDirectives logging_directives = 999;
+
 	extensions 1000 to max;
 }

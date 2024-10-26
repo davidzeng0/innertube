@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpointContextKidsErrorConfig {
-	optional FormattedString errorText = 2;
+	optional FormattedString error_text = 2;
 }

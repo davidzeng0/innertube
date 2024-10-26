@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message BrowseSurveyTriggerSupportedRenderers {
 	oneof renderer {
-		SurveyTriggerRenderer surveyTriggerRenderer = 84469052;
-		CommandWrapperPopUpSurveyRenderer commandWrapperPopUpSurveyRenderer = 364669234;
+		SurveyTriggerRenderer survey_trigger_renderer = 84469052;
+		CommandWrapperPopUpSurveyRenderer command_wrapper_pop_up_survey_renderer = 364669234;
 	}
 }

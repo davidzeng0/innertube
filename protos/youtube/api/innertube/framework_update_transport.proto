@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FrameworkUpdateTransport {
-	extensions 1 to 4;
+	extensions 1 to 3;
 }

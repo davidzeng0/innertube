@@ -20,28 +20,28 @@ option objc_class_prefix = "YTI";
 
 message ResponseContext {
 	optional .gdata.Errors errors = 1;
-	optional string visitorData = 2;
-	repeated ServiceTrackingParams serviceTrackingParams = 6;
-	optional uint32 maxAgeSeconds = 7;
-	optional string entityTag = 8;
-	optional bool notModified = 9;
-	optional string logEntryString = 10;
-	optional string extraDebugData = 11;
-	optional string veTree = 13;
-	optional ExperimentalData experimentalData = 14;
-	repeated string spacecastAddressCandidates = 15;
-	optional GlobalConfigGroup globalConfigGroup = 16;
+	optional string visitor_data = 2;
+	repeated ServiceTrackingParams service_tracking_params = 6;
+	optional uint32 max_age_seconds = 7;
+	optional string entity_tag = 8;
+	optional bool not_modified = 9;
+	optional string log_entry_string = 10;
+	optional string extra_debug_data = 11;
+	optional string ve_tree = 13;
+	optional ExperimentalData experimental_data = 14;
+	repeated string spacecast_address_candidates = 15;
+	optional GlobalConfigGroup global_config_group = 16;
 	optional string bloat = 17;
-	optional string logEntryStringJson = 19;
-	optional bool isIncognito = 20;
-	optional UnpluggedResponseContext unpluggedResponseContext = 21;
-	optional ConsistencyTokenJar consistencyTokenJar = 22;
-	optional string sherlogFrontendUrl = 23;
-	optional string locationPlayabilityToken = 24;
-	optional StateTags stateTags = 26;
-	optional InnerTubeTokenJar innertubeTokenJar = 27;
-	
-	extensions 3 to 4;
-	
+	optional string log_entry_string_json = 19;
+	optional bool is_incognito = 20;
+	optional UnpluggedResponseContext unplugged_response_context = 21;
+	optional ConsistencyTokenJar consistency_token_jar = 22;
+	optional string sherlog_frontend_url = 23;
+	optional string location_playability_token = 24;
+	optional StateTags state_tags = 26;
+	optional InnerTubeTokenJar innertube_token_jar = 27;
+
+	extensions 3;
+
 	extensions 1000 to max;
 }

@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message TrackingUrl {
-	optional string baseUrl = 1;
-	optional int32 elapsedMediaTimeSeconds = 2;
+	optional string base_url = 1;
+	optional int32 elapsed_media_time_seconds = 2;
 	repeated Header headers = 3;
 }

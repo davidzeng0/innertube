@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UnsubscribeEndpoint {
-	repeated string channelIds = 1;
-	optional string siloName = 2;
+	repeated string channel_ids = 1;
+	optional string silo_name = 2;
 	optional string params = 4;
-	optional UnsubscribeConfirmDialogSupportedRenderers unsubscribeDialog = 5;
+	optional UnsubscribeConfirmDialogSupportedRenderers unsubscribe_dialog = 5;
 }

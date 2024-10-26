@@ -14,8 +14,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ConfigResponse {
-	optional ResponseContext responseContext = 1;
-	optional string configData = 2;
-	optional ColdConfigGroup rawColdConfigGroup = 4;
-	optional HotConfigGroup rawHotConfigGroup = 5;
+	optional ResponseContext response_context = 1;
+	optional string config_data = 2;
+	optional ColdConfigGroup raw_cold_config_group = 4;
+	optional HotConfigGroup raw_hot_config_group = 5;
 }

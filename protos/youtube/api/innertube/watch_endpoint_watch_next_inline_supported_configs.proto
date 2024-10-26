@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message WatchEndpointWatchNextInlineSupportedConfigs {
 	oneof configs {
-		WatchEndpointWatchNextInlineConfig watchEndpointWatchNextInlineConfig = 128400768;
+		WatchEndpointWatchNextInlineConfig watch_endpoint_watch_next_inline_config = 128400768;
 	}
 }

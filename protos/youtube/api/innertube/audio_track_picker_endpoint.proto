@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AudioTrackPickerEndpoint {
-	optional string videoId = 1;
-	
+	optional string video_id = 1;
+
 	extensions 1000 to max;
 }

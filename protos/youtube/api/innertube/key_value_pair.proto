@@ -16,9 +16,9 @@ message KeyValuePair {
 
 	oneof valueOneof {
 		string value = 2;
-		FormattedString formattedStringValue = 3;
-		int32 intValue = 4;
-		bool boolValue = 5;
-		double floatValue = 6;
+		FormattedString formatted_string_value = 3;
+		int32 int_value = 4;
+		bool bool_value = 5;
+		double float_value = 6;
 	}
 }

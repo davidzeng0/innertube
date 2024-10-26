@@ -14,5 +14,5 @@ option objc_class_prefix = "YTI";
 
 message MobileDataPlanApiConfigRequest {
 	optional InnerTubeContext context = 1;
-	optional ClientConnectionType connectionType = 3;
+	optional ClientConnectionType connection_type = 3;
 }

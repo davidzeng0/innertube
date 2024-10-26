@@ -13,10 +13,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailLoadInfo {
-	optional uint32 imageWidth = 1;
-	optional uint32 imageHeight = 2;
-	optional uint32 imageSizeBytes = 3;
+	optional uint32 image_width = 1;
+	optional uint32 image_height = 2;
+	optional uint32 image_size_bytes = 3;
 	optional bool error = 4;
-	optional LatencyImageCacheType imageCacheType = 5;
-	optional LatencyImageRequestorType imageRequestorType = 6;
+	optional LatencyImageCacheType image_cache_type = 5;
+	optional LatencyImageRequestorType image_requestor_type = 6;
 }

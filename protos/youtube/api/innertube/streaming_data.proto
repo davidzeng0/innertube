@@ -15,19 +15,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message StreamingData {
-	optional int64 expiresInSeconds = 1;
+	optional int64 expires_in_seconds = 1;
 	repeated FormatStream formats = 2;
-	repeated FormatStream adaptiveFormats = 3;
-	optional string dashManifestUrl = 4;
-	optional string hlsManifestUrl = 5;
-	repeated FormatStream hlsFormats = 6;
-	optional string probeUrl = 7;
-	repeated LicenseInfo licenseInfos = 8;
-	optional string onesieStreamingUrl = 11;
-	optional float aspectRatio = 13;
-	optional string drmParams = 14;
-	optional string serverAbrStreamingUrl = 15;
-	repeated MetadataFormat metadataFormats = 16;
-	repeated DrmTrackType initialAuthorizedDrmTrackTypes = 17;
-	optional string streamingUrlTemplate = 19;
+	repeated FormatStream adaptive_formats = 3;
+	optional string dash_manifest_url = 4;
+	optional string hls_manifest_url = 5;
+	repeated FormatStream hls_formats = 6;
+	optional string probe_url = 7;
+	repeated LicenseInfo license_infos = 8;
+	optional string onesie_streaming_url = 11;
+	optional float aspect_ratio = 13;
+	optional string drm_params = 14;
+	optional string server_abr_streaming_url = 15;
+	repeated MetadataFormat metadata_formats = 16;
+	repeated DrmTrackType initial_authorized_drm_track_types = 17;
+	optional string streaming_url_template = 19;
 }

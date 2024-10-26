@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointMusicSupportedConfigs {
-	optional WatchEndpointMusicConfig watchEndpointMusicConfig = 136657325;
+	optional WatchEndpointMusicConfig watch_endpoint_music_config = 136657325;
 }

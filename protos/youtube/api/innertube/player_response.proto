@@ -108,90 +108,83 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerResponse {
-	optional ResponseContext responseContext = 1;
-	optional PlayabilityStatus playabilityStatus = 2;
-	optional StreamingData streamingData = 4;
-	optional HeartbeatParams heartbeatParams = 6;
-	repeated PlayerAdsSupportedRenderers playerAds = 7;
-	optional PlaybackTracking playbackTracking = 9;
+	optional ResponseContext response_context = 1;
+	optional PlayabilityStatus playability_status = 2;
+	optional StreamingData streaming_data = 4;
+	optional HeartbeatParams heartbeat_params = 6;
+	repeated PlayerAdsSupportedRenderers player_ads = 7;
+	optional PlaybackTracking playback_tracking = 9;
 	optional CaptionsSupportedRenderers captions = 10;
-	optional VideoDetails videoDetails = 11;
+	optional VideoDetails video_details = 11;
 	repeated AnnotationsSupportedRenderers annotations = 13;
-	optional OfflineState offlineState = 14;
-	optional PlayerConfig playerConfig = 15;
+	optional OfflineState offline_state = 14;
+	optional PlayerConfig player_config = 15;
 	optional StoryboardsSupportedRenderers storyboards = 16;
 	optional Renderer threed = 17;
 	optional InfoCardsSupportedRenderers cards = 20;
-	optional bytes trackingParams = 21;
+	optional bytes tracking_params = 21;
 	optional AttestationSupportedRenderers attestation = 22;
-	optional string adParams = 23;
-	optional string adNextParams = 25;
-	optional VideoQualityPromoSupportedRenderers videoQualityPromoSupportedRenderers = 26;
-	optional string adBreakParams = 27;
+	optional string ad_params = 23;
+	optional string ad_next_params = 25;
+	optional VideoQualityPromoSupportedRenderers video_quality_promo_supported_renderers = 26;
+	optional string ad_break_params = 27;
 	repeated PlayerMessageSupportedRenderers messages = 30;
 	optional EndscreenSupportedRenderers endscreen = 32;
-	optional string ibaDebugInfo = 34;
+	optional string iba_debug_info = 34;
 	optional SurveySupportedRenderers survey = 35;
-	repeated Command onResponseReceivedEndpoints = 36;
-	optional PlayerCompanionAdsSupportedRenderers playerCompanionAd = 38;
-	optional bool hideAddtoButtonSmallScreen = 39;
-	optional bool hideShareButtonSmallScreen = 40;
-	optional PaidContentOverlaySupportedRenderers paidContentOverlay = 41;
+	repeated Command on_response_received_endpoints = 36;
+	optional PlayerCompanionAdsSupportedRenderers player_companion_ad = 38;
+	optional bool hide_addto_button_small_screen = 39;
+	optional bool hide_share_button_small_screen = 40;
+	optional PaidContentOverlaySupportedRenderers paid_content_overlay = 41;
 	optional PlayerControlsOverlaySupportedRenderers overlay = 42;
-	optional InStreamPlayerCtaAdsSupportedRenderers instreamPlayerCtaAd = 44;
-	repeated PlayerAdsPlacementSupportedRenderers adPlacements = 45;
-	optional AuxiliaryUi auxiliaryUi = 46;
-	optional bytes prefetchedPrerollAdBreakResponse = 48;
-	repeated Command onResponseReceivedActions = 49;
-	repeated InterstitialPod interstitialPods = 51;
-	optional bytes onesiePlayerServiceInfo = 53;
-	optional Renderer ctaOverlay = 54;
-	optional VideoInteractions videoInteractions = 55;
-	optional ClipConfig clipConfig = 56;
-	optional AccountLinkingConfig accountLinkingConfig = 58;
-	repeated Renderer playerOverlayLayerRenderers = 60;
-	optional Renderer miniPlayerByline = 61;
-	repeated PlayerCueRange playerCueRanges = 62;
-	repeated ContextualPlaybackConfig contextualPlaybackConfigs = 63;
-	optional DeferredPlayerData deferredPlayerData = 64;
-	optional string clientParam = 66;
-	repeated Renderer adSlots = 68;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
-	
+	optional InStreamPlayerCtaAdsSupportedRenderers instream_player_cta_ad = 44;
+	repeated PlayerAdsPlacementSupportedRenderers ad_placements = 45;
+	optional AuxiliaryUi auxiliary_ui = 46;
+	optional bytes prefetched_preroll_ad_break_response = 48;
+	repeated Command on_response_received_actions = 49;
+	repeated InterstitialPod interstitial_pods = 51;
+	optional bytes onesie_player_service_info = 53;
+	optional Renderer cta_overlay = 54;
+	optional VideoInteractions video_interactions = 55;
+	optional ClipConfig clip_config = 56;
+	optional AccountLinkingConfig account_linking_config = 58;
+	repeated Renderer player_overlay_layer_renderers = 60;
+	optional Renderer mini_player_byline = 61;
+	repeated PlayerCueRange player_cue_ranges = 62;
+	repeated ContextualPlaybackConfig contextual_playback_configs = 63;
+	optional DeferredPlayerData deferred_player_data = 64;
+	optional string client_param = 66;
+	repeated Renderer ad_slots = 68;
+	optional FrameworkUpdateTransport framework_updates = 777;
+
 	extensions 1000 to max;
 }
 
 /* protogen: merge reason = circular */
 message PlayerAdsSupportedRenderers {
 	oneof renderer {
-		VmapRenderer vmapRenderer = 48841103;
-		PlayerLegacyDesktopWatchAdsRenderer playerLegacyDesktopWatchAdsRenderer = 55860145;
-		PlayerInstreamAdRenderer playerInstreamAdRenderer = 63112829;
-		VastRenderer vastRenderer = 63178286;
-		AdBreakRenderer adBreakRenderer = 84813246;
-		AdIntroRenderer adIntroRenderer = 88254013;
-		AdVideoEndRenderer adVideoEndRenderer = 89145698;
-		AdPlayerOverflowButtonRenderer adPlayerOverflowButtonRenderer = 97725940;
-		AdMessageRenderer adMessageRenderer = 201403539;
+		VmapRenderer vmap_renderer = 48841103;
+		PlayerLegacyDesktopWatchAdsRenderer player_legacy_desktop_watch_ads_renderer = 55860145;
+		PlayerInstreamAdRenderer player_instream_ad_renderer = 63112829;
+		VastRenderer vast_renderer = 63178286;
+		AdBreakRenderer ad_break_renderer = 84813246;
+		AdIntroRenderer ad_intro_renderer = 88254013;
+		AdVideoEndRenderer ad_video_end_renderer = 89145698;
+		AdPlayerOverflowButtonRenderer ad_player_overflow_button_renderer = 97725940;
+		AdMessageRenderer ad_message_renderer = 201403539;
 	}
 }
 
 /* protogen: merge reason = circular */
 message PlayerInstreamAdRenderer {
-	optional PlayerResponse playerResponse = 1;
-	optional PlayerRequest playerRequest = 2;
-	optional float navigationConfidence = 3;
+	optional PlayerResponse player_response = 1;
+	optional PlayerRequest player_request = 2;
+	optional float navigation_confidence = 3;
 }
 
 /* protogen: merge reason = circular */
 message CommentRenderer {
-	/* protogen: merge reason = nested */
-	enum CommentBackgroundStyleType {
-		BG_STYLE_UNKNOWN = 0;
-		BG_STYLE_DEFAULT = 1;
-		BG_STYLE_GREY = 2;
-	}
-	
 	/* protogen: merge reason = nested */
 	enum CommentAvatarSizeType {
 		AVATAR_SIZE_UNKNOWN = 0;
@@ -199,99 +192,106 @@ message CommentRenderer {
 		AVATAR_SIZE_SMALL = 2;
 	}
 
-	optional FormattedString authorText = 1;
-	optional ThumbnailDetails authorThumbnail = 2;
-	optional Command authorEndpoint = 3;
-	optional FormattedString contentText = 4;
-	optional FormattedString publishedTimeText = 5;
-	optional bool isLiked = 6;
-	optional int32 likeCount = 7;
-	optional MenuSupportedRenderers actionMenu = 8;
-	optional string commentId = 9;
-	optional CommentActionButtonsSupportedRenderers actionButtons = 10;
-	optional bool authorIsChannelOwner = 11;
+	/* protogen: merge reason = nested */
+	enum CommentBackgroundStyleType {
+		BG_STYLE_UNKNOWN = 0;
+		BG_STYLE_DEFAULT = 1;
+		BG_STYLE_GREY = 2;
+	}
+
+	optional FormattedString author_text = 1;
+	optional ThumbnailDetails author_thumbnail = 2;
+	optional Command author_endpoint = 3;
+	optional FormattedString content_text = 4;
+	optional FormattedString published_time_text = 5;
+	optional bool is_liked = 6;
+	optional int32 like_count = 7;
+	optional MenuSupportedRenderers action_menu = 8;
+	optional string comment_id = 9;
+	optional CommentActionButtonsSupportedRenderers action_buttons = 10;
+	optional bool author_is_channel_owner = 11;
 
 	oneof linkedBadge {
-		FormattedString linkedCommentText = 12;
-		BadgeSupportedRenderers linkedCommentBadge = 43;
+		FormattedString linked_comment_text = 12;
+		BadgeSupportedRenderers linked_comment_badge = 43;
 	}
 
-	optional ThumbnailDetails currentUserReplyThumbnail = 13;
-	optional FormattedString editableContentText = 14;
-	optional LikeStatus voteStatus = 17;
-	optional BadgeSupportedRenderers authorVerifiedBadge = 18;
-	optional bytes trackingParams = 19;
-	optional string authorId = 21;
-	optional CommentReplyFormSupportedRenderers replyForm = 23;
-	optional BackstageAttachmentSupportedRenderers backstageAttachment = 24;
-	optional FormattedString initialReplyText = 25;
-	optional FormattedString prologueText = 26;
-	optional bool viewerIsAuthor = 27;
-	optional FormattedString voteCount = 28;
-	optional CommentAvatarSizeType avatarSize = 30;
+	optional ThumbnailDetails current_user_reply_thumbnail = 13;
+	optional FormattedString editable_content_text = 14;
+	optional LikeStatus vote_status = 17;
+	optional BadgeSupportedRenderers author_verified_badge = 18;
+	optional bytes tracking_params = 19;
+	optional string author_id = 21;
+	optional CommentReplyFormSupportedRenderers reply_form = 23;
+	optional BackstageAttachmentSupportedRenderers backstage_attachment = 24;
+	optional FormattedString initial_reply_text = 25;
+	optional FormattedString prologue_text = 26;
+	optional bool viewer_is_author = 27;
+	optional FormattedString vote_count = 28;
+	optional CommentAvatarSizeType avatar_size = 30;
 
 	oneof backgroundStyling {
-		CommentBackgroundStyleType backgroundStyle = 31;
+		CommentBackgroundStyleType background_style = 31;
 	}
 
-	optional Command detailViewEndpoint = 32;
-	optional CommentBadgeSupportedRenderers pinnedCommentBadge = 33;
-	optional ButtonSupportedRenderers expandButton = 34;
-	optional ButtonSupportedRenderers collapseButton = 35;
-	optional CommentSupportedRenderers creatorReply = 36;
-	optional Command replyCreateEndpoint = 38;
-	optional CommentBadgeSupportedRenderers authorCommentBadge = 39;
-	optional bool showSeparator = 40;
-	optional CommentCreationSupportedRenderers replyCreation = 41;
-	optional CommentPollStatus pollStatus = 42;
-	optional CreatorHeartSupportedRenderers creatorHeart = 44;
+	optional Command detail_view_endpoint = 32;
+	optional CommentBadgeSupportedRenderers pinned_comment_badge = 33;
+	optional ButtonSupportedRenderers expand_button = 34;
+	optional ButtonSupportedRenderers collapse_button = 35;
+	optional CommentSupportedRenderers creator_reply = 36;
+	optional Command reply_create_endpoint = 38;
+	optional CommentBadgeSupportedRenderers author_comment_badge = 39;
+	optional bool show_separator = 40;
+	optional CommentCreationSupportedRenderers reply_creation = 41;
+	optional CommentPollStatus poll_status = 42;
+	optional CreatorHeartSupportedRenderers creator_heart = 44;
 	repeated Command actions = 45;
-	optional bool iosEnablePostsV2 = 47;
-	optional bool iosEnableBackstageFullscreenImageViewer = 48;
-	optional FormattedString fullScreenImageViewerAuthorText = 49;
-	optional bool enablePostsV2 = 50;
-	optional CommentModerationButtonsSupportedRenderers moderationButtons = 51;
-	optional int64 protoCreationMs = 52;
-	optional EngagementToolbarStyle engagementToolbarStyle = 53;
-	optional bool androidEnableBackstageFullscreenImageViewer = 54;
-	optional FormattedString moderationReasonText = 55;
-	optional Renderer videoThumbnail = 56;
+	optional bool ios_enable_posts_v_2 = 47;
+	optional bool ios_enable_backstage_fullscreen_image_viewer = 48;
+	optional FormattedString full_screen_image_viewer_author_text = 49;
+	optional bool enable_posts_v_2 = 50;
+	optional CommentModerationButtonsSupportedRenderers moderation_buttons = 51;
+	optional int64 proto_creation_ms = 52;
+	optional EngagementToolbarStyle engagement_toolbar_style = 53;
+	optional bool android_enable_backstage_fullscreen_image_viewer = 54;
+	optional FormattedString moderation_reason_text = 55;
+	optional Renderer video_thumbnail = 56;
 	optional CommentStyle style = 57;
-	optional CommentBadgeSupportedRenderers sponsorCommentBadge = 58;
-	repeated CommentExpStyle experimentStyles = 59;
-	optional CommentBadgeSupportedRenderers sponsorsOnlyBadge = 60;
-	optional ButtonSupportedRenderers detailViewButton = 62;
-	repeated ThumbnailDetails authorThumbnails = 65;
-	optional bool iosUpdateElementStoreForPoll = 66;
-	optional int32 maxPostTextLines = 67;
-	optional bool containsCreatorReply = 68;
-	optional bool isCreatorReply = 69;
-	optional int32 renderingLatencyInjectionMs = 72;
-	optional int32 threadNestingLevel = 77;
-	optional Renderer reelResponseButton = 78;
-	optional bool pulseHighlight = 79;
-	repeated Renderer authorReputation = 80;
-	optional Renderer profileCardHint = 81;
-	optional int32 replyCount = 82;
-	optional Renderer viewReplies = 83;
-	optional Renderer hideReplies = 84;
-	optional bool hiddenByDefault = 85;
-	optional FormattedString repliesMetadataText = 86;
-	optional bool isChannelWideTopCommenter = 89;
-	optional bool androidUseLogScrollingVisibilityUpdates = 90;
-	optional AccessibilitySupportedDatas accessibilityData = 91;
-	optional FormattedString repliesCount = 92;
-	optional Renderer paidCommentChipRenderer = 93;
-	optional string aadcGuidelinesStateEntityKey = 95;
-	optional Command showAadcGuidelinesBottomSheetCommand = 96;
-	optional bool hideReplyIcon = 97;
-	optional LoggingDirectives loggingDirectives = 999;
+	optional CommentBadgeSupportedRenderers sponsor_comment_badge = 58;
+	repeated CommentExpStyle experiment_styles = 59;
+	optional CommentBadgeSupportedRenderers sponsors_only_badge = 60;
+	optional ButtonSupportedRenderers detail_view_button = 62;
+	repeated ThumbnailDetails author_thumbnails = 65;
+	optional bool ios_update_element_store_for_poll = 66;
+	optional int32 max_post_text_lines = 67;
+	optional bool contains_creator_reply = 68;
+	optional bool is_creator_reply = 69;
+	optional int32 rendering_latency_injection_ms = 72;
+	optional int32 thread_nesting_level = 77;
+	optional Renderer reel_response_button = 78;
+	optional bool pulse_highlight = 79;
+	repeated Renderer author_reputation = 80;
+	optional Renderer profile_card_hint = 81;
+	optional int32 reply_count = 82;
+	optional Renderer view_replies = 83;
+	optional Renderer hide_replies = 84;
+	optional bool hidden_by_default = 85;
+	optional FormattedString replies_metadata_text = 86;
+	optional bool is_channel_wide_top_commenter = 89;
+	optional bool android_use_log_scrolling_visibility_updates = 90;
+	optional AccessibilitySupportedDatas accessibility_data = 91;
+	optional FormattedString replies_count = 92;
+	optional Renderer paid_comment_chip_renderer = 93;
+	optional string aadc_guidelines_state_entity_key = 95;
+	optional Command show_aadc_guidelines_bottom_sheet_command = 96;
+	optional bool hide_reply_icon = 97;
+	optional LoggingDirectives logging_directives = 999;
 }
 
 /* protogen: merge reason = circular */
 message CommentSupportedRenderers {
 	oneof renderer {
-		CommentRenderer commentRenderer = 62285947;
+		CommentRenderer comment_renderer = 62285947;
 	}
 }
 
@@ -299,59 +299,59 @@ message CommentSupportedRenderers {
 message SettingCategoryCollectionRenderer {
 	optional FormattedString title = 2;
 	repeated SettingCategoryCollectionSupportedRenderers items = 3;
-	optional SettingCategoryId categoryId = 4;
+	optional SettingCategoryId category_id = 4;
 	optional Icon icon = 5;
 	optional FormattedString subtitle = 6;
 	optional bool focused = 7;
-	optional bytes trackingParams = 9;
+	optional bytes tracking_params = 9;
 }
 
 /* protogen: merge reason = circular */
 message SettingCategoryCollectionSupportedRenderers {
-	optional SettingSingleOptionMenuRenderer settingSingleOptionMenuRenderer = 61321220;
-	optional SettingBooleanRenderer settingBooleanRenderer = 61331416;
-	optional SettingCategoryCollectionRenderer settingCategoryCollectionRenderer = 66930374;
-	optional SettingActionRenderer settingActionRenderer = 71709717;
-	optional SettingCategorySectionRenderer settingCategorySectionRenderer = 75120871;
-	optional SettingNotificationListRenderer settingNotificationListRenderer = 75560919;
-	optional SettingReadOnlyItemRenderer settingReadOnlyItemRenderer = 76886494;
-	optional ClientStorageUsageRenderer storageUsageRenderer = 84082909;
-	optional SettingTextRenderer settingTextRenderer = 84887323;
-	optional CaptionPreviewRenderer captionPreviewRenderer = 85346949;
-	optional CaptionSettingCategoryRenderer captionSettingCategoryRenderer = 85446662;
-	optional SettingSpacerDecorationRenderer settingSpacerDecorationRenderer = 124684298;
-	optional UnpluggedSubscriptionsSettingCategoryRenderer unpluggedSubscriptionsSettingCategoryRenderer = 128367722;
-	optional NotificationEntrySettingRenderer notificationEntrySettingRenderer = 133017926;
-	optional NotificationTypeOptInRenderer notificationTypeOptInRenderer = 133044997;
-	optional UnpluggedLocationSettingRenderer unpluggedLocationSettingRenderer = 133074661;
-	optional TvMdxSettingRenderer tvMdxSettingRenderer = 134624760;
-	optional UnpluggedEmptyStateRenderer unpluggedEmptyStateRenderer = 135842323;
-	optional UnpluggedBillingDetailsRenderer unpluggedBillingDetailsRenderer = 136270667;
-	optional UnpluggedAppTourSettingRenderer unpluggedAppTourSettingRenderer = 139240142;
-	optional UnpluggedFamilyFlowMessageRenderer unpluggedFamilyFlowMessageRenderer = 142640027;
-	optional AutoOfflineStorageUsageRenderer autoOfflineStorageUsageRenderer = 147386845;
-	optional GamingAccountLinkSettingRenderer gamingAccountLinkSettingRenderer = 155765234;
-	optional GamingThirdPartySettingRenderer gamingThirdPartySettingRenderer = 155905127;
-	optional UnpluggedDisclaimerSettingRenderer unpluggedDisclaimerSettingRenderer = 157490845;
-	optional UnpluggedLiveGuideSettingCategoryRenderer unpluggedLiveGuideSettingCategoryRenderer = 174749716;
-	optional UnpluggedNotificationSectionRenderer unpluggedNotificationSectionRenderer = 177528310;
-	optional UnpluggedCurrentLocationSettingItemRenderer unpluggedCurrentLocationSettingItemRenderer = 192807389;
-	optional UnpluggedBannerRenderer unpluggedBannerRenderer = 224687714;
-	optional UnpluggedStorageUsageRenderer unpluggedStorageUsageRenderer = 339341032;
-	optional UnpluggedSettingItemRenderer unpluggedSettingItemRenderer = 339688886;
+	optional SettingSingleOptionMenuRenderer setting_single_option_menu_renderer = 61321220;
+	optional SettingBooleanRenderer setting_boolean_renderer = 61331416;
+	optional SettingCategoryCollectionRenderer setting_category_collection_renderer = 66930374;
+	optional SettingActionRenderer setting_action_renderer = 71709717;
+	optional SettingCategorySectionRenderer setting_category_section_renderer = 75120871;
+	optional SettingNotificationListRenderer setting_notification_list_renderer = 75560919;
+	optional SettingReadOnlyItemRenderer setting_read_only_item_renderer = 76886494;
+	optional ClientStorageUsageRenderer storage_usage_renderer = 84082909;
+	optional SettingTextRenderer setting_text_renderer = 84887323;
+	optional CaptionPreviewRenderer caption_preview_renderer = 85346949;
+	optional CaptionSettingCategoryRenderer caption_setting_category_renderer = 85446662;
+	optional SettingSpacerDecorationRenderer setting_spacer_decoration_renderer = 124684298;
+	optional UnpluggedSubscriptionsSettingCategoryRenderer unplugged_subscriptions_setting_category_renderer = 128367722;
+	optional NotificationEntrySettingRenderer notification_entry_setting_renderer = 133017926;
+	optional NotificationTypeOptInRenderer notification_type_opt_in_renderer = 133044997;
+	optional UnpluggedLocationSettingRenderer unplugged_location_setting_renderer = 133074661;
+	optional TvMdxSettingRenderer tv_mdx_setting_renderer = 134624760;
+	optional UnpluggedEmptyStateRenderer unplugged_empty_state_renderer = 135842323;
+	optional UnpluggedBillingDetailsRenderer unplugged_billing_details_renderer = 136270667;
+	optional UnpluggedAppTourSettingRenderer unplugged_app_tour_setting_renderer = 139240142;
+	optional UnpluggedFamilyFlowMessageRenderer unplugged_family_flow_message_renderer = 142640027;
+	optional AutoOfflineStorageUsageRenderer auto_offline_storage_usage_renderer = 147386845;
+	optional GamingAccountLinkSettingRenderer gaming_account_link_setting_renderer = 155765234;
+	optional GamingThirdPartySettingRenderer gaming_third_party_setting_renderer = 155905127;
+	optional UnpluggedDisclaimerSettingRenderer unplugged_disclaimer_setting_renderer = 157490845;
+	optional UnpluggedLiveGuideSettingCategoryRenderer unplugged_live_guide_setting_category_renderer = 174749716;
+	optional UnpluggedNotificationSectionRenderer unplugged_notification_section_renderer = 177528310;
+	optional UnpluggedCurrentLocationSettingItemRenderer unplugged_current_location_setting_item_renderer = 192807389;
+	optional UnpluggedBannerRenderer unplugged_banner_renderer = 224687714;
+	optional UnpluggedStorageUsageRenderer unplugged_storage_usage_renderer = 339341032;
+	optional UnpluggedSettingItemRenderer unplugged_setting_item_renderer = 339688886;
 }
 
 /* protogen: merge reason = circular */
 message SettingCategorySectionRenderer {
 	optional FormattedString title = 1;
 	optional FormattedString tooltip = 2;
-	optional Command serviceEndpoint = 3;
+	optional Command service_endpoint = 3;
 	repeated SettingCategoryCollectionSupportedRenderers items = 4;
 	optional Icon icon = 5;
 	optional string identifier = 7;
-	optional bytes trackingParams = 9;
-	repeated ClientSettingItem clientSettingDependencies = 10;
-	optional Renderer iconLink = 12;
+	optional bytes tracking_params = 9;
+	repeated ClientSettingItem client_setting_dependencies = 10;
+	optional Renderer icon_link = 12;
 }
 
 /* protogen: merge reason = circular */
@@ -362,10 +362,10 @@ message CaptionSettingCategoryRenderer {
 
 /* protogen: merge reason = circular */
 message CaptionCategorySupportedRenderers {
-	optional SettingSingleOptionMenuRenderer settingSingleOptionMenuRenderer = 61321220;
-	optional SettingCategorySectionRenderer settingCategorySectionRenderer = 75120871;
-	optional CaptionPreviewRenderer captionPreviewRenderer = 85346949;
-	optional CaptionCustomOptionsSectionRenderer captionCustomOptionsSectionRenderer = 85732916;
+	optional SettingSingleOptionMenuRenderer setting_single_option_menu_renderer = 61321220;
+	optional SettingCategorySectionRenderer setting_category_section_renderer = 75120871;
+	optional CaptionPreviewRenderer caption_preview_renderer = 85346949;
+	optional CaptionCustomOptionsSectionRenderer caption_custom_options_section_renderer = 85732916;
 }
 
 /* protogen: merge reason = circular */
@@ -378,18 +378,18 @@ message CaptionCustomOptionsSectionRenderer {
 message OptionsRenderer {
 	repeated OptionItemSupportedRenderers items = 1;
 	optional FormattedString title = 2;
-	optional bytes trackingParams = 4;
-	optional ButtonSupportedRenderers submitButton = 5;
+	optional bytes tracking_params = 4;
+	optional ButtonSupportedRenderers submit_button = 5;
 	optional string key = 6;
 }
 
 /* protogen: merge reason = circular */
 message OptionItemSupportedRenderers {
-	optional OptionServiceItemRenderer serviceItem = 77615207;
-	optional OptionNavigationItemRenderer navigationItem = 77694497;
-	optional OptionsRenderer subOptions = 77875886;
-	optional OptionSelectableItemRenderer optionSelectableItemRenderer = 111079109;
-	optional KidsPopoverMenuRenderer kidsPopoverMenuRenderer = 487031440;
+	optional OptionServiceItemRenderer service_item = 77615207;
+	optional OptionNavigationItemRenderer navigation_item = 77694497;
+	optional OptionsRenderer sub_options = 77875886;
+	optional OptionSelectableItemRenderer option_selectable_item_renderer = 111079109;
+	optional KidsPopoverMenuRenderer kids_popover_menu_renderer = 487031440;
 }
 
 /* protogen: merge reason = circular */
@@ -397,15 +397,15 @@ message OptionSelectableItemRenderer {
 	optional FormattedString text = 1;
 	optional Icon icon = 2;
 	optional AccessibilitySupportedDatas accessibility = 4;
-	optional bytes trackingParams = 6;
-	repeated OptionItemSupportedRenderers subOptions = 8;
-	optional OptionsConfirmDialogSupportedRenderers confirmDialog = 9;
-	optional bool disableSubmitButton = 10;
-	optional Command submitEndpoint = 12;
-	optional Command submitNavigationEndpoint = 13;
+	optional bytes tracking_params = 6;
+	repeated OptionItemSupportedRenderers sub_options = 8;
+	optional OptionsConfirmDialogSupportedRenderers confirm_dialog = 9;
+	optional bool disable_submit_button = 10;
+	optional Command submit_endpoint = 12;
+	optional Command submit_navigation_endpoint = 13;
 	repeated Command actions = 14;
-	repeated Command clickCommands = 15;
-	optional AccessibilityData subOptionsAccessibility = 16;
-	optional int32 preselectedIndex = 17;
+	repeated Command click_commands = 15;
+	optional AccessibilityData sub_options_accessibility = 16;
+	optional int32 preselected_index = 17;
 	optional FormattedString subtext = 18;
 }

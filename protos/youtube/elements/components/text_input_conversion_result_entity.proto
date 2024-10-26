@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message TextInputConversionResultEntity {
-	optional int64 convertedValue = 1;
-	optional .youtube.elements.i18n.TextInputValidationState validationState = 2;
-	optional string counterpartEntityId = 3;
+	optional int64 converted_value = 1;
+	optional .youtube.elements.i18n.TextInputValidationState validation_state = 2;
+	optional string counterpart_entity_id = 3;
 }

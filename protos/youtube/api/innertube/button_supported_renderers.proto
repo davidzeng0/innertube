@@ -15,8 +15,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ButtonSupportedRenderers {
-	optional LikeButtonRenderer likeButtonRenderer = 60091038;
-	optional ButtonRenderer buttonRenderer = 65153809;
-	optional ToggleButtonRenderer toggleButtonRenderer = 79971800;
-	optional SearchFiltersButtonRenderer searchFiltersButtonRenderer = 87962861;
+	optional LikeButtonRenderer like_button_renderer = 60091038;
+	optional ButtonRenderer button_renderer = 65153809;
+	optional ToggleButtonRenderer toggle_button_renderer = 79971800;
+	optional SearchFiltersButtonRenderer search_filters_button_renderer = 87962861;
 }

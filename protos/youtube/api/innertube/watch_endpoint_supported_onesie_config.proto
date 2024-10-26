@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointSupportedOnesieConfig {
-	optional PlaybackInitSegmentConfig playbackInitSegmentConfig = 79857191;
-	optional IosPlaybackOnesieConfig iosPlaybackOnesieConfig = 146179543;
+	optional PlaybackInitSegmentConfig playback_init_segment_config = 79857191;
+	optional IosPlaybackOnesieConfig ios_playback_onesie_config = 146179543;
 }

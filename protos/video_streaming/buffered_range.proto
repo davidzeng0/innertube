@@ -14,11 +14,11 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message BufferedRange {
-	optional FormatId formatId = 1;
-	optional int64 unnamedField2 = 2;
-	optional int64 unnamedField3 = 3;
-	optional int64 sequenceNumber1 = 4;
-	optional int64 sequenceNumber2 = 5;
-	optional TimeRange timeRange = 6;
-	optional .youtube.unknown.Unnamed9835 unnamedField7 = 7;
+	optional FormatId format_id = 1;
+	optional int64 unnamed_field_2 = 2;
+	optional int64 unnamed_field_3 = 3;
+	optional int64 sequence_number_1 = 4;
+	optional int64 sequence_number_2 = 5;
+	optional TimeRange time_range = 6;
+	optional .youtube.unknown.Unnamed9835 unnamed_field_7 = 7;
 }

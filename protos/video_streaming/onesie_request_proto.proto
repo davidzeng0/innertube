@@ -16,12 +16,12 @@ option objc_class_prefix = "YTVS";
 
 message OnesieRequestProto {
 	repeated string urls = 1;
-	optional ClientAbrState abrState = 2;
-	optional .youtube.api.innertube.EncryptedInnertubeRequest innertubeRequest = 3;
-	optional bytes onesieUstreamerConfig = 4;
-	optional int32 maxVp9Height = 5;
-	optional int32 clientDisplayHeight = 6;
-	optional StreamerContext streamerContext = 10;
-	optional .youtube.unknown.Unnamed472 unnamedField13 = 13;
-	repeated BufferedRange bufferedRanges = 14;
+	optional ClientAbrState abr_state = 2;
+	optional .youtube.api.innertube.EncryptedInnertubeRequest innertube_request = 3;
+	optional bytes onesie_ustreamer_config = 4;
+	optional int32 max_vp9_height = 5;
+	optional int32 client_display_height = 6;
+	optional StreamerContext streamer_context = 10;
+	optional .youtube.unknown.Unnamed472 unnamed_field_13 = 13;
+	repeated BufferedRange buffered_ranges = 14;
 }

@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message HeartbeatPolicy {
-	optional int32 baseHeartbeatFrequencyMs = 1;
-	optional float heartbeatDecayFactor = 2;
-	optional int32 cutoffDurationMs = 3;
+	optional int32 base_heartbeat_frequency_ms = 1;
+	optional float heartbeat_decay_factor = 2;
+	optional int32 cutoff_duration_ms = 3;
 }

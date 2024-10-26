@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message WatchNextSurveyTriggerSupportedRenderers {
 	oneof renderer {
-		SurveyTriggerRenderer surveyTriggerRenderer = 84469052;
+		SurveyTriggerRenderer survey_trigger_renderer = 84469052;
 	}
 }

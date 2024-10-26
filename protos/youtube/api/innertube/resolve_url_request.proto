@@ -15,9 +15,9 @@ option objc_class_prefix = "YTI";
 message ResolveUrlRequest {
 	optional InnerTubeContext context = 1;
 	optional string url = 2;
-	optional string referringApp = 3;
+	optional string referring_app = 3;
 	optional string referrer = 4;
-	optional PlayerRequest playerRequest = 5;
-	optional bool suppressAutoplay = 6;
-	optional bytes parentTrackingParams = 7;
+	optional PlayerRequest player_request = 5;
+	optional bool suppress_autoplay = 6;
+	optional bytes parent_tracking_params = 7;
 }

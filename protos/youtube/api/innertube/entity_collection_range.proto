@@ -10,9 +10,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityCollectionRange {
-	optional string snapshotToken = 2;
-	optional string sortType = 3;
-	optional int32 startRangeIndex = 5;
-	optional int32 minCount = 6;
-	optional int32 scrollIndex = 8;
+	optional string snapshot_token = 2;
+	optional string sort_type = 3;
+	optional int32 start_range_index = 5;
+	optional int32 min_count = 6;
+	optional int32 scroll_index = 8;
 }

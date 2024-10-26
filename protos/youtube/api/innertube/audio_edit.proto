@@ -12,13 +12,13 @@ option objc_class_prefix = "YTI";
 message AudioEdit {
 	/* protogen: merge reason = nested */
 	message SpeechEnhancement {
-		optional bool didProcess = 1;
-		optional bool isApplied = 2;
-		optional int32 tryCount = 3;
+		optional bool did_process = 1;
+		optional bool is_applied = 2;
+		optional int32 try_count = 3;
 	}
 
 	oneof audioEdit {
-		bool isMuted = 1;
-		SpeechEnhancement speechEnhancement = 2;
+		bool is_muted = 1;
+		SpeechEnhancement speech_enhancement = 2;
 	}
 }

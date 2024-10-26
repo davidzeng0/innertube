@@ -14,6 +14,6 @@ option objc_class_prefix = "ELMPB";
 
 message StreamPreviewViewPlaceholderModel {
 	optional .youtube.elements.Context context = 3;
-	optional .youtube.api.innertube.StreamStatusDataEntity dataEntity = 8;
-	optional string dataKey = 9;
+	optional .youtube.api.innertube.StreamStatusDataEntity data_entity = 8;
+	optional string data_key = 9;
 }

@@ -13,8 +13,8 @@ option java_package = "com.google.protos.youtube.elements.contrib";
 option objc_class_prefix = "ELMPB";
 
 message DisplaySyncCommand {
-	optional string displaySyncId = 1;
-	optional .youtube.elements.i18n.DisplaySyncFrequencyHint frequencyHint = 2;
-	optional float maxDurationMs = 3;
+	optional string display_sync_id = 1;
+	optional .youtube.elements.i18n.DisplaySyncFrequencyHint frequency_hint = 2;
+	optional float max_duration_ms = 3;
 	optional .youtube.elements.Command command = 4;
 }

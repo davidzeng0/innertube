@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message BrowseTopbarSupportedRenderers {
 	oneof renderer {
-		GuideFusionTopbarRenderer guideFusionTopbarRenderer = 95305902;
-		MobileTopbarRenderer mobileTopbarRenderer = 123267149;
+		GuideFusionTopbarRenderer guide_fusion_topbar_renderer = 95305902;
+		MobileTopbarRenderer mobile_topbar_renderer = 123267149;
 	}
 }

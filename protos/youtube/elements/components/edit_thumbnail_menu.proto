@@ -18,8 +18,8 @@ message EditThumbnailMenu {
 		optional .youtube.api.innertube.Command command = 2;
 	}
 
-	optional string dismissText = 1;
-	optional ListOption takeThumbnail = 2;
-	optional ListOption uploadThumbnail = 3;
-	optional ListOption editStreamMetadata = 4;
+	optional string dismiss_text = 1;
+	optional ListOption take_thumbnail = 2;
+	optional ListOption upload_thumbnail = 3;
+	optional ListOption edit_stream_metadata = 4;
 }

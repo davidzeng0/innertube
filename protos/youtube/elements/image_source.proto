@@ -14,8 +14,8 @@ option objc_class_prefix = "ELMPB";
 message ImageSource {
 	oneof source {
 		string url = 1;
-		bytes imageData = 2;
-		ClientResource clientResource = 3;
+		bytes image_data = 2;
+		ClientResource client_resource = 3;
 	}
 
 	optional uint32 width = 4;

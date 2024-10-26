@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BadgeInfo {
-	optional string badgeText = 1;
-	optional string labelText = 2;
-	optional string accessibilityLabel = 3;
+	optional string badge_text = 1;
+	optional string label_text = 2;
+	optional string accessibility_label = 3;
 }

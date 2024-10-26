@@ -10,12 +10,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ActiveViewDisplayColdConfig {
-	optional bool enableActiveViewDisplayMonitor = 1;
-	optional bool disableActiveViewDisplayReportEndOfSessionIos = 2;
-	optional bool enableActiveViewIosDisplayDeduplication = 3;
-	optional bool enableActiveViewIosDisplayImprovedSizeReporting = 4;
-	optional bool enableActiveViewAndroidDisplayImprovedSizeReporting = 5;
-	optional bool enableActiveViewIosDisplayOptimizeTraversal = 6;
-	optional bool enableActiveViewAndroidWindowFocusCheck = 7;
-	optional bool enableActiveViewIosConsolidateViewTraversal = 8;
+	optional bool enable_active_view_display_monitor = 1;
+	optional bool disable_active_view_display_report_end_of_session_ios = 2;
+	optional bool enable_active_view_ios_display_deduplication = 3;
+	optional bool enable_active_view_ios_display_improved_size_reporting = 4;
+	optional bool enable_active_view_android_display_improved_size_reporting = 5;
+	optional bool enable_active_view_ios_display_optimize_traversal = 6;
+	optional bool enable_active_view_android_window_focus_check = 7;
+	optional bool enable_active_view_ios_consolidate_view_traversal = 8;
 }

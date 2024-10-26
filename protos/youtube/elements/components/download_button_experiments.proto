@@ -10,8 +10,8 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadButtonExperiments {
-	optional bool enableNewIcon = 2;
-	optional bool enableNewStaticIconOnly = 3;
-	optional bool useStaticIconColor = 4;
-	optional bool useTextDisabledIconColor = 5;
+	optional bool enable_new_icon = 2;
+	optional bool enable_new_static_icon_only = 3;
+	optional bool use_static_icon_color = 4;
+	optional bool use_text_disabled_icon_color = 5;
 }

@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseSectionListReloadSupportedContinuations {
-	optional ReloadContinuationData reloadContinuationData = 60487319;
+	optional ReloadContinuationData reload_continuation_data = 60487319;
 }

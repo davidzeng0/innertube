@@ -14,14 +14,14 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message NavigationEndpointInteractionLoggingExtension {
-	optional string parentCsn = 1;
+	optional string parent_csn = 1;
 	optional string csn = 2;
-	optional int32 pageVeType = 3;
-	optional int32 parentVeType = 4;
-	optional int32 parentVeCounter = 5;
-	optional ClientData parentClientData = 6;
-	optional string cloneCsn = 7;
-	optional InteractionLoggingClientData parentInteractionLoggingClientData = 8;
-	optional bool isSanitizedEndpoint = 9;
-	optional VisualElement playbackVe = 11;
+	optional int32 page_ve_type = 3;
+	optional int32 parent_ve_type = 4;
+	optional int32 parent_ve_counter = 5;
+	optional ClientData parent_client_data = 6;
+	optional string clone_csn = 7;
+	optional InteractionLoggingClientData parent_interaction_logging_client_data = 8;
+	optional bool is_sanitized_endpoint = 9;
+	optional VisualElement playback_ve = 11;
 }

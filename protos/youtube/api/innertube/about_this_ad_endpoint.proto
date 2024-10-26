@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AboutThisAdEndpoint {
-	optional .webutil.html.types.TrustedResourceUrlProto ataUrl = 1;
-	optional bytes trackingParams = 3;
-	optional Renderer aboutThisAdRenderer = 5;
+	optional .webutil.html.types.TrustedResourceUrlProto ata_url = 1;
+	optional bytes tracking_params = 3;
+	optional Renderer about_this_ad_renderer = 5;
 }

@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerAnnotationsUrlsRenderer {
-	optional string invideoUrl = 1;
-	optional bool adsOnly = 4;
-	optional bool allowInPlaceSwitch = 5;
+	optional string invideo_url = 1;
+	optional bool ads_only = 4;
+	optional bool allow_in_place_switch = 5;
 }

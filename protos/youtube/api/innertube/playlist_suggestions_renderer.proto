@@ -14,5 +14,5 @@ option objc_class_prefix = "YTI";
 
 message PlaylistSuggestionsRenderer {
 	optional FormattedString title = 1;
-	optional PlaylistDedupeSuggestionsSupportedRenderers dedupeSuggestions = 3;
+	optional PlaylistDedupeSuggestionsSupportedRenderers dedupe_suggestions = 3;
 }

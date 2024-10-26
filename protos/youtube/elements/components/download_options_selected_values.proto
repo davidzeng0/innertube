@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadOptionsSelectedValues {
-	optional bool rememberSettings = 1;
-	optional .youtube.api.innertube.DownloadFormat selectedFormat = 2;
-	optional .youtube.api.innertube.DownloadAudioTrack selectedAudioTrack = 3;
+	optional bool remember_settings = 1;
+	optional .youtube.api.innertube.DownloadFormat selected_format = 2;
+	optional .youtube.api.innertube.DownloadAudioTrack selected_audio_track = 3;
 }

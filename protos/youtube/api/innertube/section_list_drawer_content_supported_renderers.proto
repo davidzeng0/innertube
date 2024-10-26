@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message SectionListDrawerContentSupportedRenderers {
 	oneof renderer {
-		DrawerListRenderer drawerListRenderer = 106506504;
-		MySubsContentFilterRenderer mySubsContentFilterRenderer = 117271479;
+		DrawerListRenderer drawer_list_renderer = 106506504;
+		MySubsContentFilterRenderer my_subs_content_filter_renderer = 117271479;
 	}
 }

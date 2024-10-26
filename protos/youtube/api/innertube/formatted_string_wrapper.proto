@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormattedStringWrapper {
-	optional FormattedString formattedString = 1;
-	repeated int32 varIndexes = 2;
+	optional FormattedString formatted_string = 1;
+	repeated int32 var_indexes = 2;
 }

@@ -13,7 +13,7 @@ option objc_class_prefix = "YTI";
 
 message OnesieInnertubeRequest {
 	optional string url = 1;
-	repeated HTTPHeader httpHeaders = 2;
-	optional bytes postBody = 3;
-	optional bool proxiedByTrustedBandaid = 4;
+	repeated HTTPHeader http_headers = 2;
+	optional bytes post_body = 3;
+	optional bool proxied_by_trusted_bandaid = 4;
 }

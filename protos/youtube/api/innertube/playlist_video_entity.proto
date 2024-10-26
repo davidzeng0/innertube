@@ -11,9 +11,9 @@ option objc_class_prefix = "YTI";
 
 message PlaylistVideoEntity {
 	optional string key = 1;
-	optional string videoEntity = 2;
-	optional string setVideoId = 3;
-	optional string channelContributor = 4;
-	optional bool videoAddedByContributor = 5;
+	optional string video_entity = 2;
+	optional string set_video_id = 3;
+	optional string channel_contributor = 4;
+	optional bool video_added_by_contributor = 5;
 	repeated bytes parameters = 6;
 }

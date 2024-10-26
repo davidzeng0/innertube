@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message WatchNextLockScreenSupportedRenderers {
 	oneof renderer {
-		LockScreenRenderer lockScreenRenderer = 61479009;
-		UnpluggedLockScreenRenderer unpluggedLockScreenRenderer = 122746779;
+		LockScreenRenderer lock_screen_renderer = 61479009;
+		UnpluggedLockScreenRenderer unplugged_lock_screen_renderer = 122746779;
 	}
 }

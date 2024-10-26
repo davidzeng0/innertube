@@ -13,5 +13,5 @@ option objc_class_prefix = "YTI";
 
 message MoreLikeThisRequest {
 	optional InnerTubeContext context = 1;
-	optional string moreLikeThisToken = 2;
+	optional string more_like_this_token = 2;
 }

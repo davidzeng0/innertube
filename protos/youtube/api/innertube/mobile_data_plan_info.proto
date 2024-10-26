@@ -11,7 +11,7 @@ option objc_class_prefix = "YTI";
 
 message MobileDataPlanInfo {
 	optional string cpid = 49;
-	repeated string serializedDataPlanStatus = 50;
-	optional int64 carrierId = 51;
-	optional bool dataSavingQualityPickerEnabled = 52;
+	repeated string serialized_data_plan_status = 50;
+	optional int64 carrier_id = 51;
+	optional bool data_saving_quality_picker_enabled = 52;
 }

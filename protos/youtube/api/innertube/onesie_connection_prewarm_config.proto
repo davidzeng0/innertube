@@ -12,15 +12,15 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message OnesieConnectionPrewarmConfig {
-	optional int32 pingIntervalSeconds = 1;
-	optional string redirectorUrl = 2;
-	optional int32 randomizeRedirectorUrlSeconds = 3;
-	optional int32 hostnameTtlSeconds = 4;
-	optional int32 connectionKeepaliveSeconds = 5;
-	optional int32 startDelayMs = 6;
-	optional bool remapOnNetworkChange = 7;
-	repeated string mappingParamsToCopy = 9;
-	repeated ClientConnectionType prewarmOnlyWhenNetworkActiveConnectionTypes = 10 [packed = true];
-	optional string onesieHostSelectionToken = 11;
-	repeated string redirectorUrls = 12;
+	optional int32 ping_interval_seconds = 1;
+	optional string redirector_url = 2;
+	optional int32 randomize_redirector_url_seconds = 3;
+	optional int32 hostname_ttl_seconds = 4;
+	optional int32 connection_keepalive_seconds = 5;
+	optional int32 start_delay_ms = 6;
+	optional bool remap_on_network_change = 7;
+	repeated string mapping_params_to_copy = 9;
+	repeated ClientConnectionType prewarm_only_when_network_active_connection_types = 10 [packed = true];
+	optional string onesie_host_selection_token = 11;
+	repeated string redirector_urls = 12;
 }

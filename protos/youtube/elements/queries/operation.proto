@@ -17,8 +17,8 @@ option objc_class_prefix = "ELMQY";
 
 message Operation {
 	optional string name = 1;
-	optional OperationType operationType = 2;
-	repeated VariableDefinition variableDefinitions = 3;
+	optional OperationType operation_type = 2;
+	repeated VariableDefinition variable_definitions = 3;
 	repeated Selection selections = 4;
 	repeated Directive directives = 5;
 	repeated Type types = 6;

@@ -20,10 +20,10 @@ message AttachmentRun {
 		ALIGNMENT_VERTICAL_CENTER = 3;
 	}
 
-	optional uint32 startIndex = 1;
+	optional uint32 start_index = 1;
 	optional uint32 length = 2;
 	optional Element element = 3;
 	optional Alignment alignment = 4;
-	
+
 	extensions 999 to max;
 }

@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package youtube.elements.components;
 
-import "youtube/api/innertube/validation_state.proto";
+import "youtube/utils/visibility/alidation_state.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -12,11 +12,11 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message TagEditorClientState {
-	optional string pendingTag = 1;
-	optional int32 selectedTagIndex = 2;
-	optional bool isDuplicate = 3;
-	optional bool isDirty = 4;
-	optional bool isFocused = 5;
-	optional .youtube.api.innertube.ValidationState validationState = 6;
+	optional string pending_tag = 1;
+	optional int32 selected_tag_index = 2;
+	optional bool is_duplicate = 3;
+	optional bool is_dirty = 4;
+	optional bool is_focused = 5;
+	optional .youtube.utils.visibility.alidationState validation_state = 6;
 	optional string key = 7;
 }

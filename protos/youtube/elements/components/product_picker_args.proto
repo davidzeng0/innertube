@@ -15,14 +15,14 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message ProductPickerArgs {
-	optional string entityKey = 1;
+	optional string entity_key = 1;
 	optional string query = 2;
 	optional .youtube.api.innertube.PickerItemData item = 3;
-	optional bool clearSelection = 5;
+	optional bool clear_selection = 5;
 	optional ProductPickerEntity.State state = 6;
-	optional bool inputFocus = 7;
-	optional int32 itemIndex = 8;
-	repeated .youtube.api.innertube.PickerMerchant connectedStores = 9;
-	optional string externalChannelId = 10;
-	optional .youtube.api.innertube.EnablementUseCase useCase = 11;
+	optional bool input_focus = 7;
+	optional int32 item_index = 8;
+	repeated .youtube.api.innertube.PickerMerchant connected_stores = 9;
+	optional string external_channel_id = 10;
+	optional .youtube.api.innertube.EnablementUseCase use_case = 11;
 }

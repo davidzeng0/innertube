@@ -19,7 +19,7 @@ message Endpoint {
 	
 	/* protogen: merge reason = nested */
 	message Home {
-		optional bool isRequiredSignin = 1;
+		optional bool is_required_signin = 1;
 		optional SurveyTriggerAction action = 2;
 	}
 	
@@ -29,7 +29,7 @@ message Endpoint {
 	}
 
 	oneof page {
-		KidsParentZone kidsParentZone = 1;
+		KidsParentZone kids_parent_zone = 1;
 		Home home = 6;
 		Downloads downloads = 7;
 	}

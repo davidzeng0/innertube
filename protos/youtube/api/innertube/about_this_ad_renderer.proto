@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message AboutThisAdRenderer {
 	optional .webutil.html.types.TrustedResourceUrlProto url = 1;
-	optional string layoutId = 2;
-	optional bytes trackingParams = 4;
+	optional string layout_id = 2;
+	optional bytes tracking_params = 4;
 }

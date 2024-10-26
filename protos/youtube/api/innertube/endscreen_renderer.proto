@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 
 message EndscreenRenderer {
 	repeated EndscreenElementSupportedRenderers elements = 1;
-	optional int64 startMs = 2;
-	repeated LoggingUrl impressionUrls = 3;
-	optional bool skipEndscreen = 4;
-	optional bytes trackingParams = 6;
+	optional int64 start_ms = 2;
+	repeated LoggingUrl impression_urls = 3;
+	optional bool skip_endscreen = 4;
+	optional bytes tracking_params = 6;
 }

@@ -14,10 +14,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntitiesError {
-	optional EntityStoreType entityStoreType = 1;
-	optional uint32 entityType = 2;
-	optional EntityStoreActionType entityStoreActionType = 3;
-	optional EntityStoreErrorType entityStoreErrorType = 4;
-	optional uint32 sqliteLastErrorCode = 5;
-	optional uint32 sqliteLastExtendedErrorCode = 6;
+	optional EntityStoreType entity_store_type = 1;
+	optional uint32 entity_type = 2;
+	optional EntityStoreActionType entity_store_action_type = 3;
+	optional EntityStoreErrorType entity_store_error_type = 4;
+	optional uint32 sqlite_last_error_code = 5;
+	optional uint32 sqlite_last_extended_error_code = 6;
 }

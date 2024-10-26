@@ -14,6 +14,6 @@ option objc_class_prefix = "ELMPB";
 message SearchState {
 	optional string query = 1;
 	repeated string suggestions = 2;
-	repeated .youtube.api.innertube.PickerItemData availableItems = 3;
-	optional int32 queryCharacterCount = 4;
+	repeated .youtube.api.innertube.PickerItemData available_items = 3;
+	optional int32 query_character_count = 4;
 }

@@ -97,5 +97,5 @@ message AccessibilityId {
 		MENU_GO_TO_CHANNEL = 81;
 	}
 
-	optional AccessibilityIdType accessibilityIdType = 1;
+	optional AccessibilityIdType accessibility_id_type = 1;
 }

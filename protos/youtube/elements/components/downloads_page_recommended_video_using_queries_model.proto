@@ -16,16 +16,16 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageRecommendedVideoUsingQueriesModel {
-	optional string mainVideoEntityKey = 1;
-	optional int32 positionIndex = 2;
+	optional string main_video_entity_key = 1;
+	optional int32 position_index = 2;
 	optional DownloadsPageVideoExperiments experiments = 4;
 	optional .youtube.elements.Context context = 5;
-	optional .youtube.elements.EnvironmentData environmentData = 6;
-	optional .youtube.elements.queries.QueryResponse queryResponse = 7;
-	optional string downloadStatusEntityKey = 10;
-	optional .youtube.api.innertube.DownloadStatusEntity downloadStatusEntity = 11;
-	optional string downloadA11YLabel = 12;
-	optional string downloadingA11YLabel = 13;
-	optional string removeA11YLabel = 14;
-	optional string viewCountText = 15;
+	optional .youtube.elements.EnvironmentData environment_data = 6;
+	optional .youtube.elements.queries.QueryResponse query_response = 7;
+	optional string download_status_entity_key = 10;
+	optional .youtube.api.innertube.DownloadStatusEntity download_status_entity = 11;
+	optional string download_a_11_y_label = 12;
+	optional string downloading_a_11_y_label = 13;
+	optional string remove_a_11_y_label = 14;
+	optional string view_count_text = 15;
 }

@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message NextRadioContinuationData {
 	optional string continuation = 1;
-	optional bytes clickTrackingParams = 2;
+	optional bytes click_tracking_params = 2;
 	optional FormattedString label = 3;
 }

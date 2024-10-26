@@ -14,9 +14,9 @@ option objc_class_prefix = "ELMPB";
 message UpdateActionSheetCommand {
 	optional .youtube.elements.Element header = 1;
 	optional .youtube.elements.Element footer = 2;
-	repeated .youtube.elements.Element listOption = 3;
-	optional string sheetId = 4;
-	optional bool shouldLogAsNewScreen = 5;
-	optional bool refreshSheet = 6;
-	optional .youtube.elements.Element singleContentElement = 7;
+	repeated .youtube.elements.Element list_option = 3;
+	optional string sheet_id = 4;
+	optional bool should_log_as_new_screen = 5;
+	optional bool refresh_sheet = 6;
+	optional .youtube.elements.Element single_content_element = 7;
 }

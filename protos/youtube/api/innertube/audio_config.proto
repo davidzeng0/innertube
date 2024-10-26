@@ -10,10 +10,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AudioConfig {
-	optional float loudnessDb = 1;
-	optional bool audioMuted = 2;
-	optional float perceptualLoudnessDb = 3;
-	optional bool muteOnStart = 4;
-	optional bool playAudioOnly = 5;
-	optional bool enablePerFormatLoudness = 6;
+	optional float loudness_db = 1;
+	optional bool audio_muted = 2;
+	optional float perceptual_loudness_db = 3;
+	optional bool mute_on_start = 4;
+	optional bool play_audio_only = 5;
+	optional bool enable_per_format_loudness = 6;
 }

@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message SelectedItemsPanelHeaderState {
-	optional bool doneButtonDisabled = 1;
+	optional bool done_button_disabled = 1;
 }

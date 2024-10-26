@@ -13,13 +13,13 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ElementRenderer {
-	optional ElementRendererCompatibilityOptions compatibilityOptions = 3;
-	optional bytes trackingParams = 5;
-	optional SeparatorDetails separatorDetails = 9;
-	
-	extensions 172660663 to 172660664;
-	
-	extensions 219226110 to 219226111;
-	
-	extensions 465100242 to 465100243;
+	optional ElementRendererCompatibilityOptions compatibility_options = 3;
+	optional bytes tracking_params = 5;
+	optional SeparatorDetails separator_details = 9;
+
+	extensions 172660663;
+
+	extensions 219226110;
+
+	extensions 465100242;
 }

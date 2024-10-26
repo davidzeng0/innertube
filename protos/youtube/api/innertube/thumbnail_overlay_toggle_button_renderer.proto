@@ -15,16 +15,16 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayToggleButtonRenderer {
-	optional bool isToggled = 1;
-	optional Icon untoggledIcon = 2;
-	optional Icon toggledIcon = 3;
-	optional string untoggledTooltip = 4;
-	optional string toggledTooltip = 5;
-	optional Command untoggledServiceEndpoint = 6;
-	optional Command toggledServiceEndpoint = 7;
-	optional AccessibilitySupportedDatas untoggledAccessibility = 8;
-	optional AccessibilitySupportedDatas toggledAccessibility = 9;
-	optional ThumbnailOverlayToggleButtonSupportedDatas supportedDatas = 10;
-	optional bytes trackingParams = 12;
-	optional Icon untoggledIconOnHover = 13;
+	optional bool is_toggled = 1;
+	optional Icon untoggled_icon = 2;
+	optional Icon toggled_icon = 3;
+	optional string untoggled_tooltip = 4;
+	optional string toggled_tooltip = 5;
+	optional Command untoggled_service_endpoint = 6;
+	optional Command toggled_service_endpoint = 7;
+	optional AccessibilitySupportedDatas untoggled_accessibility = 8;
+	optional AccessibilitySupportedDatas toggled_accessibility = 9;
+	optional ThumbnailOverlayToggleButtonSupportedDatas supported_datas = 10;
+	optional bytes tracking_params = 12;
+	optional Icon untoggled_icon_on_hover = 13;
 }

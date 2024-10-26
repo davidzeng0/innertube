@@ -13,17 +13,17 @@ option objc_class_prefix = "ELMQY";
 
 message Value {
 	oneof kind {
-		bool boolValue = 1;
-		double doubleValue = 2;
-		float floatValue = 3;
-		int32 int32Value = 4;
-		int64 int64Value = 5;
-		string stringValue = 6;
-		uint32 uint32Value = 7;
-		uint64 uint64Value = 8;
-		ObjectValue objectValue = 9;
-		ListValue listValue = 10;
-		int32 variableReference = 11;
+		bool bool_value = 1;
+		double double_value = 2;
+		float float_value = 3;
+		int32 int_32_value = 4;
+		int64 int_64_value = 5;
+		string string_value = 6;
+		uint32 uint_32_value = 7;
+		uint64 uint_64_value = 8;
+		ObjectValue object_value = 9;
+		ListValue list_value = 10;
+		int32 variable_reference = 11;
 	}
 }
 
@@ -47,8 +47,8 @@ message ListValue {
 message Selection {
 	oneof selection {
 		Field field = 1;
-		FragmentSpread fragmentSpread = 2;
-		InlineFragment inlineFragment = 3;
+		FragmentSpread fragment_spread = 2;
+		InlineFragment inline_fragment = 3;
 	}
 }
 
@@ -56,11 +56,11 @@ message Selection {
 message Field {
 	optional int32 number = 1;
 	repeated Selection selections = 2;
-	optional int32 typeId = 3;
+	optional int32 type_id = 3;
 	optional ObjectValue arguments = 4;
 	repeated Directive directives = 5;
 	optional string name = 6;
-	optional FieldResolverConfig fieldResolverConfig = 7;
+	optional FieldResolverConfig field_resolver_config = 7;
 }
 
 /* protogen: merge reason = circular */
@@ -71,7 +71,7 @@ message InlineFragment {
 
 /* protogen: merge reason = circular */
 message FragmentSpread {
-	optional int32 fragmentId = 1;
+	optional int32 fragment_id = 1;
 	repeated Directive directives = 2;
 }
 

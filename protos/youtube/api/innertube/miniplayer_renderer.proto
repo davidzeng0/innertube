@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MiniplayerRenderer {
-	optional PlaybackMode playbackMode = 1;
-	optional Command minimizedEndpoint = 2;
+	optional PlaybackMode playback_mode = 1;
+	optional Command minimized_endpoint = 2;
 }

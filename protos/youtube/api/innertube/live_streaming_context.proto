@@ -14,12 +14,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamingContext {
-	optional bool isAutoDashboard = 2;
-	optional string externalVideoId = 3;
-	optional BroadcastConferenceType broadcastConferenceType = 4;
-	optional LiveStreamingEventData eventData = 5;
-	optional bool isMonetizationOn = 6;
-	optional bool sharedmdeEnabled = 7;
-	optional bool isScreencast = 8;
-	optional BroadcastLifecycleStatus broadcastLifecycleStatus = 9;
+	optional bool is_auto_dashboard = 2;
+	optional string external_video_id = 3;
+	optional BroadcastConferenceType broadcast_conference_type = 4;
+	optional LiveStreamingEventData event_data = 5;
+	optional bool is_monetization_on = 6;
+	optional bool sharedmde_enabled = 7;
+	optional bool is_screencast = 8;
+	optional BroadcastLifecycleStatus broadcast_lifecycle_status = 9;
 }

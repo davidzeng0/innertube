@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message VideoCardExperiment {
-	optional float percentageWidth = 1;
-	optional float maxWidth = 2;
-	optional bool enableFeedItemsTouchFeedback = 3;
+	optional float percentage_width = 1;
+	optional float max_width = 2;
+	optional bool enable_feed_items_touch_feedback = 3;
 }

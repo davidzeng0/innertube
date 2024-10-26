@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message WatchEndpointAbandonedWatchSupportedConfigs {
 	oneof configs {
-		WatchEndpointAbandonedWatchNotificationConfig watchEndpointAbandonedWatchNotificationConfig = 132493632;
+		WatchEndpointAbandonedWatchNotificationConfig watch_endpoint_abandoned_watch_notification_config = 132493632;
 	}
 }

@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.extensions";
 option objc_class_prefix = "ELMPB";
 
 message BarSeriesStyle {
-	optional bool isSideBySide = 1;
+	optional bool is_side_by_side = 1;
 }

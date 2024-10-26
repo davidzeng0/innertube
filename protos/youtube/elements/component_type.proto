@@ -13,8 +13,8 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message ComponentType {
-	optional string customClass = 1;
+	optional string custom_class = 1;
 	optional Model model = 5;
-	optional EntitiesConfig entitiesConfig = 6;
-	optional string developmentFixture = 7;
+	optional EntitiesConfig entities_config = 6;
+	optional string development_fixture = 7;
 }

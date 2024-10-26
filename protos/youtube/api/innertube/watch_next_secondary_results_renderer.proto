@@ -25,21 +25,21 @@ message WatchNextSecondaryResultsRenderer {
 	/* protogen: merge reason = nested */
 	message WatchNextSecondaryResultsSupportedRenderers {
 		oneof renderer {
-			ItemSectionRenderer itemSectionRenderer = 50195462;
-			CompactVideoRenderer compactVideoRenderer = 50630979;
-			CompactPlaylistRenderer compactPlaylistRenderer = 50742631;
-			ShelfRenderer shelfRenderer = 51845067;
-			CompactRadioRenderer compactRadioRenderer = 53170873;
-			CompactMovieRenderer compactMovieRenderer = 58485276;
-			CompactPromotedVideoRenderer compactPromotedVideoRenderer = 73920376;
-			CompactEpisodeRenderer compactEpisodeRenderer = 87866443;
-			CompactAutoplayRenderer compactAutoplayRenderer = 92156382;
-			RelatedChipCloudRenderer relatedChipCloudRenderer = 188360221;
+			ItemSectionRenderer item_section_renderer = 50195462;
+			CompactVideoRenderer compact_video_renderer = 50630979;
+			CompactPlaylistRenderer compact_playlist_renderer = 50742631;
+			ShelfRenderer shelf_renderer = 51845067;
+			CompactRadioRenderer compact_radio_renderer = 53170873;
+			CompactMovieRenderer compact_movie_renderer = 58485276;
+			CompactPromotedVideoRenderer compact_promoted_video_renderer = 73920376;
+			CompactEpisodeRenderer compact_episode_renderer = 87866443;
+			CompactAutoplayRenderer compact_autoplay_renderer = 92156382;
+			RelatedChipCloudRenderer related_chip_cloud_renderer = 188360221;
 		}
 	}
 
 	repeated WatchNextSecondaryResultsSupportedRenderers results = 1;
 	repeated WatchNextSecondaryResultsSupportedContinuations continuations = 2;
-	optional bytes trackingParams = 4;
-	optional string targetId = 6;
+	optional bytes tracking_params = 4;
+	optional string target_id = 6;
 }

@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AudioCastConfig {
-	optional bool enableAudioCast = 1;
+	optional bool enable_audio_cast = 1;
 }

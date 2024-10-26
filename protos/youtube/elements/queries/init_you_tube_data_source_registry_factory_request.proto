@@ -18,17 +18,17 @@ option objc_class_prefix = "ELMQY";
 
 message InitYouTubeDataSourceRegistryFactoryRequest {
 	oneof byteStoreRefKind {
-		ByteStoreBlockWeakRef byteStore = 1;
-		ByteStoreBlockMovableRef movableByteStore = 2;
+		ByteStoreBlockWeakRef byte_store = 1;
+		ByteStoreBlockMovableRef movable_byte_store = 2;
 	}
 
 	oneof environmentDataRefKind {
-		EnvironmentDataBlockWeakRef environmentData = 3;
-		EnvironmentDataBlockMovableRef movableEnvironmentData = 4;
+		EnvironmentDataBlockWeakRef environment_data = 3;
+		EnvironmentDataBlockMovableRef movable_environment_data = 4;
 	}
 
 	oneof persistentEntityStoreRefKind {
-		EntityStoreBlockWeakRef persistentEntityStore = 5;
-		EntityStoreBlockMovableRef movablePersistentEntityStore = 6;
+		EntityStoreBlockWeakRef persistent_entity_store = 5;
+		EntityStoreBlockMovableRef movable_persistent_entity_store = 6;
 	}
 }

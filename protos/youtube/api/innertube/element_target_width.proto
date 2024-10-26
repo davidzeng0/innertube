@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ElementTargetWidth {
-	optional float targetWidthForLargeForm = 1;
-	optional float targetWidthForSmallForm = 2;
-	optional float largeFormCutoffWidth = 3;
+	optional float target_width_for_large_form = 1;
+	optional float target_width_for_small_form = 2;
+	optional float large_form_cutoff_width = 3;
 }

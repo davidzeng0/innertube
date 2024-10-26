@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ClientError {
-	optional ErrorMetaData errorMetadata = 1;
-	optional ErrorStackTrace stackTrace = 2;
-	optional LogMessage logMessage = 3;
+	optional ErrorMetaData error_metadata = 1;
+	optional ErrorStackTrace stack_trace = 2;
+	optional LogMessage log_message = 3;
 }

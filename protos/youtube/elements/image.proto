@@ -17,9 +17,9 @@ option objc_class_prefix = "ELMPB";
 
 message Image {
 	repeated ImageSource sources = 1;
-	optional i18n.ContentMode contentMode = 2;
+	optional i18n.ContentMode content_mode = 2;
 	optional ImageProcessor processor = 3;
-	optional bool flipForRtlLayout = 4;
-	optional i18n.ImageFormatHint imageFormatHint = 5;
-	optional CachingPolicy cachingPolicy = 6;
+	optional bool flip_for_rtl_layout = 4;
+	optional i18n.ImageFormatHint image_format_hint = 5;
+	optional CachingPolicy caching_policy = 6;
 }

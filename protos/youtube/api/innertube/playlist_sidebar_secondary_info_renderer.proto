@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistSidebarSecondaryInfoRenderer {
-	optional Renderer videoOwner = 1;
+	optional Renderer video_owner = 1;
 	optional Renderer button = 2;
 	optional FormattedString description = 3;
 	optional FormattedString title = 4;

@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message CallToActionButtonSupportedRenderers {
 	oneof renderer {
-		CallToActionButtonRenderer callToActionButtonRenderer = 154950953;
+		CallToActionButtonRenderer call_to_action_button_renderer = 154950953;
 	}
 }

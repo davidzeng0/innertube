@@ -24,11 +24,11 @@ message InnerTubeContext {
 	optional UserInfo user = 3;
 	optional CapabilityInfo capabilities = 4;
 	optional RequestInfo request = 5;
-	optional ClickTrackingInfo clickTracking = 6;
-	optional ThirdPartyInfo thirdParty = 7;
-	optional ClientInfo remoteClient = 8;
-	optional AdSignalsInfo adSignalsInfo = 9;
-	optional ExperimentalData experimentalData = 10;
-	optional string clientScreenNonce = 11;
-	repeated ActivePlayerInfo activePlayers = 12;
+	optional ClickTrackingInfo click_tracking = 6;
+	optional ThirdPartyInfo third_party = 7;
+	optional ClientInfo remote_client = 8;
+	optional AdSignalsInfo ad_signals_info = 9;
+	optional ExperimentalData experimental_data = 10;
+	optional string client_screen_nonce = 11;
+	repeated ActivePlayerInfo active_players = 12;
 }

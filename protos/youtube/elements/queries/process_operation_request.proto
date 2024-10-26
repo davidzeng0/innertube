@@ -14,5 +14,5 @@ option objc_class_prefix = "ELMQY";
 
 message ProcessOperationRequest {
 	optional Invocation invocation = 1;
-	optional SubscriptionSyncBlockWeakRef subscriptionSync = 2;
+	optional SubscriptionSyncBlockWeakRef subscription_sync = 2;
 }

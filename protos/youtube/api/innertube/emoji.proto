@@ -12,12 +12,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message Emoji {
-	optional string emojiId = 1;
+	optional string emoji_id = 1;
 	repeated string shortcuts = 2;
-	repeated string searchTerms = 3;
-	optional bool supportsSkinTone = 4;
+	repeated string search_terms = 3;
+	optional bool supports_skin_tone = 4;
 	optional ThumbnailDetails image = 5;
-	optional bool isCustomEmoji = 6;
-	optional bool isLocked = 7;
-	repeated string variantIds = 8;
+	optional bool is_custom_emoji = 6;
+	optional bool is_locked = 7;
+	repeated string variant_ids = 8;
 }

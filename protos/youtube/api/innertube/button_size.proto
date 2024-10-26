@@ -20,5 +20,5 @@ message ButtonSize {
 		SIZE_XSMALL = 5;
 	}
 
-	optional ButtonSizeType sizeType = 1;
+	optional ButtonSizeType size_type = 1;
 }

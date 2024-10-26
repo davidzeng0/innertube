@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message CachingPolicy {
-	optional int32 maxFramesToCache = 1;
+	optional int32 max_frames_to_cache = 1;
 }

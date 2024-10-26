@@ -14,7 +14,7 @@ option objc_class_prefix = "YTVS";
 message StreamerContext {
 	// the same client used for all innertube requests
 	optional .youtube.api.innertube.ClientInfo client = 1;
-	optional bytes unnamedField2 = 2;
-	optional bytes unnamedField3 = 3;
-	optional bytes unnamedField4 = 4;
+	optional bytes unnamed_field_2 = 2;
+	optional bytes unnamed_field_3 = 3;
+	optional bytes unnamed_field_4 = 4;
 }

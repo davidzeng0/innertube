@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message BrowsePageSurveyDisplayTrigger {
 	oneof trigger {
-		SurveyDisplayTriggerUiEvent uiEventTrigger = 1;
+		SurveyDisplayTriggerUiEvent ui_event_trigger = 1;
 	}
 }

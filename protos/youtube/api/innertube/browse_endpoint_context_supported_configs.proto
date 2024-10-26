@@ -16,9 +16,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpointContextSupportedConfigs {
-	optional BrowseEndpointContextUnpluggedConfig browseEndpointContextUnpluggedConfig = 134719594;
-	optional BrowseEndpointContextMainConfig browseEndpointContextMainConfig = 146036531;
-	optional BrowseEndpointContextKidsErrorConfig browseEndpointContextKidsErrorConfig = 147384717;
-	optional BrowseEndpointContextMusicConfig browseEndpointContextMusicConfig = 172183029;
-	optional BrowseEndpointContextCreatorConfig browseEndpointContextCreatorConfig = 414701792;
+	optional BrowseEndpointContextUnpluggedConfig browse_endpoint_context_unplugged_config = 134719594;
+	optional BrowseEndpointContextMainConfig browse_endpoint_context_main_config = 146036531;
+	optional BrowseEndpointContextKidsErrorConfig browse_endpoint_context_kids_error_config = 147384717;
+	optional BrowseEndpointContextMusicConfig browse_endpoint_context_music_config = 172183029;
+	optional BrowseEndpointContextCreatorConfig browse_endpoint_context_creator_config = 414701792;
 }

@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message DataSyncIdToken {
-	optional string datasyncIdToken = 1;
-	optional string encryptedDatasyncIdToken = 2;
+	optional string datasync_id_token = 1;
+	optional string encrypted_datasync_id_token = 2;
 }

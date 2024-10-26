@@ -13,10 +13,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdMessageRenderer {
-	optional int32 durationMs = 2;
-	optional AdText staticMessage = 3;
-	optional bytes trackingParams = 5;
-	optional int32 videoAdBreakOffsetMs = 7;
-	optional Renderer countdownRenderer = 8;
-	optional int64 videoAdBreakOffsetMsInt64 = 9;
+	optional int32 duration_ms = 2;
+	optional AdText static_message = 3;
+	optional bytes tracking_params = 5;
+	optional int32 video_ad_break_offset_ms = 7;
+	optional Renderer countdown_renderer = 8;
+	optional int64 video_ad_break_offset_ms_int_64 = 9;
 }

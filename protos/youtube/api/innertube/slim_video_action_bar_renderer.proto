@@ -16,9 +16,9 @@ option objc_class_prefix = "YTI";
 
 message SlimVideoActionBarRenderer {
 	repeated SlimMetadataButtonSupportedRenderers buttons = 1;
-	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offlineButtonTooltip = 2;
-	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offlineButtonPoorConnectivityTooltip = 3;
-	optional FormattedString overflowMenuText = 4;
-	optional bytes trackingParams = 6;
-	optional AccessibilityData overflowAccessibilityData = 7;
+	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offline_button_tooltip = 2;
+	optional SlimMetadataOfflineButtonTooltipSupportedRenderers offline_button_poor_connectivity_tooltip = 3;
+	optional FormattedString overflow_menu_text = 4;
+	optional bytes tracking_params = 6;
+	optional AccessibilityData overflow_accessibility_data = 7;
 }

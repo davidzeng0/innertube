@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message AdlFieldOptions {
-	optional bool skipField = 1;
-	optional i18n.AdlDefaultValue adlDefaultValue = 2;
+	optional bool skip_field = 1;
+	optional i18n.AdlDefaultValue adl_default_value = 2;
 }

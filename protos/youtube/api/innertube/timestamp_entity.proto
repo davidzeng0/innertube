@@ -14,5 +14,5 @@ option objc_class_prefix = "YTI";
 message TimestampEntity {
 	optional string key = 1;
 	optional Timestamp timestamp = 2;
-	optional string formattedTime = 3;
+	optional string formatted_time = 3;
 }

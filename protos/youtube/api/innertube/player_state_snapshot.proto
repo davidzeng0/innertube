@@ -10,9 +10,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlayerStateSnapshot {
-	optional int64 wallTimeMs = 1;
-	optional int64 abrBandwidthEstimateKbps = 2;
-	optional int64 playHeadMediaTimeMs = 3;
-	optional int64 videoReadaheadBufferMediaTimeMs = 4;
-	optional int64 audioReadaheadBufferMediaTimeMs = 5;
+	optional int64 wall_time_ms = 1;
+	optional int64 abr_bandwidth_estimate_kbps = 2;
+	optional int64 play_head_media_time_ms = 3;
+	optional int64 video_readahead_buffer_media_time_ms = 4;
+	optional int64 audio_readahead_buffer_media_time_ms = 5;
 }

@@ -13,9 +13,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EmbedsAdEvent {
-	optional EmbedsAdEventType eventType = 1;
-	optional EmbedsAdBreakType breakType = 2;
-	optional string packageName = 3;
-	optional string embedUrl = 4;
-	optional string youtubeHost = 6;
+	optional EmbedsAdEventType event_type = 1;
+	optional EmbedsAdBreakType break_type = 2;
+	optional string package_name = 3;
+	optional string embed_url = 4;
+	optional string youtube_host = 6;
 }

@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message InteractionLoggingLayersScreenConfig {
-	optional int32 pageVisualElementType = 1;
+	optional int32 page_visual_element_type = 1;
 }

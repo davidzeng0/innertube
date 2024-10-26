@@ -13,7 +13,7 @@ option objc_class_prefix = "YTI";
 
 message SingleColumnBrowseResultsRenderer {
 	repeated BrowseTabSupportedRenderers tabs = 1;
-	optional bool hideTabBar = 2;
-	optional bool disableTabSwiping = 3;
-	optional bool disableTabNavbarTitleUpdate = 4;
+	optional bool hide_tab_bar = 2;
+	optional bool disable_tab_swiping = 3;
+	optional bool disable_tab_navbar_title_update = 4;
 }

@@ -12,5 +12,5 @@ option objc_class_prefix = "ELMPB";
 message BarValue {
 	optional double value = 1;
 	optional uint32 color = 2;
-	optional string touchCardLabel = 3;
+	optional string touch_card_label = 3;
 }

@@ -16,10 +16,10 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPagePlaylistModel {
-	optional string playlistEntityKey = 2;
-	optional .youtube.api.innertube.DownloadsPagePlaylistEntity playlistEntity = 3;
-	optional .youtube.api.innertube.DownloadStatusEntity downloadStatusEntity = 4;
-	optional .youtube.elements.EnvironmentData environmentData = 5;
-	optional .youtube.api.innertube.ClientVeSpec clientVeSpec = 6;
+	optional string playlist_entity_key = 2;
+	optional .youtube.api.innertube.DownloadsPagePlaylistEntity playlist_entity = 3;
+	optional .youtube.api.innertube.DownloadStatusEntity download_status_entity = 4;
+	optional .youtube.elements.EnvironmentData environment_data = 5;
+	optional .youtube.api.innertube.ClientVeSpec client_ve_spec = 6;
 	optional .youtube.elements.Context context = 7;
 }

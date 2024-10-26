@@ -15,9 +15,9 @@ option objc_class_prefix = "ELMPB";
 message ShowBottomSheetCommand {
 	optional .youtube.elements.Element element = 1;
 	optional .youtube.elements.i18n.BottomSheetStyle style = 2;
-	optional uint32 containerBackgroundColor = 3;
-	optional double durationSeconds = 4;
-	optional double scrimOpacity = 5;
-	optional bool shouldLogAsNewScreen = 7;
-	optional int32 largeFormWidth = 8;
+	optional uint32 container_background_color = 3;
+	optional double duration_seconds = 4;
+	optional double scrim_opacity = 5;
+	optional bool should_log_as_new_screen = 7;
+	optional int32 large_form_width = 8;
 }

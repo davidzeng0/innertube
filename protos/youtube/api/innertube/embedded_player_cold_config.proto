@@ -10,11 +10,11 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EmbeddedPlayerColdConfig {
-	optional bool enableHostAppVerificationForEmbeddedPlayer = 2;
-	optional bool enableWorkmanagerForEmbeddedPlayer = 3;
-	optional bool darkLaunchHostAppVerificationForEmbeddedPlayer = 4;
-	optional bool requestHavsTokenOnInitForAndroidEmbeddedPlayer = 6;
-	optional bool refreshGlobalConfigOnInitForAndroidEmbeddedPlayer = 7;
-	optional bool enableAndroidApiEnvironmentReusePerApp = 8;
-	optional bool androidEnableAppSessionScopePermissions = 24;
+	optional bool enable_host_app_verification_for_embedded_player = 2;
+	optional bool enable_workmanager_for_embedded_player = 3;
+	optional bool dark_launch_host_app_verification_for_embedded_player = 4;
+	optional bool request_havs_token_on_init_for_android_embedded_player = 6;
+	optional bool refresh_global_config_on_init_for_android_embedded_player = 7;
+	optional bool enable_android_api_environment_reuse_per_app = 8;
+	optional bool android_enable_app_session_scope_permissions = 24;
 }

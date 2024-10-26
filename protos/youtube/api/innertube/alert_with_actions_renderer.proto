@@ -16,13 +16,13 @@ option objc_class_prefix = "YTI";
 
 message AlertWithActionsRenderer {
 	optional Icon icon = 1;
-	optional FormattedString alertMessage = 2;
-	repeated ButtonSupportedRenderers actionButtons = 3;
-	optional string backgroundColor = 4;
-	optional bytes trackingParams = 6;
-	repeated Command impressionEndpoints = 7;
-	optional bool isVisible = 8;
-	optional ButtonSupportedRenderers dismissButton = 11;
-	optional Command dismissEndpoint = 13;
+	optional FormattedString alert_message = 2;
+	repeated ButtonSupportedRenderers action_buttons = 3;
+	optional string background_color = 4;
+	optional bytes tracking_params = 6;
+	repeated Command impression_endpoints = 7;
+	optional bool is_visible = 8;
+	optional ButtonSupportedRenderers dismiss_button = 11;
+	optional Command dismiss_endpoint = 13;
 	optional FormattedString title = 15;
 }

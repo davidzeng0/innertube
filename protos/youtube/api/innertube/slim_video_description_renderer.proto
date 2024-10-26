@@ -15,10 +15,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SlimVideoDescriptionRenderer {
-	optional FormattedString publishDate = 1;
+	optional FormattedString publish_date = 1;
 	optional FormattedString description = 2;
-	optional VideoMetadataRowContainerSupportedRenderers metadataRowContainer = 3;
-	optional bytes trackingParams = 5;
-	optional Renderer slimChannelMetadata = 6;
-	optional SlimDescriptionDividerStyle bottomDividerStyle = 7;
+	optional VideoMetadataRowContainerSupportedRenderers metadata_row_container = 3;
+	optional bytes tracking_params = 5;
+	optional Renderer slim_channel_metadata = 6;
+	optional SlimDescriptionDividerStyle bottom_divider_style = 7;
 }

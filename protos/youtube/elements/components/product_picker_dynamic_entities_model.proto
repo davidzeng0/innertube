@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message ProductPickerDynamicEntitiesModel {
-	optional ProductPickerEntity clientState = 1;
-	optional ProductPickerArgs productPickerArgs = 2;
+	optional ProductPickerEntity client_state = 1;
+	optional ProductPickerArgs product_picker_args = 2;
 }

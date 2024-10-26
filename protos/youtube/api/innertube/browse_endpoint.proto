@@ -15,17 +15,17 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpoint {
-	optional string browseId = 2;
+	optional string browse_id = 2;
 	optional string params = 3;
-	optional string canonicalBaseUrl = 4;
+	optional string canonical_base_url = 4;
 	optional string query = 5;
-	optional BrowseEndpointContextSupportedConfigs browseEndpointContextSupportedConfigs = 6;
+	optional BrowseEndpointContextSupportedConfigs browse_endpoint_context_supported_configs = 6;
 	optional bool offline = 7;
-	optional BrowseEndpointFormData formData = 8;
-	optional DataSyncPath consistencyTokenPath = 9;
+	optional BrowseEndpointFormData form_data = 8;
+	optional DataSyncPath consistency_token_path = 9;
 	optional bool nofollow = 11;
-	optional string parentTabIdentifier = 12;
-	optional BrowseNavigationType navigationType = 14;
-	optional bool forceReload = 15;
-	optional bool presentInShortsContext = 16;
+	optional string parent_tab_identifier = 12;
+	optional BrowseNavigationType navigation_type = 14;
+	optional bool force_reload = 15;
+	optional bool present_in_shorts_context = 16;
 }

@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SectionListGhostCardRenderer {
-	optional GhostCardType ghostCardType = 1;
-	optional bool enableModernStyle = 2;
-	optional bool enableAnimation = 3;
+	optional GhostCardType ghost_card_type = 1;
+	optional bool enable_modern_style = 2;
+	optional bool enable_animation = 3;
 }

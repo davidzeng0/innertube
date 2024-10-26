@@ -12,12 +12,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message NetworkConnectivityBaselineMetric {
-	optional NetworkConnectivityBaselineMeasurement innertubeMeasurement = 1;
-	optional NetworkConnectivityBaselineMeasurement firstGen204Measurement = 2;
-	optional NetworkConnectivityBaselineMeasurement secondGen204Measurement = 3;
-	optional bool initiallyConnected = 4;
-	optional bool connectedWhenInnertubeRequestCompleted = 5;
-	optional string requestService = 6;
-	optional string requestAnnotation = 7;
-	optional NetworkConnectivityBaselineMeasurement cronetSampleMeasurement = 8;
+	optional NetworkConnectivityBaselineMeasurement innertube_measurement = 1;
+	optional NetworkConnectivityBaselineMeasurement first_gen_204_measurement = 2;
+	optional NetworkConnectivityBaselineMeasurement second_gen_204_measurement = 3;
+	optional bool initially_connected = 4;
+	optional bool connected_when_innertube_request_completed = 5;
+	optional string request_service = 6;
+	optional string request_annotation = 7;
+	optional NetworkConnectivityBaselineMeasurement cronet_sample_measurement = 8;
 }

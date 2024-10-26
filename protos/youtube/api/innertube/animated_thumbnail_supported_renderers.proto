@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AnimatedThumbnailSupportedRenderers {
-	optional AnimatedThumbnailFrameRenderer animatedThumbnailFrameRenderer = 135482798;
+	optional AnimatedThumbnailFrameRenderer animated_thumbnail_frame_renderer = 135482798;
 }

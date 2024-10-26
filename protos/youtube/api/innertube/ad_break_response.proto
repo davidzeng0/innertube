@@ -14,12 +14,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdBreakResponse {
-	optional ResponseContext responseContext = 1;
-	repeated MidrollAdsSupportedRenderers playerAds = 2;
-	optional string adParams = 3;
-	optional bool adThrottled = 5;
-	optional string adNextParams = 6;
-	optional bytes trackingParams = 8;
-	optional bytes ssdaiAdsConfig = 9;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional ResponseContext response_context = 1;
+	repeated MidrollAdsSupportedRenderers player_ads = 2;
+	optional string ad_params = 3;
+	optional bool ad_throttled = 5;
+	optional string ad_next_params = 6;
+	optional bytes tracking_params = 8;
+	optional bytes ssdai_ads_config = 9;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

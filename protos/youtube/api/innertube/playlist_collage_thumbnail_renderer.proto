@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistCollageThumbnailRenderer {
-	repeated ThumbnailDetails thumbnailDetails = 1;
+	repeated ThumbnailDetails thumbnail_details = 1;
 	optional BundleItemStyle style = 2;
-	optional ThumbnailDetails coverThumbnail = 3;
+	optional ThumbnailDetails cover_thumbnail = 3;
 }

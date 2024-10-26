@@ -17,19 +17,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistSidebarPrimaryInfoRenderer {
-	optional PlaylistThumbnailSupportedRenderers thumbnailRenderer = 1;
+	optional PlaylistThumbnailSupportedRenderers thumbnail_renderer = 1;
 	optional FormattedString title = 2;
 	repeated FormattedString stats = 3;
 	optional Renderer menu = 4;
-	repeated ThumbnailOverlaySupportedRenderers thumbnailOverlays = 5;
-	optional Command navigationEndpoint = 6;
+	repeated ThumbnailOverlaySupportedRenderers thumbnail_overlays = 5;
+	optional Command navigation_endpoint = 6;
 	repeated BadgeSupportedRenderers badges = 7;
 	optional FormattedString description = 8;
-	optional FormattedString showMoreText = 9;
-	repeated Renderer playButtons = 10;
-	optional Renderer titleForm = 11;
-	optional Renderer descriptionForm = 12;
-	optional Renderer privacyForm = 13;
+	optional FormattedString show_more_text = 9;
+	repeated Renderer play_buttons = 10;
+	optional Renderer title_form = 11;
+	optional Renderer description_form = 12;
+	optional Renderer privacy_form = 13;
 	optional Renderer progress = 14;
-	repeated FormattedString showStats = 16;
+	repeated FormattedString show_stats = 16;
 }

@@ -16,35 +16,35 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageBannerModel {
-	optional string bannerEntityKey = 2;
-	optional .youtube.api.innertube.DownloadsPageBannerEntity bannerEntity = 3;
-	optional .youtube.api.innertube.ClientVeSpec clientVeSpec = 4;
-	optional .youtube.api.innertube.ClientVeSpec buttonClientVeSpec = 5;
+	optional string banner_entity_key = 2;
+	optional .youtube.api.innertube.DownloadsPageBannerEntity banner_entity = 3;
+	optional .youtube.api.innertube.ClientVeSpec client_ve_spec = 4;
+	optional .youtube.api.innertube.ClientVeSpec button_client_ve_spec = 5;
 
 	oneof bodyText {
 		string text = 6;
-		.youtube.elements.AttributedString formattedText = 25;
+		.youtube.elements.AttributedString formatted_text = 25;
 	}
 
-	optional int32 uiType = 7;
-	optional string buttonText = 8;
-	optional string buttonNavigationUrl = 9;
-	optional int32 buttonUiType = 10;
+	optional int32 ui_type = 7;
+	optional string button_text = 8;
+	optional string button_navigation_url = 9;
+	optional int32 button_ui_type = 10;
 	optional .youtube.elements.Context context = 11;
 
 	oneof titleText {
 		string title = 12;
-		.youtube.elements.AttributedString formattedTitle = 26;
+		.youtube.elements.AttributedString formatted_title = 26;
 	}
 
-	optional Button primaryButton = 13;
-	optional Button secondaryButton = 14;
-	optional uint32 backgroundColor = 15;
-	optional uint32 textColor = 16;
-	optional float paddingBottomValue = 17;
-	optional float titlePaddingBottomValue = 18;
-	optional float textPaddingBottomValue = 19;
-	optional bool shouldLogGestureForPrimaryButton = 22;
-	optional bool shouldLogGestureForSecondaryButton = 23;
-	optional float spaceBetweenButtonsValue = 24;
+	optional Button primary_button = 13;
+	optional Button secondary_button = 14;
+	optional uint32 background_color = 15;
+	optional uint32 text_color = 16;
+	optional float padding_bottom_value = 17;
+	optional float title_padding_bottom_value = 18;
+	optional float text_padding_bottom_value = 19;
+	optional bool should_log_gesture_for_primary_button = 22;
+	optional bool should_log_gesture_for_secondary_button = 23;
+	optional float space_between_buttons_value = 24;
 }

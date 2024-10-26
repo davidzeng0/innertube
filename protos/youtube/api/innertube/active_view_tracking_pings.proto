@@ -13,11 +13,11 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ActiveViewTrackingPings {
-	repeated Ping activeViewViewablePings = 1;
-	repeated Ping activeViewMeasurablePings = 2;
-	repeated Ping activeViewFullyViewableAudibleHalfDurationPings = 3;
-	repeated Ping activeViewEndOfSessionPings = 4;
-	repeated Ping activeViewAudioAudiblePings = 5;
-	repeated Ping activeViewAudioMeasurablePings = 6;
-	optional ActiveViewTrafficType trafficType = 7;
+	repeated Ping active_view_viewable_pings = 1;
+	repeated Ping active_view_measurable_pings = 2;
+	repeated Ping active_view_fully_viewable_audible_half_duration_pings = 3;
+	repeated Ping active_view_end_of_session_pings = 4;
+	repeated Ping active_view_audio_audible_pings = 5;
+	repeated Ping active_view_audio_measurable_pings = 6;
+	optional ActiveViewTrafficType traffic_type = 7;
 }

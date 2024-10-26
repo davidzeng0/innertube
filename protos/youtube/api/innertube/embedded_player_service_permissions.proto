@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EmbeddedPlayerServicePermissions {
-	optional bool allowAdEvents = 1;
-	optional bool allowImaMonetization = 2;
+	optional bool allow_ad_events = 1;
+	optional bool allow_ima_monetization = 2;
 }

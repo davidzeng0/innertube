@@ -19,15 +19,15 @@ option objc_class_prefix = "ELMPB";
 
 message InviteScreenModel {
 	optional .youtube.elements.Context context = 2;
-	optional InviteScreenData inviteScreenData = 3;
-	optional VideoThumbnailData videoThumbnailData = 4;
-	optional string videoThumbnailDataKey = 5;
-	optional .youtube.api.innertube.InviteLinkEntity inviteLinkEntity = 8;
-	optional string inviteLinkEntityKey = 9;
+	optional InviteScreenData invite_screen_data = 3;
+	optional VideoThumbnailData video_thumbnail_data = 4;
+	optional string video_thumbnail_data_key = 5;
+	optional .youtube.api.innertube.InviteLinkEntity invite_link_entity = 8;
+	optional string invite_link_entity_key = 9;
 	optional .youtube.elements.EnvironmentData environment = 10;
-	optional string nextButtonEnabledKey = 12;
-	optional string doneButtonEnabledKey = 14;
-	optional InviteScreenButtonEnabled nextButtonEnabled = 15;
-	optional InviteScreenButtonEnabled doneButtonEnabled = 16;
-	optional .youtube.api.innertube.LoggingDirectives loggingDirectives = 999;
+	optional string next_button_enabled_key = 12;
+	optional string done_button_enabled_key = 14;
+	optional InviteScreenButtonEnabled next_button_enabled = 15;
+	optional InviteScreenButtonEnabled done_button_enabled = 16;
+	optional .youtube.api.innertube.LoggingDirectives logging_directives = 999;
 }

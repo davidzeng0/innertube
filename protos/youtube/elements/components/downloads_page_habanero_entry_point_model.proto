@@ -12,11 +12,11 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageHabaneroEntryPointModel {
-	optional bool isEnabled = 2;
+	optional bool is_enabled = 2;
 	optional string title = 3;
 	optional string subtitle = 4;
-	optional string buttonText = 5;
-	optional string offlineSnackbarMessage = 6;
-	optional string buttonBrowseId = 7;
+	optional string button_text = 5;
+	optional string offline_snackbar_message = 6;
+	optional string button_browse_id = 7;
 	optional .youtube.elements.Context context = 8;
 }

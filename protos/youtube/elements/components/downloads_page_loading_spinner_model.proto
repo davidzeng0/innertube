@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageLoadingSpinnerModel {
-	optional string detailsText = 2;
-	optional .google.protobuf.BoolValue detailsTextDelayPassed = 3;
+	optional string details_text = 2;
+	optional .google.protobuf.BoolValue details_text_delay_passed = 3;
 }

@@ -14,11 +14,11 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FeaturedChannel {
-	optional int64 startTimeMs = 1;
-	optional int64 endTimeMs = 2;
+	optional int64 start_time_ms = 1;
+	optional int64 end_time_ms = 2;
 	optional ThumbnailDetails watermark = 6;
-	optional bytes trackingParams = 9;
-	optional Command navigationEndpoint = 10;
-	optional string channelName = 11;
-	optional Renderer subscribeButton = 12;
+	optional bytes tracking_params = 9;
+	optional Command navigation_endpoint = 10;
+	optional string channel_name = 11;
+	optional Renderer subscribe_button = 12;
 }

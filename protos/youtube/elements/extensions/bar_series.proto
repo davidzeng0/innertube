@@ -15,6 +15,6 @@ option objc_class_prefix = "ELMPB";
 
 message BarSeries {
 	repeated BarSeriesData data = 1;
-	optional MeasureAxisConfiguration measureAxis = 2;
+	optional MeasureAxisConfiguration measure_axis = 2;
 	optional BarSeriesStyle style = 4;
 }

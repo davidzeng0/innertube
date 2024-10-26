@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LivePlaybackContext {
-	optional uint64 startWalltime = 1;
-	optional uint64 manifestDuration = 2;
-	optional string airingVideoId = 3;
+	optional uint64 start_walltime = 1;
+	optional uint64 manifest_duration = 2;
+	optional string airing_video_id = 3;
 }

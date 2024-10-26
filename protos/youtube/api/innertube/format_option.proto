@@ -14,6 +14,6 @@ option objc_class_prefix = "YTI";
 
 message FormatOption {
 	optional FormattedString label = 1;
-	optional FormattedString sizeLabel = 2;
-	repeated OfflineStreamSelectionBadgeSupportedRenderers streamSelectionBadges = 5;
+	optional FormattedString size_label = 2;
+	repeated OfflineStreamSelectionBadgeSupportedRenderers stream_selection_badges = 5;
 }

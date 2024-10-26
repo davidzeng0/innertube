@@ -18,11 +18,11 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SectionListSubMenuSupportedRenderers {
-	optional ChannelListSubMenuRenderer channelListSubMenuRenderer = 48479645;
-	optional ChannelSubMenuRenderer channelSubMenuRenderer = 53577639;
-	optional SearchSubMenuRenderer searchSubMenuRenderer = 69655246;
-	optional SortFilterSubMenuRenderer sortFilterSubMenuRenderer = 76818770;
-	optional LinkSubMenuRenderer linkSubMenuRenderer = 85962144;
-	optional SearchBoxRenderer searchBoxRenderer = 132114608;
-	optional ElementRenderer elementRenderer = 153515154;
+	optional ChannelListSubMenuRenderer channel_list_sub_menu_renderer = 48479645;
+	optional ChannelSubMenuRenderer channel_sub_menu_renderer = 53577639;
+	optional SearchSubMenuRenderer search_sub_menu_renderer = 69655246;
+	optional SortFilterSubMenuRenderer sort_filter_sub_menu_renderer = 76818770;
+	optional LinkSubMenuRenderer link_sub_menu_renderer = 85962144;
+	optional SearchBoxRenderer search_box_renderer = 132114608;
+	optional ElementRenderer element_renderer = 153515154;
 }

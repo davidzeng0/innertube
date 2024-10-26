@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message BrowseContinuationHeaderSupportedRenderers {
 	oneof renderer {
-		CreatorHeaderRenderer creatorHeaderRenderer = 64375887;
-		SearchableBrowseHeaderRenderer searchableBrowseHeaderRenderer = 84636745;
-		NotificationInboxHeaderRenderer notificationInboxHeaderRenderer = 100977426;
+		CreatorHeaderRenderer creator_header_renderer = 64375887;
+		SearchableBrowseHeaderRenderer searchable_browse_header_renderer = 84636745;
+		NotificationInboxHeaderRenderer notification_inbox_header_renderer = 100977426;
 	}
 }

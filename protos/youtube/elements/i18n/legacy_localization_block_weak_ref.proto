@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.i18n";
 option objc_class_prefix = "ELMPB";
 
 message LegacyLocalizationBlockWeakRef {
-	optional string blockInstanceId = 1;
+	optional string block_instance_id = 1;
 }

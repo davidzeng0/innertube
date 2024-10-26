@@ -19,11 +19,11 @@ message DownloadsPageSmartDownloadsOptInBannerModel {
 
 	oneof bodyText {
 		string text = 4;
-		.youtube.elements.AttributedString formattedText = 9;
+		.youtube.elements.AttributedString formatted_text = 9;
 	}
 
-	optional string primaryButtonText = 5;
-	optional string secondaryButtonText = 6;
-	optional .youtube.elements.EnvironmentData environmentData = 7;
-	optional string offlineSnackbarMessage = 8;
+	optional string primary_button_text = 5;
+	optional string secondary_button_text = 6;
+	optional .youtube.elements.EnvironmentData environment_data = 7;
+	optional string offline_snackbar_message = 8;
 }

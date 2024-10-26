@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointUnpluggedConfig {
-	optional bool disableResetWatchNext = 1;
-	optional bool disableScreenLogging = 2;
-	optional bool shouldMinimizePlayer = 3;
+	optional bool disable_reset_watch_next = 1;
+	optional bool disable_screen_logging = 2;
+	optional bool should_minimize_player = 3;
 }

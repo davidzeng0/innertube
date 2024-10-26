@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MoreLikeThisEndpoint {
-	optional string moreLikeThisToken = 1;
+	optional string more_like_this_token = 1;
 	repeated Command actions = 2;
 }

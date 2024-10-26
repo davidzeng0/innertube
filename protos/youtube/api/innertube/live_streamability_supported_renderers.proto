@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamabilitySupportedRenderers {
-	optional LiveStreamabilityRenderer liveStreamabilityRenderer = 108363419;
+	optional LiveStreamabilityRenderer live_streamability_renderer = 108363419;
 }

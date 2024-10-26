@@ -15,18 +15,18 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EndScreenVideoRenderer {
-	optional string videoId = 1;
+	optional string video_id = 1;
 	optional ThumbnailDetails thumbnail = 2;
 	optional FormattedString title = 3;
-	optional FormattedString longBylineText = 4;
-	optional FormattedString shortBylineText = 5;
-	optional FormattedString viewCountText = 6;
-	optional FormattedString lengthText = 7;
-	optional int32 lengthInSeconds = 8;
+	optional FormattedString long_byline_text = 4;
+	optional FormattedString short_byline_text = 5;
+	optional FormattedString view_count_text = 6;
+	optional FormattedString length_text = 7;
+	optional int32 length_in_seconds = 8;
 	optional bool featured = 9;
-	optional Command navigationEndpoint = 10;
-	optional bytes trackingParams = 12;
-	optional FormattedString shortViewCountText = 13;
-	optional FormattedString publishedTimeText = 14;
-	repeated ThumbnailOverlaySupportedRenderers thumbnailOverlays = 16;
+	optional Command navigation_endpoint = 10;
+	optional bytes tracking_params = 12;
+	optional FormattedString short_view_count_text = 13;
+	optional FormattedString published_time_text = 14;
+	repeated ThumbnailOverlaySupportedRenderers thumbnail_overlays = 16;
 }

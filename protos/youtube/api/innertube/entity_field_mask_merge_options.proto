@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityFieldMaskMergeOptions {
-	optional RepeatedFieldsMergeOption repeatedFieldsMergeOption = 1;
+	optional RepeatedFieldsMergeOption repeated_fields_merge_option = 1;
 }

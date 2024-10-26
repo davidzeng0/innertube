@@ -20,6 +20,6 @@ message BrowseEndpointContextMainConfig {
 		BROWSE_THEME_DARK = 3;
 	}
 
-	optional BrowseEndpointMainColorSupportedDatas mainConfigColorPalette = 1;
+	optional BrowseEndpointMainColorSupportedDatas main_config_color_palette = 1;
 	optional BrowseTheme theme = 2;
 }

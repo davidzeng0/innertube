@@ -15,9 +15,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message InnerTubeFeedbackResponse {
-	optional ResponseContext responseContext = 1;
-	repeated FeedbackResponseData feedbackResponses = 4;
+	optional ResponseContext response_context = 1;
+	repeated FeedbackResponseData feedback_responses = 4;
 	repeated Command actions = 5;
-	optional bytes trackingParams = 12;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional bytes tracking_params = 12;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

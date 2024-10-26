@@ -12,10 +12,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpointFormData {
-	repeated string selectedValues = 1;
-	repeated string impressionValues = 2;
+	repeated string selected_values = 1;
+	repeated string impression_values = 2;
 
 	oneof data {
-		TastebuilderFormData tastebuilderFormData = 393677516;
+		TastebuilderFormData tastebuilder_form_data = 393677516;
 	}
 }

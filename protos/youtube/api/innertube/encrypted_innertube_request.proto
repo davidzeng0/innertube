@@ -17,14 +17,14 @@ message EncryptedInnertubeRequest {
 	// debugDeviceIdOverride: '0', clientName: ANDROID or IOS or any other, clientVersion:
 	// operating system version. not app version.
 	optional InnerTubeContext context = 1;
-	optional bytes encryptedOnesieInnertubeRequest = 2;
+	optional bytes encrypted_onesie_innertube_request = 2;
 	// from Onesie(Hot)Config::encryptedClientKey
-	optional bytes encryptedClientKey = 5;
-	optional bytes iv = 6; // randomly generated iv
+	optional bytes encrypted_client_key = 5;
+	optional bytes iv = 6;
 	optional bytes hmac = 7;
 	// if set to true, the `encryptedOnesieRequest` is gzipped before encrypted
-	optional bool enableCompression = 8;
+	optional bool enable_compression = 8;
 	// from Onesie(Hot)Config::reverseProxyConfig
-	optional string reverseProxyConfig = 9;
-	optional .youtube.unknown.Unnamed7319 unnamedField12 = 12;
+	optional string reverse_proxy_config = 9;
+	optional .youtube.unknown.Unnamed7319 unnamed_field_12 = 12;
 }

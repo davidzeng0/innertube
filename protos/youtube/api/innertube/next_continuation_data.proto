@@ -13,13 +13,13 @@ option objc_class_prefix = "YTI";
 
 message NextContinuationData {
 	optional string continuation = 1;
-	optional bytes clickTrackingParams = 2;
+	optional bytes click_tracking_params = 2;
 	optional FormattedString label = 3;
-	optional bool prefetchingEnabled = 5;
-	optional bool autoloadEnabled = 7;
+	optional bool prefetching_enabled = 5;
+	optional bool autoload_enabled = 7;
 
 	oneof autoloadTrigger {
-		bool autoloadImmediately = 8;
-		int32 autoloadThresholdItemsFromEnd = 9;
+		bool autoload_immediately = 8;
+		int32 autoload_threshold_items_from_end = 9;
 	}
 }

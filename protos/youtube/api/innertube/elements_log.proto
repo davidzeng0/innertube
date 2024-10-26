@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ElementsLog {
-	optional .youtube.elements.ClientLog.ErrorType errorElementsLogType = 2;
-	optional string logMessage = 3;
-	optional string emlTemplate = 4;
-	optional int32 nativeErrorCode = 5;
+	optional .youtube.elements.ClientLog.ErrorType error_elements_log_type = 2;
+	optional string log_message = 3;
+	optional string eml_template = 4;
+	optional int32 native_error_code = 5;
 }

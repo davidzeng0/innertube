@@ -12,9 +12,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseNotificationsParams {
-	optional ActivityTabSelection activityTabSelection = 1;
-	optional bool deviceNotificationsEnabled = 2;
-	optional bool markFeedAsSeen = 3;
-	optional bool inappNotificationsEnabled = 4;
-	optional int64 lastDeviceOptInChangeTimeAgoSec = 5;
+	optional ActivityTabSelection activity_tab_selection = 1;
+	optional bool device_notifications_enabled = 2;
+	optional bool mark_feed_as_seen = 3;
+	optional bool inapp_notifications_enabled = 4;
+	optional int64 last_device_opt_in_change_time_ago_sec = 5;
 }

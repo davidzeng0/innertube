@@ -20,14 +20,14 @@ option objc_class_prefix = "ELMPB";
 
 message AttributedString {
 	optional string content = 1;
-	optional float lineSpacing = 2;
+	optional float line_spacing = 2;
 	optional i18n.TextAlignment alignment = 3;
-	optional i18n.LineBreakMode lineBreakMode = 4;
-	repeated CommandRun commandRuns = 5;
-	repeated StyleRun styleRuns = 6;
-	optional bool androidIncludeFontPadding = 7;
-	repeated AttachmentRun attachmentRuns = 8;
-	optional i18n.TruncationMode truncationMode = 9;
-	repeated DecorationRun decorationRuns = 10;
-	optional FontDimension lineHeight = 11;
+	optional i18n.LineBreakMode line_break_mode = 4;
+	repeated CommandRun command_runs = 5;
+	repeated StyleRun style_runs = 6;
+	optional bool android_include_font_padding = 7;
+	repeated AttachmentRun attachment_runs = 8;
+	optional i18n.TruncationMode truncation_mode = 9;
+	repeated DecorationRun decoration_runs = 10;
+	optional FontDimension line_height = 11;
 }

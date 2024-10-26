@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MediaColdConfig {
-	optional IosMediaColdConfig iosMediaColdConfig = 1;
-	optional ScriptedPlayerColdConfig scriptedPlayerColdConfig = 3;
-	optional MediaFetchColdConfig mediaFetchColdConfig = 4;
+	optional IosMediaColdConfig ios_media_cold_config = 1;
+	optional ScriptedPlayerColdConfig scripted_player_cold_config = 3;
+	optional MediaFetchColdConfig media_fetch_cold_config = 4;
 }

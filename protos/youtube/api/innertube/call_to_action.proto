@@ -15,16 +15,16 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message CallToAction {
-	optional int64 startTimeMs = 1;
-	optional int64 endTimeMs = 2;
-	optional int64 hideTimeMs = 3;
+	optional int64 start_time_ms = 1;
+	optional int64 end_time_ms = 2;
+	optional int64 hide_time_ms = 3;
 	optional string headline = 4;
-	optional string displayUrl = 7;
-	optional Command clickDestination = 8;
+	optional string display_url = 7;
+	optional Command click_destination = 8;
 	optional ThumbnailDetails image = 9;
-	optional bytes trackingParams = 12;
-	optional PlayerVisibility playerVisibility = 13;
-	repeated LoggingUrl impressionLoggingUrls = 14;
-	repeated LoggingUrl closeLoggingUrls = 15;
-	optional int32 collapseAfterMs = 16;
+	optional bytes tracking_params = 12;
+	optional PlayerVisibility player_visibility = 13;
+	repeated LoggingUrl impression_logging_urls = 14;
+	repeated LoggingUrl close_logging_urls = 15;
+	optional int32 collapse_after_ms = 16;
 }

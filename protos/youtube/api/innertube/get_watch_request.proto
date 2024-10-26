@@ -15,6 +15,6 @@ option objc_class_prefix = "YTI";
 
 message GetWatchRequest {
 	optional InnerTubeContext context = 1;
-	optional PlayerRequest playerRequest = 2;
-	optional WatchNextRequest watchNextRequest = 3;
+	optional PlayerRequest player_request = 2;
+	optional WatchNextRequest watch_next_request = 3;
 }

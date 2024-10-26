@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistClientBindingData {
-	optional string playlistId = 1;
+	optional string playlist_id = 1;
 }

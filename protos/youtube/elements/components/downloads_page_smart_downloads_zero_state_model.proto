@@ -15,13 +15,13 @@ option objc_class_prefix = "ELMPB";
 
 message DownloadsPageSmartDownloadsZeroStateModel {
 	optional .youtube.elements.Context context = 2;
-	optional string futureUpdateMessage = 3;
-	optional Button primaryButton = 4;
-	optional Button secondaryButton = 5;
-	optional string updateNowButtonText = 6;
-	optional string turnOffButtonText = 7;
-	optional string smartDownloadsListEntityKey = 8;
-	optional .youtube.elements.EnvironmentData environmentData = 9;
-	optional string offlineSnackbarMessage = 10;
-	repeated int32 updateNowRetryIntervalsInSeconds = 11;
+	optional string future_update_message = 3;
+	optional Button primary_button = 4;
+	optional Button secondary_button = 5;
+	optional string update_now_button_text = 6;
+	optional string turn_off_button_text = 7;
+	optional string smart_downloads_list_entity_key = 8;
+	optional .youtube.elements.EnvironmentData environment_data = 9;
+	optional string offline_snackbar_message = 10;
+	repeated int32 update_now_retry_intervals_in_seconds = 11;
 }

@@ -11,5 +11,5 @@ option objc_class_prefix = "ELMPB";
 
 message AnimatedSwitchState {
 	optional bool selected = 1;
-	optional bool disableAnimation = 2;
+	optional bool disable_animation = 2;
 }

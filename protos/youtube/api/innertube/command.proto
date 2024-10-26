@@ -13,9 +13,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message Command {
-	optional bytes clickTrackingParams = 2;
-	repeated LoggingUrl loggingUrls = 3;
-	optional CommandMetadata commandMetadata = 4;
-	
+	optional bytes click_tracking_params = 2;
+	repeated LoggingUrl logging_urls = 3;
+	optional CommandMetadata command_metadata = 4;
+
 	extensions 1000 to max;
 }

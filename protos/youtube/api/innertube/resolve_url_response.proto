@@ -14,8 +14,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ResolveUrlResponse {
-	optional ResponseContext responseContext = 1;
+	optional ResponseContext response_context = 1;
 	optional Command endpoint = 2;
-	optional AttributionData attributionData = 4;
-	optional Command commandExecutorCommand = 5;
+	optional AttributionData attribution_data = 4;
+	optional Command command_executor_command = 5;
 }

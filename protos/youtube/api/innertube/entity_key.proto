@@ -17,8 +17,8 @@ message EntityKey {
 		ID_NAMESPACE_CLIENT = 2;
 	}
 
-	optional bytes entityId = 2;
-	optional int64 entityType = 4;
-	optional IdNamespace entityIdNamespace = 5;
-	optional bytes entityScopeToken = 6;
+	optional bytes entity_id = 2;
+	optional int64 entity_type = 4;
+	optional IdNamespace entity_id_namespace = 5;
+	optional bytes entity_scope_token = 6;
 }

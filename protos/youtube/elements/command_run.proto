@@ -13,12 +13,12 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message CommandRun {
-	optional uint32 startIndex = 1;
+	optional uint32 start_index = 1;
 	optional uint32 length = 2;
-	optional Command onTap = 3;
-	optional Command onLongPress = 4;
-	optional GestureOptions onTapOptions = 5;
-	optional GestureOptions onLongPressOptions = 6;
-	
+	optional Command on_tap = 3;
+	optional Command on_long_press = 4;
+	optional GestureOptions on_tap_options = 5;
+	optional GestureOptions on_long_press_options = 6;
+
 	extensions 999 to max;
 }

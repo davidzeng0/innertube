@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message AccessibilityActivationPointProperties {
-	optional Point accessibilityActivationPoint = 1;
+	optional Point accessibility_activation_point = 1;
 }

@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UpdatedMetadataEndpoint {
-	optional string videoId = 1;
-	optional bool shouldStopUpdate = 3;
-	optional int32 initialDelayMs = 4;
+	optional string video_id = 1;
+	optional bool should_stop_update = 3;
+	optional int32 initial_delay_ms = 4;
 }

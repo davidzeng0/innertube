@@ -14,6 +14,6 @@ option objc_class_prefix = "YTI";
 
 message AnimatedThumbnailFrameRenderer {
 	optional ThumbnailDetails thumbnail = 1;
-	optional Command navigationEndpoint = 2;
-	optional bytes trackingParams = 4;
+	optional Command navigation_endpoint = 2;
+	optional bytes tracking_params = 4;
 }

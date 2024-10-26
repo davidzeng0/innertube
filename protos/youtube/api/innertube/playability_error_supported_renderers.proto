@@ -19,12 +19,12 @@ option objc_class_prefix = "YTI";
 
 message PlayabilityErrorSupportedRenderers {
 	oneof renderer {
-		PlayerErrorMessageRenderer playerErrorMessageRenderer = 58356580;
-		ConfirmDialogRenderer confirmDialogRenderer = 64099105;
-		PlayerLegacyDesktopYpcOfferRenderer playerLegacyDesktopYpcOfferRenderer = 64587791;
-		PlayerLegacyDesktopYpcTrailerRenderer playerLegacyDesktopYpcTrailerRenderer = 71948135;
-		PlayerKavRenderer playerKavRenderer = 73238862;
-		YpcTrailerRenderer ypcTrailerRenderer = 86164011;
-		PlayerSpotlightStoryRenderer playerSpotlightStoryRenderer = 91346961;
+		PlayerErrorMessageRenderer player_error_message_renderer = 58356580;
+		ConfirmDialogRenderer confirm_dialog_renderer = 64099105;
+		PlayerLegacyDesktopYpcOfferRenderer player_legacy_desktop_ypc_offer_renderer = 64587791;
+		PlayerLegacyDesktopYpcTrailerRenderer player_legacy_desktop_ypc_trailer_renderer = 71948135;
+		PlayerKavRenderer player_kav_renderer = 73238862;
+		YpcTrailerRenderer ypc_trailer_renderer = 86164011;
+		PlayerSpotlightStoryRenderer player_spotlight_story_renderer = 91346961;
 	}
 }

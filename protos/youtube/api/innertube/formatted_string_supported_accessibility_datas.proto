@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormattedStringSupportedAccessibilityDatas {
-	optional AccessibilityData accessibilityData = 75730170;
+	optional AccessibilityData accessibility_data = 75730170;
 }

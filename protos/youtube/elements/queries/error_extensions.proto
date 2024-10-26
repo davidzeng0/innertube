@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message ErrorExtensions {
-	optional int32 errorCode = 1;
-	
+	optional int32 error_code = 1;
+
 	extensions 1000 to max;
 }

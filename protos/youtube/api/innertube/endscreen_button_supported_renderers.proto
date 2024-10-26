@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message EndscreenButtonSupportedRenderers {
 	oneof renderer {
-		SubscribeButtonRenderer subscribeButtonRenderer = 55419609;
+		SubscribeButtonRenderer subscribe_button_renderer = 55419609;
 	}
 }

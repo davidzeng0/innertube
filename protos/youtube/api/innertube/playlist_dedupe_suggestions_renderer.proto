@@ -16,7 +16,7 @@ option objc_class_prefix = "YTI";
 message PlaylistDedupeSuggestionsRenderer {
 	optional FormattedString title = 1;
 	repeated PlaylistDedupeSuggestionsVideoSupportedRenderers items = 2;
-	optional Command removeDuplicateVideosEndpoint = 3;
-	optional FormattedString removeDuplicateButtonLabel = 4;
+	optional Command remove_duplicate_videos_endpoint = 3;
+	optional FormattedString remove_duplicate_button_label = 4;
 	optional FormattedString description = 5;
 }

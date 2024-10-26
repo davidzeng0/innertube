@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UpdatedMetadataSupportedContinuations {
-	optional TimedContinuationData timedContinuationData = 70339736;
+	optional TimedContinuationData timed_continuation_data = 70339736;
 }

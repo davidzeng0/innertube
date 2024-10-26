@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message HeaderLink {
-	optional Command navigationEndpoint = 1;
+	optional Command navigation_endpoint = 1;
 	optional ThumbnailDetails icon = 2;
 	optional FormattedString title = 3;
 }

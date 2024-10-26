@@ -15,10 +15,10 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageVideoUsingQueriesModel {
-	optional string mainVideoEntityKey = 2;
-	optional int32 positionIndex = 3;
+	optional string main_video_entity_key = 2;
+	optional int32 position_index = 3;
 	optional DownloadsPageVideoExperiments experiments = 4;
 	optional .youtube.elements.Context context = 5;
-	optional .youtube.elements.EnvironmentData environmentData = 6;
-	optional .youtube.elements.queries.QueryResponse queryResponse = 7;
+	optional .youtube.elements.EnvironmentData environment_data = 6;
+	optional .youtube.elements.queries.QueryResponse query_response = 7;
 }

@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointSupportedPrefetchConfig {
-	optional PlaybackPrefetchDataConfig prefetchDataConfig = 68202535;
-	optional PlaybackPrefetchHintConfig prefetchHintConfig = 68429767;
+	optional PlaybackPrefetchDataConfig prefetch_data_config = 68202535;
+	optional PlaybackPrefetchHintConfig prefetch_hint_config = 68429767;
 }

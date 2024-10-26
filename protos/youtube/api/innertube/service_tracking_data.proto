@@ -10,10 +10,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ServiceTrackingData {
-	optional int64 innertubeBuildChangelist = 1;
-	optional int64 innertubeBuildExperimentsSourceVersion = 2;
-	optional string innertubeBuildLabel = 3;
-	optional int64 innertubeBuildTimestampSec = 4;
-	optional string innertubeBuildVariantsChecksum = 5;
-	optional string innertubeJobName = 6;
+	optional int64 innertube_build_changelist = 1;
+	optional int64 innertube_build_experiments_source_version = 2;
+	optional string innertube_build_label = 3;
+	optional int64 innertube_build_timestamp_sec = 4;
+	optional string innertube_build_variants_checksum = 5;
+	optional string innertube_job_name = 6;
 }

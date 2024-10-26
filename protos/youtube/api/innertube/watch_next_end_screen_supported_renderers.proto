@@ -15,8 +15,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchNextEndScreenSupportedRenderers {
-	optional EndScreenPlaylistRenderer endScreenPlaylistRenderer = 57128056;
-	optional EndScreenVideoRenderer endScreenVideoRenderer = 57153017;
-	optional ElementRenderer elementRenderer = 153515154;
-	optional AdEndScreenVideoRenderer adEndScreenVideoRenderer = 212894435;
+	optional EndScreenPlaylistRenderer end_screen_playlist_renderer = 57128056;
+	optional EndScreenVideoRenderer end_screen_video_renderer = 57153017;
+	optional ElementRenderer element_renderer = 153515154;
+	optional AdEndScreenVideoRenderer ad_end_screen_video_renderer = 212894435;
 }

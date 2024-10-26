@@ -19,7 +19,7 @@ message ThumbnailDetails {
 		optional uint32 width = 2;
 		optional uint32 height = 3;
 	}
-	
+
 	/* protogen: merge reason = nested */
 	message RgbColor {
 		optional int32 red = 1;
@@ -28,20 +28,20 @@ message ThumbnailDetails {
 	}
 
 	repeated Thumbnail thumbnails = 1;
-	optional uint32 placeholderColor = 2;
-	optional bool enableLoadedLogging = 3;
+	optional uint32 placeholder_color = 2;
+	optional bool enable_loaded_logging = 3;
 	optional AccessibilitySupportedDatas accessibility = 4;
-	optional bool logAsMovingThumbnail = 5;
-	optional bytes lowResJpeg = 6;
-	optional bool isReelsVideo = 9;
-	optional bool isOriginalAspectRatio = 11;
-	optional RgbColor sampledThumbnailColor = 12;
-	optional LightsourceColorPaletteData lightColorPalette = 13;
-	optional LightsourceColorPaletteData darkColorPalette = 14;
-	optional string targetId = 15;
+	optional bool log_as_moving_thumbnail = 5;
+	optional bytes low_res_jpeg = 6;
+	optional bool is_reels_video = 9;
+	optional bool is_original_aspect_ratio = 11;
+	optional RgbColor sampled_thumbnail_color = 12;
+	optional LightsourceColorPaletteData light_color_palette = 13;
+	optional LightsourceColorPaletteData dark_color_palette = 14;
+	optional string target_id = 15;
 	optional float opacity = 16;
-	
-	extensions 10 to 11;
-	
+
+	extensions 10;
+
 	extensions 1000 to max;
 }

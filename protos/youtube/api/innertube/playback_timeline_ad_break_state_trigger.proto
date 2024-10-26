@@ -13,9 +13,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaybackTimelineAdBreakStateTrigger {
-	optional string cueIdentifier = 1;
-	optional int64 timestampUnixEpochSec = 2;
-	optional DAIAdBreakAdRequestState adRequestState = 3;
-	optional DAIAdBreakSegmentState segmentState = 4;
-	optional int64 timestampUnixEpochMs = 5;
+	optional string cue_identifier = 1;
+	optional int64 timestamp_unix_epoch_sec = 2;
+	optional DAIAdBreakAdRequestState ad_request_state = 3;
+	optional DAIAdBreakSegmentState segment_state = 4;
+	optional int64 timestamp_unix_epoch_ms = 5;
 }

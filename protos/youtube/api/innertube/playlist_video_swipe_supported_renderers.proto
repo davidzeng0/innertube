@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message PlaylistVideoSwipeSupportedRenderers {
 	oneof renderer {
-		ButtonRenderer buttonRenderer = 65153809;
+		ButtonRenderer button_renderer = 65153809;
 	}
 }

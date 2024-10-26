@@ -15,14 +15,14 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message InteractionLoggingAdsClientData {
-	optional int32 clickLocation = 3;
-	optional AdClientDataEntry adClientDataEntry = 4;
-	optional bytes serializedAdServingData = 5;
+	optional int32 click_location = 3;
+	optional AdClientDataEntry ad_client_data_entry = 4;
+	optional bytes serialized_ad_serving_data = 5;
 
 	oneof adsClientData {
-		AdGestureTerminationData adGestureTerminationData = 10;
-		PreloadAppStoreData preloadAppStoreData = 14;
+		AdGestureTerminationData ad_gesture_termination_data = 10;
+		PreloadAppStoreData preload_app_store_data = 14;
 	}
 
-	optional AdsClickData clickData = 12;
+	optional AdsClickData click_data = 12;
 }

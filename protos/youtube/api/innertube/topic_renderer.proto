@@ -17,9 +17,9 @@ option objc_class_prefix = "YTI";
 
 message TopicRenderer {
 	optional FormattedString title = 1;
-	optional Command navigationEndpoint = 2;
+	optional Command navigation_endpoint = 2;
 	optional ThumbnailDetails thumbnail = 3;
-	optional Icon topicIcon = 4;
-	optional bytes trackingParams = 6;
-	optional TopicStyle topicStyle = 7;
+	optional Icon topic_icon = 4;
+	optional bytes tracking_params = 6;
+	optional TopicStyle topic_style = 7;
 }

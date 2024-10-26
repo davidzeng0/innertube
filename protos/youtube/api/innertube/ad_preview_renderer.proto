@@ -13,8 +13,8 @@ option objc_class_prefix = "YTI";
 
 message AdPreviewRenderer {
 	optional AdText message = 2;
-	optional string elementId = 4;
-	optional bytes trackingParams = 6;
-	optional AdText staticPreview = 8;
-	optional int32 durationMilliseconds = 9;
+	optional string element_id = 4;
+	optional bytes tracking_params = 6;
+	optional AdText static_preview = 8;
+	optional int32 duration_milliseconds = 9;
 }

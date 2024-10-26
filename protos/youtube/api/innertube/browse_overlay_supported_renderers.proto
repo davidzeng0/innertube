@@ -38,31 +38,31 @@ option objc_class_prefix = "YTI";
 
 message BrowseOverlaySupportedRenderers {
 	oneof renderer {
-		ConfirmDialogRenderer confirmDialogRenderer = 64099105;
-		InterstitialPromoRenderer interstitialPromo = 86135402;
-		UpsellDialogRenderer upsellDialogRenderer = 88122887;
-		MusicFullscreenPromoRenderer musicFullscreenPromoRenderer = 94312586;
-		MealbarPromoRenderer mealbarPromoRenderer = 96907215;
-		FlowRenderer flowRenderer = 97673187;
-		DismissableClingRenderer dismissableClingRenderer = 102365781;
-		HintRenderer hintRenderer = 102716411;
-		TopicPickerRenderer topicPickerRenderer = 118637602;
-		InterstitialGridPromoRenderer interstitialGridPromoRenderer = 118816221;
-		TastebuilderRenderer tastebuilderRenderer = 121288100;
-		UnpluggedLocationRenderer unpluggedLocationRenderer = 121478669;
-		UnpluggedLocationResolutionRenderer unpluggedLocationResolutionRenderer = 133553674;
-		UnpluggedTravelRenderer unpluggedTravelRenderer = 139486753;
-		UnsupportedVersionRenderer unsupportedVersionRenderer = 141221048;
-		UnpluggedPromoRenderer unpluggedPromoRenderer = 144754891;
-		TooltipRenderer tooltipRenderer = 152873793;
-		ElementRenderer elementRenderer = 153515154;
-		UnpluggedAlertRenderer unpluggedAlertRenderer = 156478231;
-		UnpluggedFullScreenStepRenderer unpluggedFullScreenStepRenderer = 157910660;
-		FullScreenOverlayRenderer fullScreenOverlayRenderer = 162801955;
-		UnpluggedInfoDialogRenderer unpluggedInfoDialogRenderer = 173637591;
-		CommandWrapperPromoRenderer commandWrapperPromoRenderer = 182224395;
-		MusicMultiselectFormRenderer musicMultiselectFormRenderer = 209621365;
-		UnpluggedDvrPickerFooterRenderer unpluggedDvrPickerFooterRenderer = 220023602;
-		FlowRootRenderer flowRootRenderer = 371777145;
+		ConfirmDialogRenderer confirm_dialog_renderer = 64099105;
+		InterstitialPromoRenderer interstitial_promo = 86135402;
+		UpsellDialogRenderer upsell_dialog_renderer = 88122887;
+		MusicFullscreenPromoRenderer music_fullscreen_promo_renderer = 94312586;
+		MealbarPromoRenderer mealbar_promo_renderer = 96907215;
+		FlowRenderer flow_renderer = 97673187;
+		DismissableClingRenderer dismissable_cling_renderer = 102365781;
+		HintRenderer hint_renderer = 102716411;
+		TopicPickerRenderer topic_picker_renderer = 118637602;
+		InterstitialGridPromoRenderer interstitial_grid_promo_renderer = 118816221;
+		TastebuilderRenderer tastebuilder_renderer = 121288100;
+		UnpluggedLocationRenderer unplugged_location_renderer = 121478669;
+		UnpluggedLocationResolutionRenderer unplugged_location_resolution_renderer = 133553674;
+		UnpluggedTravelRenderer unplugged_travel_renderer = 139486753;
+		UnsupportedVersionRenderer unsupported_version_renderer = 141221048;
+		UnpluggedPromoRenderer unplugged_promo_renderer = 144754891;
+		TooltipRenderer tooltip_renderer = 152873793;
+		ElementRenderer element_renderer = 153515154;
+		UnpluggedAlertRenderer unplugged_alert_renderer = 156478231;
+		UnpluggedFullScreenStepRenderer unplugged_full_screen_step_renderer = 157910660;
+		FullScreenOverlayRenderer full_screen_overlay_renderer = 162801955;
+		UnpluggedInfoDialogRenderer unplugged_info_dialog_renderer = 173637591;
+		CommandWrapperPromoRenderer command_wrapper_promo_renderer = 182224395;
+		MusicMultiselectFormRenderer music_multiselect_form_renderer = 209621365;
+		UnpluggedDvrPickerFooterRenderer unplugged_dvr_picker_footer_renderer = 220023602;
+		FlowRootRenderer flow_root_renderer = 371777145;
 	}
 }

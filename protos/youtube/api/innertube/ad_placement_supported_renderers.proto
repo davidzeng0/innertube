@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message AdPlacementSupportedRenderers {
 	oneof renderer {
-		AdBreakServiceRenderer adBreakServiceRenderer = 106947817;
-		ClientForecastingAdRenderer clientForecastingAdRenderer = 106994398;
-		VideoAdTrackingRenderer videoAdTrackingRenderer = 341525695;
+		AdBreakServiceRenderer ad_break_service_renderer = 106947817;
+		ClientForecastingAdRenderer client_forecasting_ad_renderer = 106994398;
+		VideoAdTrackingRenderer video_ad_tracking_renderer = 341525695;
 	}
 }

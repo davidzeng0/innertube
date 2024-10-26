@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message ThumbnailPickerStateEntity {
 	optional string key = 1;
-	optional ThumbnailSelection thumbnailSelection = 2;
-	optional bytes customThumbnailBytes = 3;
-	optional .youtube.elements.ImageSource imageSource = 4;
+	optional ThumbnailSelection thumbnail_selection = 2;
+	optional bytes custom_thumbnail_bytes = 3;
+	optional .youtube.elements.ImageSource image_source = 4;
 }

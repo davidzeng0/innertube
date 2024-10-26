@@ -14,10 +14,10 @@ option objc_class_prefix = "YTI";
 message AdText {
 	optional string text = 1;
 	optional AdTextSupportedStyle style = 2;
-	optional bool isTemplated = 3;
-	optional bytes trackingParams = 5;
-	optional string targetId = 8;
-	optional int64 textTimeoutMs = 10;
-	
+	optional bool is_templated = 3;
+	optional bytes tracking_params = 5;
+	optional string target_id = 8;
+	optional int64 text_timeout_ms = 10;
+
 	extensions 1000 to max;
 }

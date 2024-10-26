@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message WatchNextOverlaySupportedRenderers {
 	oneof renderer {
-		MealbarPromoRenderer mealbarPromoRenderer = 96907215;
-		DismissableClingRenderer dismissableClingRenderer = 102365781;
-		TooltipRenderer tooltipRenderer = 152873793;
+		MealbarPromoRenderer mealbar_promo_renderer = 96907215;
+		DismissableClingRenderer dismissable_cling_renderer = 102365781;
+		TooltipRenderer tooltip_renderer = 152873793;
 	}
 }

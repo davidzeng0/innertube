@@ -16,10 +16,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message VideoQualityPromoRenderer {
-	optional VideoQualityPromoTriggers triggerCriteria = 1;
+	optional VideoQualityPromoTriggers trigger_criteria = 1;
 	optional FormattedString text = 2;
 	optional Command endpoint = 3;
-	optional bytes trackingParams = 4;
-	optional VideoQualityPromoActionSupportedRenderers closeButton = 6;
+	optional bytes tracking_params = 4;
+	optional VideoQualityPromoActionSupportedRenderers close_button = 6;
 	optional VideoQualityPromoSnackbarSupportedRenderers snackbar = 7;
 }

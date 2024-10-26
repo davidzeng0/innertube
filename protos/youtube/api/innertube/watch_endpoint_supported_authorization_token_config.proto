@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointSupportedAuthorizationTokenConfig {
-	optional VideoAuthorizationToken videoAuthorizationToken = 69162607;
+	optional VideoAuthorizationToken video_authorization_token = 69162607;
 }

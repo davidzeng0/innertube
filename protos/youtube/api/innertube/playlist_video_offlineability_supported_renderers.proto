@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistVideoOfflineabilitySupportedRenderers {
-	optional OfflineabilityRenderer offlineabilityRenderer = 60572968;
+	optional OfflineabilityRenderer offlineability_renderer = 60572968;
 }

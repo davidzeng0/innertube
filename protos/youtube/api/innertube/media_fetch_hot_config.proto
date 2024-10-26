@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MediaFetchHotConfig {
-	optional int32 fetchLoopIntervalMs = 1;
+	optional int32 fetch_loop_interval_ms = 1;
 }

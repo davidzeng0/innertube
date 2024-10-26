@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SectionListEngagementPanelExtras {
-	optional string scrollToItemSectionIdentifier = 1;
-	optional int32 scrollToItemSectionOffsetIndex = 2;
-	optional int32 scrollToItemSectionOffsetDistance = 3;
+	optional string scroll_to_item_section_identifier = 1;
+	optional int32 scroll_to_item_section_offset_index = 2;
+	optional int32 scroll_to_item_section_offset_distance = 3;
 }

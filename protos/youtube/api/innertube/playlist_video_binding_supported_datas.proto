@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message PlaylistVideoBindingSupportedDatas {
 	oneof data {
-		VideoClientBindingData videoClientBindingData = 135739233;
+		VideoClientBindingData video_client_binding_data = 135739233;
 	}
 }

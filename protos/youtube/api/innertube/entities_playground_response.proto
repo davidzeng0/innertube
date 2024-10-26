@@ -14,8 +14,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntitiesPlaygroundResponse {
-	optional ResponseContext responseContext = 1;
-	optional FakeChannelEntity fakeChannelEntity = 3;
-	repeated string entityKeys = 4;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional ResponseContext response_context = 1;
+	optional FakeChannelEntity fake_channel_entity = 3;
+	repeated string entity_keys = 4;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

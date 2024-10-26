@@ -12,9 +12,9 @@ option java_package = "com.google.android.apps.youtube.proto";
 option objc_class_prefix = "YTVS";
 
 message FormatInitializationMetadata {
-	optional string videoId = 1;
-	optional FormatId formatId = 2;
-	optional int64 unnamedField4 = 4;
-	optional string unnamedField5 = 5;
-	optional bytes unnamedField6 = 6;
+	optional string video_id = 1;
+	optional FormatId format_id = 2;
+	optional int64 unnamed_field_4 = 4;
+	optional string unnamed_field_5 = 5;
+	optional bytes unnamed_field_6 = 6;
 }

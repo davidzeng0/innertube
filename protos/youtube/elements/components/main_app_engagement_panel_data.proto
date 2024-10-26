@@ -10,8 +10,8 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message MainAppEngagementPanelData {
-	optional float sectionListContainerHeight = 1;
-	map<string, bool> watchEngagementPanelVisibilityStateMap = 2;
-	optional float sectionListContainerWidth = 3;
-	optional bool engagementPanelIsVisible = 4;
+	optional float section_list_container_height = 1;
+	map<string, bool> watch_engagement_panel_visibility_state_map = 2;
+	optional float section_list_container_width = 3;
+	optional bool engagement_panel_is_visible = 4;
 }

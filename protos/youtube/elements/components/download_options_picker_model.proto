@@ -34,58 +34,58 @@ message DownloadOptionsPickerModel {
 	}
 	
 	/* protogen: merge reason = nested */
-	enum DownloadOptionsLayoutStyle {
-		LAYOUT_STYLE_UNKNOWN = 0;
-		LAYOUT_STYLE_DIALOG = 1;
-		LAYOUT_STYLE_BOTTOM_SHEET = 2;
-	}
-	
-	/* protogen: merge reason = nested */
 	enum FormatHeaderType {
 		FORMAT_HEADER_TYPE_UNKNOWN = 0;
 		FORMAT_HEADER_TYPE_DIVIDER = 1;
 		FORMAT_HEADER_TYPE_PREMIUM = 2;
 	}
-
-	optional string rememberSettingsText = 2;
-	optional string subscriptionId = 3;
-	optional string cancelButtonTitle = 4;
-	optional string formatPickerId = 5;
-	optional .youtube.elements.Command dismissCommand = 6;
-	optional DownloadOptionsLayoutStyle layoutStyle = 7;
-	optional string hintFor1080P = 8;
-	repeated .youtube.api.innertube.DownloadFormat formats = 10;
-	optional string upsellText = 11;
-	optional string downloadCtaButtonTitle = 12;
-	optional string upsellCtaButtonTitle = 13;
-	optional .youtube.elements.EnvironmentData environmentData = 14;
-	optional DownloadOptionsPickerExperiments experiments = 15;
-	optional string selectedValuesId = 16;
-	optional DownloadOptionsSelectedValues selectedValues = 17;
-
-	oneof videoOrPlaylistId {
-		string videoId = 18;
-		string playlistId = 19;
+	
+	/* protogen: merge reason = nested */
+	enum DownloadOptionsLayoutStyle {
+		LAYOUT_STYLE_UNKNOWN = 0;
+		LAYOUT_STYLE_DIALOG = 1;
+		LAYOUT_STYLE_BOTTOM_SHEET = 2;
 	}
 
-	optional string expiringRememberSettingsText = 20;
-	optional int32 upsellFormatDividerIndex = 21;
-	optional bool showUpsell = 22;
+	optional string remember_settings_text = 2;
+	optional string subscription_id = 3;
+	optional string cancel_button_title = 4;
+	optional string format_picker_id = 5;
+	optional .youtube.elements.Command dismiss_command = 6;
+	optional DownloadOptionsLayoutStyle layout_style = 7;
+	optional string hint_for_1080_p = 8;
+	repeated .youtube.api.innertube.DownloadFormat formats = 10;
+	optional string upsell_text = 11;
+	optional string download_cta_button_title = 12;
+	optional string upsell_cta_button_title = 13;
+	optional .youtube.elements.EnvironmentData environment_data = 14;
+	optional DownloadOptionsPickerExperiments experiments = 15;
+	optional string selected_values_id = 16;
+	optional DownloadOptionsSelectedValues selected_values = 17;
+
+	oneof videoOrPlaylistId {
+		string video_id = 18;
+		string playlist_id = 19;
+	}
+
+	optional string expiring_remember_settings_text = 20;
+	optional int32 upsell_format_divider_index = 21;
+	optional bool show_upsell = 22;
 
 	oneof offlineabilityClickTracking {
-		bytes offlineabilityClickTrackingParams = 23;
-		int32 offlineabilityVeCounter = 33;
+		bytes offlineability_click_tracking_params = 23;
+		int32 offlineability_ve_counter = 33;
 	}
 
 	optional .youtube.elements.Context context = 24;
-	repeated FormatHeader formatHeaders = 25;
-	optional DownloadOptionsA11yStrings a11YStrings = 26;
-	optional bool displayRememberSettingsCheckbox = 27;
-	optional PickerHeader formatPickerHeader = 28;
-	repeated .youtube.api.innertube.DownloadAudioTrack audioTracks = 29;
-	optional string audioTrackPickerId = 30;
-	optional PickerHeader audioTrackPickerHeader = 31;
-	optional DownloadOptionsPickerBodyData downloadOptionsPickerBodyData = 35;
-	optional DownloadOptionsPickerFooterData downloadOptionsPickerFooterData = 36;
-	optional bytes trackingParams = 38;
+	repeated FormatHeader format_headers = 25;
+	optional DownloadOptionsA11yStrings a_11_y_strings = 26;
+	optional bool display_remember_settings_checkbox = 27;
+	optional PickerHeader format_picker_header = 28;
+	repeated .youtube.api.innertube.DownloadAudioTrack audio_tracks = 29;
+	optional string audio_track_picker_id = 30;
+	optional PickerHeader audio_track_picker_header = 31;
+	optional DownloadOptionsPickerBodyData download_options_picker_body_data = 35;
+	optional DownloadOptionsPickerFooterData download_options_picker_footer_data = 36;
+	optional bytes tracking_params = 38;
 }

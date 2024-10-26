@@ -15,9 +15,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityMutation {
-	optional string entityKey = 1;
+	optional string entity_key = 1;
 	optional EntityMutationType type = 2;
 	optional EntityMutationPayload payload = 3;
-	optional EntityFieldMask fieldMask = 4;
+	optional EntityFieldMask field_mask = 4;
 	optional EntityMutationOptions options = 5;
 }

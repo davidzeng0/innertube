@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormatOptionsData {
-	repeated FormatOption formatOptions = 1;
-	repeated FormatOption adaptiveFormatOptions = 2;
-	repeated FormatOption hlsFormatOptions = 3;
+	repeated FormatOption format_options = 1;
+	repeated FormatOption adaptive_format_options = 2;
+	repeated FormatOption hls_format_options = 3;
 }

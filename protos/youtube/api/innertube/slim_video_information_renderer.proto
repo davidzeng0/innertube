@@ -20,17 +20,17 @@ option objc_class_prefix = "YTI";
 
 message SlimVideoInformationRenderer {
 	optional FormattedString title = 1;
-	optional FormattedString collapsedSubtitle = 2;
-	optional FormattedString expandedSubtitle = 3;
-	optional StandaloneBadgeSupportedRenderers topStandaloneBadge = 4;
-	optional StandaloneBadgeSupportedRenderers underTitleStandaloneBadge = 5;
+	optional FormattedString collapsed_subtitle = 2;
+	optional FormattedString expanded_subtitle = 3;
+	optional StandaloneBadgeSupportedRenderers top_standalone_badge = 4;
+	optional StandaloneBadgeSupportedRenderers under_title_standalone_badge = 5;
 	repeated BadgeSupportedRenderers badges = 6;
-	optional bytes trackingParams = 8;
-	optional Renderer slimAutotaggingVideoInformation = 9;
-	optional Command onClickCommand = 10;
-	optional SlimVideoInformationCaretStyle caretStyle = 11;
-	optional Icon.IconType caretStyleIcon = 12;
-	optional SlimVideoInformationCaretRenderers caretRenderer = 13;
-	optional bool isCompactifyVideoMetadataPlaceholder = 14;
-	optional FormattedString showMoreText = 15;
+	optional bytes tracking_params = 8;
+	optional Renderer slim_autotagging_video_information = 9;
+	optional Command on_click_command = 10;
+	optional SlimVideoInformationCaretStyle caret_style = 11;
+	optional Icon.IconType caret_style_icon = 12;
+	optional SlimVideoInformationCaretRenderers caret_renderer = 13;
+	optional bool is_compactify_video_metadata_placeholder = 14;
+	optional FormattedString show_more_text = 15;
 }

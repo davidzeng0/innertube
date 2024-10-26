@@ -10,14 +10,14 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message LiveMetadata {
-	optional string unnamedField1 = 1;
-	optional int64 headSequenceNumber = 3;
-	optional int64 headTimeMillis = 4;
-	optional int64 walltimeMs = 5;
-	optional string unnamedField6 = 6;
-	optional bool unnamedField8 = 8;
-	optional int64 unnamedField12 = 12;
-	optional int32 unnamedField13 = 13;
-	optional int64 unnamedField14 = 14;
-	optional int32 unnamedField15 = 15;
+	optional string unnamed_field_1 = 1;
+	optional int64 head_sequence_number = 3;
+	optional int64 head_time_millis = 4;
+	optional int64 walltime_ms = 5;
+	optional string unnamed_field_6 = 6;
+	optional bool unnamed_field_8 = 8;
+	optional int64 unnamed_field_12 = 12;
+	optional int32 unnamed_field_13 = 13;
+	optional int64 unnamed_field_14 = 14;
+	optional int32 unnamed_field_15 = 15;
 }

@@ -21,9 +21,9 @@ message UrlEndpoint {
 
 	optional string url = 1;
 	optional UrlTarget target = 2;
-	repeated Command terminationCommands = 3;
-	optional GRWOpenInOverride grwOpenInOverride = 4;
-	optional bool attemptOpenInIncognito = 7;
-	optional bool allowOpener = 8;
+	repeated Command termination_commands = 3;
+	optional GRWOpenInOverride grw_open_in_override = 4;
+	optional bool attempt_open_in_incognito = 7;
+	optional bool allow_opener = 8;
 	optional bool nofollow = 17;
 }

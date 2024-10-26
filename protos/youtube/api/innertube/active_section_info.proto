@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ActiveSectionInfo {
-	optional int32 activeItemIndexInSection = 1;
-	optional string sectionIdentifier = 2;
+	optional int32 active_item_index_in_section = 1;
+	optional string section_identifier = 2;
 }

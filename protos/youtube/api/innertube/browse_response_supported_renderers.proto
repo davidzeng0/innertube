@@ -27,20 +27,20 @@ option objc_class_prefix = "YTI";
 
 message BrowseResponseSupportedRenderers {
 	oneof renderer {
-		SectionListRenderer sectionListRenderer = 49399797;
-		TwoColumnBrowseResultsRenderer twoColumnBrowseResultsRenderer = 52123031;
-		SingleColumnBrowseResultsRenderer singleColumnBrowseResultsRenderer = 58173949;
-		MessageRenderer messageRenderer = 58508690;
-		KidsHomeScreenRenderer kidsHomeScreenRenderer = 64982244;
-		EpgRenderer epgRenderer = 84078878;
-		FeatureRestrictedRenderer featureRestrictedRenderer = 94596021;
-		TopicPickerRenderer topicPickerRenderer = 118637602;
-		TastebuilderRenderer tastebuilderRenderer = 121288100;
-		ElementRenderer elementRenderer = 153515154;
-		KidsLibraryRenderer kidsLibraryRenderer = 166527508;
-		CreatorWidgetRenderer creatorWidgetRenderer = 204748818;
-		MusicMultiselectFormRenderer musicMultiselectFormRenderer = 209621365;
-		UnpluggedWarmWelcomeRenderer unpluggedWarmWelcomeRenderer = 245833885;
-		UnpluggedOnboardingRenderer unpluggedOnboardingRenderer = 250511662;
+		SectionListRenderer section_list_renderer = 49399797;
+		TwoColumnBrowseResultsRenderer two_column_browse_results_renderer = 52123031;
+		SingleColumnBrowseResultsRenderer single_column_browse_results_renderer = 58173949;
+		MessageRenderer message_renderer = 58508690;
+		KidsHomeScreenRenderer kids_home_screen_renderer = 64982244;
+		EpgRenderer epg_renderer = 84078878;
+		FeatureRestrictedRenderer feature_restricted_renderer = 94596021;
+		TopicPickerRenderer topic_picker_renderer = 118637602;
+		TastebuilderRenderer tastebuilder_renderer = 121288100;
+		ElementRenderer element_renderer = 153515154;
+		KidsLibraryRenderer kids_library_renderer = 166527508;
+		CreatorWidgetRenderer creator_widget_renderer = 204748818;
+		MusicMultiselectFormRenderer music_multiselect_form_renderer = 209621365;
+		UnpluggedWarmWelcomeRenderer unplugged_warm_welcome_renderer = 245833885;
+		UnpluggedOnboardingRenderer unplugged_onboarding_renderer = 250511662;
 	}
 }

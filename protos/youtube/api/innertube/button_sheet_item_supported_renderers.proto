@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ButtonSheetItemSupportedRenderers {
-	optional ButtonRenderer buttonRenderer = 65153809;
+	optional ButtonRenderer button_renderer = 65153809;
 }

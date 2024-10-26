@@ -17,13 +17,13 @@ option objc_class_prefix = "YTI";
 
 message PlayerErrorMessageRenderer {
 	optional FormattedString subreason = 1;
-	optional FormattedString learnMore = 2;
+	optional FormattedString learn_more = 2;
 	optional FormattedString reason = 3;
-	optional ButtonSupportedRenderers proceedButton = 4;
+	optional ButtonSupportedRenderers proceed_button = 4;
 	optional ThumbnailDetails thumbnail = 5;
 	optional Icon icon = 6;
-	optional ButtonSupportedRenderers dismissButton = 7;
-	optional ThumbnailDetails thumbnailIcon = 8;
-	optional RendererVisibilityConditionData visibilityCondition = 9;
+	optional ButtonSupportedRenderers dismiss_button = 7;
+	optional ThumbnailDetails thumbnail_icon = 8;
+	optional RendererVisibilityConditionData visibility_condition = 9;
 	optional FormattedString footer = 10;
 }

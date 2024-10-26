@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.elements.i18n";
 option objc_class_prefix = "ELMPB";
 
 message GetLegacyTranslatedStringResponse {
-	optional .youtube.elements.AttributedString localizedString = 1;
+	optional .youtube.elements.AttributedString localized_string = 1;
 }

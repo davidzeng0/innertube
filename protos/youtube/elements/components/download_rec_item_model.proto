@@ -16,15 +16,15 @@ option objc_class_prefix = "ELMPB";
 
 message DownloadRecItemModel {
 	oneof item {
-		string videoEntityId = 2;
-		string playlistEntityId = 3;
+		string video_entity_id = 2;
+		string playlist_entity_id = 3;
 	}
 
-	optional bool isLargeFormFactor = 4;
-	optional DownloadRecItemLocalizedStrings localizedStrings = 5;
-	optional bool isAndroid = 7;
-	optional string downloadStatusKey = 8;
+	optional bool is_large_form_factor = 4;
+	optional DownloadRecItemLocalizedStrings localized_strings = 5;
+	optional bool is_android = 7;
+	optional string download_status_key = 8;
 	optional .youtube.elements.Context context = 9;
-	optional DownloadRecItemExperiments downloadRecItemExperiments = 10;
-	optional .youtube.elements.EnvironmentData environmentData = 11;
+	optional DownloadRecItemExperiments download_rec_item_experiments = 10;
+	optional .youtube.elements.EnvironmentData environment_data = 11;
 }

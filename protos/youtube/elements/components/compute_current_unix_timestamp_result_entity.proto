@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message ComputeCurrentUnixTimestampResultEntity {
-	optional uint64 currentUnixTimestamp = 1;
+	optional uint64 current_unix_timestamp = 1;
 }

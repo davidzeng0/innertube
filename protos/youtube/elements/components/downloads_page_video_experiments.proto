@@ -12,8 +12,8 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageVideoExperiments {
-	optional DownloadButtonExperiments downloadButtonExperiments = 1;
-	optional bool alignLockupsOnDownloadsPage = 2;
-	optional bool useBlockForDownloadingStatusText = 4;
-	optional bool enableOfflineWatchHandlingOfOverrideData = 5;
+	optional DownloadButtonExperiments download_button_experiments = 1;
+	optional bool align_lockups_on_downloads_page = 2;
+	optional bool use_block_for_downloading_status_text = 4;
+	optional bool enable_offline_watch_handling_of_override_data = 5;
 }

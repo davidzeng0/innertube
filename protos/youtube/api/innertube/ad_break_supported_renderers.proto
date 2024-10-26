@@ -17,10 +17,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdBreakSupportedRenderers {
-	optional VideoAdRenderer videoAdRenderer = 61554017;
-	optional ForecastingAdRenderer forecastingAdRenderer = 84818269;
-	optional SurveyAdRenderer surveyAdRenderer = 85201052;
-	optional AdVideoEndRenderer adVideoEndRenderer = 89145698;
-	optional VideoAdTrackingRenderer videoAdTrackingRenderer = 341525695;
-	optional VideoAdPlayerOverlayRenderer videoAdPlayerOverlayRenderer = 342187185;
+	optional VideoAdRenderer video_ad_renderer = 61554017;
+	optional ForecastingAdRenderer forecasting_ad_renderer = 84818269;
+	optional SurveyAdRenderer survey_ad_renderer = 85201052;
+	optional AdVideoEndRenderer ad_video_end_renderer = 89145698;
+	optional VideoAdTrackingRenderer video_ad_tracking_renderer = 341525695;
+	optional VideoAdPlayerOverlayRenderer video_ad_player_overlay_renderer = 342187185;
 }

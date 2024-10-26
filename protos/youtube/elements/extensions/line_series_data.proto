@@ -14,5 +14,5 @@ option objc_class_prefix = "ELMPB";
 message LineSeriesData {
 	repeated double x = 1;
 	repeated double y = 2;
-	optional SeriesAllyConfiguration allyConfiguration = 5;
+	optional SeriesAllyConfiguration ally_configuration = 5;
 }

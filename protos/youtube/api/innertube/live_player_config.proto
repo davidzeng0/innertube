@@ -10,12 +10,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LivePlayerConfig {
-	optional double liveReadaheadSeconds = 1;
-	optional bool hasSubfragmentedFmp4 = 2;
-	optional int64 liveExperimentalContentId = 3;
-	optional bool defraggedFromSubfragments = 4;
-	optional bool useManifestlessForPostLive = 5;
-	optional bool hasSubfragmentedWebm = 6;
-	optional double liveHeadWindowSeconds = 7;
-	optional bool isLiveHeadPlayable = 8;
+	optional double live_readahead_seconds = 1;
+	optional bool has_subfragmented_fmp_4 = 2;
+	optional int64 live_experimental_content_id = 3;
+	optional bool defragged_from_subfragments = 4;
+	optional bool use_manifestless_for_post_live = 5;
+	optional bool has_subfragmented_webm = 6;
+	optional double live_head_window_seconds = 7;
+	optional bool is_live_head_playable = 8;
 }

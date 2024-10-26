@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BandwidthModelConfig {
-	optional IosAvPlayerBandwidthModel iosAvPlayerModel = 2;
-	optional SlidingPercentileBandwidthModel slidingPercentileModel = 4;
-	optional TFLiteBandwidthModelConfig tfliteModelConfig = 5;
+	optional IosAvPlayerBandwidthModel ios_av_player_model = 2;
+	optional SlidingPercentileBandwidthModel sliding_percentile_model = 4;
+	optional TFLiteBandwidthModelConfig tflite_model_config = 5;
 }

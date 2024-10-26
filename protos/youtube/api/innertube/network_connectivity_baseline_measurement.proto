@@ -12,13 +12,13 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message NetworkConnectivityBaselineMeasurement {
-	optional int32 statusCode = 1;
-	optional int32 roundTripTimeInMs = 2;
-	optional NetworkConnectivityBaselineErrorDomain errorDomain = 3;
-	optional string errorDomainString = 4;
-	optional int32 errorCode = 5;
-	optional uint64 responseLengthInBytes = 6;
-	optional NetworkConnectivityBaselineErrorDomain underlyingErrorDomain = 7;
-	optional string underlyingErrorDomainString = 8;
-	optional int32 underlyingErrorCode = 9;
+	optional int32 status_code = 1;
+	optional int32 round_trip_time_in_ms = 2;
+	optional NetworkConnectivityBaselineErrorDomain error_domain = 3;
+	optional string error_domain_string = 4;
+	optional int32 error_code = 5;
+	optional uint64 response_length_in_bytes = 6;
+	optional NetworkConnectivityBaselineErrorDomain underlying_error_domain = 7;
+	optional string underlying_error_domain_string = 8;
+	optional int32 underlying_error_code = 9;
 }

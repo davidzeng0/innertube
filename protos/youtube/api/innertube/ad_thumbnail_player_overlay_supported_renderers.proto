@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdThumbnailPlayerOverlaySupportedRenderers {
-	optional ThumbnailPlayerOverlayRenderer thumbnailPlayerOverlayRenderer = 84897255;
+	optional ThumbnailPlayerOverlayRenderer thumbnail_player_overlay_renderer = 84897255;
 }

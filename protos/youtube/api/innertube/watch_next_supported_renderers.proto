@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message WatchNextSupportedRenderers {
 	oneof renderer {
-		SingleColumnWatchNextResultsRenderer singleColumnWatchNextResults = 51779735;
-		TwoColumnWatchNextResultsRenderer twoColumnWatchNextResults = 51779759;
-		SingleColumnMusicWatchNextResultsRenderer singleColumnMusicWatchNextResultsRenderer = 125354411;
+		SingleColumnWatchNextResultsRenderer single_column_watch_next_results = 51779735;
+		TwoColumnWatchNextResultsRenderer two_column_watch_next_results = 51779759;
+		SingleColumnMusicWatchNextResultsRenderer single_column_music_watch_next_results_renderer = 125354411;
 	}
 }

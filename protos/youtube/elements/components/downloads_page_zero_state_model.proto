@@ -16,6 +16,6 @@ message DownloadsPageZeroStateModel {
 	optional .youtube.elements.Context context = 2;
 	optional string title = 3;
 	optional string subtitle = 4;
-	optional .youtube.elements.EnvironmentData environmentData = 5;
-	optional bool shouldExtendToFullScreen = 6;
+	optional .youtube.elements.EnvironmentData environment_data = 5;
+	optional bool should_extend_to_full_screen = 6;
 }

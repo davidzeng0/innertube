@@ -15,8 +15,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message UpdatedMetadataResponse {
-	optional ResponseContext responseContext = 1;
+	optional ResponseContext response_context = 1;
 	optional UpdatedMetadataSupportedContinuations continuation = 3;
 	repeated Command actions = 4;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

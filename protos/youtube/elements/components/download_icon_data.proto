@@ -14,8 +14,8 @@ option objc_class_prefix = "ELMPB";
 
 message DownloadIconData {
 	optional DownloadButtonExperiments experiments = 1;
-	optional bool useSpinnerForPendingState = 2;
-	optional bool useInfiniteSpinner = 3;
-	optional string downloadStatusEntityKey = 4;
-	repeated .youtube.api.innertube.DownloadState downloadStatesToShow = 5;
+	optional bool use_spinner_for_pending_state = 2;
+	optional bool use_infinite_spinner = 3;
+	optional string download_status_entity_key = 4;
+	repeated .youtube.api.innertube.DownloadState download_states_to_show = 5;
 }

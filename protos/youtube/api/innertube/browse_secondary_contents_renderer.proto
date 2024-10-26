@@ -19,11 +19,11 @@ message BrowseSecondaryContentsRenderer {
 	/* protogen: merge reason = nested */
 	message BrowseSecondaryContentsSupportedRenderers {
 		oneof renderer {
-			ChannelLegalInfoRenderer channelLegalInfoRenderer = 52052136;
-			ChannelAboutMetadataRenderer channelAboutMetadataRenderer = 52191200;
-			PlaylistSuggestionsRenderer playlistSuggestionsRenderer = 63491129;
-			ChannelTipCardRenderer channelTipCardRenderer = 64792712;
-			ChannelChecklistSectionRenderer channelChecklistSectionRenderer = 85035561;
+			ChannelLegalInfoRenderer channel_legal_info_renderer = 52052136;
+			ChannelAboutMetadataRenderer channel_about_metadata_renderer = 52191200;
+			PlaylistSuggestionsRenderer playlist_suggestions_renderer = 63491129;
+			ChannelTipCardRenderer channel_tip_card_renderer = 64792712;
+			ChannelChecklistSectionRenderer channel_checklist_section_renderer = 85035561;
 		}
 	}
 

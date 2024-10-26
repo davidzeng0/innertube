@@ -19,51 +19,51 @@ message SingleColumnMusicWatchNextResultsRenderer {
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextResultsSupportedRenderers {
 		oneof renderer {
-			SectionListRenderer sectionListRenderer = 49399797;
+			SectionListRenderer section_list_renderer = 49399797;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextPlaylistSupportedRenderers {
 		oneof renderer {
-			PlaylistPanelRenderer playlistPanelRenderer = 50631000;
+			PlaylistPanelRenderer playlist_panel_renderer = 50631000;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextFooterResultsSupportedRenderers {
 		oneof renderer {
-			SectionListRenderer sectionListRenderer = 49399797;
+			SectionListRenderer section_list_renderer = 49399797;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextMetadataScreenSupportedRenderers {
 		oneof renderer {
-			SectionListRenderer sectionListRenderer = 49399797;
+			SectionListRenderer section_list_renderer = 49399797;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextLockScreenSupportedRenderers {
 		oneof renderer {
-			LockScreenRenderer lockScreenRenderer = 61479009;
+			LockScreenRenderer lock_screen_renderer = 61479009;
 		}
 	}
 	
 	/* protogen: merge reason = nested */
 	message SingleColumnMusicWatchNextAutoplaySupportedRenderers {
 		oneof renderer {
-			AutoplayRenderer autoplayRenderer = 46659098;
+			AutoplayRenderer autoplay_renderer = 46659098;
 		}
 	}
 
 	optional SingleColumnMusicWatchNextResultsSupportedRenderers results = 1;
 	optional SingleColumnMusicWatchNextPlaylistSupportedRenderers playlist = 2;
-	optional SingleColumnMusicWatchNextFooterResultsSupportedRenderers footerResults = 3;
-	optional SingleColumnMusicWatchNextMetadataScreenSupportedRenderers metadataScreen = 4;
-	optional SingleColumnMusicWatchNextLockScreenSupportedRenderers lockScreen = 5;
+	optional SingleColumnMusicWatchNextFooterResultsSupportedRenderers footer_results = 3;
+	optional SingleColumnMusicWatchNextMetadataScreenSupportedRenderers metadata_screen = 4;
+	optional SingleColumnMusicWatchNextLockScreenSupportedRenderers lock_screen = 5;
 	optional SingleColumnMusicWatchNextAutoplaySupportedRenderers autoplay = 6;
-	optional Renderer tabbedRenderer = 7;
-	optional Renderer playerPageChipRenderer = 8;
+	optional Renderer tabbed_renderer = 7;
+	optional Renderer player_page_chip_renderer = 8;
 }

@@ -17,19 +17,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistDetailHeaderRenderer {
-	optional string playlistId = 1;
-	optional Command editPlaylistEndpoint = 2;
-	optional Command sharePlaylistEndpoint = 3;
-	optional Command playPlaylistEndpoint = 4;
-	optional PlaylistDetailHeaderSupportedAccessibilityDatas editPlaylistAccessibility = 5;
-	optional PlaylistDetailHeaderSupportedAccessibilityDatas sharePlaylistAccessibility = 6;
-	optional PlaylistDetailHeaderSupportedAccessibilityDatas playPlaylistAccessibility = 7;
+	optional string playlist_id = 1;
+	optional Command edit_playlist_endpoint = 2;
+	optional Command share_playlist_endpoint = 3;
+	optional Command play_playlist_endpoint = 4;
+	optional PlaylistDetailHeaderSupportedAccessibilityDatas edit_playlist_accessibility = 5;
+	optional PlaylistDetailHeaderSupportedAccessibilityDatas share_playlist_accessibility = 6;
+	optional PlaylistDetailHeaderSupportedAccessibilityDatas play_playlist_accessibility = 7;
 	optional FormattedString title = 8;
 	optional FormattedString description = 9;
-	optional PlaylistThumbnailSupportedRenderers thumbnailRenderer = 10;
+	optional PlaylistThumbnailSupportedRenderers thumbnail_renderer = 10;
 	optional PlaylistDetailMetrics metrics = 11;
 	repeated BadgeSupportedRenderers badges = 12;
-	optional bytes trackingParams = 14;
-	optional PlaylistDetailHeaderSupportedAccessibilityDatas metricsAccessibility = 15;
-	optional bool editPlaylistIsDisabled = 16;
+	optional bytes tracking_params = 14;
+	optional PlaylistDetailHeaderSupportedAccessibilityDatas metrics_accessibility = 15;
+	optional bool edit_playlist_is_disabled = 16;
 }

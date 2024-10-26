@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiteGlobalConfig {
-	optional int32 maxLocalSearchResultsOnline = 2;
-	optional int32 maxLocalSearchResultsOffline = 3;
-	repeated string androidSupportedFileSharingAppPackages = 27;
+	optional int32 max_local_search_results_online = 2;
+	optional int32 max_local_search_results_offline = 3;
+	repeated string android_supported_file_sharing_app_packages = 27;
 }

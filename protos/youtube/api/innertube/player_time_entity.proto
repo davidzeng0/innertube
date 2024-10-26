@@ -11,8 +11,8 @@ option objc_class_prefix = "YTI";
 
 message PlayerTimeEntity {
 	optional string key = 1;
-	optional bool liveVideo = 2;
-	optional int64 minimumSeekableTimeInMs = 3;
-	optional int64 maximumSeekableTimeInMs = 4;
-	optional int64 currentVideoTimeInMs = 5;
+	optional bool live_video = 2;
+	optional int64 minimum_seekable_time_in_ms = 3;
+	optional int64 maximum_seekable_time_in_ms = 4;
+	optional int64 current_video_time_in_ms = 5;
 }

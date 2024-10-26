@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpointContextCreatorConfig {
-	optional bool hidePivotBar = 1;
-	optional bool applySmartRepliesSetting = 2;
+	optional bool hide_pivot_bar = 1;
+	optional bool apply_smart_replies_setting = 2;
 }

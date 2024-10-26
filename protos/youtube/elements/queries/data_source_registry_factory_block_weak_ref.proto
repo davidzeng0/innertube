@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message DataSourceRegistryFactoryBlockWeakRef {
-	optional string blockInstanceId = 1;
+	optional string block_instance_id = 1;
 }

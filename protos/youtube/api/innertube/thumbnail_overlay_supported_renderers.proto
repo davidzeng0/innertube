@@ -24,17 +24,17 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlaySupportedRenderers {
-	optional LiveBadgeRenderer liveBadgeRenderer = 50921414;
-	optional ThumbnailOverlayTextRenderer thumbnailOverlayTextRenderer = 103313378;
-	optional ThumbnailOverlaySidePanelRenderer thumbnailOverlaySidePanelRenderer = 107164415;
-	optional ThumbnailOverlayHoverTextRenderer thumbnailOverlayHoverTextRenderer = 107250266;
-	optional ThumbnailOverlayBottomPanelRenderer thumbnailOverlayBottomPanelRenderer = 109635582;
-	optional ThumbnailOverlayResumePlaybackRenderer thumbnailOverlayResumePlaybackRenderer = 110282477;
-	optional PlaylistThumbnailOverlayRenderer playlistThumbnailOverlayRenderer = 111664577;
-	optional ThumbnailOverlayBottomGradientRenderer thumbnailOverlayBottomGradientRenderer = 115279480;
-	optional ThumbnailOverlayPlaybackStatusRenderer thumbnailOverlayPlaybackStatusRenderer = 121717534;
-	optional ThumbnailOverlayTimeStatusRenderer thumbnailOverlayTimeStatusRenderer = 121720768;
-	optional ThumbnailOverlayToggleButtonRenderer thumbnailOverlayToggleButtonRenderer = 128231774;
-	optional ThumbnailOverlayInlineUnplayableRenderer thumbnailOverlayInlineUnplayableRenderer = 164529395;
-	optional ThumbnailOverlayIconRenderer thumbnailOverlayIconRenderer = 387448098;
+	optional LiveBadgeRenderer live_badge_renderer = 50921414;
+	optional ThumbnailOverlayTextRenderer thumbnail_overlay_text_renderer = 103313378;
+	optional ThumbnailOverlaySidePanelRenderer thumbnail_overlay_side_panel_renderer = 107164415;
+	optional ThumbnailOverlayHoverTextRenderer thumbnail_overlay_hover_text_renderer = 107250266;
+	optional ThumbnailOverlayBottomPanelRenderer thumbnail_overlay_bottom_panel_renderer = 109635582;
+	optional ThumbnailOverlayResumePlaybackRenderer thumbnail_overlay_resume_playback_renderer = 110282477;
+	optional PlaylistThumbnailOverlayRenderer playlist_thumbnail_overlay_renderer = 111664577;
+	optional ThumbnailOverlayBottomGradientRenderer thumbnail_overlay_bottom_gradient_renderer = 115279480;
+	optional ThumbnailOverlayPlaybackStatusRenderer thumbnail_overlay_playback_status_renderer = 121717534;
+	optional ThumbnailOverlayTimeStatusRenderer thumbnail_overlay_time_status_renderer = 121720768;
+	optional ThumbnailOverlayToggleButtonRenderer thumbnail_overlay_toggle_button_renderer = 128231774;
+	optional ThumbnailOverlayInlineUnplayableRenderer thumbnail_overlay_inline_unplayable_renderer = 164529395;
+	optional ThumbnailOverlayIconRenderer thumbnail_overlay_icon_renderer = 387448098;
 }

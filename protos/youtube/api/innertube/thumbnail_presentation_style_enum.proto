@@ -18,5 +18,5 @@ message ThumbnailPresentationStyleEnum {
 		SQUARE = 3;
 	}
 
-	optional ThumbnailPresentationStyle presentationStyle = 1;
+	optional ThumbnailPresentationStyle presentation_style = 1;
 }

@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityMutationOptions {
-	optional EntityPersistenceOption persistenceOption = 1;
-	optional EntityDeleteOption deleteOption = 2;
+	optional EntityPersistenceOption persistence_option = 1;
+	optional EntityDeleteOption delete_option = 2;
 }

@@ -19,19 +19,19 @@ option objc_class_prefix = "YTI";
 message LiveStreamOfflineSlateRenderer {
 	/* protogen: merge reason = nested */
 	message CollapseBehavior {
-		optional bool isCollapsible = 1;
-		optional Renderer expandButton = 2;
-		optional uint64 autoCollapseDelayMs = 3;
+		optional bool is_collapsible = 1;
+		optional Renderer expand_button = 2;
+		optional uint64 auto_collapse_delay_ms = 3;
 	}
 
-	optional int64 scheduledStartTime = 1;
-	optional bool canShowCountdown = 2;
-	optional FormattedString mainText = 3;
-	optional FormattedString subtitleText = 4;
+	optional int64 scheduled_start_time = 1;
+	optional bool can_show_countdown = 2;
+	optional FormattedString main_text = 3;
+	optional FormattedString subtitle_text = 4;
 	optional ThumbnailDetails thumbnail = 5;
-	repeated ButtonSupportedRenderers actionButtons = 6;
-	optional OfflineSlateStyle offlineSlateStyle = 8;
-	optional Renderer reminderButton = 9;
-	optional CollapseBehavior collapseBehavior = 10;
-	optional OfflineSlateCountdownStyle countdownStyle = 11;
+	repeated ButtonSupportedRenderers action_buttons = 6;
+	optional OfflineSlateStyle offline_slate_style = 8;
+	optional Renderer reminder_button = 9;
+	optional CollapseBehavior collapse_behavior = 10;
+	optional OfflineSlateCountdownStyle countdown_style = 11;
 }

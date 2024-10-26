@@ -17,10 +17,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistVideoListSupportedRenderers {
-	optional VideoRenderer videoRenderer = 50577878;
-	optional PlaylistVideoRenderer playlistVideoRenderer = 53330184;
-	optional MessageRenderer messageRenderer = 58508690;
-	optional AutoplayVideoRenderer autoplayVideoRenderer = 65121821;
-	optional CounterfactualRenderer counterfactualRenderer = 98817457;
-	optional RedCarpetPlaylistVideoRenderer redCarpetPlaylistVideoRenderer = 154471660;
+	optional VideoRenderer video_renderer = 50577878;
+	optional PlaylistVideoRenderer playlist_video_renderer = 53330184;
+	optional MessageRenderer message_renderer = 58508690;
+	optional AutoplayVideoRenderer autoplay_video_renderer = 65121821;
+	optional CounterfactualRenderer counterfactual_renderer = 98817457;
+	optional RedCarpetPlaylistVideoRenderer red_carpet_playlist_video_renderer = 154471660;
 }

@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistDedupeSuggestionsSupportedRenderers {
-	optional PlaylistDedupeSuggestionsRenderer playlistDedupeSuggestionsRenderer = 64236482;
+	optional PlaylistDedupeSuggestionsRenderer playlist_dedupe_suggestions_renderer = 64236482;
 }

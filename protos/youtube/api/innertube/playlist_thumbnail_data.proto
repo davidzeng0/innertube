@@ -14,11 +14,11 @@ option objc_class_prefix = "YTI";
 message PlaylistThumbnailData {
 	/* protogen: merge reason = nested */
 	message CollageThumbnailData {
-		optional ThumbnailDetails coverThumbnail = 1;
+		optional ThumbnailDetails cover_thumbnail = 1;
 	}
 
 	oneof playlistThumbnailData {
 		ThumbnailDetails thumbnail = 1;
-		CollageThumbnailData collageThumbnail = 2;
+		CollageThumbnailData collage_thumbnail = 2;
 	}
 }

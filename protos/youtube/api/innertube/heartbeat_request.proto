@@ -16,12 +16,12 @@ option objc_class_prefix = "YTI";
 
 message HeartbeatRequest {
 	optional InnerTubeContext context = 1;
-	optional string videoId = 2;
-	optional string heartbeatToken = 3;
-	optional HeartbeatRequestParams heartbeatRequestParams = 5;
+	optional string video_id = 2;
+	optional string heartbeat_token = 3;
+	optional HeartbeatRequestParams heartbeat_request_params = 5;
 	optional string cpn = 6;
-	optional int32 sequenceNumber = 7;
-	optional bytes heartbeatServerData = 8;
-	optional HeartbeatClientPlaybackState playbackState = 9;
-	optional AttestationResponseData attestationResponse = 10;
+	optional int32 sequence_number = 7;
+	optional bytes heartbeat_server_data = 8;
+	optional HeartbeatClientPlaybackState playback_state = 9;
+	optional AttestationResponseData attestation_response = 10;
 }

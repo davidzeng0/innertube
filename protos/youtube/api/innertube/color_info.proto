@@ -13,14 +13,6 @@ option objc_class_prefix = "YTI";
 
 message ColorInfo {
 	/* protogen: merge reason = nested */
-	enum ColorMatrixCoefficients {
-		COLOR_MATRIX_COEFFICIENTS_UNKNOWN = 0;
-		COLOR_MATRIX_COEFFICIENTS_BT_709 = 1;
-		COLOR_MATRIX_COEFFICIENTS_UNSPECIFIED = 2;
-		COLOR_MATRIX_COEFFICIENTS_BT_2020_NCL = 9;
-	}
-	
-	/* protogen: merge reason = nested */
 	enum ColorPrimaries {
 		COLOR_PRIMARIES_UNKNOWN = 0;
 		COLOR_PRIMARIES_BT_709 = 1;
@@ -37,9 +29,17 @@ message ColorInfo {
 		COLOR_TRANSFER_CHARACTERISTICS_SMPTEST_2084 = 16;
 		COLOR_TRANSFER_CHARACTERISTICS_ARIB_STD_B_67 = 18;
 	}
+	
+	/* protogen: merge reason = nested */
+	enum ColorMatrixCoefficients {
+		COLOR_MATRIX_COEFFICIENTS_UNKNOWN = 0;
+		COLOR_MATRIX_COEFFICIENTS_BT_709 = 1;
+		COLOR_MATRIX_COEFFICIENTS_UNSPECIFIED = 2;
+		COLOR_MATRIX_COEFFICIENTS_BT_2020_NCL = 9;
+	}
 
 	optional ColorPrimaries primaries = 1;
-	optional ColorTransferCharacteristics transferCharacteristics = 2;
-	optional ColorMatrixCoefficients matrixCoefficients = 3;
-	optional DynamicMetadata dynamicMetadata = 4;
+	optional ColorTransferCharacteristics transfer_characteristics = 2;
+	optional ColorMatrixCoefficients matrix_coefficients = 3;
+	optional DynamicMetadata dynamic_metadata = 4;
 }

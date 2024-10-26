@@ -15,8 +15,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistThumbnailSupportedRenderers {
-	optional PlaylistVideoThumbnailRenderer playlistVideoThumbnailRenderer = 72426341;
-	optional PlaylistCustomThumbnailRenderer playlistCustomThumbnailRenderer = 72426385;
-	optional MusicThumbnailRenderer musicThumbnailRenderer = 164480666;
-	optional PlaylistCollageThumbnailRenderer playlistCollageThumbnailRenderer = 165537212;
+	optional PlaylistVideoThumbnailRenderer playlist_video_thumbnail_renderer = 72426341;
+	optional PlaylistCustomThumbnailRenderer playlist_custom_thumbnail_renderer = 72426385;
+	optional MusicThumbnailRenderer music_thumbnail_renderer = 164480666;
+	optional PlaylistCollageThumbnailRenderer playlist_collage_thumbnail_renderer = 165537212;
 }

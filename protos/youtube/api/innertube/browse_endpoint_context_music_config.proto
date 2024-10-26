@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseEndpointContextMusicConfig {
-	optional MusicPageType pageType = 1;
-	optional MusicScreenTargetType screenTargetType = 2;
-	optional string playlistIdForFallback = 3;
+	optional MusicPageType page_type = 1;
+	optional MusicScreenTargetType screen_target_type = 2;
+	optional string playlist_id_for_fallback = 3;
 }

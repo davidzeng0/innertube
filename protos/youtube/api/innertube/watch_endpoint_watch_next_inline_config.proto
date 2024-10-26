@@ -11,5 +11,5 @@ option objc_class_prefix = "YTI";
 
 message WatchEndpointWatchNextInlineConfig {
 	optional bytes response = 1;
-	optional bool completeResponse = 2;
+	optional bool complete_response = 2;
 }

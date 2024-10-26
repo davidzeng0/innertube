@@ -14,11 +14,11 @@ option objc_class_prefix = "YTI";
 
 message FormattedStringTemplate {
 	oneof testString {
-		FormattedStringWrapper formattedStringWrapper = 1;
-		PluralFormattedStringWrapper pluralFormattedStringWrapper = 2;
+		FormattedStringWrapper formatted_string_wrapper = 1;
+		PluralFormattedStringWrapper plural_formatted_string_wrapper = 2;
 	}
 
-	repeated string varNames = 10;
+	repeated string var_names = 10;
 	optional string hl = 13;
-	optional string icuLocale = 14;
+	optional string icu_locale = 14;
 }

@@ -11,6 +11,6 @@ option objc_class_prefix = "YTVS";
 
 message FormatId {
 	optional int32 itag = 1;
-	optional uint64 lastModified = 2;
+	optional uint64 last_modified = 2;
 	optional string xtags = 3;
 }

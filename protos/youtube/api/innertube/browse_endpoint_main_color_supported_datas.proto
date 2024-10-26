@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message BrowseEndpointMainColorSupportedDatas {
 	oneof datas {
-		BasicColorPaletteData basicColorPaletteData = 118483990;
+		BasicColorPaletteData basic_color_palette_data = 118483990;
 	}
 }

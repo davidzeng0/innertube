@@ -21,26 +21,26 @@ message DownloadOptionsPickerFooterData {
 		LAYOUT_STYLE_BOTTOM_SHEET = 2;
 	}
 
-	optional DownloadOptionsLayoutStyle layoutStyle = 1;
-	optional string cancelButtonTitle = 2;
-	optional string upsellCtaButtonTitle = 3;
-	optional string downloadCtaButtonTitle = 4;
-	optional .youtube.elements.Command dismissCommand = 5;
+	optional DownloadOptionsLayoutStyle layout_style = 1;
+	optional string cancel_button_title = 2;
+	optional string upsell_cta_button_title = 3;
+	optional string download_cta_button_title = 4;
+	optional .youtube.elements.Command dismiss_command = 5;
 
 	oneof videoOrPlaylistId {
-		string videoId = 6;
-		string playlistId = 7;
+		string video_id = 6;
+		string playlist_id = 7;
 	}
 
 	oneof offlineabilityClickTracking {
-		bytes offlineabilityClickTrackingParams = 8;
-		int32 offlineabilityVeCounter = 9;
+		bytes offlineability_click_tracking_params = 8;
+		int32 offlineability_ve_counter = 9;
 	}
 
 	repeated .youtube.api.innertube.DownloadFormat formats = 10;
-	optional bool displayRememberSettingsCheckbox = 11;
-	optional string selectedValuesId = 12;
-	optional .youtube.elements.Command upsellCommand = 13;
-	optional .youtube.elements.Command offlineOrchestrationActionCommand = 14;
-	optional .youtube.api.innertube.LoggingDirectives loggingDirectives = 999;
+	optional bool display_remember_settings_checkbox = 11;
+	optional string selected_values_id = 12;
+	optional .youtube.elements.Command upsell_command = 13;
+	optional .youtube.elements.Command offline_orchestration_action_command = 14;
+	optional .youtube.api.innertube.LoggingDirectives logging_directives = 999;
 }

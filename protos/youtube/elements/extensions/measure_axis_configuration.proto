@@ -14,11 +14,11 @@ option java_package = "com.google.protos.youtube.elements.extensions";
 option objc_class_prefix = "ELMPB";
 
 message MeasureAxisConfiguration {
-	repeated double tickValues = 1;
+	repeated double tick_values = 1;
 
 	oneof tickFormatter {
-		CustomFormatter customFormatter = 2;
-		PercentageFormatter percentageFormatter = 3;
-		CurrencyFormatter currencyFormatter = 4;
+		CustomFormatter custom_formatter = 2;
+		PercentageFormatter percentage_formatter = 3;
+		CurrencyFormatter currency_formatter = 4;
 	}
 }

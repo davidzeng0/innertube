@@ -16,13 +16,13 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message Config {
-	optional .youtube.unknown.Unnamed1667 unnamedField1 = 1;
-	optional .youtube.unknown.Unnamed1372 unnamedField2 = 2;
-	optional .youtube.unknown.Unnamed4036 unnamedField4 = 4;
-	optional .youtube.unknown.Unnamed1811 unnamedField6 = 6;
-	optional int32 unnamedField8 = 8;
-	optional int32 unnamedField9 = 9;
-	optional .youtube.unknown.Unnamed1373 unnamedField10 = 10;
-	optional .youtube.unknown.Unnamed1667 unnamedField12 = 12;
-	optional bool unnamedField13 = 13;
+	optional .youtube.unknown.Unnamed1667 unnamed_field_1 = 1;
+	optional .youtube.unknown.Unnamed1372 unnamed_field_2 = 2;
+	optional .youtube.unknown.Unnamed4036 unnamed_field_4 = 4;
+	optional .youtube.unknown.Unnamed1811 unnamed_field_6 = 6;
+	optional int32 unnamed_field_8 = 8;
+	optional int32 unnamed_field_9 = 9;
+	optional .youtube.unknown.Unnamed1373 unnamed_field_10 = 10;
+	optional .youtube.unknown.Unnamed1667 unnamed_field_12 = 12;
+	optional bool unnamed_field_13 = 13;
 }

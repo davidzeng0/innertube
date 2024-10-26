@@ -17,13 +17,13 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message ProductPickerModel {
-	optional string clientStateEntityKey = 1;
-	optional ProductPickerEntity clientStateEntity = 2;
+	optional string client_state_entity_key = 1;
+	optional ProductPickerEntity client_state_entity = 2;
 	optional .youtube.elements.Context context = 3;
-	optional string serverStateEntityKey = 4;
+	optional string server_state_entity_key = 4;
 	optional ProductPickerData data = 6;
-	optional .youtube.elements.Command onChange = 8;
-	optional float scubaHeightOverride = 9;
+	optional .youtube.elements.Command on_change = 8;
+	optional float scuba_height_override = 9;
 	optional .youtube.elements.EnvironmentData environment = 10;
-	optional .youtube.api.innertube.ClientInfo.ClientName clientName = 11;
+	optional .youtube.api.innertube.ClientInfo.ClientName client_name = 11;
 }

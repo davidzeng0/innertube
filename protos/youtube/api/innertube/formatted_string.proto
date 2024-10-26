@@ -16,7 +16,7 @@ message FormattedString {
 	repeated StringRun runs = 1;
 	optional bool rtl = 2;
 	optional FormattedStringSupportedAccessibilityDatas accessibility = 3;
-	optional string simpleText = 4;
-	
-	extensions 5 to 6;
+	optional string simple_text = 4;
+
+	extensions 5;
 }

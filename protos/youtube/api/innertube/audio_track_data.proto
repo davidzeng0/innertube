@@ -22,13 +22,13 @@ message AudioTrackData {
 		OFF_WEAK = 5;
 	}
 
-	repeated int32 captionTrackIndices = 2;
-	optional int32 defaultCaptionTrackIndex = 3;
-	optional int32 forcedCaptionTrackIndex = 4;
+	repeated int32 caption_track_indices = 2;
+	optional int32 default_caption_track_index = 3;
+	optional int32 forced_caption_track_index = 4;
 	optional CaptionsVisibilityForTrackList visibility = 5;
-	optional bool hasDefaultTrack = 6;
-	optional bool hasForcedTrack = 7;
-	optional string audioTrackId = 8;
-	optional bool canOverrideDefaultCaptionTrack = 9;
-	optional CaptionsInitialState captionsInitialState = 11;
+	optional bool has_default_track = 6;
+	optional bool has_forced_track = 7;
+	optional string audio_track_id = 8;
+	optional bool can_override_default_caption_track = 9;
+	optional CaptionsInitialState captions_initial_state = 11;
 }

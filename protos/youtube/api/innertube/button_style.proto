@@ -58,5 +58,5 @@ message ButtonStyle {
 		STYLE_MONO_FILLED_OVERLAY = 41;
 	}
 
-	optional ButtonStyleType styleType = 1;
+	optional ButtonStyleType style_type = 1;
 }

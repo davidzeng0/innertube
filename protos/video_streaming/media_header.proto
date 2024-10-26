@@ -20,19 +20,19 @@ message MediaHeader {
 		GZIP = 2;
 	}
 
-	optional uint32 headerId = 1;
-	optional string videoId = 2;
+	optional uint32 header_id = 1;
+	optional string video_id = 2;
 	optional int32 itag = 3;
-	optional uint64 lastModified = 4;
+	optional uint64 last_modified = 4;
 	optional string xtags = 5;
-	optional int64 startRange = 6;
-	optional CompressionType compressionType = 7;
-	optional bool isInitSegment = 8;
-	optional int64 sequenceNumber = 9;
-	optional int64 unnamedField10 = 10;
-	optional FormatId formatId = 13;
+	optional int64 start_range = 6;
+	optional CompressionType compression_type = 7;
+	optional bool is_init_segment = 8;
+	optional int64 sequence_number = 9;
+	optional int64 unnamed_field_10 = 10;
+	optional FormatId format_id = 13;
 	optional int64 length = 14;
-	optional TimeRange timeRange = 15;
-	optional uint64 unnamedField16 = 16;
-	optional int64 unnamedField17 = 17;
+	optional TimeRange time_range = 15;
+	optional uint64 unnamed_field_16 = 16;
+	optional int64 unnamed_field_17 = 17;
 }

@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message StoryboardFlags {
-	optional bool prefetchLowerResolutionMosaics = 1;
-	optional bool delayFetchingHigherResolutionMosaics = 2;
+	optional bool prefetch_lower_resolution_mosaics = 1;
+	optional bool delay_fetching_higher_resolution_mosaics = 2;
 }

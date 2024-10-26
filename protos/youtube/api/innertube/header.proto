@@ -22,5 +22,5 @@ message Header {
 		ATTRIBUTION_REPORTING_ELIGIBLE = 7;
 	}
 
-	optional HeaderType headerType = 1;
+	optional HeaderType header_type = 1;
 }

@@ -15,17 +15,17 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message GetWatchResponse {
-	optional ResponseContext responseContext = 1;
+	optional ResponseContext response_context = 1;
 
 	oneof getPlayer {
-		PlayerResponse playerResponse = 2;
-		string getPlayerErrorMsg = 4;
+		PlayerResponse player_response = 2;
+		string get_player_error_msg = 4;
 	}
 
 	oneof getWatchNext {
-		WatchNextResponse watchNextResponse = 3;
-		string getWatchNextErrorMsg = 5;
+		WatchNextResponse watch_next_response = 3;
+		string get_watch_next_error_msg = 5;
 	}
 
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
+	optional FrameworkUpdateTransport framework_updates = 777;
 }

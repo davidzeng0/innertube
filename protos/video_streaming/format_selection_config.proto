@@ -11,5 +11,5 @@ option objc_class_prefix = "YTVS";
 
 message FormatSelectionConfig {
 	repeated int32 itags = 2;
-	optional string videoId = 3;
+	optional string video_id = 3;
 }

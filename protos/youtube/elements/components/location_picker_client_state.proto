@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message LocationPickerClientState {
-	optional bool isDirty = 1;
+	optional bool is_dirty = 1;
 }

@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MoreLikeThisResponse {
-	optional ResponseContext responseContext = 1;
+	optional ResponseContext response_context = 1;
 	repeated Command actions = 2;
 }

@@ -15,14 +15,14 @@ option objc_class_prefix = "YTI";
 
 message PlaylistSegmentRenderer {
 	optional FormattedString title = 1;
-	optional FormattedString positionText = 2;
-	optional Renderer videoList = 5;
-	optional bytes trackingParams = 7;
-	optional FormattedString segmentAnnotation = 8;
-	optional bool isCollapsible = 9;
-	optional bool isCollapsedByDefault = 10;
+	optional FormattedString position_text = 2;
+	optional Renderer video_list = 5;
+	optional bytes tracking_params = 7;
+	optional FormattedString segment_annotation = 8;
+	optional bool is_collapsible = 9;
+	optional bool is_collapsed_by_default = 10;
 	optional Renderer trailer = 11;
-	optional Renderer expandButton = 12;
-	optional AccessibilitySupportedDatas expandingAccessibilityData = 13;
-	optional AccessibilitySupportedDatas collapsingAccessibilityData = 14;
+	optional Renderer expand_button = 12;
+	optional AccessibilitySupportedDatas expanding_accessibility_data = 13;
+	optional AccessibilitySupportedDatas collapsing_accessibility_data = 14;
 }

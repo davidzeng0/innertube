@@ -17,19 +17,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MediaCommonConfig {
-	optional DynamicReadaheadConfig dynamicReadaheadConfig = 1;
-	optional MediaUstreamerRequestConfig mediaUstreamerRequestConfig = 2;
-	optional int32 hfrDroppedFramerateFallbackThreshold = 3;
-	optional bool optimizeForGapless = 5;
-	optional int32 mediaFetchMaximumServerErrors = 7;
-	optional int32 mediaFetchMaximumNetworkErrors = 8;
-	optional int32 mediaFetchMaximumErrors = 9;
-	optional ServerReadaheadConfig serverReadaheadConfig = 10;
-	optional DynamicReadaheadConfig backgroundDynamicReadaheadConfig = 12;
-	optional bool useServerDrivenAbr = 13;
-	optional SabrClientConfig sabrClientConfig = 14;
-	optional ServerPlaybackStartConfig serverPlaybackStartConfig = 15;
-	optional ScriptedPlayerConfig scriptedPlayerConfig = 16;
-	optional bool enableServerDrivenRequestCancellation = 17;
-	optional bool usePlatypus = 18;
+	optional DynamicReadaheadConfig dynamic_readahead_config = 1;
+	optional MediaUstreamerRequestConfig media_ustreamer_request_config = 2;
+	optional int32 hfr_dropped_framerate_fallback_threshold = 3;
+	optional bool optimize_for_gapless = 5;
+	optional int32 media_fetch_maximum_server_errors = 7;
+	optional int32 media_fetch_maximum_network_errors = 8;
+	optional int32 media_fetch_maximum_errors = 9;
+	optional ServerReadaheadConfig server_readahead_config = 10;
+	optional DynamicReadaheadConfig background_dynamic_readahead_config = 12;
+	optional bool use_server_driven_abr = 13;
+	optional SabrClientConfig sabr_client_config = 14;
+	optional ServerPlaybackStartConfig server_playback_start_config = 15;
+	optional ScriptedPlayerConfig scripted_player_config = 16;
+	optional bool enable_server_driven_request_cancellation = 17;
+	optional bool use_platypus = 18;
 }

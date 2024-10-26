@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message ClientResource {
-	optional string bundleId = 1;
-	optional string imageName = 2;
-	optional uint32 imageColor = 3;
+	optional string bundle_id = 1;
+	optional string image_name = 2;
+	optional uint32 image_color = 3;
 }

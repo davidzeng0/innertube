@@ -16,5 +16,5 @@ option objc_class_prefix = "YTI";
 message PlaylistDedupeSuggestionsVideoRenderer {
 	optional ThumbnailDetails thumbnail = 1;
 	optional FormattedString title = 2;
-	optional Command watchEndpoint = 3;
+	optional Command watch_endpoint = 3;
 }

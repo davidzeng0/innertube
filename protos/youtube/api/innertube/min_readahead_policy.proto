@@ -10,6 +10,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MinReadaheadPolicy {
-	optional int64 minBandwidthBytesPerSec = 1;
-	optional int32 minReadaheadMs = 2;
+	optional int64 min_bandwidth_bytes_per_sec = 1;
+	optional int32 min_readahead_ms = 2;
 }

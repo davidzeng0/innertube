@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamViewerStats {
-	optional FormattedString concurrentViewersText = 1;
-	optional FormattedString concurrentViewersTinyText = 2;
-	optional uint64 concurrentViewersCount = 3;
+	optional FormattedString concurrent_viewers_text = 1;
+	optional FormattedString concurrent_viewers_tiny_text = 2;
+	optional uint64 concurrent_viewers_count = 3;
 }

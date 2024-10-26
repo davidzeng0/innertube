@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailEditorStateEntity {
-	optional .youtube.elements.ImageSource imageSource = 1;
-	optional string timestampText = 2;
+	optional .youtube.elements.ImageSource image_source = 1;
+	optional string timestamp_text = 2;
 	optional string key = 3;
 }

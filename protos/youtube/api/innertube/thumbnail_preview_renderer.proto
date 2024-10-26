@@ -17,18 +17,18 @@ option objc_class_prefix = "YTI";
 message ThumbnailPreviewRenderer {
 	optional FormattedString title = 1;
 	optional FormattedString subtitle = 2;
-	optional ThumbnailDetails defaultThumbnail = 3;
-	optional ButtonSupportedRenderers playButton = 5;
+	optional ThumbnailDetails default_thumbnail = 3;
+	optional ButtonSupportedRenderers play_button = 5;
 
 	oneof controlBgOneof {
-		uint32 controlBgArgb = 6;
-		string controlBgHtml = 10;
+		uint32 control_bg_argb = 6;
+		string control_bg_html = 10;
 	}
 
-	optional Renderer videoDetails = 7;
-	optional Renderer shareButton = 8;
-	optional Renderer addToWatchLaterButton = 11;
-	optional int64 videoDurationSeconds = 12;
+	optional Renderer video_details = 7;
+	optional Renderer share_button = 8;
+	optional Renderer add_to_watch_later_button = 11;
+	optional int64 video_duration_seconds = 12;
 	optional Renderer playlist = 19;
-	optional Renderer infoPanel = 22;
+	optional Renderer info_panel = 22;
 }

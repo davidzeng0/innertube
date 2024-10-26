@@ -18,14 +18,14 @@ message StringRun {
 	optional bool bold = 2;
 	optional bool italics = 3;
 	optional bool strikethrough = 4;
-	optional Command navigationEndpoint = 5;
+	optional Command navigation_endpoint = 5;
 	optional bool deemphasize = 6;
-	optional uint32 textColor = 8;
-	optional FontFaceEnum.FontFace fontFace = 9;
+	optional uint32 text_color = 8;
+	optional FontFaceEnum.FontFace font_face = 9;
 	optional bool underline = 10;
-	optional uint32 darkModeTextColor = 11;
+	optional uint32 dark_mode_text_color = 11;
 	optional bool bracket = 12;
-	optional LoggingDirectives loggingDirectives = 999;
-	
+	optional LoggingDirectives logging_directives = 999;
+
 	extensions 1000 to max;
 }

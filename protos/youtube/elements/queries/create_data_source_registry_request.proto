@@ -14,5 +14,5 @@ option objc_class_prefix = "ELMQY";
 
 message CreateDataSourceRegistryRequest {
 	optional Invocation invocation = 1;
-	optional SubscriptionSyncBlockWeakRef subscriptionSync = 2;
+	optional SubscriptionSyncBlockWeakRef subscription_sync = 2;
 }

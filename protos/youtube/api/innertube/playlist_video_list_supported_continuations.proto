@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistVideoListSupportedContinuations {
-	optional NextContinuationData nextContinuationData = 52047593;
-	optional PreviousContinuationData previousContinuationData = 52047597;
-	optional ReloadContinuationData reloadContinuationData = 60487319;
+	optional NextContinuationData next_continuation_data = 52047593;
+	optional PreviousContinuationData previous_continuation_data = 52047597;
+	optional ReloadContinuationData reload_continuation_data = 60487319;
 }

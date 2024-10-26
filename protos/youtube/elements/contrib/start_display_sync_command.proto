@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.elements.contrib";
 option objc_class_prefix = "ELMPB";
 
 message StartDisplaySyncCommand {
-	optional string displaySyncId = 1;
+	optional string display_sync_id = 1;
 }

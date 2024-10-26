@@ -11,7 +11,7 @@ option objc_class_prefix = "YTI";
 
 message MobileDataPlanApiConfig {
 	optional bool enabled = 1;
-	repeated string cpidEndpointUrls = 3;
-	optional bool getDataPlanStatusByClient = 4;
-	optional int64 carrierId = 5;
+	repeated string cpid_endpoint_urls = 3;
+	optional bool get_data_plan_status_by_client = 4;
+	optional int64 carrier_id = 5;
 }

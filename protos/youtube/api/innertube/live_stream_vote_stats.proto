@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamVoteStats {
-	optional FormattedString likesTinyText = 1;
-	optional uint64 likesCount = 2;
+	optional FormattedString likes_tiny_text = 1;
+	optional uint64 likes_count = 2;
 }

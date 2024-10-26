@@ -25,16 +25,16 @@ message AdBreakRenderer {
 		BREAK_CUE_POINT = 6;
 	}
 
-	optional uint32 offsetMilliseconds = 1;
+	optional uint32 offset_milliseconds = 1;
 	repeated AdBreakSupportedRenderers ads = 2;
-	optional BreakType breakType = 3;
-	optional string adBreakParams = 4;
-	optional string getMidrollInfoUrl = 5;
-	repeated Ping breakStartPings = 6;
-	repeated Ping breakEndPings = 7;
-	optional int64 driftRecoveryMs = 8;
-	optional bool adPodChoiceEligible = 11;
-	optional int64 maxDurationMs = 12;
-	optional int64 offsetMs = 13;
-	optional AdSlotLoggingData adSlotLoggingData = 14;
+	optional BreakType break_type = 3;
+	optional string ad_break_params = 4;
+	optional string get_midroll_info_url = 5;
+	repeated Ping break_start_pings = 6;
+	repeated Ping break_end_pings = 7;
+	optional int64 drift_recovery_ms = 8;
+	optional bool ad_pod_choice_eligible = 11;
+	optional int64 max_duration_ms = 12;
+	optional int64 offset_ms = 13;
+	optional AdSlotLoggingData ad_slot_logging_data = 14;
 }

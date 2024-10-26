@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayToggleButtonSupportedDatas {
-	optional RendererVisibilityConditionData rendererVisibilityConditionData = 136648691;
+	optional RendererVisibilityConditionData renderer_visibility_condition_data = 136648691;
 }

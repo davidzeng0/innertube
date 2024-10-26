@@ -25,34 +25,34 @@ option objc_class_prefix = "YTI";
 message ButtonRenderer {
 	oneof styleOneof {
 		ButtonStyle.ButtonStyleType style = 1;
-		ButtonColorSupportedDatas colorData = 17;
-		ThemedBasicColorPalette themedBasicColorPalette = 20;
+		ButtonColorSupportedDatas color_data = 17;
+		ThemedBasicColorPalette themed_basic_color_palette = 20;
 	}
 
 	optional ButtonSize.ButtonSizeType size = 2;
-	optional bool isDisabled = 3;
+	optional bool is_disabled = 3;
 	optional FormattedString text = 5;
-	optional Command serviceEndpoint = 7;
+	optional Command service_endpoint = 7;
 	optional Icon icon = 8;
-	optional Command navigationEndpoint = 9;
+	optional Command navigation_endpoint = 9;
 	optional AccessibilityData accessibility = 10;
 	optional string tooltip = 11;
-	optional bytes trackingParams = 13;
+	optional bytes tracking_params = 13;
 	optional HintSupportedRenderers hint = 14;
-	optional bool isSelected = 15;
-	optional AccessibilitySupportedDatas accessibilityData = 16;
-	optional string targetId = 18;
+	optional bool is_selected = 15;
+	optional AccessibilitySupportedDatas accessibility_data = 16;
+	optional string target_id = 18;
 	optional Command command = 19;
-	repeated Command impressionCommands = 21;
-	optional ButtonIconPositionType iconPosition = 22;
-	optional string disabledTooltip = 23;
-	optional Command onFocusCommand = 26;
-	optional Icon secondaryIcon = 27;
-	optional Command disabledCommand = 28;
-	optional string buttonEntityKey = 29;
-	optional LoggingDirectives loggingDirectives = 999;
-	
-	extensions 24 to 25;
-	
+	repeated Command impression_commands = 21;
+	optional ButtonIconPositionType icon_position = 22;
+	optional string disabled_tooltip = 23;
+	optional Command on_focus_command = 26;
+	optional Icon secondary_icon = 27;
+	optional Command disabled_command = 28;
+	optional string button_entity_key = 29;
+	optional LoggingDirectives logging_directives = 999;
+
+	extensions 24;
+
 	extensions 1000 to max;
 }

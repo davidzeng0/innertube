@@ -10,10 +10,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistRequestDescriptor {
-	optional string playlistId = 1;
-	optional uint64 playlistIndex = 2;
-	optional string serializedThirdPartyEmbedConfig = 3;
-	repeated string templistVideoIds = 4;
-	optional string videoId = 5;
+	optional string playlist_id = 1;
+	optional uint64 playlist_index = 2;
+	optional string serialized_third_party_embed_config = 3;
+	repeated string templist_video_ids = 4;
+	optional string video_id = 5;
 	optional string username = 6;
 }

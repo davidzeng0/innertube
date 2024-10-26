@@ -26,31 +26,31 @@ option objc_class_prefix = "YTI";
 message SectionListRenderer {
 	repeated SectionListSupportedRenderers contents = 1;
 	repeated SectionListSupportedContinuations continuations = 2;
-	optional bytes trackingParams = 4;
-	optional SectionListSubMenuSupportedRenderers subMenu = 5;
+	optional bytes tracking_params = 4;
+	optional SectionListSubMenuSupportedRenderers sub_menu = 5;
 	optional SectionListHeaderSupportedRenderers header = 6;
 	optional SectionListFabSupportedRenderers fab = 7;
 	optional SectionListDrawerSupportedRenderers drawer = 8;
-	optional bool canHaveDrawer = 9;
-	optional bool enableElements = 10;
-	optional bool hideBottomSeparator = 11;
-	optional bool disableSubMenuScroll = 12;
-	optional string targetId = 13;
+	optional bool can_have_drawer = 9;
+	optional bool enable_elements = 10;
+	optional bool hide_bottom_separator = 11;
+	optional bool disable_sub_menu_scroll = 12;
+	optional string target_id = 13;
 	optional bool hack = 14;
-	optional FloatingPillRenderers floatingPillRenderers = 15;
-	optional SectionListLayoutOrder layoutOrder = 16;
-	optional string syncModelEntityKey = 17;
-	optional SectionListSelectedItemAlignPosition selectedItemAlignPosition = 18;
+	optional FloatingPillRenderers floating_pill_renderers = 15;
+	optional SectionListLayoutOrder layout_order = 16;
+	optional string sync_model_entity_key = 17;
+	optional SectionListSelectedItemAlignPosition selected_item_align_position = 18;
 	optional Renderer footer = 19;
 
 	oneof layoutStyle {
-		SectionListStylePaddedList listStyle = 20;
+		SectionListStylePaddedList list_style = 20;
 	}
 
-	optional ScreenVisualElement screenVisualElement = 21;
-	optional Renderer contentOverlay = 22;
-	optional bool disablePullToRefresh = 23;
-	optional int32 selectedIndex = 24;
-	optional SectionListIdentifier sectionListIdentifier = 25;
-	optional int32 scrollPositionIndex = 26;
+	optional ScreenVisualElement screen_visual_element = 21;
+	optional Renderer content_overlay = 22;
+	optional bool disable_pull_to_refresh = 23;
+	optional int32 selected_index = 24;
+	optional SectionListIdentifier section_list_identifier = 25;
+	optional int32 scroll_position_index = 26;
 }

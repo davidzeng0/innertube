@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdSlotAndLayoutMetadata {
-	optional AdSlotMetadata adSlotMetadata = 1;
-	repeated AdLayoutMetadata adLayoutMetadata = 2;
+	optional AdSlotMetadata ad_slot_metadata = 1;
+	repeated AdLayoutMetadata ad_layout_metadata = 2;
 }

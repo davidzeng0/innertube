@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message EmbedPreviewSupportedRenderers {
 	oneof renderer {
-		ThumbnailPreviewRenderer thumbnailPreviewRenderer = 131195200;
+		ThumbnailPreviewRenderer thumbnail_preview_renderer = 131195200;
 	}
 }

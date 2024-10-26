@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AudioTrack {
-	optional string displayName = 4;
+	optional string display_name = 4;
 	optional string id = 5;
-	optional bool audioIsDefault = 6;
+	optional bool audio_is_default = 6;
 }

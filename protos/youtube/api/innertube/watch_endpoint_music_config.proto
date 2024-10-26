@@ -15,9 +15,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message WatchEndpointMusicConfig {
-	optional bool hasPersistentPlaylistPanel = 1;
-	optional MusicVideoType musicVideoType = 2;
-	optional MusicPlaylistContentType musicPlaylistContentType = 3;
-	optional MusicWatchPlayerMode suggestedInitialPlayerMode = 4;
-	optional Command nextExecutionCommand = 5;
+	optional bool has_persistent_playlist_panel = 1;
+	optional MusicVideoType music_video_type = 2;
+	optional MusicPlaylistContentType music_playlist_content_type = 3;
+	optional MusicWatchPlayerMode suggested_initial_player_mode = 4;
+	optional Command next_execution_command = 5;
 }

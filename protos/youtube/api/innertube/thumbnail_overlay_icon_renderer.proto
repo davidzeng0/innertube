@@ -15,6 +15,6 @@ option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayIconRenderer {
 	optional Icon icon = 1;
-	optional ThumbnailOverlayIconRendererIconPosition iconPosition = 2;
-	optional ThumbnailOverlayIconRendererIconStyle iconStyle = 3;
+	optional ThumbnailOverlayIconRendererIconPosition icon_position = 2;
+	optional ThumbnailOverlayIconRendererIconStyle icon_style = 3;
 }

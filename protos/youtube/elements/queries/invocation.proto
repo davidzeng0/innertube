@@ -14,5 +14,5 @@ option objc_class_prefix = "ELMQY";
 
 message Invocation {
 	optional Operation operation = 1;
-	optional .google.protobuf.Any variableValues = 2;
+	optional .google.protobuf.Any variable_values = 2;
 }

@@ -37,18 +37,18 @@ message DownloadOptionsPickerBodyData {
 		FORMAT_HEADER_TYPE_PREMIUM = 2;
 	}
 
-	optional string upsellText = 1;
+	optional string upsell_text = 1;
 	repeated .youtube.api.innertube.DownloadFormat formats = 2;
-	repeated .youtube.api.innertube.DownloadAudioTrack audioTracks = 3;
-	optional string rememberSettingsText = 4;
-	optional string expiringRememberSettingsText = 5;
-	optional bool displayRememberSettingsCheckbox = 6;
-	optional string hintFor1080P = 7;
-	optional DownloadOptionsA11yStrings a11YStrings = 8;
-	optional string selectedValuesId = 9;
-	optional string formatPickerId = 10;
-	optional string audioTrackPickerId = 11;
-	repeated FormatHeader formatHeaders = 12;
-	optional PickerHeader formatPickerHeader = 13;
-	optional PickerHeader audioTrackPickerHeader = 14;
+	repeated .youtube.api.innertube.DownloadAudioTrack audio_tracks = 3;
+	optional string remember_settings_text = 4;
+	optional string expiring_remember_settings_text = 5;
+	optional bool display_remember_settings_checkbox = 6;
+	optional string hint_for_1080_p = 7;
+	optional DownloadOptionsA11yStrings a_11_y_strings = 8;
+	optional string selected_values_id = 9;
+	optional string format_picker_id = 10;
+	optional string audio_track_picker_id = 11;
+	repeated FormatHeader format_headers = 12;
+	optional PickerHeader format_picker_header = 13;
+	optional PickerHeader audio_track_picker_header = 14;
 }

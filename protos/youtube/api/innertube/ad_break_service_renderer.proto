@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdBreakServiceRenderer {
-	optional int64 prefetchMilliseconds = 1;
-	optional string adBreakParams = 2;
-	optional string getAdBreakUrl = 3;
+	optional int64 prefetch_milliseconds = 1;
+	optional string ad_break_params = 2;
+	optional string get_ad_break_url = 3;
 }

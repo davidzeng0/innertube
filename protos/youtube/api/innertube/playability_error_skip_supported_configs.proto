@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message PlayabilityErrorSkipSupportedConfigs {
 	oneof config {
-		PlayabilityErrorSkipConfig playabilityErrorSkipConfig = 109608350;
+		PlayabilityErrorSkipConfig playability_error_skip_config = 109608350;
 	}
 }

@@ -13,17 +13,17 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message ProductPickerData {
-	optional string externalChannelId = 1;
+	optional string external_channel_id = 1;
 	optional ProductPickerStrings strings = 3;
-	optional int32 selectionLimit = 4;
-	optional bytes trackingParams = 5;
-	optional bool usesRedesignedSheets = 7;
-	optional bool enableM2Picker = 8;
-	repeated .youtube.api.innertube.PickerMerchant connectedStores = 10;
-	optional bool enableTypescript = 12;
-	optional bool showAffiliateCommissions = 13;
-	repeated .youtube.api.innertube.PickerMerchant affiliateSellers = 14;
-	repeated .youtube.api.innertube.PickerMerchant freeListingSellers = 15;
-	optional bool updateProductSelectionOnDone = 16;
-	optional string externalVideoId = 17;
+	optional int32 selection_limit = 4;
+	optional bytes tracking_params = 5;
+	optional bool uses_redesigned_sheets = 7;
+	optional bool enable_m_2_picker = 8;
+	repeated .youtube.api.innertube.PickerMerchant connected_stores = 10;
+	optional bool enable_typescript = 12;
+	optional bool show_affiliate_commissions = 13;
+	repeated .youtube.api.innertube.PickerMerchant affiliate_sellers = 14;
+	repeated .youtube.api.innertube.PickerMerchant free_listing_sellers = 15;
+	optional bool update_product_selection_on_done = 16;
+	optional string external_video_id = 17;
 }

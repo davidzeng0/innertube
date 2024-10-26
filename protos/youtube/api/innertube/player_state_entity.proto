@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message PlayerStateEntity {
 	optional string key = 1;
-	optional PlayerState playerState = 2;
-	optional AdsState adsState = 3;
-	optional string videoId = 4;
+	optional PlayerState player_state = 2;
+	optional AdsState ads_state = 3;
+	optional string video_id = 4;
 }

@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailSupportedRenderers {
-	optional ThumbnailLandscapePortraitRenderer thumbnailLandscapePortraitRenderer = 102114592;
+	optional ThumbnailLandscapePortraitRenderer thumbnail_landscape_portrait_renderer = 102114592;
 }

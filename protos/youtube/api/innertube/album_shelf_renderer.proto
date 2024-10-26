@@ -13,8 +13,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AlbumShelfRenderer {
-	optional Renderer shelfTemplateRenderer = 2;
-	optional Renderer itemTemplateRenderer = 3;
-	optional MusicEntityRef entityRef = 4;
-	repeated Renderer iconTemplates = 5;
+	optional Renderer shelf_template_renderer = 2;
+	optional Renderer item_template_renderer = 3;
+	optional MusicEntityRef entity_ref = 4;
+	repeated Renderer icon_templates = 5;
 }

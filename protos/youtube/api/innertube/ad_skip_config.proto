@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdSkipConfig {
-	optional uint32 timeToSkipAdMs = 1;
+	optional uint32 time_to_skip_ad_ms = 1;
 }

@@ -12,6 +12,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseMusicLibrarySectionListReloadCommand {
-	optional BrowseSectionListReloadSupportedContinuations listViewModeContinuation = 1;
-	optional BrowseSectionListReloadSupportedContinuations gridViewModeContinuation = 2;
+	optional BrowseSectionListReloadSupportedContinuations list_view_mode_continuation = 1;
+	optional BrowseSectionListReloadSupportedContinuations grid_view_mode_continuation = 2;
 }

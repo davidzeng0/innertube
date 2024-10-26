@@ -11,5 +11,5 @@ option objc_class_prefix = "YTI";
 
 message NextGenerationWatchConfig {
 	optional bool enabled = 1;
-	optional bool ngwTallFloatyBar = 5;
+	optional bool ngw_tall_floaty_bar = 5;
 }

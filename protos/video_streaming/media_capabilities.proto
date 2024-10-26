@@ -17,11 +17,11 @@ message MediaCapabilities {
 	message VideoFormatCapability {
 		/* protogen: merge reason = nested */
 		message DrmCapabilities {
-			optional bool supportsWidevineL1 = 1;
-			optional bool supportsWidevineL3 = 2;
-			optional bool supportsFairplay = 3;
-			optional bool supportsPlayready = 4;
-			optional bool supportsHdcp = 5;
+			optional bool supports_widevine_l_1 = 1;
+			optional bool supports_widevine_l_3 = 2;
+			optional bool supports_fairplay = 3;
+			optional bool supports_playready = 4;
+			optional bool supports_hdcp = 5;
 		}
 
 		/* protogen: merge reason = nested */
@@ -42,37 +42,37 @@ message MediaCapabilities {
 			AVC_HIGH_41 = 13;
 		}
 
-		optional .video.storage.FormatDescription.Video.Codec videoCodec = 1;
+		optional .video.storage.FormatDescription.Video.Codec video_codec = 1;
 		optional bool efficient = 2;
-		optional int32 maxLandscapeHeight = 3;
-		optional int32 maxLandscapeWidth = 4;
-		optional int32 minLandscapeHeight = 5;
-		optional int32 minLandscapeWidth = 6;
-		optional int32 maxPortraitHeight = 7;
-		optional int32 maxPortraitWidth = 8;
-		optional int32 minPortraitHeight = 9;
-		optional int32 minPortraitWidth = 10;
-		optional int32 maxFramerate = 11;
-		optional int32 maxBitrateBps = 12;
-		repeated Profile profilesSupported = 13;
-		optional DrmCapabilities drmCapabilities = 14;
-		optional bool isHdrAllowed = 15;
-		optional int32 drmCapability = 16;
+		optional int32 max_landscape_height = 3;
+		optional int32 max_landscape_width = 4;
+		optional int32 min_landscape_height = 5;
+		optional int32 min_landscape_width = 6;
+		optional int32 max_portrait_height = 7;
+		optional int32 max_portrait_width = 8;
+		optional int32 min_portrait_height = 9;
+		optional int32 min_portrait_width = 10;
+		optional int32 max_framerate = 11;
+		optional int32 max_bitrate_bps = 12;
+		repeated Profile profiles_supported = 13;
+		optional DrmCapabilities drm_capabilities = 14;
+		optional bool is_hdr_allowed = 15;
+		optional int32 drm_capability = 16;
 	}
 
 	/* protogen: merge reason = nested */
 	message AudioFormatCapability {
 		/* protogen: merge reason = nested */
 		message SpatialAudioCapabilities {
-			optional bool supportsMultichannelSpatialAudio = 1;
-			optional bool supportsStereoSpatialAudio = 2;
+			optional bool supports_multichannel_spatial_audio = 1;
+			optional bool supports_stereo_spatial_audio = 2;
 		}
 
-		optional .video.storage.FormatDescription.Audio.Codec audioCodec = 1;
-		optional int32 numChannels = 2;
-		optional int32 maxBitrateBps = 3;
-		optional SpatialAudioCapabilities spatialAudioCapabilities = 4;
-		optional int32 drmCapability = 5;
+		optional .video.storage.FormatDescription.Audio.Codec audio_codec = 1;
+		optional int32 num_channels = 2;
+		optional int32 max_bitrate_bps = 3;
+		optional SpatialAudioCapabilities spatial_audio_capabilities = 4;
+		optional int32 drm_capability = 5;
 	}
 
 	/* protogen: merge reason = nested */
@@ -83,8 +83,8 @@ message MediaCapabilities {
 		HDR_TRANSFER_FUNCTION_HDR_10_PLUS = 3;
 	}
 
-	repeated VideoFormatCapability videoFormatCapabilities = 1;
-	repeated AudioFormatCapability audioFormatCapabilities = 2;
-	repeated HdrTransferFunction hdrTransferFunctions = 3;
-	optional PerPlaybackAttributes perPlaybackAttributes = 4;
+	repeated VideoFormatCapability video_format_capabilities = 1;
+	repeated AudioFormatCapability audio_format_capabilities = 2;
+	repeated HdrTransferFunction hdr_transfer_functions = 3;
+	optional PerPlaybackAttributes per_playback_attributes = 4;
 }

@@ -15,5 +15,5 @@ option objc_class_prefix = "YTI";
 message PlaylistContributorsList {
 	optional FormattedString title = 1;
 	repeated CollaborationUser contributors = 2;
-	optional FormattedString emptyListText = 6;
+	optional FormattedString empty_list_text = 6;
 }

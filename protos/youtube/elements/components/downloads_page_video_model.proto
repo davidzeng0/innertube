@@ -17,14 +17,14 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message DownloadsPageVideoModel {
-	optional string videoEntityKey = 2;
-	optional .youtube.api.innertube.DownloadsPageVideoEntity videoEntity = 3;
-	optional .youtube.api.innertube.DownloadStatusEntity downloadStatusEntity = 4;
+	optional string video_entity_key = 2;
+	optional .youtube.api.innertube.DownloadsPageVideoEntity video_entity = 3;
+	optional .youtube.api.innertube.DownloadStatusEntity download_status_entity = 4;
 	optional DownloadsPageVideoExperiments experiments = 6;
-	optional .youtube.api.innertube.ClientVeSpec clientVeSpec = 7;
+	optional .youtube.api.innertube.ClientVeSpec client_ve_spec = 7;
 	optional .youtube.elements.Context context = 8;
-	optional int32 positionIndex = 9;
-	optional string accessibilityId = 10;
-	optional bool isSmartDownloads = 11;
-	optional .youtube.elements.Command overflowButtonOnTap = 12;
+	optional int32 position_index = 9;
+	optional string accessibility_id = 10;
+	optional bool is_smart_downloads = 11;
+	optional .youtube.elements.Command overflow_button_on_tap = 12;
 }

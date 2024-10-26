@@ -11,19 +11,19 @@ option objc_class_prefix = "YTI";
 
 message GlobalConfigGroup {
 	oneof coldConfigGroup {
-		string serializedColdConfigGroup = 1;
-		bytes bytesSerializedColdConfigGroup = 6;
+		string serialized_cold_config_group = 1;
+		bytes bytes_serialized_cold_config_group = 6;
 	}
 
 	oneof hotConfigGroup {
-		string serializedHotConfigGroup = 3;
-		bytes bytesSerializedHotConfigGroup = 7;
+		string serialized_hot_config_group = 3;
+		bytes bytes_serialized_hot_config_group = 7;
 	}
 
-	optional string hotHashData = 4;
-	optional string coldHashData = 5;
-	
-	extensions 120941151 to 120941152;
-	
-	extensions 121075448 to 121075449;
+	optional string hot_hash_data = 4;
+	optional string cold_hash_data = 5;
+
+	extensions 120941151;
+
+	extensions 121075448;
 }

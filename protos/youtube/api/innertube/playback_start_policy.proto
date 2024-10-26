@@ -12,9 +12,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaybackStartPolicy {
-	repeated MinReadaheadPolicy startMinReadaheadPolicy = 1;
-	repeated MinReadaheadPolicy resumeMinReadaheadPolicy = 2;
-	optional string videoId = 3;
-	optional int32 startTimeoutMs = 4;
-	optional int32 resumeTimeoutMs = 5;
+	repeated MinReadaheadPolicy start_min_readahead_policy = 1;
+	repeated MinReadaheadPolicy resume_min_readahead_policy = 2;
+	optional string video_id = 3;
+	optional int32 start_timeout_ms = 4;
+	optional int32 resume_timeout_ms = 5;
 }

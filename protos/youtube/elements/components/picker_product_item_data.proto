@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message PickerProductItemData {
-	optional .youtube.api.innertube.ShoppingItem shoppingItem = 1;
-	optional string formattedPrice = 2;
-	optional string formattedAffiliateCommission = 3;
+	optional .youtube.api.innertube.ShoppingItem shopping_item = 1;
+	optional string formatted_price = 2;
+	optional string formatted_affiliate_commission = 3;
 }

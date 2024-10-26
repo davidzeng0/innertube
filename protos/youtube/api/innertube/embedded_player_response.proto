@@ -16,10 +16,10 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EmbeddedPlayerResponse {
-	optional ResponseContext responseContext = 1;
-	optional EmbedPreviewSupportedRenderers embedPreview = 3;
-	optional bytes trackingParams = 5;
+	optional ResponseContext response_context = 1;
+	optional EmbedPreviewSupportedRenderers embed_preview = 3;
+	optional bytes tracking_params = 5;
 	optional EmbeddedPlayerServicePermissions permissions = 7;
 	optional AttestationSupportedRenderers attestation = 8;
-	optional PlayabilityStatus previewPlayabilityStatus = 10;
+	optional PlayabilityStatus preview_playability_status = 10;
 }

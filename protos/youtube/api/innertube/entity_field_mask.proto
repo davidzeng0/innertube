@@ -13,6 +13,6 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityFieldMask {
-	optional EntityFieldMaskMergeOptions mergeOptions = 1;
-	optional .gtasks.utils.XFieldMaskProto xfieldMask = 2;
+	optional EntityFieldMaskMergeOptions merge_options = 1;
+	optional .gtasks.utils.XFieldMaskProto xfield_mask = 2;
 }

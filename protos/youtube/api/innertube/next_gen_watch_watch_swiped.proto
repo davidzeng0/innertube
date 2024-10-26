@@ -10,11 +10,11 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message NextGenWatchWatchSwiped {
-	optional bool isSwipeToPreviousVideo = 1;
-	optional bool isBackStackEntry = 2;
-	optional bool isFullscreenPlayer = 3;
-	optional string videoId = 4;
-	optional string playlistId = 5;
-	optional bytes clientScreenNonce = 6;
-	optional bool isSwipeToSkip = 7;
+	optional bool is_swipe_to_previous_video = 1;
+	optional bool is_back_stack_entry = 2;
+	optional bool is_fullscreen_player = 3;
+	optional string video_id = 4;
+	optional string playlist_id = 5;
+	optional bytes client_screen_nonce = 6;
+	optional bool is_swipe_to_skip = 7;
 }

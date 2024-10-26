@@ -13,5 +13,5 @@ option objc_class_prefix = "YTI";
 
 message LivestreamId {
 	optional LivestreamContentSource source = 1;
-	optional string broadcastId = 2;
+	optional string broadcast_id = 2;
 }

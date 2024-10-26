@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message AnnotationsSupportedRenderers {
 	oneof renderer {
-		PlayerAnnotationsExpandedRenderer playerAnnotationsExpandedRenderer = 49483894;
-		PlayerAnnotationsUrlsRenderer playerAnnotationsUrlsRenderer = 50290091;
+		PlayerAnnotationsExpandedRenderer player_annotations_expanded_renderer = 49483894;
+		PlayerAnnotationsUrlsRenderer player_annotations_urls_renderer = 50290091;
 	}
 }

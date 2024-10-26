@@ -26,19 +26,19 @@ option objc_class_prefix = "YTI";
 
 message SectionListHeaderSupportedRenderers {
 	oneof renderer {
-		ChannelPostBulletinRenderer channelPostBulletinRenderer = 89991643;
-		ChipCloudRenderer chipCloudRenderer = 90823135;
-		CommentsHeaderRenderer commentsHeaderRenderer = 105977417;
-		FeedChannelFilterHeaderRenderer feedChannelFilterHeaderRenderer = 107984702;
-		RichListHeaderRenderer richListHeaderRenderer = 120280839;
-		BrowsySectionHeaderRenderer browsySectionHeaderRenderer = 141910182;
-		EpisodesSectionHeaderRenderer episodesSectionHeaderRenderer = 171606645;
-		SortFilterHeaderRenderer sortFilterHeaderRenderer = 207130962;
-		FeedFilterChipBarRenderer feedFilterChipBarRenderer = 213380311;
-		MusicSideAlignedItemRenderer musicSideAlignedItemRenderer = 217934217;
-		GetSuggestedPlaylistVideosHeaderRenderer getSuggestedPlaylistVideosHeaderRenderer = 222895468;
-		UnpluggedBannerRenderer unpluggedBannerRenderer = 224687714;
-		MySubsFilterHeaderRenderer mySubsFilterHeaderRenderer = 256220752;
-		FilterChipBarElementRenderer filterChipBarElementRenderer = 420115721;
+		ChannelPostBulletinRenderer channel_post_bulletin_renderer = 89991643;
+		ChipCloudRenderer chip_cloud_renderer = 90823135;
+		CommentsHeaderRenderer comments_header_renderer = 105977417;
+		FeedChannelFilterHeaderRenderer feed_channel_filter_header_renderer = 107984702;
+		RichListHeaderRenderer rich_list_header_renderer = 120280839;
+		BrowsySectionHeaderRenderer browsy_section_header_renderer = 141910182;
+		EpisodesSectionHeaderRenderer episodes_section_header_renderer = 171606645;
+		SortFilterHeaderRenderer sort_filter_header_renderer = 207130962;
+		FeedFilterChipBarRenderer feed_filter_chip_bar_renderer = 213380311;
+		MusicSideAlignedItemRenderer music_side_aligned_item_renderer = 217934217;
+		GetSuggestedPlaylistVideosHeaderRenderer get_suggested_playlist_videos_header_renderer = 222895468;
+		UnpluggedBannerRenderer unplugged_banner_renderer = 224687714;
+		MySubsFilterHeaderRenderer my_subs_filter_header_renderer = 256220752;
+		FilterChipBarElementRenderer filter_chip_bar_element_renderer = 420115721;
 	}
 }

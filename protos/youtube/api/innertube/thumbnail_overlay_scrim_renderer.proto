@@ -10,5 +10,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayScrimRenderer {
-	repeated uint32 scrimColorValues = 1;
+	repeated uint32 scrim_color_values = 1;
 }

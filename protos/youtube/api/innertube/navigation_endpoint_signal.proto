@@ -38,5 +38,5 @@ message NavigationEndpointSignal {
 		ACCOUNT_MENU = 23;
 	}
 
-	optional NavigationSignalType signalType = 1;
+	optional NavigationSignalType signal_type = 1;
 }

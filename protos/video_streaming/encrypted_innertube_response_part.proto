@@ -12,8 +12,8 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message EncryptedInnertubeResponsePart {
-	optional bytes encryptedContent = 1;
+	optional bytes encrypted_content = 1;
 	optional bytes hmac = 2;
 	optional bytes iv = 3;
-	optional CompressionType compressionType = 4;
+	optional CompressionType compression_type = 4;
 }

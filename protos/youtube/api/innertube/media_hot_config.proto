@@ -22,15 +22,15 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message MediaHotConfig {
-	optional IosMediaHotConfig iosMediaHotConfig = 1;
-	optional MediaQualitySettingsHotConfig mediaQualitySettingsHotConfig = 3;
-	optional PlanAwareStreamingConfig planAwareStreamingConfig = 4;
-	optional ScriptedPlayerHotConfig scriptedPlayerHotConfig = 7;
-	optional MediaFetchHotConfig mediaFetchHotConfig = 8;
-	optional HamplayerHotConfig hamplayerHotConfig = 138562899;
-	optional ExoCacheHotConfig exoCacheHotConfig = 139360648;
-	optional OnesieHotConfig onesieHotConfig = 146311580;
-	optional BandwidthModelConfig bandwidthModelConfig = 151068309;
-	optional IosAvPlayerHotConfig iosAvPlayerHotConfig = 151193525;
-	optional QoeHotConfig qoeHotConfig = 158048433;
+	optional IosMediaHotConfig ios_media_hot_config = 1;
+	optional MediaQualitySettingsHotConfig media_quality_settings_hot_config = 3;
+	optional PlanAwareStreamingConfig plan_aware_streaming_config = 4;
+	optional ScriptedPlayerHotConfig scripted_player_hot_config = 7;
+	optional MediaFetchHotConfig media_fetch_hot_config = 8;
+	optional HamplayerHotConfig hamplayer_hot_config = 138562899;
+	optional ExoCacheHotConfig exo_cache_hot_config = 139360648;
+	optional OnesieHotConfig onesie_hot_config = 146311580;
+	optional BandwidthModelConfig bandwidth_model_config = 151068309;
+	optional IosAvPlayerHotConfig ios_av_player_hot_config = 151193525;
+	optional QoeHotConfig qoe_hot_config = 158048433;
 }

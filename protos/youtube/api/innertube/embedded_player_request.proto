@@ -18,10 +18,10 @@ message EmbeddedPlayerRequest {
 	optional InnerTubeContext context = 1;
 
 	oneof request {
-		SingleVideoRequestDescriptor singleVideoRequest = 2;
-		PlaylistRequestDescriptor playlistRequest = 3;
+		SingleVideoRequestDescriptor single_video_request = 2;
+		PlaylistRequestDescriptor playlist_request = 3;
 	}
 
-	optional string hostAppToken = 4;
-	optional PlaybackContext playbackContext = 7;
+	optional string host_app_token = 4;
+	optional PlaybackContext playback_context = 7;
 }

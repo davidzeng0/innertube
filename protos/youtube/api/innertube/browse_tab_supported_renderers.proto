@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message BrowseTabSupportedRenderers {
 	oneof renderer {
-		TabRenderer tabRenderer = 58174010;
-		ExpandableTabRenderer expandableTabRenderer = 62070496;
-		SoftTabRenderer softTabRenderer = 64172177;
+		TabRenderer tab_renderer = 58174010;
+		ExpandableTabRenderer expandable_tab_renderer = 62070496;
+		SoftTabRenderer soft_tab_renderer = 64172177;
 	}
 }

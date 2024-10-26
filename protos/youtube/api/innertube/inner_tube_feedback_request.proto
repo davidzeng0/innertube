@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 
 message InnerTubeFeedbackRequest {
 	optional InnerTubeContext context = 1;
-	repeated string feedbackTokens = 2;
-	optional bool shouldMerge = 3;
-	optional FeedbackRequestContext feedbackContext = 4;
-	optional bool isFeedbackTokenUnencrypted = 5;
+	repeated string feedback_tokens = 2;
+	optional bool should_merge = 3;
+	optional FeedbackRequestContext feedback_context = 4;
+	optional bool is_feedback_token_unencrypted = 5;
 }

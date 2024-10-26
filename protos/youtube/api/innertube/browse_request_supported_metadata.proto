@@ -15,8 +15,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseRequestSupportedMetadata {
-	optional OfflinedContentsInBrowse offlinedContentsInBrowse = 1;
-	optional BedtimeReminderContents bedtimeReminderContents = 2;
-	optional DownloadsBrowseParams downloadsBrowseParams = 5;
-	optional MusicLibraryBrowseRequestMetadata musicLibraryBrowseRequestMetadata = 7;
+	optional OfflinedContentsInBrowse offlined_contents_in_browse = 1;
+	optional BedtimeReminderContents bedtime_reminder_contents = 2;
+	optional DownloadsBrowseParams downloads_browse_params = 5;
+	optional MusicLibraryBrowseRequestMetadata music_library_browse_request_metadata = 7;
 }

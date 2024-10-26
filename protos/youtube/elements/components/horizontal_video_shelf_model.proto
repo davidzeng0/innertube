@@ -17,7 +17,7 @@ option objc_class_prefix = "ELMPB";
 message HorizontalVideoShelfModel {
 	optional .youtube.elements.EnvironmentData environment = 11;
 	optional .youtube.elements.Context context = 14;
-	optional HorizontalVideoShelfData shelfData = 20;
-	optional .youtube.api.innertube.ActiveStateDescriptor activeStateDescriptor = 21;
-	optional string collectionKey = 22;
+	optional HorizontalVideoShelfData shelf_data = 20;
+	optional .youtube.api.innertube.ActiveStateDescriptor active_state_descriptor = 21;
+	optional string collection_key = 22;
 }

@@ -14,14 +14,14 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EndScreenPlaylistRenderer {
-	optional string playlistId = 1;
+	optional string playlist_id = 1;
 	optional FormattedString title = 2;
 	optional ThumbnailDetails thumbnail = 3;
-	optional int64 videoCount = 4;
-	optional FormattedString viewPlaylistText = 6;
-	optional FormattedString shortBylineText = 7;
-	optional FormattedString longBylineText = 10;
-	optional FormattedString videoCountText = 11;
-	optional Command navigationEndpoint = 13;
-	optional bytes trackingParams = 14;
+	optional int64 video_count = 4;
+	optional FormattedString view_playlist_text = 6;
+	optional FormattedString short_byline_text = 7;
+	optional FormattedString long_byline_text = 10;
+	optional FormattedString video_count_text = 11;
+	optional Command navigation_endpoint = 13;
+	optional bytes tracking_params = 14;
 }

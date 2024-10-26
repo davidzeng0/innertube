@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 message PlaylistShowMetadataRenderer {
 	optional Renderer collection = 1;
 	optional FormattedString description = 2;
-	optional Renderer showMoreButton = 3;
-	repeated Renderer actionButtons = 4;
-	optional FormattedString showMoreText = 5;
-	optional FormattedString showLessText = 6;
+	optional Renderer show_more_button = 3;
+	repeated Renderer action_buttons = 4;
+	optional FormattedString show_more_text = 5;
+	optional FormattedString show_less_text = 6;
 }

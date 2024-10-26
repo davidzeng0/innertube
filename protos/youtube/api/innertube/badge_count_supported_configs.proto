@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message BadgeCountSupportedConfigs {
 	oneof config {
-		IosBadgeCountConfig iosBadgeCountConfig = 119572805;
+		IosBadgeCountConfig ios_badge_count_config = 119572805;
 	}
 }

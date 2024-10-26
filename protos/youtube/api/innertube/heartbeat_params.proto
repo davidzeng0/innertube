@@ -12,12 +12,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message HeartbeatParams {
-	optional string heartbeatToken = 1;
-	optional int64 intervalMilliseconds = 2;
-	optional int64 maxRetries = 3;
-	optional string drmSessionId = 5;
-	optional bool softFailOnError = 6;
-	optional bool useInnertubeHeartbeatsForDrm = 7;
-	optional bytes heartbeatServerData = 8;
-	optional HeartbeatAttestationConfig heartbeatAttestationConfig = 9;
+	optional string heartbeat_token = 1;
+	optional int64 interval_milliseconds = 2;
+	optional int64 max_retries = 3;
+	optional string drm_session_id = 5;
+	optional bool soft_fail_on_error = 6;
+	optional bool use_innertube_heartbeats_for_drm = 7;
+	optional bytes heartbeat_server_data = 8;
+	optional HeartbeatAttestationConfig heartbeat_attestation_config = 9;
 }

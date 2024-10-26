@@ -10,35 +10,35 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EntityMutationPayload {
-	extensions 2 to 31;
-	
-	extensions 37 to 90;
-	
-	extensions 91 to 98;
-	
-	extensions 99 to 104;
-	
-	extensions 107 to 108;
-	
-	extensions 109 to 112;
-	
-	extensions 113 to 133;
-	
-	extensions 134 to 157;
-	
-	extensions 158 to 160;
-	
-	extensions 162 to 222;
-	
-	extensions 223 to 237;
-	
-	extensions 238 to 247;
-	
-	extensions 248 to 283;
-	
-	extensions 284 to 330;
-	
-	extensions 331 to 375;
-	
-	extensions 376 to 436;
+	extensions 2 to 30;
+
+	extensions 37 to 89;
+
+	extensions 91 to 97;
+
+	extensions 99 to 103;
+
+	extensions 107;
+
+	extensions 109 to 111;
+
+	extensions 113 to 132;
+
+	extensions 134 to 156;
+
+	extensions 158 to 159;
+
+	extensions 162 to 221;
+
+	extensions 223 to 236;
+
+	extensions 238 to 246;
+
+	extensions 248 to 282;
+
+	extensions 284 to 329;
+
+	extensions 331 to 374;
+
+	extensions 376 to 435;
 }

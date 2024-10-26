@@ -16,5 +16,5 @@ message PlaylistContributionState {
 	optional FormattedString title = 1;
 	optional FormattedString description = 2;
 	optional bool closed = 3;
-	optional Command setStateEndpoint = 4;
+	optional Command set_state_endpoint = 4;
 }

@@ -12,6 +12,6 @@ option objc_class_prefix = "YTI";
 message InnerTubeCapability {
 	optional uint32 capability = 1;
 	repeated uint32 features = 2;
-	repeated string experimentFlags = 6;
-	optional uint32 contextualCapability = 7;
+	repeated string experiment_flags = 6;
+	optional uint32 contextual_capability = 7;
 }

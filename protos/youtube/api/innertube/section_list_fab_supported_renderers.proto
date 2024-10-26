@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message SectionListFabSupportedRenderers {
 	oneof renderer {
-		ButtonRenderer buttonRenderer = 65153809;
-		ContentFabRenderer contentFabRenderer = 93737126;
+		ButtonRenderer button_renderer = 65153809;
+		ContentFabRenderer content_fab_renderer = 93737126;
 	}
 }

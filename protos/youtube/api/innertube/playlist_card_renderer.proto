@@ -17,12 +17,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaylistCardRenderer {
-	optional PlaylistThumbnailSupportedRenderers thumbnailRenderer = 1;
+	optional PlaylistThumbnailSupportedRenderers thumbnail_renderer = 1;
 	optional FormattedString title = 2;
-	optional FormattedString bylineText = 3;
-	repeated ThumbnailOverlaySupportedRenderers thumbnailOverlays = 4;
-	optional Command navigationEndpoint = 5;
+	optional FormattedString byline_text = 3;
+	repeated ThumbnailOverlaySupportedRenderers thumbnail_overlays = 4;
+	optional Command navigation_endpoint = 5;
 	optional MenuSupportedRenderers menu = 6;
-	optional bytes trackingParams = 8;
+	optional bytes tracking_params = 8;
 	optional PlaylistCardRendererStyle style = 9;
 }

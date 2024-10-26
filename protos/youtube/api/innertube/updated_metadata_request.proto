@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 message UpdatedMetadataRequest {
 	optional InnerTubeContext context = 1;
 	optional string continuation = 2;
-	optional string videoId = 3;
-	optional int64 lastFullRefreshSecs = 4;
-	optional bool initialBroadcastStateLiveOrNotYetLive = 7;
-	optional bool lastBroadcastStateHasGoneLive = 8;
+	optional string video_id = 3;
+	optional int64 last_full_refresh_secs = 4;
+	optional bool initial_broadcast_state_live_or_not_yet_live = 7;
+	optional bool last_broadcast_state_has_gone_live = 8;
 }

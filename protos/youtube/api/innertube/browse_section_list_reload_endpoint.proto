@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 
 message BrowseSectionListReloadEndpoint {
 	optional BrowseSectionListReloadSupportedContinuations continuation = 1;
-	optional string targetId = 2;
-	optional bool logNewScreenOnContinuation = 3;
-	optional int32 pageType = 4;
-	optional BrowseResponseSupportedRenderers preloadContent = 5;
+	optional string target_id = 2;
+	optional bool log_new_screen_on_continuation = 3;
+	optional int32 page_type = 4;
+	optional BrowseResponseSupportedRenderers preload_content = 5;
 }

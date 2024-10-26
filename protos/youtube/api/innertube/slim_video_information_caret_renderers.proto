@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message SlimVideoInformationCaretRenderers {
-	optional SlimVideoInformationCaretStyle caretStyle = 1;
-	optional Icon.IconType caretStyleIcon = 2;
-	optional string targetId = 3;
+	optional SlimVideoInformationCaretStyle caret_style = 1;
+	optional Icon.IconType caret_style_icon = 2;
+	optional string target_id = 3;
 }

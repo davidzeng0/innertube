@@ -16,12 +16,12 @@ option objc_class_prefix = "YTI";
 
 message LiveErrorRenderer {
 	optional LiveErrorType type = 1;
-	optional bool clientMayRetry = 2;
-	optional uint32 clientRetryTimeMs = 3;
-	optional Command redirectEndpoint = 4;
+	optional bool client_may_retry = 2;
+	optional uint32 client_retry_time_ms = 3;
+	optional Command redirect_endpoint = 4;
 
 	oneof error {
-		FormattedString errorMessage = 5;
-		Renderer errorDialog = 6;
+		FormattedString error_message = 5;
+		Renderer error_dialog = 6;
 	}
 }

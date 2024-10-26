@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message EndscreenSupportedRenderers {
 	oneof renderer {
-		EndscreenRenderer endscreenRenderer = 106301526;
-		EndscreenUrlRenderer endscreenUrlRenderer = 107233212;
-		SkipEndscreenRenderer skipEndscreenRenderer = 150436494;
+		EndscreenRenderer endscreen_renderer = 106301526;
+		EndscreenUrlRenderer endscreen_url_renderer = 107233212;
+		SkipEndscreenRenderer skip_endscreen_renderer = 150436494;
 	}
 }

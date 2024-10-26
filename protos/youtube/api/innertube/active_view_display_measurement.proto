@@ -14,9 +14,9 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ActiveViewDisplayMeasurement {
-	repeated Command viewableCommands = 1;
-	repeated Command endOfSessionCommands = 2;
-	optional RegexUriMacroValidator regexUriMacroValidator = 3;
+	repeated Command viewable_commands = 1;
+	repeated Command end_of_session_commands = 2;
+	optional RegexUriMacroValidator regex_uri_macro_validator = 3;
 	optional string identifier = 4;
 	optional ActiveViewDisplayAdPlacement unused = 5;
 }

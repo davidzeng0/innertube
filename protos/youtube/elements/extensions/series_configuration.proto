@@ -14,9 +14,9 @@ option objc_class_prefix = "ELMPB";
 
 message SeriesConfiguration {
 	oneof series {
-		LineSeries lineSeries = 1;
-		BarSeries barSeries = 2;
+		LineSeries line_series = 1;
+		BarSeries bar_series = 2;
 	}
 
-	optional string noDataMessage = 3;
+	optional string no_data_message = 3;
 }

@@ -13,6 +13,6 @@ option objc_class_prefix = "YTI";
 
 message EndscreenElementSupportedRenderers {
 	oneof renderer {
-		EndscreenElementRenderer endscreenElementRenderer = 105860658;
+		EndscreenElementRenderer endscreen_element_renderer = 105860658;
 	}
 }

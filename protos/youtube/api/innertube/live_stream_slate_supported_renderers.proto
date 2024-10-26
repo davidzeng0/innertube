@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message LiveStreamSlateSupportedRenderers {
-	optional LiveStreamOfflineSlateRenderer liveStreamOfflineSlateRenderer = 127585924;
+	optional LiveStreamOfflineSlateRenderer live_stream_offline_slate_renderer = 127585924;
 }

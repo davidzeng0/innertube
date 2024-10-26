@@ -11,6 +11,6 @@ option objc_class_prefix = "ELMQY";
 
 message EntityStoreBlockMovableRef {
 	optional bool movable = 1;
-	optional string clientId = 2;
-	optional string blockInstanceId = 3;
+	optional string client_id = 2;
+	optional string block_instance_id = 3;
 }

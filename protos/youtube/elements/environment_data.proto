@@ -16,12 +16,12 @@ option java_package = "com.google.protos.youtube.elements";
 option objc_class_prefix = "ELMPB";
 
 message EnvironmentData {
-	optional float layoutRootMaxWidth = 1;
-	optional float layoutRootMaxHeight = 2;
-	optional DeviceOrientation deviceOrientation = 3;
-	optional Size windowSize = 4;
-	optional i18n.PlatformName platformName = 5;
-	optional i18n.FormFactor formFactor = 6;
-	optional bool isScreenReaderActive = 7;
-	optional DimensionEdges windowSafeAreaInsets = 8;
+	optional float layout_root_max_width = 1;
+	optional float layout_root_max_height = 2;
+	optional DeviceOrientation device_orientation = 3;
+	optional Size window_size = 4;
+	optional i18n.PlatformName platform_name = 5;
+	optional i18n.FormFactor form_factor = 6;
+	optional bool is_screen_reader_active = 7;
+	optional DimensionEdges window_safe_area_insets = 8;
 }

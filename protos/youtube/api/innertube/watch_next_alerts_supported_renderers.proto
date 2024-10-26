@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 
 message WatchNextAlertsSupportedRenderers {
 	oneof renderer {
-		AlertRenderer alertRenderer = 58057493;
-		AlertWithActionsRenderer alertWithActionsRenderer = 117586727;
+		AlertRenderer alert_renderer = 58057493;
+		AlertWithActionsRenderer alert_with_actions_renderer = 117586727;
 	}
 }

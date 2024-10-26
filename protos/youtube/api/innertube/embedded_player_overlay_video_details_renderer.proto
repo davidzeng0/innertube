@@ -14,8 +14,8 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message EmbeddedPlayerOverlayVideoDetailsRenderer {
-	optional ThumbnailDetails channelThumbnail = 4;
-	optional Renderer collapsedRenderer = 5;
-	optional Renderer expandedRenderer = 6;
-	optional Command channelThumbnailEndpoint = 7;
+	optional ThumbnailDetails channel_thumbnail = 4;
+	optional Renderer collapsed_renderer = 5;
+	optional Renderer expanded_renderer = 6;
+	optional Command channel_thumbnail_endpoint = 7;
 }

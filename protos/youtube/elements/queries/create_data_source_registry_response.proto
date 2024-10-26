@@ -12,5 +12,5 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message CreateDataSourceRegistryResponse {
-	optional DataSourceRegistryBlockMovableRef dataSourceRegistry = 1;
+	optional DataSourceRegistryBlockMovableRef data_source_registry = 1;
 }

@@ -14,8 +14,8 @@ option objc_class_prefix = "YTI";
 
 message ElementLoggingContainer {
 	optional .youtube.elements.Element element = 1;
-	optional bytes trackingParams = 3;
-	optional .youtube.elements.Command counterfactualVisible = 4;
-	
-	extensions 2 to 3;
+	optional bytes tracking_params = 3;
+	optional .youtube.elements.Command counterfactual_visible = 4;
+
+	extensions 2;
 }

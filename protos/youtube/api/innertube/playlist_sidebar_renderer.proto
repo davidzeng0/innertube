@@ -13,5 +13,5 @@ option objc_class_prefix = "YTI";
 
 message PlaylistSidebarRenderer {
 	repeated Renderer items = 1;
-	optional bytes trackingParams = 3;
+	optional bytes tracking_params = 3;
 }

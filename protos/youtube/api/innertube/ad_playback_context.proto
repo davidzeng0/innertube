@@ -14,19 +14,19 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message AdPlaybackContext {
-	optional AdSystem adSystem = 1;
-	optional AdType adType = 2;
-	optional InstreamType instreamType = 3;
-	optional string hostVideoId = 5;
+	optional AdSystem ad_system = 1;
+	optional AdType ad_type = 2;
+	optional InstreamType instream_type = 3;
+	optional string host_video_id = 5;
 	optional bool pyv = 6;
-	optional string adQueryId = 8;
-	optional uint64 adIdForWatchHistory = 10;
-	optional int64 slotPosition = 11;
-	optional float userPresence = 14;
-	optional int64 vastAdDurationMs = 16;
-	optional int64 driftFromHeadMs = 46;
-	optional bool instreamAdFeedbackEnabled = 47;
-	optional bytes adServingDataEntry = 49;
-	optional uint64 adId = 50;
-	optional bool hideTextOverlayForLivestream = 51;
+	optional string ad_query_id = 8;
+	optional uint64 ad_id_for_watch_history = 10;
+	optional int64 slot_position = 11;
+	optional float user_presence = 14;
+	optional int64 vast_ad_duration_ms = 16;
+	optional int64 drift_from_head_ms = 46;
+	optional bool instream_ad_feedback_enabled = 47;
+	optional bytes ad_serving_data_entry = 49;
+	optional uint64 ad_id = 50;
+	optional bool hide_text_overlay_for_livestream = 51;
 }

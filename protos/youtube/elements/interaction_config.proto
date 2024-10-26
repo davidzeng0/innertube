@@ -16,5 +16,5 @@ message InteractionConfig {
 		LOG_SWIPE_ON_SCROLL_STOP = 1;
 	}
 
-	optional SwipeLogging swipeLogging = 1;
+	optional SwipeLogging swipe_logging = 1;
 }

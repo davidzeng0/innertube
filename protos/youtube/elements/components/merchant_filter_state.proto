@@ -20,10 +20,10 @@ message MerchantFilterState {
 		EMPTY_RESULT = 3;
 	}
 
-	optional string merchantSearchQuery = 1;
-	optional bool isApplyButtonActive = 2;
-	repeated .youtube.api.innertube.PickerMerchant merchantSearchSuggestions = 6;
-	optional int32 queryCharacterCount = 7;
-	optional .youtube.api.innertube.PickerMerchant checkedMerchant = 8;
+	optional string merchant_search_query = 1;
+	optional bool is_apply_button_active = 2;
+	repeated .youtube.api.innertube.PickerMerchant merchant_search_suggestions = 6;
+	optional int32 query_character_count = 7;
+	optional .youtube.api.innertube.PickerMerchant checked_merchant = 8;
 	optional State state = 9;
 }

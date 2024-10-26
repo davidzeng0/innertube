@@ -15,12 +15,12 @@ option objc_class_prefix = "YTI";
 
 message DateTimePickerRenderer {
 	optional FormattedString header = 1;
-	optional uint64 defaultTimeSec = 2;
-	repeated TimezoneOption timezoneOptions = 3;
-	optional Renderer dismissButton = 4;
-	optional FormattedString datePickerHeader = 5;
-	optional FormattedString timePickerHeader = 6;
-	optional FormattedString timezonePickerHeader = 7;
-	optional Renderer confirmButton = 8;
-	optional string timestampEntityKey = 9;
+	optional uint64 default_time_sec = 2;
+	repeated TimezoneOption timezone_options = 3;
+	optional Renderer dismiss_button = 4;
+	optional FormattedString date_picker_header = 5;
+	optional FormattedString time_picker_header = 6;
+	optional FormattedString timezone_picker_header = 7;
+	optional Renderer confirm_button = 8;
+	optional string timestamp_entity_key = 9;
 }

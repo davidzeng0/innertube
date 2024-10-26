@@ -19,17 +19,17 @@ option objc_class_prefix = "YTI";
 message InteractionLoggingRequest {
 	/* protogen: merge reason = nested */
 	message Interaction {
-		optional VisibilityUpdateRequest visibilityUpdate = 1;
-		optional ScreenGraftRequest screenGraft = 2;
+		optional VisibilityUpdateRequest visibility_update = 1;
+		optional ScreenGraftRequest screen_graft = 2;
 		optional ClickRequest click = 3;
-		optional int64 eventTimeMs = 4;
-		optional ScreenGraftAttachChildRequest attachChild = 5;
-		optional ClientData clientData = 6;
+		optional int64 event_time_ms = 4;
+		optional ScreenGraftAttachChildRequest attach_child = 5;
+		optional ClientData client_data = 6;
 		optional uint32 conn = 7;
-		optional int64 lactMs = 8;
+		optional int64 lact_ms = 8;
 	}
 
 	optional InnerTubeContext context = 1;
 	repeated Interaction interactions = 2;
-	optional int64 requestTimeMs = 3;
+	optional int64 request_time_ms = 3;
 }

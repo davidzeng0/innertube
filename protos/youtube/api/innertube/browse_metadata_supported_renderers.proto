@@ -17,10 +17,10 @@ option objc_class_prefix = "YTI";
 
 message BrowseMetadataSupportedRenderers {
 	oneof renderer {
-		ChannelMetadataRenderer channelMetadataRenderer = 57075253;
-		PlaylistMetadataRenderer playlistMetadataRenderer = 63173126;
-		HomeMetadataRenderer homeMetadataRenderer = 85175861;
-		MusicAppMetadataRenderer musicAppMetadataRenderer = 100625508;
-		ReplaylistMetadataRenderer replaylistMetadataRenderer = 206848708;
+		ChannelMetadataRenderer channel_metadata_renderer = 57075253;
+		PlaylistMetadataRenderer playlist_metadata_renderer = 63173126;
+		HomeMetadataRenderer home_metadata_renderer = 85175861;
+		MusicAppMetadataRenderer music_app_metadata_renderer = 100625508;
+		ReplaylistMetadataRenderer replaylist_metadata_renderer = 206848708;
 	}
 }

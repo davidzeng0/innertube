@@ -27,14 +27,6 @@ option objc_class_prefix = "YTI";
 
 message ClientInfo {
 	/* protogen: merge reason = nested */
-	enum ApplicationState {
-		UNKNOWN_APPLICATION_STATE = 0;
-		ACTIVE = 1;
-		BACKGROUND = 2;
-		INACTIVE = 3;
-	}
-
-	/* protogen: merge reason = nested */
 	enum ClientFormFactor {
 		UNKNOWN_FORM_FACTOR = 0;
 		SMALL_FORM_FACTOR = 1;
@@ -42,7 +34,27 @@ message ClientInfo {
 		AUTOMOTIVE_FORM_FACTOR = 3;
 		WEARABLE_FORM_FACTOR = 4;
 	}
-
+	
+	/* protogen: merge reason = nested */
+	enum Theme {
+		UNKNOWN_THEME = 0;
+		CLASSIC = 1;
+		KIDS = 2;
+		INSTANT = 3;
+		CREATOR = 4;
+		MUSIC = 5;
+		GAMING = 6;
+		UNPLUGGED = 7;
+	}
+	
+	/* protogen: merge reason = nested */
+	enum ApplicationState {
+		UNKNOWN_APPLICATION_STATE = 0;
+		ACTIVE = 1;
+		BACKGROUND = 2;
+		INACTIVE = 3;
+	}
+	
 	/* protogen: merge reason = nested */
 	enum ClientName {
 		UNKNOWN_INTERFACE = 0;
@@ -126,102 +138,91 @@ message ClientInfo {
 		MEDIA_CONNECT_FRONTEND = 95;
 	}
 
-	/* protogen: merge reason = nested */
-	enum Theme {
-		UNKNOWN_THEME = 0;
-		CLASSIC = 1;
-		KIDS = 2;
-		INSTANT = 3;
-		CREATOR = 4;
-		MUSIC = 5;
-		GAMING = 6;
-		UNPLUGGED = 7;
-	}
 	optional string hl = 1;
 	optional string gl = 2;
 	optional string geo = 3;
-	optional string remoteHost = 4;
-	optional string deviceId = 6;
-	optional bool isInternal = 7;
-	optional string debugDeviceIdOverride = 8;
-	repeated int32 experimentIds = 9;
-	optional string carrierGeo = 10;
-	optional bool crackedHl = 11;
-	optional string deviceMake = 12;
-	optional string deviceModel = 13;
-	optional string visitorData = 14;
-	optional string userAgent = 15;
-	optional ClientName clientName = 16;
-	optional string clientVersion = 17;
-	optional string osName = 18;
-	optional string osVersion = 19;
-	optional string projectId = 20;
-	optional string acceptLanguage = 21;
-	optional string acceptRegion = 22;
-	optional string originalUrl = 23;
-	repeated int32 internalExperimentIds = 24;
-	optional string rawDeviceId = 25;
-	optional bool clientValid = 26;
-	optional string configData = 27;
+	optional string remote_host = 4;
+	optional string device_id = 6;
+	optional bool is_internal = 7;
+	optional string debug_device_id_override = 8;
+	repeated int32 experiment_ids = 9;
+	optional string carrier_geo = 10;
+	optional bool cracked_hl = 11;
+	optional string device_make = 12;
+	optional string device_model = 13;
+	optional string visitor_data = 14;
+	optional string user_agent = 15;
+	optional ClientName client_name = 16;
+	optional string client_version = 17;
+	optional string os_name = 18;
+	optional string os_version = 19;
+	optional string project_id = 20;
+	optional string accept_language = 21;
+	optional string accept_region = 22;
+	optional string original_url = 23;
+	repeated int32 internal_experiment_ids = 24;
+	optional string raw_device_id = 25;
+	optional bool client_valid = 26;
+	optional string config_data = 27;
 	optional Theme theme = 30;
-	optional string spacecastToken = 31;
-	repeated int32 internalClientExperimentIds = 32;
-	optional string internalGeo = 34;
-	optional ApplicationState applicationState = 35;
-	optional PlayerType playerType = 36;
-	optional int32 screenWidthPoints = 37;
-	optional int32 screenHeightPoints = 38;
-	optional float screenWidthInches = 39;
-	optional float screenHeightInches = 40;
-	optional int32 screenPixelDensity = 41;
-	optional string gfeFrontlineInfo = 43;
-	optional string ytSafetyModeHeader = 44;
-	optional ClientFormFactor clientFormFactor = 46;
-	optional string forwardedFor = 48;
-	optional MobileDataPlanInfo mobileDataPlanInfo = 49;
-	optional int32 gmscoreVersionCode = 50;
-	optional bool webpSupport = 51;
-	optional string ytRestrictHeader = 53;
-	optional string experimentsToken = 54;
-	optional int32 windowWidthPoints = 55;
-	optional int32 windowHeightPoints = 56;
-	optional ClientConnectionType connectionType = 61;
-	optional ConfigGroupsClientInfo configInfo = 62;
-	optional UnpluggedLocationInfo unpluggedLocationInfo = 63;
-	optional int32 androidSdkVersion = 64;
-	optional float screenDensityFloat = 65;
-	repeated int32 firstTimeSignInExperimentIds = 66;
-	optional int32 utcOffsetMinutes = 67;
-	optional bool animatedWebpSupport = 68;
-	optional KidsAppInfo kidsAppInfo = 69;
-	optional MusicAppInfo musicAppInfo = 70;
-	optional string internalGeoIp = 72;
-	optional UnpluggedAppInfo unpluggedAppInfo = 73;
-	optional LocationInfo locationInfo = 74;
+	optional string spacecast_token = 31;
+	repeated int32 internal_client_experiment_ids = 32;
+	optional string internal_geo = 34;
+	optional ApplicationState application_state = 35;
+	optional PlayerType player_type = 36;
+	optional int32 screen_width_points = 37;
+	optional int32 screen_height_points = 38;
+	optional float screen_width_inches = 39;
+	optional float screen_height_inches = 40;
+	optional int32 screen_pixel_density = 41;
+	optional string gfe_frontline_info = 43;
+	optional string yt_safety_mode_header = 44;
+	optional ClientFormFactor client_form_factor = 46;
+	optional string forwarded_for = 48;
+	optional MobileDataPlanInfo mobile_data_plan_info = 49;
+	optional int32 gmscore_version_code = 50;
+	optional bool webp_support = 51;
+	optional string yt_restrict_header = 53;
+	optional string experiments_token = 54;
+	optional int32 window_width_points = 55;
+	optional int32 window_height_points = 56;
+	optional ClientConnectionType connection_type = 61;
+	optional ConfigGroupsClientInfo config_info = 62;
+	optional UnpluggedLocationInfo unplugged_location_info = 63;
+	optional int32 android_sdk_version = 64;
+	optional float screen_density_float = 65;
+	repeated int32 first_time_sign_in_experiment_ids = 66;
+	optional int32 utc_offset_minutes = 67;
+	optional bool animated_webp_support = 68;
+	optional KidsAppInfo kids_app_info = 69;
+	optional MusicAppInfo music_app_info = 70;
+	optional string internal_geo_ip = 72;
+	optional UnpluggedAppInfo unplugged_app_info = 73;
+	optional LocationInfo location_info = 74;
 
 	oneof textScaleAdjustment {
-		string contentSizeCategory = 76;
-		float fontScale = 77;
+		string content_size_category = 76;
+		float font_scale = 77;
 	}
 
-	optional UserInterfaceTheme userInterfaceTheme = 78;
-	optional bool newVisitorCookie = 79;
-	optional string timeZone = 80;
-	optional bytes emlTemplateContext = 84;
-	optional bytes coldAppBundleConfigData = 85;
-	repeated .experiments.heterodyne.ExperimentIds heterodyneIds = 86;
-	optional string browserName = 87;
-	optional string browserVersion = 88;
-	optional string locationPlayabilityToken = 89;
-	optional int32 releaseYear = 91;
+	optional UserInterfaceTheme user_interface_theme = 78;
+	optional bool new_visitor_cookie = 79;
+	optional string time_zone = 80;
+	optional bytes eml_template_context = 84;
+	optional bytes cold_app_bundle_config_data = 85;
+	repeated .experiments.heterodyne.ExperimentIds heterodyne_ids = 86;
+	optional string browser_name = 87;
+	optional string browser_version = 88;
+	optional string location_playability_token = 89;
+	optional int32 release_year = 91;
 	optional string chipset = 92;
-	optional string firmwareVersion = 93;
-	optional int64 memoryTotalKbytes = 95;
-	optional NotificationPermissionInfo notificationPermissionInfo = 97;
-	optional string deviceBrand = 98;
-	optional ClientStoreInfo clientStoreInfo = 99;
-	repeated SRSDataPushVersion srsDatapushBuildIds = 100;
-	repeated PlayerDataPushVersion playerDatapushBuildIds = 101;
-	optional string acceptHeader = 103;
-	optional string deviceExperimentId = 104;
+	optional string firmware_version = 93;
+	optional int64 memory_total_kbytes = 95;
+	optional NotificationPermissionInfo notification_permission_info = 97;
+	optional string device_brand = 98;
+	optional ClientStoreInfo client_store_info = 99;
+	repeated SRSDataPushVersion srs_datapush_build_ids = 100;
+	repeated PlayerDataPushVersion player_datapush_build_ids = 101;
+	optional string accept_header = 103;
+	optional string device_experiment_id = 104;
 }

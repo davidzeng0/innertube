@@ -10,7 +10,7 @@ option java_package = "com.google.protos.youtube.elements.i18n";
 option objc_class_prefix = "ELMPB";
 
 message GetLegacyTranslatedStringRequest {
-	optional int64 messageId = 1;
+	optional int64 message_id = 1;
 	repeated string substitutions = 2;
-	optional string fallbackString = 3;
+	optional string fallback_string = 3;
 }

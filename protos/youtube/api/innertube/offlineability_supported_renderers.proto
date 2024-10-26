@@ -15,8 +15,8 @@ option objc_class_prefix = "YTI";
 
 message OfflineabilitySupportedRenderers {
 	oneof renderer {
-		OfflineabilityRenderer offlineabilityRenderer = 60572968;
-		ButtonRenderer buttonRenderer = 65153809;
-		OfflinePromoRenderer offlinePromoRenderer = 131899791;
+		OfflineabilityRenderer offlineability_renderer = 60572968;
+		ButtonRenderer button_renderer = 65153809;
+		OfflinePromoRenderer offline_promo_renderer = 131899791;
 	}
 }

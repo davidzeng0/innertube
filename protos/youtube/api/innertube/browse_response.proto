@@ -29,41 +29,41 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message BrowseResponse {
-	optional ResponseContext responseContext = 1;
+	optional ResponseContext response_context = 1;
 	optional BrowseResponseSupportedRenderers contents = 9;
-	optional ContinuationSupportedRenderers continuationContents = 10;
-	optional BrowseMastheadAdSupportedRenderers mastheadAd = 12;
+	optional ContinuationSupportedRenderers continuation_contents = 10;
+	optional BrowseMastheadAdSupportedRenderers masthead_ad = 12;
 	optional BrowseHeaderSupportedRenderers header = 13;
 	repeated BrowseAlertSupportedRenderers alerts = 14;
 	optional BrowseMetadataSupportedRenderers metadata = 15;
-	optional bytes trackingParams = 16;
+	optional bytes tracking_params = 16;
 	optional BrowseSurveyTriggerSupportedRenderers survey = 18;
-	optional bool disableScrollyTabs = 19;
+	optional bool disable_scrolly_tabs = 19;
 	optional BrowseOverlaySupportedRenderers overlay = 20;
-	optional BrowseContinuationHeaderSupportedRenderers continuationHeader = 22;
+	optional BrowseContinuationHeaderSupportedRenderers continuation_header = 22;
 	optional BrowseTopbarSupportedRenderers topbar = 25;
-	optional bool disableScrollyToolbar = 26;
+	optional bool disable_scrolly_toolbar = 26;
 	optional BrowseMicroformatSupportedRenderers microformat = 27;
-	optional BrowseToolbarMenuSupportedRenderers toolbarMenu = 28;
-	repeated Command onResponseReceivedEndpoints = 29;
-	repeated Command onResponseReceivedActions = 30;
-	optional bool hasAccessToOffline = 31;
+	optional BrowseToolbarMenuSupportedRenderers toolbar_menu = 28;
+	repeated Command on_response_received_endpoints = 29;
+	repeated Command on_response_received_actions = 30;
+	optional bool has_access_to_offline = 31;
 	optional BrowseSidebarSupportedRenderers sidebar = 33;
-	optional uint32 maxAgeStoreSeconds = 34;
-	optional uint32 staleWhileRevalidateStoreSeconds = 35;
-	optional Command onCacheInvalidated = 36;
+	optional uint32 max_age_store_seconds = 34;
+	optional uint32 stale_while_revalidate_store_seconds = 35;
+	optional Command on_cache_invalidated = 36;
 	optional Renderer fab = 37;
-	optional Command onSwipeLeftCommand = 38;
+	optional Command on_swipe_left_command = 38;
 	optional Renderer footer = 39;
-	repeated Renderer toolbarButtons = 40;
-	optional Command onViewScrolledBeyondThreshold = 42;
+	repeated Renderer toolbar_buttons = 40;
+	optional Command on_view_scrolled_beyond_threshold = 42;
 	optional Renderer background = 43;
 	repeated Renderer panels = 44;
-	optional Command onNetworkConnectivityRegained = 45;
-	repeated BrowseObservedStateTag observedStateTags = 46;
-	optional FrameworkUpdateTransport frameworkUpdates = 777;
-	
-	extensions 41 to 42;
-	
+	optional Command on_network_connectivity_regained = 45;
+	repeated BrowseObservedStateTag observed_state_tags = 46;
+	optional FrameworkUpdateTransport framework_updates = 777;
+
+	extensions 41;
+
 	extensions 1000 to max;
 }

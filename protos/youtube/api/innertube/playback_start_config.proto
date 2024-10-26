@@ -12,12 +12,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message PlaybackStartConfig {
-	optional float startSeconds = 1;
-	optional bool startPaused = 2;
-	optional int64 liveUtcStartSeconds = 3;
-	optional int64 startTimeToleranceBeforeMs = 4;
-	optional int64 startTimeToleranceAfterMs = 5;
-	optional VideoPlaybackPosition startPosition = 6;
-	optional VideoPlaybackPosition progressBarStartPosition = 7;
-	optional VideoPlaybackPosition progressBarEndPosition = 8;
+	optional float start_seconds = 1;
+	optional bool start_paused = 2;
+	optional int64 live_utc_start_seconds = 3;
+	optional int64 start_time_tolerance_before_ms = 4;
+	optional int64 start_time_tolerance_after_ms = 5;
+	optional VideoPlaybackPosition start_position = 6;
+	optional VideoPlaybackPosition progress_bar_start_position = 7;
+	optional VideoPlaybackPosition progress_bar_end_position = 8;
 }

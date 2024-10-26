@@ -10,12 +10,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ClientErrorData {
-	optional string errorMessageIdentifier = 1;
-	optional int32 pageVeType = 2;
-	optional string exceptionName = 3;
-	optional string rpcEndpoint = 4;
-	optional string innertubeBrowseId = 5;
-	optional int32 rpcResponseCode = 6;
-	optional string errorDomain = 7;
-	optional int32 errorCode = 8;
+	optional string error_message_identifier = 1;
+	optional int32 page_ve_type = 2;
+	optional string exception_name = 3;
+	optional string rpc_endpoint = 4;
+	optional string innertube_browse_id = 5;
+	optional int32 rpc_response_code = 6;
+	optional string error_domain = 7;
+	optional int32 error_code = 8;
 }

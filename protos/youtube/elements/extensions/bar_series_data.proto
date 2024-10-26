@@ -13,6 +13,6 @@ option objc_class_prefix = "ELMPB";
 
 message BarSeriesData {
 	optional string domain = 1;
-	optional string formattedDomain = 2;
+	optional string formatted_domain = 2;
 	repeated BarValue values = 3;
 }

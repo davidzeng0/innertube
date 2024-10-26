@@ -14,15 +14,15 @@ option java_package = "com.google.protos.youtube.elements.extensions";
 option objc_class_prefix = "ELMPB";
 
 message SeriesAllyConfiguration {
-	optional string seriesName = 1;
+	optional string series_name = 1;
 
 	oneof measureAllyFormatter {
-		CustomFormatter measureCustomFormatter = 2;
-		PercentageFormatter mesasurePercentageFormatter = 3;
-		CurrencyFormatter measureCurrencyFormatter = 5;
+		CustomFormatter measure_custom_formatter = 2;
+		PercentageFormatter mesasure_percentage_formatter = 3;
+		CurrencyFormatter measure_currency_formatter = 5;
 	}
 
 	oneof domainFormatter {
-		CustomFormatter domainCustomFormatter = 4;
+		CustomFormatter domain_custom_formatter = 4;
 	}
 }

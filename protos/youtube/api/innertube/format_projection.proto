@@ -19,5 +19,5 @@ message FormatProjection {
 		MESH = 4;
 	}
 
-	optional ProjectionType projectionType = 1;
+	optional ProjectionType projection_type = 1;
 }
