@@ -14,7 +14,7 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message VideoThumbnailData {
-	oneof thumbnailImage {
+	oneof thumbnail_image {
 		.youtube.elements.Image image = 1;
 	}
 

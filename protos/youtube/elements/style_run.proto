@@ -24,7 +24,7 @@ message StyleRun {
 	optional uint32 font_color = 5;
 	optional i18n.LineStyle underline = 6;
 
-	oneof fontWeight {
+	oneof font_weight {
 		uint32 weight = 7;
 		i18n.FontWeight weight_label = 8;
 	}

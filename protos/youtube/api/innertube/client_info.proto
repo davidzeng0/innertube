@@ -200,7 +200,7 @@ message ClientInfo {
 	optional UnpluggedAppInfo unplugged_app_info = 73;
 	optional LocationInfo location_info = 74;
 
-	oneof textScaleAdjustment {
+	oneof text_scale_adjustment {
 		string content_size_category = 76;
 		float font_scale = 77;
 	}

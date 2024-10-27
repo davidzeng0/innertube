@@ -14,12 +14,12 @@ option java_package = "com.google.protos.youtube.elements.components";
 option objc_class_prefix = "ELMPB";
 
 message Metadata {
-	oneof titleOneof {
+	oneof title_oneof {
 		string title = 1;
 		.youtube.elements.AttributedString formatted_title = 27;
 	}
 
-	oneof bylineOneof {
+	oneof byline_oneof {
 		string byline = 2;
 	}
 

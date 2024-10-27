@@ -43,7 +43,7 @@ message SectionListRenderer {
 	optional SectionListSelectedItemAlignPosition selected_item_align_position = 18;
 	optional Renderer footer = 19;
 
-	oneof layoutStyle {
+	oneof layout_style {
 		SectionListStylePaddedList list_style = 20;
 	}
 

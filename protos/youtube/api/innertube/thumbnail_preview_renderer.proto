@@ -20,7 +20,7 @@ message ThumbnailPreviewRenderer {
 	optional ThumbnailDetails default_thumbnail = 3;
 	optional ButtonSupportedRenderers play_button = 5;
 
-	oneof controlBgOneof {
+	oneof control_bg_oneof {
 		uint32 control_bg_argb = 6;
 		string control_bg_html = 10;
 	}

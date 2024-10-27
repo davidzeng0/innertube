@@ -23,7 +23,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ButtonRenderer {
-	oneof styleOneof {
+	oneof style_oneof {
 		ButtonStyle.ButtonStyleType style = 1;
 		ButtonColorSupportedDatas color_data = 17;
 		ThemedBasicColorPalette themed_basic_color_palette = 20;

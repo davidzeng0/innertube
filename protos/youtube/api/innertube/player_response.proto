@@ -211,7 +211,7 @@ message CommentRenderer {
 	optional CommentActionButtonsSupportedRenderers action_buttons = 10;
 	optional bool author_is_channel_owner = 11;
 
-	oneof linkedBadge {
+	oneof linked_badge {
 		FormattedString linked_comment_text = 12;
 		BadgeSupportedRenderers linked_comment_badge = 43;
 	}
@@ -230,7 +230,7 @@ message CommentRenderer {
 	optional FormattedString vote_count = 28;
 	optional CommentAvatarSizeType avatar_size = 30;
 
-	oneof backgroundStyling {
+	oneof background_styling {
 		CommentBackgroundStyleType background_style = 31;
 	}
 

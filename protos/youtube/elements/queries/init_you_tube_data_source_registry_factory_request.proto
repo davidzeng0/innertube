@@ -17,17 +17,17 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message InitYouTubeDataSourceRegistryFactoryRequest {
-	oneof byteStoreRefKind {
+	oneof byte_store_ref_kind {
 		ByteStoreBlockWeakRef byte_store = 1;
 		ByteStoreBlockMovableRef movable_byte_store = 2;
 	}
 
-	oneof environmentDataRefKind {
+	oneof environment_data_ref_kind {
 		EnvironmentDataBlockWeakRef environment_data = 3;
 		EnvironmentDataBlockMovableRef movable_environment_data = 4;
 	}
 
-	oneof persistentEntityStoreRefKind {
+	oneof persistent_entity_store_ref_kind {
 		EntityStoreBlockWeakRef persistent_entity_store = 5;
 		EntityStoreBlockMovableRef movable_persistent_entity_store = 6;
 	}

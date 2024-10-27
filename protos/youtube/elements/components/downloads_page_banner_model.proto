@@ -21,7 +21,7 @@ message DownloadsPageBannerModel {
 	optional .youtube.api.innertube.ClientVeSpec client_ve_spec = 4;
 	optional .youtube.api.innertube.ClientVeSpec button_client_ve_spec = 5;
 
-	oneof bodyText {
+	oneof body_text {
 		string text = 6;
 		.youtube.elements.AttributedString formatted_text = 25;
 	}
@@ -32,7 +32,7 @@ message DownloadsPageBannerModel {
 	optional int32 button_ui_type = 10;
 	optional .youtube.elements.Context context = 11;
 
-	oneof titleText {
+	oneof title_text {
 		string title = 12;
 		.youtube.elements.AttributedString formatted_title = 26;
 	}

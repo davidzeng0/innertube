@@ -63,7 +63,7 @@ message DownloadOptionsPickerModel {
 	optional string selected_values_id = 16;
 	optional DownloadOptionsSelectedValues selected_values = 17;
 
-	oneof videoOrPlaylistId {
+	oneof video_or_playlist_id {
 		string video_id = 18;
 		string playlist_id = 19;
 	}
@@ -72,7 +72,7 @@ message DownloadOptionsPickerModel {
 	optional int32 upsell_format_divider_index = 21;
 	optional bool show_upsell = 22;
 
-	oneof offlineabilityClickTracking {
+	oneof offlineability_click_tracking {
 		bytes offlineability_click_tracking_params = 23;
 		int32 offlineability_ve_counter = 33;
 	}

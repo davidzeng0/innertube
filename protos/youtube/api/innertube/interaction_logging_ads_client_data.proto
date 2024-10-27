@@ -19,7 +19,7 @@ message InteractionLoggingAdsClientData {
 	optional AdClientDataEntry ad_client_data_entry = 4;
 	optional bytes serialized_ad_serving_data = 5;
 
-	oneof adsClientData {
+	oneof ads_client_data {
 		AdGestureTerminationData ad_gesture_termination_data = 10;
 		PreloadAppStoreData preload_app_store_data = 14;
 	}

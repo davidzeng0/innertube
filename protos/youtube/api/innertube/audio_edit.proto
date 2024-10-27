@@ -17,7 +17,7 @@ message AudioEdit {
 		optional int32 try_count = 3;
 	}
 
-	oneof audioEdit {
+	oneof audio_edit {
 		bool is_muted = 1;
 		SpeechEnhancement speech_enhancement = 2;
 	}

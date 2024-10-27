@@ -12,7 +12,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message ThumbnailOverlayBottomGradientRenderer {
-	oneof displayOption {
+	oneof display_option {
 		FormattedString text = 1;
 		bool no_text_overlay = 2;
 	}

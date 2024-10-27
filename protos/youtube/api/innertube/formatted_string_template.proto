@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message FormattedStringTemplate {
-	oneof testString {
+	oneof test_string {
 		FormattedStringWrapper formatted_string_wrapper = 1;
 		PluralFormattedStringWrapper plural_formatted_string_wrapper = 2;
 	}

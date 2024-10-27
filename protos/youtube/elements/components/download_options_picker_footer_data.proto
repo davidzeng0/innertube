@@ -27,12 +27,12 @@ message DownloadOptionsPickerFooterData {
 	optional string download_cta_button_title = 4;
 	optional .youtube.elements.Command dismiss_command = 5;
 
-	oneof videoOrPlaylistId {
+	oneof video_or_playlist_id {
 		string video_id = 6;
 		string playlist_id = 7;
 	}
 
-	oneof offlineabilityClickTracking {
+	oneof offlineability_click_tracking {
 		bytes offlineability_click_tracking_params = 8;
 		int32 offlineability_ve_counter = 9;
 	}

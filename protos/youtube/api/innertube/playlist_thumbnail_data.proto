@@ -17,7 +17,7 @@ message PlaylistThumbnailData {
 		optional ThumbnailDetails cover_thumbnail = 1;
 	}
 
-	oneof playlistThumbnailData {
+	oneof playlist_thumbnail_data {
 		ThumbnailDetails thumbnail = 1;
 		CollageThumbnailData collage_thumbnail = 2;
 	}

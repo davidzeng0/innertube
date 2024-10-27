@@ -16,13 +16,13 @@ option objc_class_prefix = "ELMPB";
 message SeriesAllyConfiguration {
 	optional string series_name = 1;
 
-	oneof measureAllyFormatter {
+	oneof measure_ally_formatter {
 		CustomFormatter measure_custom_formatter = 2;
 		PercentageFormatter mesasure_percentage_formatter = 3;
 		CurrencyFormatter measure_currency_formatter = 5;
 	}
 
-	oneof domainFormatter {
+	oneof domain_formatter {
 		CustomFormatter domain_custom_formatter = 4;
 	}
 }

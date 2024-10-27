@@ -17,7 +17,7 @@ message DownloadsPageSmartDownloadsOptInBannerModel {
 	optional .youtube.elements.Context context = 2;
 	optional string title = 3;
 
-	oneof bodyText {
+	oneof body_text {
 		string text = 4;
 		.youtube.elements.AttributedString formatted_text = 9;
 	}

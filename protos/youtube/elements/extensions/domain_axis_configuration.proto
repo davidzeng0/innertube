@@ -14,7 +14,7 @@ option objc_class_prefix = "ELMPB";
 message DomainAxisConfiguration {
 	repeated double tick_values = 1;
 
-	oneof tickFormatter {
+	oneof tick_formatter {
 		CustomFormatter custom_formatter = 2;
 	}
 }

@@ -20,12 +20,12 @@ option objc_class_prefix = "ELMPB";
 message Button {
 	optional bool enabled = 1;
 
-	oneof iconOneof {
+	oneof icon_oneof {
 		string icon_name = 2;
 		.youtube.elements.ImageSource icon_image = 35;
 	}
 
-	oneof titleOneof {
+	oneof title_oneof {
 		string title = 3;
 		.youtube.elements.AttributedString title_formatted = 19;
 	}

@@ -10,12 +10,12 @@ option java_package = "com.google.protos.youtube.api.innertube";
 option objc_class_prefix = "YTI";
 
 message GlobalConfigGroup {
-	oneof coldConfigGroup {
+	oneof cold_config_group {
 		string serialized_cold_config_group = 1;
 		bytes bytes_serialized_cold_config_group = 6;
 	}
 
-	oneof hotConfigGroup {
+	oneof hot_config_group {
 		string serialized_hot_config_group = 3;
 		bytes bytes_serialized_hot_config_group = 7;
 	}

@@ -14,7 +14,7 @@ option objc_class_prefix = "YTI";
 message KeyValuePair {
 	optional string key = 1;
 
-	oneof valueOneof {
+	oneof value_oneof {
 		string value = 2;
 		FormattedString formatted_string_value = 3;
 		int32 int_value = 4;

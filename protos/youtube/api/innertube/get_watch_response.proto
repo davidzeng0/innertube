@@ -17,12 +17,12 @@ option objc_class_prefix = "YTI";
 message GetWatchResponse {
 	optional ResponseContext response_context = 1;
 
-	oneof getPlayer {
+	oneof get_player {
 		PlayerResponse player_response = 2;
 		string get_player_error_msg = 4;
 	}
 
-	oneof getWatchNext {
+	oneof get_watch_next {
 		WatchNextResponse watch_next_response = 3;
 		string get_watch_next_error_msg = 5;
 	}

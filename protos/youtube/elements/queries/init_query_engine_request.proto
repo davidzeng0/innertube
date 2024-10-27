@@ -13,7 +13,7 @@ option java_package = "com.google.protos.youtube.elements.queries";
 option objc_class_prefix = "ELMQY";
 
 message InitQueryEngineRequest {
-	oneof dataSourceRegistryFactoryKind {
+	oneof data_source_registry_factory_kind {
 		DataSourceRegistryFactoryBlockWeakRef data_source_registry_factory = 3;
 		DataSourceRegistryFactoryBlockMovableRef movable_data_source_registry_factory = 4;
 	}
