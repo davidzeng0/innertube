@@ -14,7 +14,7 @@ option objc_class_prefix = "YTVS";
 message FormatInitializationMetadata {
 	optional string video_id = 1;
 	optional FormatId format_id = 2;
-	optional int64 unnamed_field_4 = 4;
-	optional string unnamed_field_5 = 5;
+	optional int64 end_segment_number = 4;
+	optional string mime_type = 5;
 	optional bytes unnamed_field_6 = 6;
 }

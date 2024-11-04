@@ -4,7 +4,7 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "youtube/unknown/unnamed4308.proto";
+import "youtube/api/innertube/seek_source.proto";
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
@@ -12,7 +12,7 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message SabrSeek {
-	optional int64 unnamed_field_1 = 1;
-	optional int32 unnamed_field_2 = 2;
-	optional .youtube.unknown.Unnamed4308 unnamed_field_3 = 3;
+	optional int64 seek_media_time = 1;
+	optional int32 seek_media_timescale = 2;
+	optional .youtube.api.innertube.SeekSource seek_source = 3;
 }
