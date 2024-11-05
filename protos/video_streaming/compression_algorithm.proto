@@ -10,8 +10,7 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 enum CompressionAlgorithm {
-	// unknown. probably deflate. both this and gzip are handled with GZIPInputStream (android) and zlib::inflate (ios) in the disassembled code.
-	CompressionAlgorithm_value_0 = 0;
+	NONE = 0;
 	GZIP = 1;
 	BROTLI = 2;
 }

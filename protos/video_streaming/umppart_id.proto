@@ -9,7 +9,7 @@ option java_multiple_files = true;
 option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
-enum PartType {
+enum UMPPartId {
 	UNKNOWN = 0;
 	ONESIE_HEADER = 10;
 	ONESIE_DATA = 11;

@@ -11,17 +11,17 @@ option objc_class_prefix = "YTVS";
 
 enum OnesieHeaderType {
 	// expect a ONESIE_DATA with an encrypted innertube response
-	INNERTUBE_RESPONSE = 0;
-	OnesieHeaderType_value_1 = 1;
+	ENCRYPTED_ONESIE_INNERTUBE_RESPONSE = 0;
+	ENCRYPTED_MEDIA = 1;
 	// expect a ONESIE_DATA of which the 16 byte data is the decryption key for ONESIE_ENCRYPTED_MEDIA
 	MEDIA_DECRYPTION_KEY = 2;
-	OnesieHeaderType_value_3 = 3;
-	OnesieHeaderType_value_4 = 4;
-	OnesieHeaderType_value_5 = 5;
-	NEW_HOST = 6;
-	OnesieHeaderType_value_7 = 7;
-	OnesieHeaderType_value_8 = 8;
-	OnesieHeaderType_value_9 = 9;
+	CLEAR_MEDIA = 3;
+	CLEAR_INIT_SEGMENT = 4;
+	ACK = 5;
+	MEDIA_STREAMER_HOSTNAME = 6;
+	MEDIA_SIZE_HINT = 7;
+	PLAYER_SERVICE_RESPONSE_PUSH_URL = 8;
+	LAST_HIGH_PRIORITY_HINT = 9;
 	OnesieHeaderType_value_10 = 10;
 	OnesieHeaderType_value_11 = 11;
 	OnesieHeaderType_value_12 = 12;
