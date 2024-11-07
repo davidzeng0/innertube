@@ -1,5 +1,5 @@
 # InnerTube
-Schemas and (some, contributions welcome) unofficial documentation for the YouTube Internal API, also known as InnerTube.
+Schemas and (some, contributions welcome) unofficial documentation for the YouTube Internal API, also known as InnerTube. This repository is provided for interoperability.
 
 See [googlevideo](./googlevideo) for a description of googlevideo request formats and the UMP response format.
 
