@@ -1,6 +1,6 @@
 # UMP Format
 
-Thanks to contributors to [gsuberland/UMP_Format](https://github.com/gsuberland/UMP_Format/blob/main/UMP_Format.md) for kickstarting this document.<br>
+Thanks to contributors to [gsuberland/UMP_Format](https://github.com/gsuberland/UMP_Format/blob/main/UMP_Format.md) for kickstarting this repository.<br>
 Original document (derived from gsuberland): [davidzeng0/UMP_Format](https://github.com/davidzeng0/UMP_Format/blob/main/UMP_Format.md)
 
 The UMP (likely Universal Media Playback or U(stream/streamer) Multi Part) format is used as the response format by all Google services that play videos. This document details the format for the purposes of interoperability.
@@ -65,7 +65,7 @@ fn read_part(input: &mut Reader) -> (Vec<u8>, u32) {
 
 ## Part types
 
-The following part types have been observed.
+See [UMPPartId](../protos/video_streaming/umppart_id.proto)
 
 ### Part 10: ONESIE_HEADER
 
@@ -79,11 +79,11 @@ See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto) for p
 
 If present, must be preceded by OnesieHeader (part 10).
 
-#### Type 0: OnesieHeaderType::ONESIE_PLAYER_RESPONSE
+#### Type 0: OnesieHeaderType::ENCRYPTED_ONESIE_INNERTUBE_RESPONSE
 
 The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
 
-If the compression type is BROTLI, decompress using BROTLI, otherwise decompress using GZIP.
+If the compression algorithm is set, decompress accordingly.
 
 The contents are now in protobuf. See [OnesieInnertubeResponse](../protos/video_streaming/onesie_innertube_response.proto) for the format.
 
@@ -99,7 +99,7 @@ The body can be deserialized as a `PlayerResponse`.
 The body is 16 bytes. This is the key used to decrypt ONESIE_ENCRYPTED_MEDIA.
 The key is sent after a successful player request/response, which may come after instances of ONESIE_ENCRYPTED_MEDIA.
 
-#### Type 6: OnesieHeaderType::NEW_HOST
+#### Type 6: OnesieHeaderType::MEDIA_STREAMER_HOSTNAME
 
 Unknown. No ONESIE_DATA follows
 
@@ -121,7 +121,7 @@ See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertu
 
 ### Part 12: ONESIE_ENCRYPTED_MEDIA
 
-Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L19). The rest is encrypted media.
+Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L23). The rest is encrypted media.
 
 The key is found in `OnesieHeaderType::ONESIE_MEDIA_DECRYPTION_KEY`.
 The initialization vector is 16 bytes of zeros. There is no hmac.
