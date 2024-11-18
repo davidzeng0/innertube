@@ -79,7 +79,7 @@ See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto) for p
 
 If present, must be preceded by OnesieHeader (part 10).
 
-#### Type 0: OnesieHeaderType::ENCRYPTED_ONESIE_INNERTUBE_RESPONSE
+#### Type 0: OnesieHeaderType::ENCRYPTED_ONESIE_PLAYER_RESPONSE
 
 The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
 

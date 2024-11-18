@@ -11,7 +11,7 @@ option objc_class_prefix = "YTVS";
 
 enum OnesieHeaderType {
 	// expect a ONESIE_DATA with an encrypted innertube response
-	ENCRYPTED_ONESIE_INNERTUBE_RESPONSE = 0;
+	ENCRYPTED_ONESIE_PLAYER_RESPONSE = 0;
 	ENCRYPTED_MEDIA = 1;
 	// expect a ONESIE_DATA of which the 16 byte data is the decryption key for ONESIE_ENCRYPTED_MEDIA
 	MEDIA_DECRYPTION_KEY = 2;
