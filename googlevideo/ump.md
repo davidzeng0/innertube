@@ -113,9 +113,9 @@ Indicates some stream metadata is set in the header. No ONESIE_DATA follows
 
 #### Type 25: OnesieHeaderType::ENCRYPTED_INNERTUBE_RESPONSE_PART
 
-Unknown purpose.
+Parts of a GetWatchResponse.
 
-Decrypted in the same way as OnesieHeaderType::ONESIE_PLAYER_RESPONSE.
+Decrypted in the same way as OnesieHeaderType::ENCRYPTED_ONESIE_PLAYER_RESPONSE.
 
 See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertube_response_part.proto)
 

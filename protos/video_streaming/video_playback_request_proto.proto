@@ -13,8 +13,8 @@ option java_package = "com.google.android.apps.youtube.proto.streaming";
 option objc_class_prefix = "YTVS";
 
 message VideoPlaybackRequestProto {
-	optional ClientAbrState unnamed_field_1 = 1;
-	optional bytes unnamed_field_3 = 3;
-	optional int64 unnamed_field_4 = 4;
-	optional StreamerContext unnamed_field_5 = 5;
+	optional ClientAbrState abr_state = 1;
+	optional bytes video_playback_ustreamer_config = 3;
+	optional int64 player_time_ms = 4;
+	optional StreamerContext streamer_context = 5;
 }
