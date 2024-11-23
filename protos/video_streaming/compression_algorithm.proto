@@ -6,11 +6,11 @@ package video_streaming;
 
 option cc_enable_arenas = true;
 option java_multiple_files = true;
-option java_package = "com.google.android.apps.youtube.proto.streaming";
+option java_package = "com.google.android.apps.youtube.proto";
 option objc_class_prefix = "YTVS";
 
 enum CompressionAlgorithm {
-	NONE = 0;
-	GZIP = 1;
-	BROTLI = 2;
+	COMPRESSION_ALGORITHM_UNKNOWN = 0;
+	COMPRESSION_ALGORITHM_NONE = 1;
+	COMPRESSION_ALGORITHM_GZIP = 2;
 }

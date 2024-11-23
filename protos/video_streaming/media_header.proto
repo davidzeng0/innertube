@@ -4,6 +4,7 @@ syntax = "proto2";
 
 package video_streaming;
 
+import "video_streaming/compression_algorithm.proto";
 import "video_streaming/format_id.proto";
 import "video_streaming/time_range.proto";
 
@@ -13,13 +14,6 @@ option java_package = "com.google.android.apps.youtube.proto";
 option objc_class_prefix = "YTVS";
 
 message MediaHeader {
-	/* protogen: merge reason = nested */
-	enum CompressionAlgorithm {
-		NONE = 0;
-		NONE_1 = 1;
-		GZIP = 2;
-	}
-
 	optional uint32 header_id = 1;
 	optional string video_id = 2;
 	optional int32 itag = 3;
