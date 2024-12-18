@@ -39,7 +39,6 @@ enum OnesieHeaderType {
 	OnesieHeaderType_value_22 = 22;
 	OnesieHeaderType_value_23 = 23;
 	OnesieHeaderType_value_24 = 24;
-	// an encrypted response. purpose is unknown
 	ENCRYPTED_INNERTUBE_RESPONSE_PART = 25;
 	OnesieHeaderType_value_26 = 26;
 	OnesieHeaderType_value_27 = 27;
