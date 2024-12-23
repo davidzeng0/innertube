@@ -85,7 +85,7 @@ The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L
 
 If the compression algorithm is set, decompress accordingly.
 
-The contents are now in protobuf. See [OnesieInnertubeResponse](../protos/video_streaming/onesie_innertube_response.proto) for the format.
+The contents are now in protobuf. See [OnesieInnertubeResponse](../protos/youtube/api/innertube/onesie_innertube_response.proto) for the format.
 
 If the onesie proxy status is not `OK`, panic or throw an exception.
 The http status and response body can be considered a part of a normal Google Cloud API invocation.
