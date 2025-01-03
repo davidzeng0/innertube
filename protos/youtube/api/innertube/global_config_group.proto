@@ -11,13 +11,13 @@ option objc_class_prefix = "YTI";
 
 message GlobalConfigGroup {
 	oneof cold_config_group {
-		string serialized_cold_config_group = 1;
-		bytes bytes_serialized_cold_config_group = 6;
+		string serialized_cold_config_group = 1; // base64url serialized cold config group
+		bytes bytes_serialized_cold_config_group = 6; // raw bytes. decode protobuf directly
 	}
 
 	oneof hot_config_group {
-		string serialized_hot_config_group = 3;
-		bytes bytes_serialized_hot_config_group = 7;
+		string serialized_hot_config_group = 3; // base64url serialized hot config group
+		bytes bytes_serialized_hot_config_group = 7; // raw bytes. decode protobuf directly
 	}
 
 	optional string hot_hash_data = 4;
