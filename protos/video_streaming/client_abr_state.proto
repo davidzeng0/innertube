@@ -23,17 +23,17 @@ message ClientAbrState {
 	optional .youtube.api.innertube.DetailedNetworkType detailed_network_type = 17;
 	optional int32 client_viewport_width = 18;
 	optional int32 client_viewport_height = 19;
-	optional int64 client_bitrate_cap = 20;
+	optional int64 client_bitrate_cap_bytes_per_sec = 20;
 	optional int32 sticky_resolution = 21;
 	optional bool client_viewport_is_flexible = 22;
-	optional int64 bandwidth_estimate = 23;
+	optional int64 bandwidth_estimate_bytes_per_sec = 23;
 	optional .youtube.api.innertube.AudioQuality min_audio_quality = 24;
 	optional .youtube.api.innertube.AudioQuality max_audio_quality = 25;
 	optional .youtube.api.innertube.VideoQualitySetting video_quality_setting = 26;
 	optional .youtube.api.innertube.PlaybackAudioRouteOutputType audio_route = 27;
 	optional int64 player_time_ms = 28;
 	optional int64 time_since_last_seek_or_join_ms = 29;
-	optional bool data_saver_mode = 30;
+	optional bool low_power_mode = 30;
 	optional .youtube.api.innertube.NetworkMeteredState network_metered_state = 32;
 	optional int32 visibility = 34;
 	optional float playback_rate = 35;
@@ -41,7 +41,7 @@ message ClientAbrState {
 	optional bytes media_capabilities = 38;
 	optional int64 time_since_last_action_ms = 39;
 	optional int32 enabled_track_types_bitfield = 40;
-	optional int32 max_pacing_rate = 43;
+	optional int32 max_pacing_rate_bytes_per_sec = 43;
 	optional bool drc_enabled = 46;
 	repeated .youtube.unknown.Unnamed1779 unnamed_field_55 = 55 [packed = true];
 }

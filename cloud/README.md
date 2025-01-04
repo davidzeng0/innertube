@@ -5,7 +5,7 @@ The [services.yaml](./services.yaml) specifies the InnerTube API as a part of th
 
 The `protoOverRest` implementation refers to [innertube.proto](../protos/youtube/api/innertube/innertube.proto). Note that `innertube.proto` is not a part of the official API. It is intended as a starter template for integrating proto defined RPC services into your preferred language.
 
-The current `services.yaml` was intended for use with ts-proto and mosaic-googlecloud, both in typescript, of which the latter is now discontinued, due to being RIIR and multiple limitations of the javascript language. If you are using ts-proto, generate with the following options
+The current `services.yaml` was intended for use with ts-proto and mosaic-googlecloud, both in typescript, of which the latter is now discontinued, due to being RIIR and multiple limitations of the javascript language. If you are using ts-proto, generate with the following options. Note that the protos are currently expected to not compile. This is an issue with the generator and may be fixed in the future. If you want to use them, please copy them by hand and keep the fields you desire.
 
 ```bash
 --ts_proto_out "${PROTO_OUTPUT_DIR}"
