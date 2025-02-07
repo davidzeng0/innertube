@@ -65,7 +65,7 @@ fn read_part(input: &mut Reader) -> (Vec<u8>, u32) {
 
 ## Part types
 
-See [UMPPartId](../protos/video_streaming/umppart_id.proto)
+See [UMPPartId](../protos/video_streaming/ump_part_id.proto)
 
 ### Part 10: ONESIE_HEADER
 
@@ -73,13 +73,13 @@ Data related to a onesie (`/initplayback`) request. See [OnesieHeader](../protos
 
 Depending on the header type, there is exactly 0-1 ONESIE_DATA parts that follow.
 
-See [OnesieHeaderType](../protos/video_streaming/onesie_header_type.proto) for possible values.
+See [OnesieHeaderId](../protos/video_streaming/onesie_header_id.proto) for possible values.
 
 ### Part 11: ONESIE_DATA
 
 If present, must be preceded by OnesieHeader (part 10).
 
-#### Type 0: OnesieHeaderType::ENCRYPTED_ONESIE_PLAYER_RESPONSE
+#### Type 0: OnesieHeaderId::ENCRYPTED_ONESIE_PLAYER_RESPONSE
 
 The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
 
@@ -94,28 +94,28 @@ For `X-Goog-Api-Format-Version: 2`, this corresponds to `message Status`. Otherw
 
 The body can be deserialized as a `PlayerResponse`.
 
-#### Type 2: OnesieHeaderType::MEDIA_DECRYPTION_KEY
+#### Type 2: OnesieHeaderId::MEDIA_DECRYPTION_KEY
 
 The body is 16 bytes. This is the key used to decrypt ONESIE_ENCRYPTED_MEDIA.
 The key is sent after a successful player request/response, which may come after instances of ONESIE_ENCRYPTED_MEDIA.
 
-#### Type 6: OnesieHeaderType::MEDIA_STREAMER_HOSTNAME
+#### Type 6: OnesieHeaderId::MEDIA_STREAMER_HOSTNAME
 
 Unknown. No ONESIE_DATA follows
 
-#### Type 14: OnesieHeaderType::RESTRICTED_FORMATS_HINT
+#### Type 14: OnesieHeaderId::RESTRICTED_FORMATS_HINT
 
 Indicates that [OnesieHeader::restrictedFormats](../protos/video_streaming/onesie_header.proto#L23) is set. A string list of itags that needs to be converted to ints. No ONESIE_DATA follows
 
-#### Type 16: OnesieHeaderType::STREAM_METADATA
+#### Type 16: OnesieHeaderId::STREAM_METADATA
 
 Indicates some stream metadata is set in the header. No ONESIE_DATA follows
 
-#### Type 25: OnesieHeaderType::ENCRYPTED_INNERTUBE_RESPONSE_PART
+#### Type 25: OnesieHeaderId::ENCRYPTED_INNERTUBE_RESPONSE_PART
 
 Parts of a GetWatchResponse.
 
-Decrypted in the same way as OnesieHeaderType::ENCRYPTED_ONESIE_PLAYER_RESPONSE.
+Decrypted in the same way as OnesieHeaderId::ENCRYPTED_ONESIE_PLAYER_RESPONSE.
 
 See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertube_response_part.proto)
 
@@ -123,7 +123,7 @@ See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertu
 
 Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L23). The rest is encrypted media.
 
-The key is found in `OnesieHeaderType::ONESIE_MEDIA_DECRYPTION_KEY`.
+The key is found in `OnesieHeaderId::ONESIE_MEDIA_DECRYPTION_KEY`.
 The initialization vector is 16 bytes of zeros. There is no hmac.
 
 All ONESIE_ENCRYPTED_MEDIA chunks are to be decrypted with the same cipher instance, without resetting the IV.
