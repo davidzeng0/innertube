@@ -81,7 +81,7 @@ If present, must be preceded by OnesieHeader (part 10).
 
 #### Type 0: OnesieHeaderId::ENCRYPTED_ONESIE_PLAYER_RESPONSE
 
-The [OnesieHeader::cryptoParams](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
+The [OnesieHeader::crypto_params](../protos/video_streaming/onesie_header.proto#L19) field must be set. If any of the fields mentioned below arent set, panic or throw an exception. Decrypt the contents using the same clientKey used in the [request](./initplayback.md), and the IV from crypto params.
 
 If the compression algorithm is set, decompress accordingly.
 
@@ -105,7 +105,7 @@ Unknown. No ONESIE_DATA follows
 
 #### Type 14: OnesieHeaderId::RESTRICTED_FORMATS_HINT
 
-Indicates that [OnesieHeader::restrictedFormats](../protos/video_streaming/onesie_header.proto#L23) is set. A string list of itags that needs to be converted to ints. No ONESIE_DATA follows
+Indicates that [OnesieHeader::restricted_formats](../protos/video_streaming/onesie_header.proto#L29) is set. A string list of itags that needs to be converted to ints. No ONESIE_DATA follows
 
 #### Type 16: OnesieHeaderId::STREAM_METADATA
 
@@ -121,7 +121,7 @@ See [EncryptedInnertubeResponsePart](../protos/video_streaming/encrypted_innertu
 
 ### Part 12: ONESIE_ENCRYPTED_MEDIA
 
-Starts with a UMP varint that corresponds to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L23). The rest is encrypted media.
+Starts with a UMP varint that corresponds to [MediaHeader::header_id](../protos/video_streaming/media_header.proto#L18). The rest is encrypted media.
 
 The key is found in `OnesieHeaderId::ONESIE_MEDIA_DECRYPTION_KEY`.
 The initialization vector is 16 bytes of zeros. There is no hmac.
@@ -146,7 +146,7 @@ If the header compression type is set to GZIP, decompress using gzip.
 
 Terminator part. Usually included at the end of all payloads where there is no partial payload at the end.
 
-Size is usually 1, with the data being a UMP varint corresponding to [MediaHeader::headerId](../protos/video_streaming/media_header.proto#L19).
+Size is usually 1, with the data being a UMP varint corresponding to [MediaHeader::header_id](../protos/video_streaming/media_header.proto#L18).
 
 ### Part 31: LIVE_METADATA
 
