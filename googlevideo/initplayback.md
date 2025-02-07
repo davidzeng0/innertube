@@ -6,11 +6,11 @@ Encryption is required for the player request. It can be acquired via a request 
 
 The formats are [ConfigRequest](../protos/youtube/api/innertube/config_request.proto) and [ConfigResponse](../protos/youtube/api/innertube/config_response.proto)
 
-If the rawColdConfigGroup and rawHotConfigGroup are not present, then check the [ResponseContext::global_config_group](../protos/youtube/api/innertube/response_context.proto#L33). See [GlobalConfigGroup](../protos/youtube/api/innertube/global_config_group.proto) for more information. The [OnesieHotConfig](../protos/youtube/api/innertube/onesie_hot_config.proto) can be found via `HotConfigGroup::media_hot_config::onesie_hot_config`
+If the rawColdConfigGroup and rawHotConfigGroup are not present, then check the [ResponseContext::global_config_group](../protos/youtube/api/innertube/response_context.proto#L34). See [GlobalConfigGroup](../protos/youtube/api/innertube/global_config_group.proto) for more information. The [OnesieHotConfig](../protos/youtube/api/innertube/onesie_hot_config.proto) can be found via `HotConfigGroup::media_hot_config::onesie_hot_config`
 
 The client uses the [OnesieHotConfig::client_key](../protos/youtube/api/innertube/onesie_hot_config.proto#L16) for encrypting the request. The IV is randomly generated.
 
-[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in [`EncryptedInnertubeRequest::encrypted_onesie_innertube_request`](../protos/youtube/api/innertube/encrypted_innertube_request.proto#L20)
+[OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in [`EncryptedInnertubeRequest::encrypted_onesie_innertube_request`](../protos/youtube/api/innertube/encrypted_innertube_request.proto#L22)
 
 The `OnesieHotConfig::encrypted_client_key` is sent in the request, along with the hmac and iv produced by the function below. Responses are encrypted/hmaced with the same key
 
