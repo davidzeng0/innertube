@@ -10,6 +10,7 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "ELMQY";
 
+/* protogen: merge reason = circular */
 message Value {
 	oneof kind {
 		bool bool_value = 1;
@@ -26,10 +27,12 @@ message Value {
 	}
 }
 
+/* protogen: merge reason = circular */
 message ListValue {
 	repeated Value values = 1;
 }
 
+/* protogen: merge reason = circular */
 message ObjectValue {
 	message Entry {
 		optional int32 identifier = 1;

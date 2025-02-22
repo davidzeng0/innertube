@@ -4,8 +4,8 @@ syntax = "proto2";
 
 package youtube.elements.contrib;
 
-import "youtube/elements/command.proto";
 import "youtube/elements/contrib/clipboard_content.proto";
+import "youtube/elements/command.proto";
 
 option java_package = "com.google.protos.youtube.elements.contrib";
 option java_multiple_files = true;

@@ -4,11 +4,11 @@ syntax = "proto2";
 
 package youtube.elements;
 
-import "youtube/elements/properties.proto";
 import "youtube/elements/rect_corners.proto";
 import "youtube/elements/style_properties_extensions.proto";
 import "youtube/elements/affine_transform.proto";
 import "youtube/elements/point.proto";
+import "youtube/elements/properties.proto";
 
 option java_package = "com.google.protos.youtube.elements";
 option java_multiple_files = true;

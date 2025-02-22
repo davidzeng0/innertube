@@ -4,10 +4,10 @@ syntax = "proto2";
 
 package youtube.elements.queries;
 
-import "youtube/elements/queries/object_value.proto";
-import "youtube/elements/queries/field_resolver_config.proto";
 import "youtube/elements/queries/fragment_spread.proto";
 import "youtube/elements/queries/directive.proto";
+import "youtube/elements/queries/field_resolver_config.proto";
+import "youtube/elements/queries/object_value.proto";
 
 option java_package = "com.google.protos.youtube.elements.queries";
 option java_multiple_files = true;
@@ -15,6 +15,7 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "ELMQY";
 
+/* protogen: merge reason = circular */
 message Selection {
 	oneof selection {
 		Field field = 1;
@@ -23,11 +24,13 @@ message Selection {
 	}
 }
 
+/* protogen: merge reason = circular */
 message InlineFragment {
 	repeated Selection selections = 1;
 	repeated Directive directives = 2;
 }
 
+/* protogen: merge reason = circular */
 message Field {
 	optional int32 number = 1;
 	repeated Selection selections = 2;

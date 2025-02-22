@@ -5,8 +5,8 @@ syntax = "proto2";
 package youtube.elements.extensions;
 
 import "youtube/elements/command.proto";
-import "youtube/elements/type.proto";
 import "youtube/elements/extensions/series_configuration.proto";
+import "youtube/elements/type.proto";
 
 option java_package = "com.google.protos.youtube.elements.extensions";
 option java_multiple_files = true;

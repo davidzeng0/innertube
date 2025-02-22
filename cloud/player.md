@@ -41,6 +41,9 @@ service PlayerService {
 - geographic location<br>
   body: `.context.client.gl`
 
+- proof of origin token<br>
+  body: `.service_integrity_dimensions.po_token`
+
 ## Response
 
 - playability status: whether or not the video can be played<br>

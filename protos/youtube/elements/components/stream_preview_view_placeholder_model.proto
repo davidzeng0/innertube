@@ -5,8 +5,8 @@ syntax = "proto2";
 package youtube.elements.components;
 
 import "youtube/api/innertube/stream_status_data_entity.proto";
-import "youtube/elements/model.proto";
 import "youtube/elements/context.proto";
+import "youtube/elements/model.proto";
 
 option java_package = "com.google.protos.youtube.elements.components";
 option java_multiple_files = true;
