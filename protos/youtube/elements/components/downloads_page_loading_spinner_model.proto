@@ -4,8 +4,8 @@ syntax = "proto2";
 
 package youtube.elements.components;
 
-import "youtube/elements/model.proto";
 import "google/protobuf/bool_value.proto";
+import "youtube/elements/model.proto";
 
 option java_package = "com.google.protos.youtube.elements.components";
 option java_multiple_files = true;

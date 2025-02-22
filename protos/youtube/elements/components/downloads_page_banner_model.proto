@@ -7,9 +7,9 @@ package youtube.elements.components;
 import "youtube/api/innertube/client_ve_spec.proto";
 import "youtube/elements/attributed_string.proto";
 import "youtube/api/innertube/downloads_page_banner_entity.proto";
-import "youtube/elements/model.proto";
 import "youtube/elements/context.proto";
 import "youtube/elements/components/button.proto";
+import "youtube/elements/model.proto";
 
 option java_package = "com.google.protos.youtube.elements.components";
 option java_multiple_files = true;

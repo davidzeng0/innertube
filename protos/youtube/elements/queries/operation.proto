@@ -4,8 +4,8 @@ syntax = "proto2";
 
 package youtube.elements.queries;
 
-import "youtube/elements/queries/selection.proto";
 import "youtube/elements/queries/operation_type.proto";
+import "youtube/elements/queries/selection.proto";
 import "youtube/elements/queries/fragment.proto";
 import "youtube/elements/queries/type.proto";
 import "youtube/elements/queries/variable_definition.proto";

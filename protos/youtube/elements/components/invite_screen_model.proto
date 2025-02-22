@@ -6,12 +6,12 @@ package youtube.elements.components;
 
 import "youtube/api/innertube/logging_directives.proto";
 import "youtube/api/innertube/invite_link_entity.proto";
-import "youtube/elements/model.proto";
 import "youtube/elements/context.proto";
 import "youtube/elements/environment_data.proto";
 import "youtube/elements/components/invite_screen_data.proto";
 import "youtube/elements/components/invite_screen_button_enabled.proto";
 import "youtube/elements/components/video_thumbnail_data.proto";
+import "youtube/elements/model.proto";
 
 option java_package = "com.google.protos.youtube.elements.components";
 option java_multiple_files = true;

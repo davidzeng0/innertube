@@ -12,11 +12,13 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "ELMQY";
 
+/* protogen: merge reason = circular */
 message Schema {
 	/* protogen: fields not specified */
 	extensions 1000 to max;
 }
 
+/* protogen: merge reason = circular */
 extend Schema {
 	optional EnvironmentData environment = 413835977;
 }

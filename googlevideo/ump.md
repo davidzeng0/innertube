@@ -170,7 +170,7 @@ Same format as LIVE_METADATA_PROMISE.
 
 ### Part 35: NEXT_REQUEST_POLICY
 
-Unknown purpose and format.
+See [NextRequestPolicy](../protos/youtube/api/innertube/next_request_policy.proto)
 
 ### Part 36: USTREAMER_VIDEO_AND_FORMAT_DATA
 

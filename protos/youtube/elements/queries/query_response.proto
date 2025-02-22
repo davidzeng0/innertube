@@ -4,9 +4,9 @@ syntax = "proto2";
 
 package youtube.elements.queries;
 
-import "youtube/elements/queries/schema.proto";
 import "youtube/elements/queries/error.proto";
 import "youtube/elements/queries/response_extensions.proto";
+import "youtube/elements/queries/schema.proto";
 
 option java_package = "com.google.protos.youtube.elements.queries";
 option java_multiple_files = true;
