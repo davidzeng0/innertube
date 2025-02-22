@@ -33,6 +33,14 @@ service PlayerService {
 - racy check status: user wishes to see age restricted video<br>
   body: `.racy_check_ok`
 
+## Optional Fields
+
+- host language<br>
+  body: `.context.client.hl`
+
+- geographic location<br>
+  body: `.context.client.gl`
+
 ## Response
 
 - playability status: whether or not the video can be played<br>
