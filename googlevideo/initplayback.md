@@ -12,7 +12,16 @@ The client uses the [OnesieHotConfig::client_key](../protos/youtube/api/innertub
 
 [OnesieInnertubeRequest](../protos/youtube/api/innertube/onesie_innertube_request.proto) is the data sent in [`EncryptedInnertubeRequest::encrypted_onesie_innertube_request`](../protos/youtube/api/innertube/encrypted_innertube_request.proto#L22)
 
-The `OnesieHotConfig::encrypted_client_key` is an encrypted version of the `client_key` you obtained above, with a leading header byte, 4 byte key-id, and a 12 byte iv.
+The `OnesieHotConfig::encrypted_client_key` is used by the server to decrypt the request and has the following format:
+
+```
+00..01 - 1 byte header
+01..05 - 4 byte id of key used to decrypt the client key
+05..17 - 12 byte iv
+----------------------- ENCRYPTED ----------------------
+17..21 - 4 byte id of client-key
+21..53 - 32 byte client key
+```
 
 This is sent in the request, along with the hmac and iv produced by the function below. Responses are encrypted/hmaced with the same key
 
