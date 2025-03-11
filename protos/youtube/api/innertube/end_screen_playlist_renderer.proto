@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message EndScreenPlaylistRenderer {
 	optional string playlist_id = 1;
 	optional FormattedString title = 2;
@@ -29,7 +28,6 @@ message EndScreenPlaylistRenderer {
 	optional bytes tracking_params = 14;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional EndScreenPlaylistRenderer end_screen_playlist_renderer = 57128056;
 }

@@ -19,7 +19,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message MealbarPromoRenderer {
 	message MealbarPromoDismissData {
 		optional Command endpoint = 1;
@@ -86,7 +85,6 @@ message MealbarPromoRenderer {
 	optional int32 dwell_time_ms = 25;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional MealbarPromoRenderer mealbar_promo_renderer = 96907215;
 }

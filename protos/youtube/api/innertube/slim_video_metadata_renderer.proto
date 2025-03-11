@@ -25,7 +25,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message SlimVideoMetadataRenderer {
 	optional FormattedString title = 3;
 	optional FormattedString collapsed_subtitle = 4;
@@ -51,27 +50,22 @@ message SlimVideoMetadataRenderer {
 	extensions 1000 to max;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SlimVideoMetadataRenderer slim_video_metadata_renderer = 119167901;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SlimMetadataButtonRenderer slim_metadata_button_renderer = 124608017;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SlimMetadataToggleButtonRenderer slim_metadata_toggle_button_renderer = 124608045;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SlimMetadataAddToButtonRenderer slim_metadata_add_to_button_renderer = 186676672;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SlimOwnerRenderer slim_owner_renderer = 119170535;
 }

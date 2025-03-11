@@ -19,7 +19,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message HorizontalListRenderer {
 	repeated HorizontalListSupportedRenderers items = 1;
 	optional FormattedString view_all_text = 3;
@@ -37,12 +36,10 @@ message HorizontalListRenderer {
 	extensions 1000 to max;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional HorizontalListRenderer horizontal_list_renderer = 51431404;
 }
 
-/* protogen: merge reason = circular */
 extend ContinuationSupportedRenderers {
 	optional HorizontalListRenderer horizontal_list_continuation = 51431404;
 }

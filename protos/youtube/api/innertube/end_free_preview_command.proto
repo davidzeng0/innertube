@@ -12,12 +12,10 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message EndFreePreviewCommand {
 	optional bytes params = 1;
 }
 
-/* protogen: merge reason = circular */
 extend Command {
 	optional EndFreePreviewCommand end_free_preview_command = 414836754;
 }

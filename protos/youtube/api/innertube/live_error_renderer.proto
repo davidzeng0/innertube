@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message LiveErrorRenderer {
 	optional LiveErrorType type = 1;
 	optional bool client_may_retry = 2;
@@ -28,7 +27,6 @@ message LiveErrorRenderer {
 	}
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional LiveErrorRenderer live_error_renderer = 124003698;
 }

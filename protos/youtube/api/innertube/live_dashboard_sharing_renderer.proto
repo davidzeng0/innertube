@@ -13,14 +13,12 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message LiveDashboardSharingRenderer {
 	optional string video_id = 1;
 	optional string url = 2;
 	optional FormattedString title = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional LiveDashboardSharingRenderer live_dashboard_sharing_renderer = 86294750;
 }

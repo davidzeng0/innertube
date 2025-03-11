@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistThumbnailOverlayRenderer {
 	optional PlaylistThumbnailOverlayThumbnailSupportedRenderers thumbnail = 1;
 	optional FormattedString video_count_text = 2;
@@ -25,7 +24,6 @@ message PlaylistThumbnailOverlayRenderer {
 	optional uint32 background_color = 7;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistThumbnailOverlayRenderer playlist_thumbnail_overlay_renderer = 111664577;
 }

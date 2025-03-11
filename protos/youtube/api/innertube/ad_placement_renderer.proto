@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AdPlacementRenderer {
 	optional AdPlacementSupportedRenderers renderer = 2;
 	optional string element_id = 3;
@@ -25,7 +24,6 @@ message AdPlacementRenderer {
 	optional AdSlotLoggingData ad_slot_logging_data = 9;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AdPlacementRenderer ad_placement_renderer = 136104733;
 }

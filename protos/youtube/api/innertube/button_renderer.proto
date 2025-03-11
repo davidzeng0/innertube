@@ -25,7 +25,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message ButtonRenderer {
 	oneof style_oneof {
 		ButtonStyle.ButtonStyleType style = 1;
@@ -60,12 +59,10 @@ message ButtonRenderer {
 	extensions 1000 to max;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional ButtonRenderer button_renderer = 65153809;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional ToggleButtonRenderer toggle_button_renderer = 79971800;
 }

@@ -16,7 +16,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistAutoAddConfirmationRenderer {
 	optional FormattedString title = 1;
 	optional FormattedString description = 2;
@@ -25,7 +24,6 @@ message PlaylistAutoAddConfirmationRenderer {
 	optional Command add_matching_videos_endpoint = 5;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistAutoAddConfirmationRenderer playlist_auto_add_confirmation_renderer = 81299423;
 }

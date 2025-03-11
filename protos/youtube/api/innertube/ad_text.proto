@@ -13,7 +13,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AdText {
 	optional string text = 1;
 	optional AdTextSupportedStyle style = 2;
@@ -25,7 +24,6 @@ message AdText {
 	extensions 1000 to max;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AdText ad_text = 266982641;
 }

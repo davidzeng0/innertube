@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AdBreakRenderer {
 	optional uint32 offset_milliseconds = 1;
 	repeated AdBreakSupportedRenderers ads = 2;
@@ -42,7 +41,6 @@ message AdBreakRenderer {
 	optional AdSlotLoggingData ad_slot_logging_data = 14;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AdBreakRenderer ad_break_renderer = 84813246;
 }

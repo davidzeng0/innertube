@@ -17,7 +17,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message TopicRenderer {
 	optional FormattedString title = 1;
 	optional Command navigation_endpoint = 2;
@@ -27,7 +26,6 @@ message TopicRenderer {
 	optional TopicStyle topic_style = 7;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional TopicRenderer topic_renderer = 102283498;
 }

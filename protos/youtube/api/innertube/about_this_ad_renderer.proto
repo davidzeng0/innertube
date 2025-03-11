@@ -13,14 +13,12 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AboutThisAdRenderer {
 	optional webutil.html.types.TrustedResourceUrlProto url = 1;
 	optional string layout_id = 2;
 	optional bytes tracking_params = 4;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AboutThisAdRenderer about_this_ad_renderer = 343935806;
 }

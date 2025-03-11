@@ -14,7 +14,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message SectionListWithoutPreviewRenderer {
 	extend ContinuationSupportedRenderers {
 		optional SectionListWithoutPreviewRenderer section_list_without_preview_continuation = 51779803;
@@ -23,7 +22,6 @@ message SectionListWithoutPreviewRenderer {
 	repeated SectionListWithoutPreviewSupportedRenderers contents = 1;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SectionListWithoutPreviewRenderer section_list_without_preview_renderer = 51779803;
 }

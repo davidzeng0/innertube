@@ -17,7 +17,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message EndscreenRenderer {
 	repeated EndscreenElementSupportedRenderers elements = 1;
 	optional int64 start_ms = 2;
@@ -26,22 +25,18 @@ message EndscreenRenderer {
 	optional bytes tracking_params = 6;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional EndscreenRenderer endscreen_renderer = 106301526;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional EndscreenUrlRenderer endscreen_url_renderer = 107233212;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SkipEndscreenRenderer skip_endscreen_renderer = 150436494;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional EndscreenElementRenderer endscreen_element_renderer = 105860658;
 }

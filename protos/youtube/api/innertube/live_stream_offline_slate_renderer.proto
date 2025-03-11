@@ -17,7 +17,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message LiveStreamOfflineSlateRenderer {
 	optional int64 scheduled_start_time = 1;
 	optional bool can_show_countdown = 2;
@@ -38,7 +37,6 @@ message LiveStreamOfflineSlateRenderer {
 	optional OfflineSlateCountdownStyle countdown_style = 11;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional LiveStreamOfflineSlateRenderer live_stream_offline_slate_renderer = 127585924;
 }

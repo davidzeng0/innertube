@@ -16,7 +16,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message EndScreenVideoRenderer {
 	optional string video_id = 1;
 	optional ThumbnailDetails thumbnail = 2;
@@ -34,7 +33,6 @@ message EndScreenVideoRenderer {
 	repeated ThumbnailOverlaySupportedRenderers thumbnail_overlays = 16;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional EndScreenVideoRenderer end_screen_video_renderer = 57153017;
 }

@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message LiveStreamabilityRenderer {
 	optional string video_id = 1;
 	optional string broadcast_id = 2;
@@ -27,7 +26,6 @@ message LiveStreamabilityRenderer {
 	optional StreamTransitionTiming transition_timing = 10 [ default = STREAM_TRANSITION_TIMING_AT_HEAD ];
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional LiveStreamabilityRenderer live_streamability_renderer = 108363419;
 }

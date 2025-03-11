@@ -13,12 +13,10 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message ThumbnailRenderer {
 	optional ThumbnailDetails thumbnail = 1;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional ThumbnailRenderer thumbnail_renderer = 165005232;
 }

@@ -16,7 +16,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AlertWithActionsRenderer {
 	optional Icon icon = 1;
 	optional FormattedString alert_message = 2;
@@ -30,7 +29,6 @@ message AlertWithActionsRenderer {
 	optional FormattedString title = 15;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AlertWithActionsRenderer alert_with_actions_renderer = 117586727;
 }

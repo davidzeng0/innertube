@@ -12,14 +12,12 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AdBreakServiceRenderer {
 	optional int64 prefetch_milliseconds = 1;
 	optional string ad_break_params = 2;
 	optional string get_ad_break_url = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AdBreakServiceRenderer ad_break_service_renderer = 106947817;
 }

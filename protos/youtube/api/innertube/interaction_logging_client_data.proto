@@ -59,7 +59,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message InteractionLoggingClientData {
 	optional ExternalLinkData external_link_data = 1;
 	optional ThumbnailHoveredData thumbnail_hovered_data = 2;
@@ -110,7 +109,6 @@ message InteractionLoggingClientData {
 	optional WatchCinematicContainerData watch_cinematic_container_data = 77;
 }
 
-/* protogen: merge reason = circular */
 extend CommandMetadata {
 	optional InteractionLoggingClientData gesture_client_data = 285231755;
 }

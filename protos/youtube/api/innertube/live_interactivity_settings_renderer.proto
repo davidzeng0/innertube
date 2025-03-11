@@ -13,14 +13,12 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message LiveInteractivitySettingsRenderer {
 	optional string video_id = 1;
 	optional bool chat_enabled = 2;
 	repeated LiveInteractivitySettingsSupportedRenderers contents = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional LiveInteractivitySettingsRenderer live_interactivity_settings_renderer = 85693137;
 }

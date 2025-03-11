@@ -14,23 +14,19 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistSidebarRenderer {
 	repeated Renderer items = 1;
 	optional bytes tracking_params = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistSidebarRenderer playlist_sidebar_renderer = 157509376;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistSidebarPrimaryInfoRenderer playlist_sidebar_primary_info_renderer = 156930936;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistSidebarSecondaryInfoRenderer playlist_sidebar_secondary_info_renderer = 156919674;
 }

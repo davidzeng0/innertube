@@ -13,7 +13,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AdPreviewRenderer {
 	optional AdText message = 2;
 	optional string element_id = 4;
@@ -22,7 +21,6 @@ message AdPreviewRenderer {
 	optional int32 duration_milliseconds = 9;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AdPreviewRenderer ad_preview_renderer = 106944603;
 }

@@ -16,23 +16,19 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistSuggestionsRenderer {
 	optional FormattedString title = 1;
 	optional PlaylistDedupeSuggestionsSupportedRenderers dedupe_suggestions = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistSuggestionsRenderer playlist_suggestions_renderer = 63491129;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistDedupeSuggestionsRenderer playlist_dedupe_suggestions_renderer = 64236482;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistDedupeSuggestionsVideoRenderer playlist_dedupe_suggestions_video_renderer = 64241547;
 }

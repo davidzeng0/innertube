@@ -17,7 +17,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlayerErrorMessageRenderer {
 	optional FormattedString subreason = 1;
 	optional FormattedString learn_more = 2;
@@ -31,7 +30,6 @@ message PlayerErrorMessageRenderer {
 	optional FormattedString footer = 10;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlayerErrorMessageRenderer player_error_message_renderer = 58356580;
 }

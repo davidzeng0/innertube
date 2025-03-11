@@ -12,13 +12,11 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message MoreLikeThisEndpoint {
 	optional string more_like_this_token = 1;
 	repeated Command actions = 2;
 }
 
-/* protogen: merge reason = circular */
 extend Command {
 	optional MoreLikeThisEndpoint more_like_this_endpoint = 159441232;
 }

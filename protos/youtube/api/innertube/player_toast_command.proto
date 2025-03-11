@@ -13,13 +13,11 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlayerToastCommand {
 	optional FormattedString text = 1;
 	optional int32 duration_ms = 2;
 }
 
-/* protogen: merge reason = circular */
 extend Command {
 	optional PlayerToastCommand player_toast_command = 301715199;
 }

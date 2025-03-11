@@ -27,7 +27,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message WatchEndpoint {
 	optional string video_id = 1;
 	optional string playlist_id = 2;
@@ -76,7 +75,6 @@ message WatchEndpoint {
 	optional WatchEndpointMusicSupportedConfigs watch_endpoint_music_supported_configs = 136656028;
 }
 
-/* protogen: merge reason = circular */
 extend Command {
 	optional WatchEndpoint watch_endpoint = 48687757;
 }

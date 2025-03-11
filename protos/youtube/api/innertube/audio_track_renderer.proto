@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message AudioTrackRenderer {
 	optional FormattedString title = 1;
 	optional FormattedString artist = 2;
@@ -27,7 +26,6 @@ message AudioTrackRenderer {
 	optional string audioswap_id = 8;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional AudioTrackRenderer audio_track_renderer = 78929821;
 }

@@ -15,23 +15,19 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message SectionListDrawerRenderer {
 	repeated SectionListDrawerContentSupportedRenderers contents = 1;
 	optional bytes tracking_params = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional SectionListDrawerRenderer section_list_drawer_renderer = 105924295;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional DrawerListRenderer drawer_list_renderer = 106506504;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional DrawerAvatarRenderer drawer_avatar_renderer = 105604662;
 }

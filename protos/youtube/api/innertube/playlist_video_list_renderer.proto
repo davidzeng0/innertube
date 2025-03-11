@@ -18,7 +18,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistVideoListRenderer {
 	extend ContinuationSupportedRenderers {
 		optional PlaylistVideoListRenderer playlist_video_list_continuation = 54681060;
@@ -38,7 +37,6 @@ message PlaylistVideoListRenderer {
 	optional int32 selected_index = 15 [ default = 0 ];
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistVideoListRenderer playlist_video_list_renderer = 54681060;
 }

@@ -14,13 +14,11 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message MiniplayerRenderer {
 	optional PlaybackMode playback_mode = 1;
 	optional Command minimized_endpoint = 2;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional MiniplayerRenderer miniplayer_renderer = 207720144;
 }

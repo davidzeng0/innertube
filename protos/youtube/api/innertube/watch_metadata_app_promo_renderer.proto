@@ -15,7 +15,6 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message WatchMetadataAppPromoRenderer {
 	optional ThumbnailDetails image = 1;
 	optional FormattedString title = 2;
@@ -25,7 +24,6 @@ message WatchMetadataAppPromoRenderer {
 	optional bool enable_amsterdam_ui = 7;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional WatchMetadataAppPromoRenderer watch_metadata_app_promo_renderer = 240664969;
 }

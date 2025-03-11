@@ -13,14 +13,12 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message PlaylistSelectOptionRenderer {
 	optional string playlist_id = 1;
 	optional string title = 2;
 	optional FormattedString video_count = 3;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional PlaylistSelectOptionRenderer playlist_select_option_renderer = 70408529;
 }

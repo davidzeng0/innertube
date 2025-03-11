@@ -12,12 +12,10 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message ElementsSectionListFooterRenderer {
 	optional Renderer content = 1;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional ElementsSectionListFooterRenderer elements_section_list_footer_renderer = 260791572;
 }

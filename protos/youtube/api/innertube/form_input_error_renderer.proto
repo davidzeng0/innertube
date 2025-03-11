@@ -13,12 +13,10 @@ option optimize_for = LITE_RUNTIME;
 option cc_enable_arenas = true;
 option objc_class_prefix = "YTI";
 
-/* protogen: merge reason = circular */
 message FormInputErrorRenderer {
 	optional FormattedString error_text = 1;
 }
 
-/* protogen: merge reason = circular */
 extend Renderer {
 	optional FormInputErrorRenderer form_input_error_renderer = 85492347;
 }
