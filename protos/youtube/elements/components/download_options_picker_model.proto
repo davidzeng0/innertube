@@ -10,7 +10,7 @@ import "youtube/api/innertube/download_format.proto";
 import "youtube/elements/context.proto";
 import "youtube/elements/environment_data.proto";
 import "youtube/elements/components/download_options_picker_experiments.proto";
-import "youtube/elements/components/download_options_a_11_y_strings.proto";
+import "youtube/elements/components/download_options_a11y_strings.proto";
 import "youtube/elements/components/download_options_selected_values.proto";
 import "youtube/elements/components/download_options_picker_body_data.proto";
 import "youtube/elements/components/download_options_picker_footer_data.proto";

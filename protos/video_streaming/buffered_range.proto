@@ -6,7 +6,7 @@ package video_streaming;
 
 import "video_streaming/time_range.proto";
 import "video_streaming/format_id.proto";
-import "unknown/youtube/unnamed_9835.proto";
+import "unknown/youtube/unnamed9835.proto";
 
 option java_package = "com.google.android.apps.youtube.proto.streaming";
 option java_multiple_files = true;
