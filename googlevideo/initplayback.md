@@ -17,9 +17,8 @@ The `OnesieHotConfig::encrypted_client_key` is used by the server to decrypt the
 ```
 00..01 - 1 byte header
 01..05 - 4 byte id of key used to decrypt the client key
-05..17 - 12 byte iv
+05..17 - 16 byte siv
 ----------------------- ENCRYPTED ----------------------
-17..21 - 4 byte id of client-key
 21..53 - 32 byte client key
 ```
 
