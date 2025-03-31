@@ -18,4 +18,5 @@ message OnesieInnertubeRequest {
 	repeated HTTPHeader http_headers = 2;
 	optional bytes post_body = 3;
 	optional bool proxied_by_trusted_bandaid = 4;
+	optional bool skip_response_encryption = 6;
 }

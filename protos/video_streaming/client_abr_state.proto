@@ -4,13 +4,14 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "youtube/api/innertube/drm_track_type.proto";
-import "video_streaming/media_capabilities.proto";
-import "youtube/api/innertube/playback_audio_route_output_type.proto";
-import "youtube/api/innertube/video_quality_setting.proto";
-import "youtube/api/innertube/audio_quality.proto";
 import "youtube/api/innertube/detailed_network_type.proto";
+import "youtube/api/innertube/audio_quality.proto";
+import "youtube/api/innertube/video_quality_setting.proto";
+import "youtube/api/innertube/playback_audio_route_output_type.proto";
 import "youtube/api/innertube/network_metered_state.proto";
+import "video_streaming/media_capabilities.proto";
+import "youtube/api/innertube/drm_track_type.proto";
+import "unknown/youtube/unnamed8338.proto";
 
 option java_package = "com.google.android.apps.youtube.proto";
 option java_multiple_files = true;
@@ -45,5 +46,17 @@ message ClientAbrState {
 	optional int32 enabled_track_types_bitfield = 40;
 	optional int32 max_pacing_rate_bytes_per_sec = 43;
 	optional bool drc_enabled = 46;
-	repeated youtube.api.innertube.DrmTrackType drm_track_types = 55;
+	repeated youtube.api.innertube.DrmTrackType authorized_drm_track_types = 55;
+
+	/* protogen: field name not specified */
+	optional string unnamed_field_69 = 69;
+
+	/* protogen: field name not specified */
+	optional unknown.youtube.Unnamed8338 unnamed_field_70 = 70;
+
+	/* protogen: field name not specified */
+	optional youtube.api.innertube.AudioQuality unnamed_field_73 = 73;
+
+	/* protogen: field name not specified */
+	optional int32 unnamed_field_77 = 77;
 }

@@ -5,7 +5,8 @@ syntax = "proto2";
 package youtube.api.innertube;
 
 import "youtube/api/innertube/inner_tube_context.proto";
-import "unknown/youtube/unnamed7319.proto";
+import "youtube/api/innertube/onesie_innertube_request.proto";
+import "youtube/api/innertube/onesie_innertube_response.proto";
 
 option java_package = "com.google.protos.youtube.api.innertube";
 option java_multiple_files = true;
@@ -19,7 +20,14 @@ message EncryptedInnertubeRequest {
 	 * clientVersion: not app version.
 	 */
 	optional InnerTubeContext context = 1;
-	optional bytes encrypted_onesie_innertube_request = 2;
+
+	oneof onesie_innertube_request {
+		bytes encrypted_onesie_innertube_request = 2;
+		bytes unencrypted_onesie_innertube_request = 16;
+	}
+
+	optional OnesieInnertubeRequest do_not_use_onesie_innertube_request = 3;
+	optional OnesieInnertubeResponse do_not_use_onesie_innertube_response = 4;
 
 	/* from OnesieHotConfig::encrypted_client_key */
 	optional bytes encrypted_client_key = 5;
@@ -33,7 +41,14 @@ message EncryptedInnertubeRequest {
 
 	/* from OnesieHotConfig::reverse_proxy_config */
 	optional string reverse_proxy_config = 9;
+	optional bool serialize_response_as_json = 10;
+	optional bool enable_ad_placements_preroll = 13;
+	optional bool enable_compression_response_only = 14;
 
-	/* protogen: field name not specified */
-	optional unknown.youtube.Unnamed7319 unnamed_field_12 = 12;
+	message UstreamerFlags {
+		optional bool send_video_playback_config = 2;
+	}
+
+	optional UstreamerFlags ustreamer_flags = 15;
+	optional bool use_jsonformatter_to_parse_player_response = 17;
 }

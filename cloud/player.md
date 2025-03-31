@@ -44,6 +44,10 @@ service PlayerService {
 - proof of origin token<br>
   body: `.service_integrity_dimensions.po_token`
 
+Note that setting fields via query or json goes through the proto3 json format
+translation layer (aka `pfinnertube`), which may add some overhead. It is recommended to set all fields
+from the protobuf itself.
+
 ## Response
 
 - playability status: whether or not the video can be played<br>
