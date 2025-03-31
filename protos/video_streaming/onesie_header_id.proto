@@ -69,6 +69,8 @@ enum OnesieHeaderId {
 
 	/* protogen: variant name was not specified */
 	ONESIE_HEADER_ID_VALUE_24 = 24;
+
+	/* parts of a GetWatchResponse */
 	ENCRYPTED_INNERTUBE_RESPONSE_PART = 25;
 
 	/* protogen: variant name was not specified */

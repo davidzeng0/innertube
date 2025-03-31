@@ -4,11 +4,12 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "video_streaming/onesie_request_target.proto";
-import "youtube/api/innertube/encrypted_innertube_request.proto";
 import "video_streaming/client_abr_state.proto";
+import "youtube/api/innertube/encrypted_innertube_request.proto";
 import "video_streaming/streamer_context.proto";
+import "video_streaming/onesie_request_target.proto";
 import "video_streaming/buffered_range.proto";
+import "unknown/youtube/unnamed10445.proto";
 
 option java_multiple_files = true;
 option optimize_for = LITE_RUNTIME;
@@ -25,4 +26,7 @@ message OnesieRequestProto {
 	optional StreamerContext streamer_context = 10;
 	optional OnesieRequestTarget onesie_request_target = 13;
 	repeated BufferedRange buffered_ranges = 14;
+
+	/* protogen: field name not specified */
+	optional unknown.youtube.Unnamed10445 unnamed_field_16 = 16;
 }
