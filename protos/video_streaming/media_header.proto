@@ -4,9 +4,9 @@ syntax = "proto2";
 
 package video_streaming;
 
-import "video_streaming/time_range.proto";
 import "video_streaming/compression_algorithm.proto";
 import "video_streaming/format_id.proto";
+import "video_streaming/time_range.proto";
 
 option java_package = "com.google.android.apps.youtube.proto";
 option java_multiple_files = true;
